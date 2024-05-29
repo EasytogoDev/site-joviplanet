@@ -1,0 +1,89 @@
+.form-search-01 {
+	.form-control, .btn {
+		width: 127px;
+	}
+
+}
+
+.page-title {
+
+	&.bg-white-overlay {
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255, 255, 255, 0.5);
+			z-index: 1;
+		}
+	}
+
+	.bootstrap-select {
+		.btn {
+			&:focus, &:hover {
+				border: 1px solid $text-muted;
+				background-color: transparent !important;
+			}
+		}
+	}
+
+}
+
+.page-title.bg-overlay, .page-title.bg-white-overlay {
+	.container {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.page-title.shadow {
+	box-shadow: 0 7px 10px -5px rgba(51, 51, 51, 0.05) !important;
+}
+
+.page-title.bg-patten {
+	background-image: url("../images/bg-title-01.png"), url("../images/bg-title-02.png");
+	background-position: left bottom, right top;
+	background-repeat: no-repeat, no-repeat;
+	background-size: auto, auto;
+}
+
+.form-search-02 {
+	.form-control, .input-group-text {
+		border-width: 0 0 2px 0;
+	}
+
+	.form-control:focus {
+		box-shadow: none;
+		border-color: $border-color;
+		background-color: transparent !important;
+	}
+
+	.bootstrap-select .btn {
+		border-width: 0 0 2px 0;
+		border-style: solid;
+		border-color: $border-color;
+
+		&:hover, &:focus {
+			background-color: transparent !important;
+		}
+	}
+}
+
+
+.bootstrap-select {
+	.btn {
+		&:focus {
+			outline: none !important;
+			box-shadow: none !important;
+		}
+	}
+
+	.dropdown-item:focus {
+		outline: none !important;
+	}
+}
+

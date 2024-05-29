@@ -1,0 +1,9 @@
+.popover {
+	top: -11px !important;
+
+	.arrow {
+		&::before, &::after {
+			border-top-color: $white;
+		}
+	}
+}

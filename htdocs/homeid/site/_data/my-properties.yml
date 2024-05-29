@@ -1,0 +1,45 @@
+- title: Home in Metric Way
+  image: /images/my-properties-01.jpg
+  url: /single-property-1.html
+  address: 1421 San Pedro St, Los Angeles
+  price: $2500
+  type: rent
+  date_publishes: 30 December, 2019
+  status: pending
+  views: 2,049
+- title: Garden Gingerbread House
+  image: /images/my-properties-02.jpg
+  url: /single-property-1.html
+  address: 1421 San Pedro St, Los Angeles
+  price: $.1250.000
+  type: sale
+  date_publishes: 30 December, 2019
+  status: published
+  views: 2,049
+- title: Affordable Urban House
+  image: /images/my-properties-03.jpg
+  url: /single-property-1.html
+  address: 1421 San Pedro St, Los Angeles
+  price: $2500
+  type: rent
+  date_publishes: 30 December, 2019
+  status: processing
+  views: 2,049
+- title: Villa on Hollywood Boulevard
+  image: /images/my-properties-04.jpg
+  url: /single-property-1.html
+  address: 1421 San Pedro St, Los Angeles
+  price:  $.1250.000
+  type: sale
+  date_publishes: 30 December, 2019
+  status: published
+  views: 2,049
+- title: Explore Old Barcelon
+  image: /images/my-properties-03.jpg
+  url: /single-property-1.html
+  address: 1421 San Pedro St, Los Angeles
+  price: $2500
+  type: rent
+  date_publishes: 30 December, 2019
+  status: pending
+  views: 2,049

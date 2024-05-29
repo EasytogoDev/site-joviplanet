@@ -1,0 +1,250 @@
+
+breadcrumbs:
+  - title: Home
+    url: /
+  - title: Listing
+    url: /listing-grid-with-left-filter.html
+  - title: Villa on Hollywood Boulevard
+    is_active: true
+
+galleries-01:
+  - image: /images/single-property-lg-1.jpg
+  - image: /images/single-property-lg-4.jpg
+  - image: /images/single-property-lg-3.jpg
+  - image: /images/single-property-lg-2.jpg
+  - image: /images/single-property-lg-9.jpg
+  - image: /images/single-property-lg-10.jpg
+
+galleries-02:
+  - image: /images/single-property-sm-7.jpg
+    alt: Gallery 01
+  - image: /images/single-property-sm-2.jpg
+    alt: Gallery 02
+  - image: /images/single-property-sm-4.jpg
+    alt: Gallery 03
+  - image: /images/single-property-sm-1.jpg
+    alt: Gallery 04
+  - image: /images/single-property-9.jpg
+    alt: Gallery 05
+  - image: /images/single-property-1.jpg
+    alt: Gallery 06
+
+info-box:
+  - title: Type
+    sub-title: Single Family
+    icon: family
+  - title: year built
+    sub-title: 2020
+    icon: year
+  - title: heating
+    sub-title: Radiant
+    icon: heating
+  - title: SQFT
+    sub-title: 979.000
+    icon: price
+  - title: Bedrooms
+    sub-title: 3
+    icon: bedroom
+  - title: bathrooms
+    sub-title: 2
+    icon: sofa
+  - title: GARAGE
+    sub-title: 1
+    icon: Garage
+  - title: Status
+    sub-title: Active
+    icon: status
+
+list-01:
+  - title: Property ID
+    value: AD-2910
+  - title: Price
+    value: $890.000
+  - title: Property type
+    value: Apartment, bar, cafe, villa
+  - title: Property status
+    value: For Sale
+  - title: Rooms
+    value: 4
+  - title: Bedrooms
+    value: 3
+  - title: Size
+    value: 900SqFt
+  - title: Bathrooms
+    value: 2
+  - title: Garage
+    value: 1
+  - title: Bathrooms
+    value: 2000 SqFt
+  - title: Garage size
+    value: 50 SqFt
+  - title: Year build
+    value: 2020
+  - title: Label
+    value: Bestseller
+    is_offset: true
+
+list-02:
+  - title: Balcony
+  - title: Fireplace
+  - title: Balcony
+  - title: Fireplace
+  - title: Basement
+  - title: Cooling
+  - title: Basement
+  - title: Cooling
+  - title: Dining room
+  - title: Dishwasher
+  - title: Dining room
+  - title: Dishwasher
+
+accordions:
+  - data-parent: accordion-01
+    labelledby: floor-plans-01
+    id: collapse-01
+    image: /images/single-detail-property-01.jpg
+    title: First Floor
+    is_show: true
+    lists:
+      - title: Beds
+        value: 2
+      - title: Bath
+        value: 2
+      - title: Sqft
+        value: 900
+  - data-parent: accordion-02
+    labelledby: floor-plans-02
+    id: collapse-02
+    image: /images/single-detail-property-01.jpg
+    title: Second Floor
+    lists:
+      - title: Beds
+        value: 2
+      - title: Bath
+        value: 2
+      - title: Sqft
+        value: 900
+  - data-parent: accordion-03
+    labelledby: floor-plans-03
+    id: collapse-03
+    image: /images/single-detail-property-01.jpg
+    title: Third Floor
+    lists:
+      - title: Beds
+        value: 2
+      - title: Bath
+        value: 2
+      - title: Sqft
+        value: 900
+
+properties-01:
+  - title: Restaurants
+    url: /#
+    sub_properties:
+      - image: /images/single-detail-property-02.jpg
+        title: Bacchanal Buffet-Temporarily Closed
+        des: 3570 S Las Vegas BlvdLas Vegas, NV 89109
+        reviews: 120
+      - image: /images/single-detail-property-03.jpg
+        title: Bacchanal Buffet-Temporarily Closed
+        des: 3084 S Highland DrSte C
+        reviews: 120
+        is_opacity: true
+      - image: /images/single-detail-property-04.jpg
+        title: Bacchanal Buffet-Temporarily Closed
+        des: 3570 S Las Vegas BlvdLas Vegas, NV 89109
+        reviews: 120
+  - title: Education
+    url: /#
+    sub_properties:
+      - image: /images/single-detail-property-07.jpg
+        title: Safe Direction Firearms Training
+        des: 3570 S Las Vegas BlvdLas Vegas, NV 89109
+        reviews: 120
+      - image: /images/single-detail-property-08.jpg
+        title: Rabbi Shai Specht-Sandler
+        des: 3084 S Highland DrSte C
+        reviews: 120
+        is_opacity: true
+      - image: /images/single-detail-property-09.jpg
+        title: Safe Direction Firearms Training
+        des: 3570 S Las Vegas BlvdLas Vegas, NV 89109
+        reviews: 120
+  - title: Health & Medical
+    url: /#
+    sub_properties:
+      - image: /images/single-detail-property-10.jpg
+        title: Coppola David F DC & Assoc
+        des: 3570 S Las Vegas BlvdLas Vegas, NV 89109
+        reviews: 120
+      - image: /images/single-detail-property-11.jpg
+        title: Elite Medical Center
+        des: 3084 S Highland DrSte C
+        reviews: 120
+        is_opacity: true
+
+properties-02:
+  - title: Villa Called Archangel Word Document
+    image: /images/single-detail-property-05.png
+    url: /#
+  - title: Villa Called Archangel PDF Document
+    image: /images/single-detail-property-06.png
+    url: /#
+
+properties-04:
+  - title: Home in Metric Way
+    image: /images/properties-grid-38.jpg
+    url: /single-property-1.html
+    categories:
+      - name: for Sale
+        class: badge-primary
+    address: 1421 San Pedro St, Los Angeles
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $1.250.000
+    is_favorite: true
+  - title: Garden Gingerbread House
+    image: /images/properties-grid-06.jpg
+    url: /single-property-1.html
+    categories:
+      - name: for Sale
+        class: badge-primary
+    address: 1421 San Pedro St, Los Angeles
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    is_time: true
+    price: $550
+    time: month
+    is_favorite: false
+  - title: Affordable Urban House
+    image: /images/properties-grid-02.jpg
+    url: /single-property-1.html
+    categories:
+      - name: for Sale
+        class: badge-primary
+    address: 1421 San Pedro St, Los Angeles
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $1.250.000
+    is_favorite: false

@@ -1,0 +1,217 @@
+---
+
+layout: page-title-docs
+title: "Property Search"
+category_text: Property Search
+category_url: /docs/templates/property-search.html
+
+---
+
+<div class="bg-secondary py-6 py-lg-0">
+	<div class="container">
+			<form class="search-form d-none d-lg-block">
+				<div class="row align-items-center">
+					<div class="col-lg-5">
+						<div class="row">
+							<div class="col-md-6">
+								<label class="text-uppercase font-weight-500 opacity-7 text-white letter-spacing-093 mb-1">Home
+									Type</label>
+								<select class="form-control selectpicker bg-transparent border-bottom rounded-0 border-input-opacity-02" name="type"
+								        title="Select" data-style="p-0 h-24 lh-17 text-white">
+									<option>Condominium</option>
+									<option>Single-Family Home</option>
+									<option>Townhouse</option>
+									<option>Multi-Family Home</option>
+								</select>
+							</div>
+							<div class="col-md-6 pl-md-3 pt-md-0 pt-6">
+								<label class="text-uppercase font-weight-500 opacity-7 text-white letter-spacing-093 mb-1">Location</label>
+								<select class="form-control selectpicker bg-transparent border-bottom rounded-0 border-input-opacity-02" name="location"
+								        title="Select" data-style="p-0 h-24 lh-17 text-white">
+									<option>Austin</option>
+									<option>Boston</option>
+									<option>Chicago</option>
+									<option>Denver</option>
+									<option>Los Angeles</option>
+									<option>New York</option>
+									<option>San Francisco</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-5 pt-lg-0 pt-6">
+						<label class="text-uppercase font-weight-500 opacity-7 text-white letter-spacing-093">Search</label>
+						<div class="position-relative">
+							<input type="text" name="search"
+							       class="form-control bg-transparent shadow-none border-top-0 border-right-0 border-left-0 border-bottom rounded-0 h-24 lh-17 p-0 pr-md-5 text-white placeholder-light font-weight-500 border-input-opacity-02"
+							       placeholder="Enter an address, neighbourhood...">
+							<i class="far fa-search position-absolute pos-fixed-right-center pr-0 fs-18 text-white pb-2 d-none d-md-block"></i>
+						</div>
+					</div>
+					<div class="col-12 col-lg-2 pt-lg-0 pt-7">
+						<button type="submit"
+						        class="btn bg-white-opacity-01 bg-white-hover-opacity-03 h-lg-100 w-100 shadow-none text-white rounded-0 fs-16 font-weight-600">
+							Search
+						</button>
+					</div>
+				</div>
+			</form>
+			<form class="property-search property-search-mobile d-lg-none">
+				<div class="row align-items-lg-center" id="accordion-mobile">
+					<div class="col-12">
+						<div class="form-group mb-0 position-relative">
+							<a href="#advanced-search-filters-mobile"
+							   class="icon-primary btn advanced-search shadow-none pr-3 pl-0 d-flex align-items-center position-absolute pos-fixed-left-center py-0 h-100 border-right collapsed"
+							   data-toggle="collapse" data-target="#advanced-search-filters-mobile"
+							   aria-expanded="true"
+							   aria-controls="advanced-search-filters-mobile">
+							</a>
+							<input type="text"
+							       class="form-control form-control-lg border-0 shadow-none pr-9 pl-11 bg-white placeholder-muted"
+							       name="key-word"
+							       placeholder="Search...">
+							<button type="submit"
+							        class="btn position-absolute pos-fixed-right-center p-0 text-heading fs-20 px-3 shadow-none h-100 border-left bg-white">
+								<i class="far fa-search"></i>
+							</button>
+						</div>
+					</div>
+					<div id="advanced-search-filters-mobile" class="col-12 pt-2 collapse"
+					     data-parent="#accordion-mobile">
+						<div class="row mx-n2">
+							<div class="col-sm-6 pt-4 px-2">
+								<select class="form-control border-0 shadow-none form-control-lg selectpicker bg-white"
+								        title="Home Types" data-style="btn-lg py-2 h-52 bg-white" name="type">
+									<option>Condominium</option>
+									<option>Single-Family Home</option>
+									<option>Townhouse</option>
+									<option>Multi-Family Home</option>
+								</select>
+							</div>
+							<div class="col-sm-6 pt-4 px-2">
+								<select class="form-control border-0 shadow-none form-control-lg selectpicker bg-white"
+								        name="bedroom"
+								        title="Location" data-style="btn-lg py-2 h-52 bg-white">
+									<option>Austin</option>
+									<option>Boston</option>
+									<option>Chicago</option>
+									<option>Denver</option>
+									<option>Los Angeles</option>
+									<option>New York</option>
+									<option>San Francisco</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+</div>
+<section class="py-10">
+	<div class="container">
+		<div class="bg-gray-01 overflow-auto">
+{% highlight html %}
+<div class="bg-secondary py-6 py-lg-0">
+	<div class="container">
+		<form class="search-form d-none d-lg-block">
+			<div class="row align-items-center">
+				<div class="col-lg-5">
+					<div class="row">
+						<div class="col-md-6">
+							<label class="text-uppercase font-weight-500 opacity-7 text-white letter-spacing-093 mb-1">Home
+								Type</label>
+							<select class="form-control selectpicker bg-transparent border-bottom rounded-0 border-input-opacity-02" name="type"
+							        title="Select" data-style="p-0 h-24 lh-17 text-white">
+								<option>Condominium</option>
+								<option>Single-Family Home</option>
+								<option>Townhouse</option>
+								<option>Multi-Family Home</option>
+							</select>
+						</div>
+						<div class="col-md-6 pl-md-3 pt-md-0 pt-6">
+							<label class="text-uppercase font-weight-500 opacity-7 text-white letter-spacing-093 mb-1">Location</label>
+							<select class="form-control selectpicker bg-transparent border-bottom rounded-0 border-input-opacity-02" name="location"
+							        title="Select" data-style="p-0 h-24 lh-17 text-white">
+								<option>Austin</option>
+								<option>Boston</option>
+								<option>Chicago</option>
+								<option>Denver</option>
+								<option>Los Angeles</option>
+								<option>New York</option>
+								<option>San Francisco</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-5 pt-lg-0 pt-6">
+					<label class="text-uppercase font-weight-500 opacity-7 text-white letter-spacing-093">Search</label>
+					<div class="position-relative">
+						<input type="text" name="search"
+						       class="form-control bg-transparent shadow-none border-top-0 border-right-0 border-left-0 border-bottom rounded-0 h-24 lh-17 p-0 pr-md-5 text-white placeholder-light font-weight-500 border-input-opacity-02"
+						       placeholder="Enter an address, neighbourhood...">
+						<i class="far fa-search position-absolute pos-fixed-right-center pr-0 fs-18 text-white pb-2 d-none d-md-block"></i>
+					</div>
+				</div>
+				<div class="col-12 col-lg-2 pt-lg-0 pt-7">
+					<button type="submit"
+					        class="btn bg-white-opacity-01 bg-white-hover-opacity-03 h-lg-100 w-100 shadow-none text-white rounded-0 fs-16 font-weight-600">
+						Search
+					</button>
+				</div>
+			</div>
+		</form>
+		<form class="property-search property-search-mobile d-lg-none">
+			<div class="row align-items-lg-center" id="accordion-mobile">
+				<div class="col-12">
+					<div class="form-group mb-0 position-relative">
+						<a href="#advanced-search-filters-mobile"
+						   class="icon-primary btn advanced-search shadow-none pr-3 pl-0 d-flex align-items-center position-absolute pos-fixed-left-center py-0 h-100 border-right collapsed"
+						   data-toggle="collapse" data-target="#advanced-search-filters-mobile"
+						   aria-expanded="true"
+						   aria-controls="advanced-search-filters-mobile">
+						</a>
+						<input type="text"
+						       class="form-control form-control-lg border-0 shadow-none pr-9 pl-11 bg-white placeholder-muted"
+						       name="key-word"
+						       placeholder="Search...">
+						<button type="submit"
+						        class="btn position-absolute pos-fixed-right-center p-0 text-heading fs-20 px-3 shadow-none h-100 border-left bg-white">
+							<i class="far fa-search"></i>
+						</button>
+					</div>
+				</div>
+				<div id="advanced-search-filters-mobile" class="col-12 pt-2 collapse"
+				     data-parent="#accordion-mobile">
+					<div class="row mx-n2">
+						<div class="col-sm-6 pt-4 px-2">
+							<select class="form-control border-0 shadow-none form-control-lg selectpicker bg-white"
+							        title="Home Types" data-style="btn-lg py-2 h-52 bg-white" name="type">
+								<option>Condominium</option>
+								<option>Single-Family Home</option>
+								<option>Townhouse</option>
+								<option>Multi-Family Home</option>
+							</select>
+						</div>
+						<div class="col-sm-6 pt-4 px-2">
+							<select class="form-control border-0 shadow-none form-control-lg selectpicker bg-white"
+							        name="bedroom"
+							        title="Location" data-style="btn-lg py-2 h-52 bg-white">
+								<option>Austin</option>
+								<option>Boston</option>
+								<option>Chicago</option>
+								<option>Denver</option>
+								<option>Los Angeles</option>
+								<option>New York</option>
+								<option>San Francisco</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+{% endhighlight %}
+		</div>
+	</div>
+</section>

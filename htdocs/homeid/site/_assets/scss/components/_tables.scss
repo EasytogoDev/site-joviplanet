@@ -1,0 +1,45 @@
+.table {
+	thead th {
+		font-weight: 500;
+	}
+
+	.thead-sm {
+		font-size: 13px;
+		line-height: 2;
+	}
+
+	.thead-black {
+		color: #333;
+	}
+}
+
+.table-border-gray {
+	border: 1px solid #f5f5f5 !important;
+	th, td {
+		border: 1px solid #f5f5f5 !important;
+	}
+}
+
+.table-align-middle {
+	th, td {
+		vertical-align: middle !important;
+	}
+}
+
+.table-p-6 {
+	th, td {
+		padding: $spacer * 1.875;
+	}
+}
+
+.table-p-4 {
+	th, td {
+		padding: $spacer * 1.25;
+	}
+}
+
+.table-th-min-width-300 {
+	th {
+		min-width: 300px;
+	}
+}

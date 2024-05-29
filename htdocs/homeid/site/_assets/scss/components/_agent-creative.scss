@@ -1,0 +1,28 @@
+@media (min-width: 768px){
+	.arrow-box{
+		position: relative;
+		&:before{
+			position: absolute;
+			right: 100%;
+			top: 50%;
+			content: "";
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 10px 10px 10px 0;
+			border-color: transparent #fff transparent transparent;
+			transform: translateY(-50%);
+			z-index: 2;
+		}
+		&.arrow-box.arrow-right:before{
+			left: 100%;
+			right: auto;
+			border-width: 10px 0 10px 10px;
+			border-color: transparent transparent transparent #fff;
+		}
+	}
+}
+
+.overlay-opacity-02:before{
+	background-color: rgba(0, 0, 0, 0.2);
+}

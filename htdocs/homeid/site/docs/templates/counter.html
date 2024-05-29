@@ -1,0 +1,44 @@
+---
+layout: docs
+title: Counter
+description: Counter for each object. Include title and number
+group: templates
+toc: true
+---
+<h2>Counter 01</h2>
+
+{% capture example %}
+<div class="bg-secondary text-white pt-8 pb-7">
+    <div class="row no-gutters">
+        <div class="col-sm-6 col-lg-3 mb-6 mb-sm-0 px-6 text-center">
+            <div class="counterup fs-56 lh-1 mb-3 pt-2" data-start="0"
+                 data-end="1790" data-decimals="0"
+                 data-duration="0" data-separator="">1790
+            </div>
+            <div class="text-uppercase fs-13 lh-184 letter-spacing-163">happy clients</div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-6 mb-sm-0 px-6 text-center">
+            <div class="counterup fs-56 lh-1 mb-3 pt-2" data-start="0"
+                 data-end="491" data-decimals="0"
+                 data-duration="0" data-separator="">491
+            </div>
+            <div class="text-uppercase fs-13 lh-184 letter-spacing-163">finished projects</div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-6 mb-sm-0 px-6 text-center">
+            <div class="counterup fs-56 lh-1 mb-3 pt-2" data-start="0"
+                 data-end="245" data-decimals="0"
+                 data-duration="0" data-separator="">245
+            </div>
+            <div class="text-uppercase fs-13 lh-184 letter-spacing-163">Agents</div>
+        </div>
+        <div class="col-sm-6 col-lg-3 mb-6 mb-sm-0 px-6 text-center">
+            <div class="counterup fs-56 lh-1 mb-3 pt-2" data-start="0"
+                 data-end="245" data-decimals="0"
+                 data-duration="0" data-separator="">1090
+            </div>
+            <div class="text-uppercase fs-13 lh-184 letter-spacing-163">posts</div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}

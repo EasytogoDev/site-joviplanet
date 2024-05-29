@@ -1,0 +1,104 @@
+---
+layout: docs
+title: Partner
+description: A slider containing partner logos
+group: templates
+toc: true
+---
+<h2>Partner 01</h2>
+
+{% capture example %}
+<div class="container container-xxl">
+    <div class="py-8 border-top">
+        <div class="slick-slider mx-0 partners"
+             data-slick-options='{"slidesToShow": 6, "autoplay":true,"dots":false,"arrows":false,"responsive":[{"breakpoint": 992,"settings": {"slidesToShow":3}},{"breakpoint": 768,"settings": {"slidesToShow": 5}},{"breakpoint": 768,"settings": {"slidesToShow": 4}},{"breakpoint": 576,"settings": {"slidesToShow": 2}}]}'>
+            <div class="box d-flex align-items-center justify-content-center">
+                <a href="#" class="item position-relative hover-change-image">
+                    <img src="{{ '/images/partner-hover-1.png' | document_url }}" alt="Partner 1"
+                         class="hover-image position-absolute pos-fixed-top">
+                    <img src="{{ '/images/partner-1.png' | document_url }}" alt="Partner 1" class="image">
+                </a>
+
+            </div>
+            <div class="box d-flex align-items-center justify-content-center">
+                <a href="#" class="item position-relative hover-change-image">
+                    <img src="{{ '/images/partner-hover-2.png' | document_url }}" alt="Partner 2"
+                         class="hover-image position-absolute pos-fixed-top">
+                    <img src="{{ '/images/partner-2.png' | document_url }}" alt="Partner 2" class="image">
+                </a>
+            </div>
+            <div class="box d-flex align-items-center justify-content-center">
+                <a href="#" class="item position-relative hover-change-image">
+                    <img src="{{ '/images/partner-hover-3.png' | document_url }}" alt="Partner 3"
+                         class="hover-image position-absolute pos-fixed-top">
+                    <img src="{{ '/images/partner-3.png' | document_url }}" alt="Partner 3" class="image">
+                </a>
+            </div>
+            <div class="box d-flex align-items-center justify-content-center">
+                <a href="#" class="item">
+                    <img src="{{ '/images/partner-4.png' | document_url }}" alt="Partner 4" class="image">
+                </a>
+            </div>
+            <div class="box d-flex align-items-center justify-content-center">
+                <a href="#" class="item position-relative hover-change-image">
+                    <img src="{{ '/images/partner-hover-5.png' | document_url }}" alt="Partner 5"
+                         class="hover-image position-absolute pos-fixed-top">
+                    <img src="{{ '/images/partner-5.png' | document_url }}" alt="Partner 5" class="image">
+                </a>
+            </div>
+            <div class="box d-flex align-items-center justify-content-center">
+                <a href="#" class="item position-relative hover-change-image">
+                    <img src="{{ '/images/partner-6.png' | document_url }}" alt="Partner 6"
+                         class="hover-image position-absolute pos-fixed-top">
+                    <img src="{{ '/images/partner-6.jpg' | document_url }}" alt="Partner 6" class="image">
+                </a>
+            </div>
+            <div class="box d-flex align-items-center justify-content-center">
+                <a href="#" class="item position-relative hover-change-image">
+                    <img src="{{ '/images/partner-hover-1.png' | document_url }}" alt="Partner 1"
+                         class="hover-image position-absolute pos-fixed-top">
+                    <img src="{{ '/images/partner-1.png' | document_url }}" alt="Partner 1" class="image">
+                </a>
+
+            </div>
+            <div class="box d-flex align-items-center justify-content-center">
+                <a href="#" class="item position-relative hover-change-image">
+                    <img src="{{ '/images/partner-hover-2.png' | document_url }}" alt="Partner 2"
+                         class="hover-image position-absolute pos-fixed-top">
+                    <img src="{{ '/images/partner-2.png' | document_url }}" alt="Partner 2" class="image">
+                </a>
+            </div>
+            <div class="box d-flex align-items-center justify-content-center">
+                <a href="#" class="item position-relative hover-change-image">
+                    <img src="{{ '/images/partner-hover-3.png' | document_url }}" alt="Partner 3"
+                         class="hover-image position-absolute pos-fixed-top">
+                    <img src="{{ '/images/partner-3.png' | document_url }}" alt="Partner 3" class="image">
+                </a>
+            </div>
+            <div class="box d-flex align-items-center justify-content-center">
+                <a href="#" class="item">
+                    <img src="{{ '/images/partner-4.png' | document_url }}" alt="Partner 4" class="image">
+                </a>
+            </div>
+            <div class="box d-flex align-items-center justify-content-center">
+                <a href="#" class="item position-relative hover-change-image">
+                    <img src="{{ '/images/partner-hover-5.png' | document_url }}" alt="Partner 5"
+                         class="hover-image position-absolute pos-fixed-top">
+                    <img src="{{ '/images/partner-5.png' | document_url }}" alt="Partner 5" class="image">
+                </a>
+            </div>
+            <div class="box d-flex align-items-center justify-content-center">
+                <a href="#" class="item position-relative hover-change-image">
+                    <img src="{{ '/images/partner-6.png' | document_url }}" alt="Partner 6"
+                         class="hover-image position-absolute pos-fixed-top">
+                    <img src="{{ '/images/partner-6.jpg' | document_url }}" alt="Partner 6" class="image">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+{% endcapture %}
+{% include docs/example.html content=example %}

@@ -1,0 +1,137 @@
+properties:
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-35.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Villa on Hollywood Boulevard
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-36.jpg
+    for-rent: true
+    for-sale: false
+    price: $550
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Affordable Urban House
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-37.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Explore Old Barcelona
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-73.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-67.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Garden Gingerbread House
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-68.jpg
+    for-rent: true
+    for-sale: false
+    price: $550
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-49.jpg
+    for-rent: false
+    for-sale: true
+    price: $550
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-19.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+reviews:
+  - image: /images/review-06.jpg
+    name: Dollie Horton
+    address: San Diego
+    date:    02 Dec 2016 at 2:40pm
+    content: Very good and fast support during the week. Thanks for always keeping your WordPress themes up to date. Your level of support and dedication is second to none. Solved all my problems in a pressing time! Excited to see the other themes they make!
+  - image: /images/review-01.jpg
+    name: Dollie Horton
+    address: San Diego
+    date:    02 Dec 2016 at 2:40pm
+    content: Very good and fast support during the week. Thanks for always keeping your WordPress themes up to date. Your level of support and dedication is second to none. Solved all my problems in a pressing time! Excited to see the other themes they make!
+  - image:
+    name: Dollie Horton
+    address: San Diego
+    date:    02 Dec 2016 at 2:40pm
+    content: Very good and fast support during the week. Thanks for always keeping your WordPress themes up to date. Your level of support and dedication is second to none. Solved all my problems in a pressing time! Excited to see the other themes they make!
+  - image: /images/review-02.jpg
+    name: Dollie Horton
+    address: San Diego
+    date:    02 Dec 2016 at 2:40pm
+    content: Very good and fast support during the week. Thanks for always keeping your WordPress themes up to date. Your level of support and dedication is second to none. Solved all my problems in a pressing time! Excited to see the other themes they make!
+agents:
+  - image: /images/agent-1.jpg
+    name: Oliver Beddows
+    position: Sales Excutive
+  - image: /images/agent-30.jpg
+    name: Christopher Stevenson
+    position: Sales Excutive
+  - image: /images/agent-31.jpg
+    name: Kenneth Floyd
+    position: Sales Excutive
+  - image: /images/agent-32.jpg
+    name: Landon Allison
+    position: Sales Excutive
+  - image: /images/agent-33.jpg
+    name: Irene Wallace
+    position: Sales Excutive
+  - image: /images/agent-34.jpg
+    name: Tillie Clark
+    position: Sales Excutive

@@ -1,0 +1,7 @@
+I"õ
+<h5 id="flexbug-12-inline-elements-arent-treated-as-flex-items">Flexbug #12: Inline elements arenâ€™t treated as flex items</h5>
+
+<p>Internet Explorer 10-11 do not render inline elements like links or images (or <code class="language-plaintext highlighter-rouge">::before</code> and <code class="language-plaintext highlighter-rouge">::after</code> pseudo-elements) as flex items. The only workaround is to set a non-inline <code class="language-plaintext highlighter-rouge">display</code> value (e.g., <code class="language-plaintext highlighter-rouge">block</code>, <code class="language-plaintext highlighter-rouge">inline-block</code>, or <code class="language-plaintext highlighter-rouge">flex</code>). We suggest using <code class="language-plaintext highlighter-rouge">.d-flex</code>, one of our <a href="/html-homeid/docs//utilities/display/">display utilities</a>, as an easy fix.</p>
+
+<p><strong>Source:</strong> <a href="https://github.com/philipwalton/flexbugs#flexbug-12">Flexbugs on GitHub</a></p>
+:ET

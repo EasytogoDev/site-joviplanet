@@ -1,0 +1,609 @@
+---
+layout: docs
+title: Single Property
+description: The elements related to the single property of the web page
+group: templates
+toc: true
+---
+<h2 id="facts-and-features">
+	<span>Facts and Features</span>
+	<a href="#facts-and-features" class="anchorjs-link"></a>
+</h2>
+{% capture example %}
+
+<div style="max-width: 770px">
+	<div class="row">
+		<div class="col-lg-3 col-sm-4 mb-6">
+			<div class="media">
+				<div class="p-2 shadow-xxs-1 rounded-lg mr-2">
+					<svg class="icon icon-family fs-32 text-primary"><use xlink:href="#icon-family"></use></svg>
+				</div>
+				<div class="media-body">
+					<h5 class="my-1 fs-14 text-uppercase letter-spacing-093 font-weight-normal">Type</h5>
+					<p class="mb-0 fs-13 font-weight-bold text-heading">Single Family</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-4 mb-6">
+			<div class="media">
+				<div class="p-2 shadow-xxs-1 rounded-lg mr-2">
+					<svg class="icon icon-year fs-32 text-primary"><use xlink:href="#icon-year"></use></svg>
+				</div>
+				<div class="media-body">
+					<h5 class="my-1 fs-14 text-uppercase letter-spacing-093 font-weight-normal">Year Bult</h5>
+					<p class="mb-0 fs-13 font-weight-bold text-heading">2020</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-4 mb-6">
+			<div class="media">
+				<div class="p-2 shadow-xxs-1 rounded-lg mr-2">
+					<svg class="icon icon-heating fs-32 text-primary"><use xlink:href="#icon-heating"></use></svg>
+				</div>
+				<div class="media-body">
+					<h5 class="my-1 fs-14 text-uppercase letter-spacing-093 font-weight-normal">Heating</h5>
+					<p class="mb-0 fs-13 font-weight-bold text-heading">Radiant</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-4 mb-6">
+			<div class="media">
+				<div class="p-2 shadow-xxs-1 rounded-lg mr-2">
+					<svg class="icon icon-price fs-32 text-primary"><use xlink:href="#icon-price"></use></svg>
+				</div>
+				<div class="media-body">
+					<h5 class="my-1 fs-14 text-uppercase letter-spacing-093 font-weight-normal">Price/sqft</h5>
+					<p class="mb-0 fs-13 font-weight-bold text-heading">9350</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-4 mb-6">
+			<div class="media">
+				<div class="p-2 shadow-xxs-1 rounded-lg mr-2">
+					<svg class="icon icon-bedroom fs-32 text-primary"><use xlink:href="#icon-bedroom"></use></svg>
+				</div>
+				<div class="media-body">
+					<h5 class="my-1 fs-14 text-uppercase letter-spacing-093 font-weight-normal">Bedrooms</h5>
+					<p class="mb-0 fs-13 font-weight-bold text-heading">3</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-4 mb-6">
+			<div class="media">
+				<div class="p-2 shadow-xxs-1 rounded-lg mr-2">
+					<svg class="icon icon-sofa  fs-32 text-primary"><use xlink:href="#icon-sofa"></use></svg>
+				</div>
+				<div class="media-body">
+					<h5 class="my-1 fs-14 text-uppercase letter-spacing-093 font-weight-normal">Bathrooms</h5>
+					<p class="mb-0 fs-13 font-weight-bold text-heading">2</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-4 mb-6">
+			<div class="media">
+				<div class="p-2 shadow-xxs-1 rounded-lg mr-2">
+					<svg class="icon icon-Garage fs-32 text-primary"><use xlink:href="#icon-Garage"></use></svg>
+				</div>
+				<div class="media-body">
+					<h5 class="my-1 fs-14 text-uppercase letter-spacing-093 font-weight-normal">Garage</h5>
+					<p class="mb-0 fs-13 font-weight-bold text-heading">1</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-4 mb-6">
+			<div class="media">
+				<div class="p-2 shadow-xxs-1 rounded-lg mr-2">
+					<svg class="icon icon-status fs-32 text-primary"><use xlink:href="#icon-status"></use></svg>
+				</div>
+				<div class="media-body">
+					<h5 class="my-1 fs-14 text-uppercase letter-spacing-093 font-weight-normal">Status</h5>
+					<p class="mb-0 fs-13 font-weight-bold text-heading">Active</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2 id="additional-details">
+	<span>Additional Details</span>
+	<a href="#additional-details" class="anchorjs-link"></a>
+</h2>
+{% capture example %}
+<div style="max-width: 770px">
+	<div class="row">
+		<dl class="col-sm-6 mb-0 d-flex">
+			<dt class="w-110px fs-14 font-weight-500 text-heading pr-2">Property ID</dt>
+			<dd>AD-2910</dd>
+		</dl>
+		<dl class="col-sm-6 mb-0 d-flex">
+			<dt class="w-110px fs-14 font-weight-500 text-heading pr-2">Price</dt>
+			<dd>$890.000</dd>
+		</dl>
+		<dl class="col-sm-6 mb-0 d-flex">
+			<dt class="w-110px fs-14 font-weight-500 text-heading pr-2">Property type</dt>
+			<dd>Apartment, bar, cafe, villa</dd>
+		</dl>
+		<dl class="col-sm-6 mb-0 d-flex">
+			<dt class="w-110px fs-14 font-weight-500 text-heading pr-2">Property status</dt>
+			<dd>For Sale</dd>
+		</dl>
+		<dl class="col-sm-6 mb-0 d-flex">
+			<dt class="w-110px fs-14 font-weight-500 text-heading pr-2">Rooms</dt>
+			<dd>4</dd>
+		</dl>
+		<dl class="col-sm-6 mb-0 d-flex">
+			<dt class="w-110px fs-14 font-weight-500 text-heading pr-2">Bedrooms</dt>
+			<dd>3</dd>
+		</dl>
+		<dl class="col-sm-6 mb-0 d-flex">
+			<dt class="w-110px fs-14 font-weight-500 text-heading pr-2">Size</dt>
+			<dd>900SqFt</dd>
+		</dl>
+		<dl class="col-sm-6 mb-0 d-flex">
+			<dt class="w-110px fs-14 font-weight-500 text-heading pr-2">Bathrooms</dt>
+			<dd>2</dd>
+		</dl>
+		<dl class="col-sm-6 mb-0 d-flex">
+			<dt class="w-110px fs-14 font-weight-500 text-heading pr-2">Garage</dt>
+			<dd>1</dd>
+		</dl>
+		<dl class="col-sm-6 mb-0 d-flex">
+			<dt class="w-110px fs-14 font-weight-500 text-heading pr-2">Land area</dt>
+			<dd>2000 SqFt</dd>
+		</dl>
+		<dl class="col-sm-6 mb-0 d-flex">
+			<dt class="w-110px fs-14 font-weight-500 text-heading pr-2">Garage size</dt>
+			<dd>50 SqFt</dd>
+		</dl>
+		<dl class="col-sm-6 mb-0 d-flex">
+			<dt class="w-110px fs-14 font-weight-500 text-heading pr-2">Year build</dt>
+			<dd>2020</dd>
+		</dl>
+		<dl class="offset-sm-6 col-sm-6 mb-0 d-flex">
+			<dt class="w-110px fs-14 font-weight-500 text-heading pr-2">Label</dt>
+			<dd>Bestseller</dd>
+		</dl>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2 id="offices-amenities">
+	<span>Offices Amenities</span>
+	<a href="#offices-amenities" class="anchorjs-link"></a>
+</h2>
+{% capture example %}
+<div style="max-width: 770px">
+	<ul class="list-unstyled mb-0 row no-gutters">
+		<li class="col-sm-3 col-6 mb-2"><i class="far fa-check mr-2 text-primary"></i>Balcony</li>
+		<li class="col-sm-3 col-6 mb-2"><i class="far fa-check mr-2 text-primary"></i>Fireplace</li>
+		<li class="col-sm-3 col-6 mb-2"><i class="far fa-check mr-2 text-primary"></i>Balcony</li>
+		<li class="col-sm-3 col-6 mb-2"><i class="far fa-check mr-2 text-primary"></i>Fireplace</li>
+		<li class="col-sm-3 col-6 mb-2"><i class="far fa-check mr-2 text-primary"></i>Basement</li>
+		<li class="col-sm-3 col-6 mb-2"><i class="far fa-check mr-2 text-primary"></i>Cooling</li>
+		<li class="col-sm-3 col-6 mb-2"><i class="far fa-check mr-2 text-primary"></i>Basement</li>
+		<li class="col-sm-3 col-6 mb-2"><i class="far fa-check mr-2 text-primary"></i>Cooling</li>
+		<li class="col-sm-3 col-6 mb-2"><i class="far fa-check mr-2 text-primary"></i>Dining room</li>
+		<li class="col-sm-3 col-6 mb-2"><i class="far fa-check mr-2 text-primary"></i>Dishwasher</li>
+		<li class="col-sm-3 col-6 mb-2"><i class="far fa-check mr-2 text-primary"></i>Dining room</li>
+		<li class="col-sm-3 col-6 mb-2"><i class="far fa-check mr-2 text-primary"></i>Dishwasher</li>
+	</ul>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2 id="floor-plans">
+	<span>Floor Plans</span>
+	<a href="#floor-plans" class="anchorjs-link"></a>
+</h2>
+{% capture example %}
+<div style="max-width: 770px">
+	<div class="accordion accordion-03 mb-3" id="accordion-01">
+		<div class="card border-0 shadow-xxs-2">
+			<div class="card-header bg-gray-01 border-gray border-0 p-0" id="floor-plans-01">
+				<div class="heading d-flex justify-content-between align-items-center px-6" data-toggle="collapse" data-target="#collapse-01" aria-expanded="true" aria-controls="collapse-01" role="button">
+					<h2 class="mb-0 fs-16 text-heading font-weight-500 py-4 lh-13">First Floor</h2>
+					<ul class="list-inline mb-0 d-none d-sm-block">
+						<li class=" list-inline-item text-muted mr-4">Beds : <span class="font-weight-500 text-heading">2</span></li>
+						<li class=" list-inline-item text-muted mr-4">Bath : <span class="font-weight-500 text-heading">2</span></li>
+						<li class=" list-inline-item text-muted mr-6">Sqft : <span class="font-weight-500 text-heading">900</span></li>
+					</ul>
+				</div>
+			</div>
+			<div id="collapse-01" class="collapse show" aria-labelledby="floor-plans-01" data-parent="#accordion-01">
+				<div class="card-body card-body col-sm-6 offset-sm-3 mb-3">
+					<img src="{{ '/images/single-detail-property-01.jpg' | document_url }}" class="card-img" alt="Floor Plans">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="accordion accordion-03 mb-3" id="accordion-02">
+		<div class="card border-0 shadow-xxs-2">
+			<div class="card-header bg-gray-01 border-gray border-0 p-0" id="floor-plans-02">
+				<div class="heading d-flex justify-content-between align-items-center px-6 collapsed" data-toggle="collapse" data-target="#collapse-02" aria-expanded="true" aria-controls="collapse-02" role="button">
+					<h2 class="mb-0 fs-16 text-heading font-weight-500 py-4 lh-13">Second Floor</h2>
+					<ul class="list-inline mb-0 d-none d-sm-block">
+						<li class=" list-inline-item text-muted mr-4">Beds : <span class="font-weight-500 text-heading">2</span></li>
+						<li class=" list-inline-item text-muted mr-4">Bath : <span class="font-weight-500 text-heading">2</span></li>
+						<li class=" list-inline-item text-muted mr-6">Sqft : <span class="font-weight-500 text-heading">900</span></li>
+					</ul>
+				</div>
+			</div>
+			<div id="collapse-02" class="collapse" aria-labelledby="floor-plans-02" data-parent="#accordion-02">
+				<div class="card-body card-body col-sm-6 offset-sm-3 mb-3">
+					<img src="{{ '/images/single-detail-property-01.jpg' | document_url }}" class="card-img" alt="Floor Plans">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="accordion accordion-03" id="accordion-03">
+		<div class="card border-0 shadow-xxs-2">
+			<div class="card-header bg-gray-01 border-gray border-0 p-0" id="floor-plans-03">
+				<div class="heading d-flex justify-content-between align-items-center px-6 collapsed" data-toggle="collapse" data-target="#collapse-03" aria-expanded="true" aria-controls="collapse-03" role="button">
+					<h2 class="mb-0 fs-16 text-heading font-weight-500 py-4 lh-13">Third Floor</h2>
+					<ul class="list-inline mb-0 d-none d-sm-block">
+						<li class=" list-inline-item text-muted mr-4">Beds : <span class="font-weight-500 text-heading">2</span></li>
+						<li class=" list-inline-item text-muted mr-4">Bath : <span class="font-weight-500 text-heading">2</span></li>
+						<li class=" list-inline-item text-muted mr-6">Sqft : <span class="font-weight-500 text-heading">900</span></li>
+					</ul>
+				</div>
+			</div>
+			<div id="collapse-03" class="collapse" aria-labelledby="floor-plans-03" data-parent="#accordion-03">
+				<div class="card-body card-body col-sm-6 offset-sm-3 mb-3">
+					<img src="{{ '/images/single-detail-property-01.jpg' | document_url }}" class="card-img" alt="Floor Plans">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2 id="what-is-nearby">
+	<span>What is Nearby?</span>
+	<a href="#what-is-nearby" class="anchorjs-link"></a>
+</h2>
+{% capture example %}
+
+<div style="max-width: 770px">
+	<h2 class="mb-0"><a href="#" class="fs-16 lh-2 text-heading border-bottom border-primary pb-1">Restaurants</a></h2>
+	<div class="border-top pt-2">
+		<div class="py-3 border-bottom d-lg-flex justify-content-lg-between">
+			<div class="media align-items-sm-center d-sm-flex d-block">
+				<a href="#" class="hover-shine">
+					<img src="{{ '/images/single-detail-property-02.jpg' | document_url }}" class="mr-4 rounded-lg w-sm-90" alt="Bacchanal Buffet-Temporarily Closed">
+				</a>
+				<div class="mt-sm-0 mt-2">
+					<h4 class="my-0"><a href="#" class="lh-186 fs-15 text-heading hover-primary">Bacchanal Buffet-Temporarily Closed</a></h4>
+					<p class="lh-186 fs-15 font-weight-500 mb-0">3570 S Las Vegas BlvdLas Vegas, NV 89109</p>
+				</div>
+			</div>
+			<div class="text-lg-right mt-lg-0 mt-2">
+				<p class="mb-2 mb-0 lh-13">120 Reviews</p>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+			</div>
+		</div>
+		<div class="py-3 border-bottom d-lg-flex justify-content-lg-between">
+			<div class="media align-items-sm-center d-sm-flex d-block">
+				<a href="#" class="hover-shine">
+					<img src="{{ '/images/single-detail-property-03.jpg' | document_url }}" class="mr-4 rounded-lg w-sm-90" alt="Bacchanal Buffet-Temporarily Closed">
+				</a>
+				<div class="mt-sm-0 mt-2">
+					<h4 class="my-0"><a href="#" class="lh-186 fs-15 text-heading hover-primary">Bacchanal Buffet-Temporarily Closed</a></h4>
+					<p class="lh-186 fs-15 font-weight-500 mb-0">3084 S Highland DrSte C</p>
+				</div>
+			</div>
+			<div class="text-lg-right mt-lg-0 mt-2">
+				<p class="mb-2 mb-0 lh-13">120 Reviews</p>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm opacity-7"></i>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm opacity-7"></i>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm opacity-7"></i>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm opacity-7"></i>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm opacity-1"></i>
+			</div>
+		</div>
+		<div class="py-3 border-bottom d-lg-flex justify-content-lg-between">
+			<div class="media align-items-sm-center d-sm-flex d-block">
+				<a href="#" class="hover-shine">
+					<img src="{{ '/images/single-detail-property-04.jpg' | document_url }}" class="mr-4 rounded-lg w-sm-90" alt="Bacchanal Buffet-Temporarily Closed">
+				</a>
+				<div class="mt-sm-0 mt-2">
+					<h4 class="my-0"><a href="#" class="lh-186 fs-15 text-heading hover-primary">Bacchanal Buffet-Temporarily Closed</a></h4>
+					<p class="lh-186 fs-15 font-weight-500 mb-0">3570 S Las Vegas BlvdLas Vegas, NV 89109</p>
+				</div>
+			</div>
+			<div class="text-lg-right mt-lg-0 mt-2">
+				<p class="mb-2 mb-0 lh-13">120 Reviews</p>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+				<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2 id="property-attachments">
+	<span>Property Attachments</span>
+	<a href="#property-attachments" class="anchorjs-link"></a>
+</h2>
+{% capture example %}
+
+<div style="max-width: 770px">
+	<div class="row">
+		<div class="col-lg-3 col-sm-6 mb-sm-0 mb-6">
+			<div class="card text-center pt-4">
+				<img src="{{ '/images/single-detail-property-05.png' | document_url }}" class="card-img card-img w-78px mx-auto" alt="Villa Called Archangel Word Document">
+				<div class="card-body p-0 mt-4">
+					<p class="fs-13 lh-2  mb-0 py-0 px-2">Villa Called Archangel Word Document</p>
+					<a href="#" class="btn btn-block bg-gray-01 border-0 fs-14 text-heading">Download<i class="far fa-arrow-alt-circle-down ml-1 text-primary"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-sm-6">
+			<div class="card text-center pt-4">
+				<img src="{{ '/images/single-detail-property-06.png' | document_url }}" class="card-img card-img w-78px mx-auto" alt="Villa Called Archangel PDF Document">
+				<div class="card-body p-0 mt-4">
+					<p class="fs-13 lh-2  mb-0 py-0 px-2">Villa Called Archangel PDF Document</p>
+					<a href="#" class="btn btn-block bg-gray-01 border-0 fs-14 text-heading">Download<i class="far fa-arrow-alt-circle-down ml-1 text-primary"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2 id="virtual-tour">
+	<span>Virtual Tour</span>
+	<a href="#virtual-tour" class="anchorjs-link"></a>
+</h2>
+{% capture example %}
+
+<div style="max-width: 740px">
+	<iframe height="430" src="https://my.matterport.com/show/?m=wWcGxjuUuSb&amp;utm_source=hit-content-embed" allowfullscreen="" class="w-100"></iframe>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2 id="location">
+	<span>Location</span>
+	<a href="#location" class="anchorjs-link"></a>
+</h2>
+{% capture example %}
+
+<div style="max-width:770px">
+	<div class="position-relative">
+		<div id="map" class="mapbox-gl map-point-animate"
+		     data-mapbox-access-token="{{ site.data.map-access-token.access-token}}"
+		     data-mapbox-options='{"center":[-73.9927227, 40.6741035],"setLngLat":[-73.9927227, 40.6741035]}'
+		     data-mapbox-marker='[{"position":[-73.9927227, 40.6741035],"className":"marker","backgroundImage":"{{ '/images/googlle-market-01.png' | document_url }}","backgroundRepeat":"no-repeat","width":"30px","height":"40px"}]'>
+		</div>
+		<p class="mb-0 p-3 bg-white shadow rounded-lg position-absolute pos-fixed-bottom mb-4 ml-4 lh-17 z-index-2">62 Gresham St, Victoria Park <br/> WA 6100, Australia</p>
+	</div>
+</div>
+
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2 id="mortgage-calculator">
+	<span>Mortgage calculator</span>
+	<a href="#mortgage-calculator" class="anchorjs-link"></a>
+</h2>
+{% capture example %}
+
+<div style="max-width: 770px">
+	<form>
+		<div class="row">
+			<div class="col-md-6 mb-4">
+				<label>Total Amount</label>
+				<div class="position-relative">
+					<input type="number" class="form-control border-0 pr-3 h-52 pl-7" value="345" name="total-amount">
+					<span class="position-absolute pl-3 pos-fixed-left-center fs-13 font-weight-600">$</span>
+				</div>
+			</div>
+			<div class="col-md-6 mb-4">
+				<label>Down Payment</label>
+				<div class="position-relative">
+					<input type="number" class="form-control border-0 pr-3 h-52 pl-7" value="0" name="down-payment">
+					<span class="position-absolute pl-3 pos-fixed-left-center fs-13 font-weight-600">$</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 mb-4">
+				<label>Interest Rate</label>
+				<div class="position-relative">
+					<input type="number" class="form-control border-0 pr-3 h-52 pl-7" value="2.500" step="0.25" name="interest-rate">
+					<span class="position-absolute pl-3 pos-fixed-left-center fs-13 font-weight-600">%</span>
+				</div>
+			</div>
+			<div class="col-md-6 mb-4">
+				<label>Number of years</label>
+				<input type="number" class="form-control border-0 px-3 h-52" value="25" name="years">
+			</div>
+		</div>
+		<div class="form-group mb-6">
+			<label>Payment Period</label>
+			<select class="form-control selectpicker" data-style="btn-lg h-52 px-3" name="payment-period">
+				<option selected>Monthly</option>
+				<option>Yearly</option>
+			</select>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<button class="btn btn-primary fs-14 h-52 px-8" type="submit">Caculate</button>
+			</div>
+			<div class="col-lg-6">
+				<div class="shadow-xxs-2 pt-1 pb-2 px-6 border-bottom border-primary border-5x rounded-lg">
+					<dl class="d-flex mb-0 justify-content-between py-2">
+						<dt class="font-weight-normal">Monthly Payment</dt>
+						<dd class="font-weight-500 text-heading mb-0">$33</dd>
+					</dl>
+					<dl class="d-flex mb-0 justify-content-between border-top py-2">
+						<dt class="font-weight-normal">Total Cost of Loan</dt>
+						<dd class="font-weight-500 text-heading mb-0">$464</dd>
+					</dl>
+					<dl class="d-flex mb-0 justify-content-between border-top py-2">
+						<dt class="font-weight-normal">Total interest Paid</dt>
+						<dd class="font-weight-500 text-heading mb-0">$119</dd>
+					</dl>
+					<dl class="d-flex mb-0 justify-content-between border-top py-2">
+						<dt class="font-weight-normal">Mortgage Payment</dt>
+						<dd class="font-weight-500 text-heading mb-0">$1.55</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2 id="page-sstatistics">
+	<span>Page statistics</span>
+	<a href="#page-sstatistics" class="anchorjs-link"></a>
+</h2>
+{% capture example %}
+
+<div style="max-width: 770px">
+	<div class="card border-0 mb-6 chart">
+		<div class="card-body p-0 collapse-tabs" >
+			<div class="d-flex align-items-center mb-5">
+				<h2 class="mb-0 text-heading fs-22 lh-15 mr-auto">Page statistics</h2>
+				<ul class="nav nav-pills nav-pills-01 justify-content-end d-none d-sm-flex"
+				    role="tablist">
+					<li class="nav-item px-5 py-1">
+						<a class="nav-link active bg-transparent shadow-none p-0 letter-spacing-1"
+						   id="hours-tab" data-toggle="tab"
+						   href="#hours"
+						   role="tab"
+						   aria-controls="hours" aria-selected="true">Hours</a>
+					</li>
+					<li class="nav-item px-5 py-1">
+						<a class="nav-link bg-transparent shadow-none p-0 letter-spacing-1" id="weekly-tab"
+						   data-toggle="tab"
+						   href="#weekly"
+						   role="tab"
+						   aria-controls="weekly" aria-selected="false">Weekly</a>
+					</li>
+					<li class="nav-item px-5 py-1">
+						<a class="nav-link bg-transparent shadow-none p-0 letter-spacing-1" id="monthly-tab"
+						   data-toggle="tab"
+						   href="#monthly"
+						   role="tab"
+						   aria-controls="monthly" aria-selected="false">Monthly</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content shadow-none p-0">
+				<div id="collapse-tabs-accordion">
+					<div class="tab-pane tab-pane-parent fade show active px-0" id="hours"
+					     role="tabpanel"
+					     aria-labelledby="hours-tab">
+						<div class="card bg-transparent mb-sm-0 border-0">
+							<div class="card-header d-block d-sm-none bg-transparent px-0 py-1 border-bottom-0"
+							     id="headingHours">
+								<h5 class="mb-0">
+									<button class="btn collapse-parent font-size-h5 btn-block border shadow-none"
+									        data-toggle="collapse"
+									        data-target="#hours-collapse"
+									        aria-expanded="true"
+									        aria-controls="hours-collapse">
+										Hours
+									</button>
+								</h5>
+							</div>
+							<div id="hours-collapse" class="collapse show collapsible"
+							     aria-labelledby="headingHours"
+							     data-parent="#collapse-tabs-accordion">
+								<div class="card-body p-0 py-4">
+									<canvas class="chartjs" data-chart-options="[]"
+									        data-chart-labels='["05h","08h","11h","14h","17h","20h","23h"]'
+									        data-chart-datasets='[{"label":"Clicked","data":[0,7,10,3,15,30,10],"backgroundColor":"rgba(105, 105, 235, 0.1)","borderColor":"#6969eb","borderWidth":3,"fill":true},{"label":"View","data":[10,9,18,20,28,40,27],"backgroundColor":"rgba(254, 91, 52, 0.1)","borderColor":"#ff6935","borderWidth":3,"fill":true}]'>
+									</canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane tab-pane-parent fade px-0" id="weekly"
+					     role="tabpanel"
+					     aria-labelledby="weekly-tab">
+						<div class="card bg-transparent mb-sm-0 border-0">
+							<div class="card-header d-block d-sm-none bg-transparent px-0 py-1 border-bottom-0"
+							     id="headingWeekly">
+								<h5 class="mb-0">
+									<button class="btn collapse-parent font-size-h5 btn-block collapsed border shadow-none"
+									        data-toggle="collapse"
+									        data-target="#weekly-collapse"
+									        aria-expanded="true"
+									        aria-controls="weekly-collapse">
+										Weekly
+									</button>
+								</h5>
+							</div>
+							<div id="weekly-collapse" class="collapse collapsible"
+							     aria-labelledby="headingWeekly"
+							     data-parent="#collapse-tabs-accordion">
+								<div class="card-body p-0 py-4">
+									<canvas class="chartjs" data-chart-options="[]"
+									        data-chart-labels='["Mar 12","Mar 13","Mar 14","Mar 15","Mar 16","Mar 17","Mar 18","Mar 19"]'
+									        data-chart-datasets='[{"label":"Clicked","data":[0,13,9,3,15,15,10,0],"backgroundColor":"rgba(105, 105, 235, 0.1)","borderColor":"#6969eb","borderWidth":3,"fill":true},{"label":"View","data":[10,20,18,15,28,33,27,10],"backgroundColor":"rgba(254, 91, 52, 0.1)","borderColor":"#ff6935","borderWidth":3,"fill":true}]'>
+									</canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane tab-pane-parent fade px-0" id="monthly" role="tabpanel"
+					     aria-labelledby="monthly-tab">
+						<div class="card bg-transparent mb-sm-0 border-0">
+							<div class="card-header d-block d-sm-none bg-transparent px-0 py-1 border-bottom-0"
+							     id="headingMonthly">
+								<h5 class="mb-0">
+									<button class="btn btn-block collapse-parent collapsed border shadow-none"
+									        data-toggle="collapse"
+									        data-target="#monthly-collapse"
+									        aria-expanded="true"
+									        aria-controls="monthly-collapse">
+										Monthly
+									</button>
+								</h5>
+							</div>
+							<div id="monthly-collapse" class="collapse collapsible"
+							     aria-labelledby="headingMonthly"
+							     data-parent="#collapse-tabs-accordion">
+								<div class="card-body p-0 py-4">
+									<canvas class="chartjs" data-chart-options="[]"
+									        data-chart-labels='["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]'
+									        data-chart-datasets='[{"label":"Clicked","data":[2,15,20,10,15,20,10,0,20,30,10,0],"backgroundColor":"rgba(105, 105, 235, 0.1)","borderColor":"#6969eb","borderWidth":3,"fill":true},{"label":"View","data":[10,20,18,15,28,33,27,10,20,30,10,0],"backgroundColor":"rgba(254, 91, 52, 0.1)","borderColor":"#ff6935","borderWidth":3,"fill":true}]'>
+									</canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}

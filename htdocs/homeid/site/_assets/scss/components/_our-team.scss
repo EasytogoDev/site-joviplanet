@@ -1,0 +1,27 @@
+.our-team {
+	@for $i from 1 through 10 {
+		.list-inline-item:nth-child(#{$i}) {
+			transition-delay: $i * (1s / 15);
+		}
+	}
+
+	.list-inline-item {
+		transition: all 0.4s 0.1s ease-out;
+		opacity: 0;
+		transform: translateY(0px);
+		visibility: hidden;
+	}
+
+	&:hover {
+		.list-inline-item {
+			transform: translateY(-55px);
+			visibility: visible;
+			opacity: 1
+		}
+
+		.bg-hover-overlay:before {
+			background-color: rgba(0, 0, 0, 0.4);
+			z-index: 1;
+		}
+	}
+}

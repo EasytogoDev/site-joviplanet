@@ -1,0 +1,5 @@
+I"{
+<h4 id="resolvable-id-targets-required">Resolvable ID targets required</h4>
+
+<p>Navbar links must have resolvable id targets. For example, a <code class="language-plaintext highlighter-rouge">&lt;a href="#home"&gt;home&lt;/a&gt;</code> must correspond to something in the DOM like <code class="language-plaintext highlighter-rouge">&lt;div id="home"&gt;&lt;/div&gt;</code>.</p>
+:ET

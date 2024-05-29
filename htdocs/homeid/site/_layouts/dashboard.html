@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body>
+    <div class="wrapper dashboard-wrapper">
+        <div class="d-flex flex-wrap flex-xl-nowrap">
+            <div class="db-sidebar bg-white">
+                {% include dashboard-sidebar.html %}
+            </div>
+            <div class="page-content">
+                {% include dashboard-header.html %}
+                <main id="content" class="bg-gray-01">
+                    {{ content }}
+                </main>
+            </div>
+        </div>
+    </div>
+    {% include scripts.html %}
+    {% include login-register-popup.html %}
+    {% include svg-icons.html %}
+</body>
+</html>

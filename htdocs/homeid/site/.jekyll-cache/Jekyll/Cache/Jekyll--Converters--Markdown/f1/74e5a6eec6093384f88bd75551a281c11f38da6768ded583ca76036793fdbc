@@ -1,0 +1,521 @@
+I"��<h2 id="about">About</h2>
+
+<p>Bootstrap “spinners” can be used to show the loading state in your projects. They’re built only with HTML and CSS, meaning you don’t need any JavaScript to create them. You will, however, need some custom JavaScript to toggle their visibility. Their appearance, alignment, and sizing can be easily customized with our amazing utility classes.</p>
+
+<p>For accessibility purposes, each loader here includes <code class="language-plaintext highlighter-rouge">role="status"</code> and a nested <code class="language-plaintext highlighter-rouge">&lt;span class="sr-only"&gt;Loading...&lt;/span&gt;</code>.</p>
+
+<h2 id="border-spinner">Border spinner</h2>
+
+<p>Use the border spinners for a lightweight loading indicator.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-313" role="tab" aria-controls="result-313" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-313" role="tab" aria-controls="html-313" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-313">
+        <div class="tab-pane fade show active" id="result-313" role="tabpanel" aria-labelledby="result-313"><div class="bd-example">
+<div class="spinner-border" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+</div></div>
+    <div class="tab-pane fade" id="html-313" role="tabpanel" aria-labelledby="html-313">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h3 id="colors">Colors</h3>
+
+<p>The border spinner uses <code class="language-plaintext highlighter-rouge">currentColor</code> for its <code class="language-plaintext highlighter-rouge">border-color</code>, meaning you can customize the color with <a href="/html-homeid/docs//utilities/colors/">text color utilities</a>. You can use any of our text color utilities on the standard spinner.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-314" role="tab" aria-controls="result-314" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-314" role="tab" aria-controls="html-314" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-314">
+        <div class="tab-pane fade show active" id="result-314" role="tabpanel" aria-labelledby="result-314"><div class="bd-example">
+
+<div class="spinner-border text-primary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-secondary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-success" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-danger" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-warning" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-info" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-light" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-dark" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-accent" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-border text-orange" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+</div></div>
+    <div class="tab-pane fade" id="html-314" role="tabpanel" aria-labelledby="html-314">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border text-primary"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border text-secondary"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border text-success"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border text-danger"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border text-warning"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border text-info"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border text-light"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border text-dark"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border text-accent"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border text-orange"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<div class="bd-callout bd-callout-info">
+<p><strong>Why not use <code class="language-plaintext highlighter-rouge">border-color</code> utilities?</strong> Each border spinner specifies a <code class="language-plaintext highlighter-rouge">transparent</code> border for at least one side, so <code class="language-plaintext highlighter-rouge">.border-{color}</code> utilities would override that.</p>
+</div>
+
+<h2 id="growing-spinner">Growing spinner</h2>
+
+<p>If you don’t fancy a border spinner, switch to the grow spinner. While it doesn’t technically spin, it does repeatedly grow!</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-315" role="tab" aria-controls="result-315" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-315" role="tab" aria-controls="html-315" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-315">
+        <div class="tab-pane fade show active" id="result-315" role="tabpanel" aria-labelledby="result-315"><div class="bd-example">
+<div class="spinner-grow" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+</div></div>
+    <div class="tab-pane fade" id="html-315" role="tabpanel" aria-labelledby="html-315">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-grow"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<p>Once again, this spinner is built with <code class="language-plaintext highlighter-rouge">currentColor</code>, so you can easily change its appearance with <a href="/html-homeid/docs//utilities/colors/">text color utilities</a>. Here it is in blue, along with the supported variants.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-316" role="tab" aria-controls="result-316" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-316" role="tab" aria-controls="html-316" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-316">
+        <div class="tab-pane fade show active" id="result-316" role="tabpanel" aria-labelledby="result-316"><div class="bd-example">
+
+<div class="spinner-grow text-primary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-secondary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-success" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-danger" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-warning" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-info" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-light" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-dark" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-accent" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-orange" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+</div></div>
+    <div class="tab-pane fade" id="html-316" role="tabpanel" aria-labelledby="html-316">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-grow text-primary"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-grow text-secondary"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-grow text-success"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-grow text-danger"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-grow text-warning"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-grow text-info"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-grow text-light"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-grow text-dark"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-grow text-accent"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-grow text-orange"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h2 id="alignment">Alignment</h2>
+
+<p>Spinners in Bootstrap are built with <code class="language-plaintext highlighter-rouge">rem</code>s, <code class="language-plaintext highlighter-rouge">currentColor</code>, and <code class="language-plaintext highlighter-rouge">display: inline-flex</code>. This means they can easily be resized, recolored, and quickly aligned.</p>
+
+<h3 id="margin">Margin</h3>
+
+<p>Use <a href="/html-homeid/docs//utilities/spacing/">margin utilities</a> like <code class="language-plaintext highlighter-rouge">.m-5</code> for easy spacing.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-317" role="tab" aria-controls="result-317" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-317" role="tab" aria-controls="html-317" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-317">
+        <div class="tab-pane fade show active" id="result-317" role="tabpanel" aria-labelledby="result-317"><div class="bd-example">
+<div class="spinner-border m-5" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+</div></div>
+    <div class="tab-pane fade" id="html-317" role="tabpanel" aria-labelledby="html-317">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border m-5"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h3 id="placement">Placement</h3>
+
+<p>Use <a href="/html-homeid/docs//utilities/flex/">flexbox utilities</a>, <a href="/html-homeid/docs//utilities/float/">float utilities</a>, or <a href="/html-homeid/docs//content/typography/">text alignment</a> utilities to place spinners exactly where you need them in any situation.</p>
+
+<h4 id="flex">Flex</h4>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-318" role="tab" aria-controls="result-318" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-318" role="tab" aria-controls="html-318" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-318">
+        <div class="tab-pane fade show active" id="result-318" role="tabpanel" aria-labelledby="result-318"><div class="bd-example">
+<div class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+</div></div>
+    <div class="tab-pane fade" id="html-318" role="tabpanel" aria-labelledby="html-318">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex justify-content-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-319" role="tab" aria-controls="result-319" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-319" role="tab" aria-controls="html-319" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-319">
+        <div class="tab-pane fade show active" id="result-319" role="tabpanel" aria-labelledby="result-319"><div class="bd-example">
+<div class="d-flex align-items-center">
+  <strong>Loading...</strong>
+  <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+</div>
+</div></div>
+    <div class="tab-pane fade" id="html-319" role="tabpanel" aria-labelledby="html-319">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex align-items-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Loading...<span class="nt">&lt;/strong&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border ml-auto"</span> <span class="na">role=</span><span class="s">"status"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h4 id="floats">Floats</h4>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-320" role="tab" aria-controls="result-320" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-320" role="tab" aria-controls="html-320" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-320">
+        <div class="tab-pane fade show active" id="result-320" role="tabpanel" aria-labelledby="result-320"><div class="bd-example">
+<div class="clearfix">
+  <div class="spinner-border float-right" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+</div></div>
+    <div class="tab-pane fade" id="html-320" role="tabpanel" aria-labelledby="html-320">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border float-right"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h4 id="text-align">Text align</h4>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-321" role="tab" aria-controls="result-321" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-321" role="tab" aria-controls="html-321" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-321">
+        <div class="tab-pane fade show active" id="result-321" role="tabpanel" aria-labelledby="result-321"><div class="bd-example">
+<div class="text-center">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+</div></div>
+    <div class="tab-pane fade" id="html-321" role="tabpanel" aria-labelledby="html-321">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h2 id="size">Size</h2>
+
+<p>Add <code class="language-plaintext highlighter-rouge">.spinner-border-sm</code> and <code class="language-plaintext highlighter-rouge">.spinner-grow-sm</code> to make a smaller spinner that can quickly be used within other components.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-322" role="tab" aria-controls="result-322" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-322" role="tab" aria-controls="html-322" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-322">
+        <div class="tab-pane fade show active" id="result-322" role="tabpanel" aria-labelledby="result-322"><div class="bd-example">
+<div class="spinner-border spinner-border-sm" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow spinner-grow-sm" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+</div></div>
+    <div class="tab-pane fade" id="html-322" role="tabpanel" aria-labelledby="html-322">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border spinner-border-sm"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-grow spinner-grow-sm"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<p>Or, use custom CSS or inline styles to change the dimensions as needed.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-323" role="tab" aria-controls="result-323" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-323" role="tab" aria-controls="html-323" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-323">
+        <div class="tab-pane fade show active" id="result-323" role="tabpanel" aria-labelledby="result-323"><div class="bd-example">
+<div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+</div></div>
+    <div class="tab-pane fade" id="html-323" role="tabpanel" aria-labelledby="html-323">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-border"</span> <span class="na">style=</span><span class="s">"width: 3rem; height: 3rem;"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"spinner-grow"</span> <span class="na">style=</span><span class="s">"width: 3rem; height: 3rem;"</span> <span class="na">role=</span><span class="s">"status"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h2 id="buttons">Buttons</h2>
+
+<p>Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as needed.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-324" role="tab" aria-controls="result-324" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-324" role="tab" aria-controls="html-324" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-324">
+        <div class="tab-pane fade show active" id="result-324" role="tabpanel" aria-labelledby="result-324"><div class="bd-example">
+<button class="btn btn-primary" type="button" disabled="">
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  <span class="sr-only">Loading...</span>
+</button>
+<button class="btn btn-primary" type="button" disabled="">
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button>
+</div></div>
+    <div class="tab-pane fade" id="html-324" role="tabpanel" aria-labelledby="html-324">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"spinner-border spinner-border-sm"</span> <span class="na">role=</span><span class="s">"status"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"spinner-border spinner-border-sm"</span> <span class="na">role=</span><span class="s">"status"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  Loading...
+<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-325" role="tab" aria-controls="result-325" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-325" role="tab" aria-controls="html-325" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-325">
+        <div class="tab-pane fade show active" id="result-325" role="tabpanel" aria-labelledby="result-325"><div class="bd-example">
+<button class="btn btn-primary" type="button" disabled="">
+  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+  <span class="sr-only">Loading...</span>
+</button>
+<button class="btn btn-primary" type="button" disabled="">
+  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button>
+</div></div>
+    <div class="tab-pane fade" id="html-325" role="tabpanel" aria-labelledby="html-325">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"spinner-grow spinner-grow-sm"</span> <span class="na">role=</span><span class="s">"status"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"spinner-grow spinner-grow-sm"</span> <span class="na">role=</span><span class="s">"status"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  Loading...
+<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+:ET

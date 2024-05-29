@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	{% include docs/head.html %}
+</head>
+<body>
+{% include docs/navbar.html %}
+<div class="container-fluid">
+	<div class="row flex-xl-nowrap">
+		<div class="col-md-3 col-xl-2 bd-sidebar">
+			{% include docs/sidebar.html %}
+		</div>
+
+		{% if page.toc %}
+		<nav class="d-none d-xl-block col-xl-2 bd-toc " aria-label="Secondary navigation" id="toc-nav">
+			<div class="bd-toc-wrapper">
+				{{ content | toc_only }}
+			</div>
+		</nav>
+		{% endif %}
+		<main class="col-md-9 col-xl-8 bd-content">
+			<h1 class="bd-title" id="content">{{ page.title | smartify }}</h1>
+			<p class="bd-lead">{{ page.description | smartify }}</p>
+			{{ content }}
+		</main>
+	</div>
+</div>
+{% include docs/scripts.html %}
+	{% include svg-icons.html %}
+</body>
+</html>

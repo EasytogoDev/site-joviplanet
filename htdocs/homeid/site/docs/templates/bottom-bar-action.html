@@ -1,0 +1,91 @@
+---
+layout: docs
+title: Bottom Bar Actions
+description: Bottom Bar Actions contains contact actions (Calling, Texting)
+group: templates
+toc: true
+---
+<h2 id="bottom-bar-action-01">
+    <span>Bottom Bar Actions 01</span>
+    <a href="#bottom-bar-action-01" class="anchorjs-link"></a>
+</h2>
+{% capture example %}
+<div class="position-relative py-13">
+    <div class="d-flex bottom-bar-action bottom-bar-action-01 py-2 px-4 bg-gray-01 align-items-center position-absolute fixed-bottom">
+        <div class="media align-items-center">
+            <img src="{{ '/images/irene-wallace.png' | document_url }}" alt="Irene Wallace" class="mr-4 rounded-circle">
+            <div class="media-body">
+                <a href="#" class="d-block text-dark fs-15 font-weight-500 lh-15">Irene Wallace</a>
+                <span class="fs-13 lh-2">Sales Excutive</span>
+            </div>
+        </div>
+        <div class="ml-auto">
+            <button type="button" class="btn btn-primary fs-18 p-2 lh-1 mr-1 mb-1 shadow-none" data-toggle="modal"
+                    data-target="#modal-messenger"><i class="fal fa-comment"></i></button>
+            <a href="tel:(+84)2388-969-888" class="btn btn-primary fs-18 p-2 lh-1 mb-1 shadow-none" target="_blank"><i
+                    class="fal fa-phone"></i></a>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2 id="bottom-bar-action-02">
+    <span>Bottom Bar Actions 02</span>
+    <a href="#bottom-bar-action-02" class="anchorjs-link"></a>
+</h2>
+{% capture example %}
+<div class="position-relative py-13">
+    <div class="bottom-bar-action py-2 px-4 bg-gray-01 position-absolute fixed-bottom">
+        <div class="container">
+            <div class="row no-gutters mx-n2 mxw-571 mx-auto">
+                <div class="col-6 px-2">
+                    <a href="#modal-messenger" data-toggle="modal"
+                       class="btn btn-primary btn-lg btn-block fs-14 px-1 py-3 h-auto lh-13">Send Message</a>
+                </div>
+                <div class="col-6 px-2">
+                    <a href="tel:(+84)2388-969-888"
+                       class="btn btn-primary btn-lg btn-block fs-14 px-1 py-3 h-auto lh-13">Call</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+<div class="modal fade" id="modal-messenger" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+                <h4 class="modal-title text-heading" id="exampleModalLabel">Contact Form</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body pb-6">
+                <div class="form-group mb-2">
+                    <input type="text" class="form-control form-control-lg border-0"
+                           placeholder="First Name, Last Name">
+                </div>
+                <div class="form-group mb-2">
+                    <input type="email" class="form-control form-control-lg border-0" placeholder="Your Email">
+                </div>
+                <div class="form-group mb-2">
+                    <input type="tel" class="form-control form-control-lg border-0" placeholder="Your phone">
+                </div>
+                <div class="form-group mb-2">
+                    <textarea class="form-control border-0"
+                              rows="4">Hello, I'm interested in Villa Called Archangel</textarea>
+                </div>
+                <div class="form-group form-check mb-4">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                    <label class="form-check-label fs-13" for="exampleCheck3">Egestas fringilla phasellus faucibus
+                        scelerisque eleifend donec.</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block rounded">Request Info</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

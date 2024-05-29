@@ -1,0 +1,14 @@
+- title: Getting started
+  pages:
+    - title: Dev environment setup
+    - title: Working with Gulp
+    - title: Project structure
+    - title: Installing Vendor plugins
+    - title: Using Jekyll & Sass
+    - title: Browser support
+    - title: Global colors
+    - title: Components
+    - title: Header / Footer variants
+    - title: Utility classes
+    - title: Sources and credits
+    - title: Changelog

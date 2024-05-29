@@ -1,0 +1,15 @@
+.partners {
+	.item {
+		max-height: 85px;
+
+		.image {
+			opacity: 0.4;
+		}
+
+		&:not(.hover-change-image):hover {
+			.image {
+				opacity: 1;
+			}
+		}
+	}
+}

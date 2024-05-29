@@ -1,0 +1,80 @@
+.agent-3:hover {
+	border-color: transparent;
+
+	.card-footer {
+		margin: -1px;
+		background-color: $primary;
+
+		a, .icon {
+			color: $white !important;
+		}
+
+		.badge {
+			color: $heading-color !important;
+		}
+	}
+}
+
+.agent-details-tabs {
+	background-color: $border-color;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+	.nav-link {
+		border-radius: 0;
+		color: $text-muted;
+
+		&.active {
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+	}
+
+	.nav-item:first-child {
+		.nav-link {
+			border-top-left-radius: 5px;
+		}
+	}
+
+	.nav-item:last-child {
+		.nav-link {
+			border-top-right-radius: 5px;
+		}
+	}
+
+	.nav-item:not(:last-child) {
+		.nav-link:not(.active) {
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translateY(-50%);
+				width: 1px;
+				height: 24px;
+				background-color: #dfdfdf;
+			}
+		}
+	}
+}
+
+.listing-agents {
+	.card {
+		flex: 0 0 20%;
+		max-width: 20%;
+		@include media-breakpoint-down(md) {
+			flex: 0 0 33.33%;
+			max-width: 33.33%;
+		}
+		@include media-breakpoint-down(sm) {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+		@include media-breakpoint-down(xs) {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+}

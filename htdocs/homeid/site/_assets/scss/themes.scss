@@ -1,0 +1,14 @@
+// Contain custom variables for current template
+@import "custom-variables";
+
+// Override Bootstrap core variables
+@import "theme-variables";
+
+// Bootstrap css
+@import "../../../scss/bootstrap/bootstrap";
+
+// Component css (overwrite bootstrap component and template component)
+@import "components";
+
+// Other custom css
+@import "custom";

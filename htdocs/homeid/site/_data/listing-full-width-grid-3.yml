@@ -1,0 +1,136 @@
+properties-grid-01:
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-31.jpg
+    for-rent: false
+    for-sale: true
+    feature: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-32.jpg
+    for-rent: false
+    for-sale: true
+    feature: false
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-33.jpg
+    for-rent: true
+    for-sale: false
+    feature: true
+    price: $5.700
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-59.jpg
+    for-rent: true
+    for-sale: false
+    feature: false
+    price: $5.700
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-60.jpg
+    for-rent: false
+    for-sale: true
+    feature: false
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-61.jpg
+    for-rent: false
+    for-sale: true
+    feature: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-62.jpg
+    for-rent: false
+    for-sale: true
+    feature: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-63.jpg
+    for-rent: false
+    for-sale: true
+    feature: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-64.jpg
+    for-rent: true
+    for-sale: false
+    feature: false
+    price: $5.700
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+

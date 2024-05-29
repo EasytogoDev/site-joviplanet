@@ -1,0 +1,64 @@
+.category-widget {
+	input[type=checkbox]:checked + label {
+		color: #333;
+	}
+
+}
+
+.city-widget {
+	.bg-img {
+		&::after {
+			content: '';
+			display: block;
+			padding-top: 71%;
+		}
+	}
+}
+
+.property-widget {
+	.slick-arrow {
+		top: -36px;
+		right: 0;
+		left: auto;
+		width: 38.3px;
+		height: 38.2px;
+		line-height: 38.2px;
+		font-size: 18px;
+	}
+
+	.slick-prev {
+		right: 48.5px;
+		left: auto;
+	}
+
+	.slick-dots {
+		margin-top: 20px;
+	}
+}
+
+.widget-request-tour {
+	.nav-item:not(:last-child) {
+		margin-right: -2px;
+	}
+
+	.card.active {
+		border: 2px solid rgba(14, 198, 213, 0.57) !important;
+	}
+}
+
+.bootstrap-timepicker-widget {
+	min-width: 320px;
+
+	input {
+		width: 80px !important;
+		border: none;
+		background-color: transparent;
+		font-weight: 500;
+		font-size: 16px;
+	}
+
+	a {
+		padding: 0 !important;
+	}
+
+}

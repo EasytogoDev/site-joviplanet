@@ -1,0 +1,231 @@
+banners:
+  - image: /images/home-landing-01.jpg
+    title: Home 01
+    url: /home-01.html
+  - image: /images/home-landing-02.jpg
+    title: Home 02
+    url: /home-02.html
+  - image: /images/home-landing-03.jpg
+    title: Home 03
+    url: /home-03.html
+  - image: /images/home-landing-04.jpg
+    title: Home 04
+    url: /home-04.html
+  - image: /images/home-landing-05.jpg
+    title: Home 05
+    url: /home-05.html
+  - image: /images/home-landing-06.jpg
+    title: Home 06
+    url: /home-06.html
+  - image: /images/home-landing-07.jpg
+    title: Home 07
+    url: /home-07.html
+  - image: /images/home-landing-08.jpg
+    title: Home 08
+    url: /home-08.html
+  - image: /images/home-landing-09.jpg
+    title: New Demos <br/>are Coming Soon !
+    url: /#
+
+feature:
+  - image: /images/landing-feature-01.jpg
+    icon: /images/icon-landing-feature-01.png
+    title: Compare Property
+    desc: This function allows the audience to compare properties by its features, price and detailed information to find their dream home.
+
+  - image: /images/landing-feature-02.jpg
+    icon: /images/icon-landing-feature-02.png
+    title: Mortgage Calculator
+    desc: Each property page will have a finance widget to help the audience easily calculate mortgage payment in order to have a proper financial decision.
+
+  - image: /images/landing-feature-03.jpg
+    icon: /images/icon-landing-feature-03.png
+    title: Google Analytic Integration
+    desc: Agencies or property owners can observe and manage the number of visits on each property to make necessary changes if needed.
+
+  - image: /images/landing-feature-04.jpg
+    icon: /images/icon-landing-feature-04.png
+    title: Wishlist
+    desc: The audience can save their favorite property into the wishlist, arrange them as they want and open faster on the next visits.
+
+  - image: /images/landing-feature-05.jpg
+    icon: /images/icon-landing-feature-05.png
+    title: Agents & Agencies
+    desc: Users can register as an agency or agent (approved by admin) and have their own dashboard to manage personal information and add properties.
+
+  - image: /images/landing-feature-06.jpg
+    icon: /images/icon-landing-feature-06.png
+    title: Mobile Friendly
+    desc: HomeID is retina ready and fully responsive that allows all users to access the site from any browser without mistakes.
+
+listing-slider:
+  - tabs: all
+    is_active: true
+    properties:
+      - image: /images/list-landing-01.jpg
+        title: Full Width List
+        url: /listing-full-width-list.html
+      - image: /images/list-landing-02.jpg
+        title: List With Left Filter
+        url: /listing-with-left-filter.html
+      - image: /images/list-landing-03.jpg
+        title: List With Right Filter
+        url: /listing-with-right-filter.html
+      - image: /images/list-landing-04.jpg
+        title: List with left sidebar
+        url: /listing-with-left-sidebar.html
+      - image: /images/list-landing-05.jpg
+        title: List with right sidebar
+        url: /listing-with-right-sidebar.html
+      - image: /images/map-landing-01.jpg
+        title: Half map list layout 1
+        url: /listing-half-map-list-layout-1.html
+      - image: /images/map-landing-02.jpg
+        title: Half map list layout 2
+        url: /listing-half-map-list-layout-2.html
+      - image: /images/map-landing-03.jpg
+        title: Half map grid layout 1
+        url: /listing-half-map-grid-layout-1.html
+      - image: /images/map-landing-04.jpg
+        title: Half map grid layout 2
+        url: /listing-half-map-grid-layout-2.html
+      - image: /images/map-landing-05.jpg
+        title: Full map 1
+        url: /listing-full-map-1.html
+      - image: /images/map-landing-06.jpg
+        title: Full map 2
+        url: /listing-full-map-2.html
+      - image: /images/map-landing-07.jpg
+        title: Full Map with sidebar
+        url: /listing-full-map-with-sidebar.html
+      - image: /images/grid-landing-01.jpg
+        title: Full width grid 1
+        url: /listing-full-width-grid-1.html
+      - image: /images/grid-landing-02.jpg
+        title: Full width grid 2
+        url: /listing-full-width-grid-2.html
+      - image: /images/grid-landing-03.jpg
+        title: Full width grid 3
+        url: /listing-full-width-grid-3.html
+      - image: /images/grid-landing-04.jpg
+        title: Grid with left filter
+        url: /listing-grid-with-left-filter.html
+      - image: /images/grid-landing-05.jpg
+        title: Grid with right filter
+        url: /listing-grid-with-right-filter.html
+      - image: /images/grid-landing-06.jpg
+        title: Grid with left sidebar
+        url: /listing-grid-with-left-sidebar.html
+      - image: /images/grid-landing-07.jpg
+        title: Grid with right sidebar
+        url: /listing-grid-with-right-sidebar.html
+  - tabs: list
+    properties:
+      - image: /images/list-landing-01.jpg
+        title: Full Width List
+        url: /listing-full-width-list.html
+      - image: /images/list-landing-02.jpg
+        title: List With Left Filter
+        url: /listing-with-left-filter.html
+      - image: /images/list-landing-03.jpg
+        title: List With Right Filter
+        url: /listing-with-right-filter.html
+      - image: /images/list-landing-04.jpg
+        title: List with left sidebar
+        url: /listing-with-left-sidebar.html
+      - image: /images/list-landing-05.jpg
+        title: List with right sidebar
+        url: /listing-with-right-sidebar.html
+  - tabs: grid
+    properties:
+      - image: /images/grid-landing-01.jpg
+        title: Full width grid 1
+        url: /listing-full-width-grid-1.html
+      - image: /images/grid-landing-02.jpg
+        title: Full width grid 2
+        url: /listing-full-width-grid-2.html
+      - image: /images/grid-landing-03.jpg
+        title: Full width grid 3
+        url: /listing-full-width-grid-3.html
+      - image: /images/grid-landing-04.jpg
+        title: Grid with left filter
+        url: /listing-grid-with-left-filter.html
+      - image: /images/grid-landing-05.jpg
+        title: Grid with right filter
+        url: /listing-grid-with-right-filter.html
+      - image: /images/grid-landing-06.jpg
+        title: Grid with left sidebar
+        url: /listing-grid-with-left-sidebar.html
+      - image: /images/grid-landing-07.jpg
+        title: Grid with right sidebar
+        url: /listing-grid-with-right-sidebar.html
+  - tabs: map
+    properties:
+      - image: /images/map-landing-01.jpg
+        title: Half map list layout 1
+        url: /listing-half-map-list-layout-1.html
+      - image: /images/map-landing-02.jpg
+        title: Half map list layout 2
+        url: /listing-half-map-list-layout-2.html
+      - image: /images/map-landing-03.jpg
+        title: Half map grid layout 1
+        url: /listing-half-map-grid-layout-1.html
+      - image: /images/map-landing-04.jpg
+        title: Half map grid layout 2
+        url: /listing-half-map-grid-layout-2.html
+      - image: /images/map-landing-05.jpg
+        title: Full map 1
+        url: /listing-full-map-1.html
+      - image: /images/map-landing-06.jpg
+        title: Full map 2
+        url: /listing-full-map-2.html
+      - image: /images/map-landing-07.jpg
+        title: Full Map with sidebar
+        url: /listing-full-map-with-sidebar.html
+
+search:
+  - image: /images/icon-landing-search-01.png
+    title: Great Number of Search Fields
+    desc: Users can manage the field position and create more fields in numbers, text, and other formats that you want them in the advanced search.
+
+  - image: /images/icon-landing-search-02.png
+    title: Unlimited Amenities CheckBox
+    desc: There is a great number of amenities are used when filtering properties, you can add your own features and select which to show in the advanced search.
+
+  - image: /images/icon-landing-search-03.png
+    title: Autocomplete Search Suggestion
+    desc: Including the option to search with the auto-complete feature, helping visitors complete their search quickly by providing suggestions.
+
+  - image: /images/icon-landing-search-04.png
+    title: AJAX Search
+    desc: Provide visitors with a smooth searching experience when they are looking for their dream home. It raises the satisfaction when surfing on the site.
+
+properties-02:
+  - image: /images/single-landing-01.jpg
+    title: Page with Image Gallery 01
+    url: /single-property-1.html
+  - image: /images/single-landing-02.jpg
+    title: Page with Image Gallery 02
+    url: /single-property-2.html
+  - image: /images/single-landing-03.jpg
+    title: Page with Image Gallery 03
+    url: /single-property-3.html
+  - image: /images/single-landing-04.jpg
+    title: Page with Google Map
+    url: /single-property-4.html
+  - image: /images/single-landing-05.jpg
+    title: Page with Properties Slider
+    url: /single-property-5.html
+  - image: /images/single-landing-06.jpg
+    title: Page with Image Gallery 04
+    url: /single-property-6.html
+  - image: /images/single-landing-07.jpg
+    title: Page with Image Gallery 05
+    url: /single-property-7.html
+  - image: /images/single-landing-08.jpg
+    title: Page with Contact Form
+    url: /single-property-8.html
+  - image: /images/single-landing-09.jpg
+    title: Page with Image Gallery 06
+    url: /single-property-9.html
+

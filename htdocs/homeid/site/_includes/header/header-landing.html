@@ -1,0 +1,38 @@
+<header class="main-header navbar-light header-sticky header-sticky-smart header-mobile-lg header-landing position-absolute fixed-top">
+    <div class="sticky-area">
+        <div class="{{ page.header_container| default: 'container container-xxl' }}">
+            <nav class="navbar navbar-expand-lg px-0">
+                <a class="navbar-brand" href="{{ '/index.html' | document_url }}">
+                    <img src="{{ '/images/logo.png' | document_url }}" alt="{{site.title}}"
+                         class="d-none d-lg-inline-block">
+                    <img src="{{ '/images/logo-white.png' | document_url }}" alt="{{site.title}}"
+                         class="d-inline-block d-lg-none">
+                </a>
+                <div class="d-flex d-lg-none ml-auto">
+                    <button class="navbar-toggler border-0 px-0" type="button" data-toggle="collapse"
+                            data-target="#landingMenu"
+                            aria-controls="landingMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="text-white fs-24"><i class="fal fa-bars"></i></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse mt-3 mt-lg-0 mx-auto justify-content-center" id="landingMenu">
+                    {% include navbar-main-landing.html %}
+                    <div class="ml-auto d-block d-lg-none mt-2">
+                        <a class="btn btn-primary btn-lg"
+                           href="#">
+                            Purchase
+                            <span class="d-inline-block ml-1"><i class="fal fa-long-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ml-auto d-none d-lg-block">
+                    <a class="btn btn-primary btn-lg shadow-xs-6"
+                       href="#">
+                        Purchase
+                        <span class="d-inline-block ml-1"><i class="fal fa-long-arrow-right"></i></span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>

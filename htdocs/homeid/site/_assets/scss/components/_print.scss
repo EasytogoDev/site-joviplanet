@@ -1,0 +1,5 @@
+@media print {
+	.db-sidebar, .invoice-preview-button, .main-header {
+		display: none !important;
+	}
+}

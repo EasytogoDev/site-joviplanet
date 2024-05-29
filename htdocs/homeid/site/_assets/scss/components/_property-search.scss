@@ -1,0 +1,36 @@
+
+form {
+	input:focus {
+		outline: none;
+	}
+}
+
+.property-search .btn.advanced-search {
+	&:after {
+		font-family: "Font Awesome 5 Pro";
+		font-size: 24px;
+		font-weight: 400;
+		margin-left: 15px;
+	}
+	&:not(.collapsed):after {
+		content: "\f056";
+	}
+	&.collapsed:after {
+		content: "\f055";
+	}
+}
+
+.property-search .other-feature {
+	&:before {
+		font-family: "Font Awesome 5 Pro";
+		font-size: 20px;
+		margin-right: 5px;
+	}
+	&:not(.collapsed):before {
+		content: "\f146";
+	}
+	&.collapsed:before {
+		content: "\f0fe";
+	}
+}
+

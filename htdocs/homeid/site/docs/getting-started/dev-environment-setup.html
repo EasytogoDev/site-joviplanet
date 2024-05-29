@@ -1,0 +1,127 @@
+---
+layout: get-started
+title: Dev environment setup
+group: getting-started
+toc: true
+---
+<div class="alert alert-info round-lg mb-4">
+    <div class="d-flex align-items-center p-4">
+        <span class="d-none d-sm-block fs-20 mr-4">
+            <i class="fal fa-info-circle"></i>
+        </span>
+        <p class="fs-16 mb-0"><strong>Please note:</strong> this step is absolutely optional. It aims for
+            advanced user who want to speed up development process with professional grade Front-End toolset shiped with
+            Around. If you are not familiar with these tools and have no time to dive in you can still use plain HTML /
+            CSS / JS to customize Around. Files you need are located inside <strong>homeid/dist</strong> folder. In this
+            case you can skip this and next sections. Happy coding :)</p>
+    </div>
+</div>
+<h2 class="fs-20 mb-4">HomeID is built using modern development toolset.</h2>
+<div class="border-bottom pb-4 mb-4">
+    <p class="fs-18 ">Ruby <a href="https://www.ruby-lang.org/en" target="_blank" rel="noopener">Official
+        website</a></p>
+    <p>
+        A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant
+        syntax that is natural to read and easy to write.
+    </p>
+</div>
+<div class="border-bottom pb-4 mb-4">
+    <p class="fs-18 ">Node.js <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Official
+        website</a></p>
+    <p>
+        Is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O
+        model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open
+        source libraries in the world.
+    </p>
+</div>
+<div class="border-bottom pb-4 mb-4">
+    <p class="fs-18 font-weight-500">Gulp <a href="https://gulpjs.com/" target="_blank" rel="noopener">Official
+        website</a></p>
+    <p>
+        The JavaScript task runner. It helps with performing repetitive tasks like minification, compilation, unit
+        testing, linting, etc. This is possible thanks to extensive Gulp Plugins library.
+    </p>
+</div>
+<div class="border-bottom pb-4 mb-4">
+    <p class="fs-18 font-weight-500">Sass (Syntactically Awesome Style Sheets)
+        <a href="http://sass-lang.com/" target="_blank" rel="noopener">Official website</a></p>
+    <p>
+        Sass is a scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). It is the most
+        mature, stable, and powerful professional grade CSS extension language in the world. Sass gives you the power of
+        variables, mixins, functions, etc.
+    </p>
+</div>
+<div class="border-bottom pb-4 mb-4">
+    <p class="fs-18 font-weight-500">Jekyll
+        <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Official website</a></p>
+    <p>
+        Jekyll is a static site generator. It takes text written in your favorite markup language and uses layouts to
+        create a static website. You can tweak the site’s look and feel, URLs, the data displayed on the page, and more.
+    </p>
+</div>
+<div class="border-bottom pb-4 mb-4">
+    <p class="fs-18 font-weight-500">Bootstrap 4
+        <a href="http://getbootstrap.com" target="_blank" rel="noopener">Official website</a></p>
+    <p>
+        Latest version of the most popular HTML, CSS, and JS framework in the world. Around is built on Bootstrap 4 and
+        heavily depends on it. Around has all BS4 components + bunch of own plugins and components.
+    </p>
+</div>
+<div class="mb-4">
+    <u>This section will explain how to setup professional Front-End development environment for fast and
+        smooth Around customization using these technologies.</u>
+</div>
+<h2 class="fs-20 mb-4">Text Editor and Terminal (Command Line)</h2>
+
+<div class="mb-6">
+    <p>
+        You can use any text editor at your disposal and available Command line tool (Command Prompt for Windows or
+        Terminal on MacOS). Our personal preference is <a class="font-weight-500"
+                                                          href="https://code.visualstudio.com/" target="_blank"
+                                                          rel="noopener">Visual Studio Code.</a> It is free, has great
+        buil-in terminal (console), built-in git client, debugging, huge extensions library and available for MacOS,
+        Windows, Linux.
+    </p>
+</div>
+<h2 class="fs-20 mb-4">Installing Node.js and npm</h2>
+<div class="mb-6">
+    <p>In order to be able to setup HomeID development environment you will need to <strong>install Node.js and its
+        Package Manager (npm)</strong>.</p>
+    <p>
+        Node.js is absolutely free and available for download via its official website for MacOS, Windows, Linux
+        systems. <a class="font-weight-500" href="https://nodejs.org/en/" target="_blank" rel="noopener">Download
+        Node.js and npm here.</a></p>
+    <p>Learn more about Node Package Manager and available packages here: <a class="font-weight-500"
+                                                                             href="https://www.npmjs.com"
+                                                                             target="_blank" rel="noopener">https://www.npmjs.com</a>
+    </p>
+</div>
+<h2 class="fs-20 mb-4">Installing packages necessary for HomeID development</h2>
+<div class="mb-6">
+    <p>When Node.js and npm is installed you are ready to install all dependencies necessary for HomeID development.</p>
+    <u class="d-block mb-3">Navigate to the directory containing the <code>package.json</code> file. Inside your command line tool type step by step:</u>
+    <ol>
+        <li class="mb-3">Installing Node.js and npm
+            <p>
+                Install Node.js at: <a class="font-weight-500" href="https://nodejs.org/en/" target="_blank"
+                                       rel="noopener">Download
+                Node.js and npm here.</a></p>
+            <p>Learn more about Node Package Manager and available packages here: <a class="font-weight-500"
+                                                                                     href="https://www.npmjs.com"
+                                                                                     target="_blank" rel="noopener">https://www.npmjs.com</a>
+        </li>
+        <li class="mb-3"><p class="mb-0">Install Ruby at <a class="font-weight-500"
+                                                            href="https://code.visualstudio.com/" target="_blank"
+                                                            rel="noopener">https://www.ruby-lang.org/en/documentation/installation/</a>
+            if you have
+            not installed it</p>
+        </li>
+        <li class="mb-3"><kbd>npm install</kbd></li>
+        <li class="mb-3"><kbd>gem install bundler</kbd></li>
+        <li class="mb-3"><kbd>gem install bundler jekyll</kbd></li>
+        <li class="mb-3"><kbd>gem install jekyll-toc jekyll-tidy</kbd></li>
+    </ol>
+    <p>These will start the process of installing all dependencies which are listed inside
+        <code>homeid/package.json</code> file. Wait until installation is finished and jump to the next section <a
+                class="font-weight-500" href="working-with-gulp.html">Working with Gulp.</a></p>
+</div>

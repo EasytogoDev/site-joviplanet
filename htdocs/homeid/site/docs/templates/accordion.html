@@ -1,0 +1,128 @@
+---
+layout: docs
+title: Accordion
+description: Vertically stacked list of items. When clicked each item switch content in the tab pane.
+group: templates
+toc: true
+---
+<h2 id="accordion-01">
+	<span>Accordion 01</span>
+	<a href="#accordion-01" class="anchorjs-link"></a>
+</h2>
+{% capture example %}
+<div id="accordion-style-01" class="accordion accordion-01">
+	<div class="card border-0 shadow-xxs-2 mb-6 rounded-top">
+		<div class="card-header border-0 p-0 rounded-top" id="headingOne">
+			<h5 class="mb-0">
+				<button class="btn btn-link font-weight-500 pl-6 pr-5 py-3 fs-16 position-relative w-100 text-left rounded-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					How can we help?
+				</button>
+			</h5>
+		</div>
+		<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion-style-01">
+			<div class="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+				GrandHome is intended to be highly responsive and customizable for site building process. Thanks to its devoted, fastidious, and compact design, Mitech can be considered among plenty of unique themes that serve to create highly responsive websites.
+			</div>
+		</div>
+	</div>
+	<div class="card border-0 shadow-xxs-2 mb-6 rounded-top">
+		<div class="card-header border-0 p-0" id="headingTwo">
+			<h5 class="mb-0">
+				<button class="btn btn-link font-weight-500 pl-6 pr-5 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+					How do I delete my account?
+				</button>
+			</h5>
+		</div>
+		<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-style-01">
+			<div class="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+				GrandHome is intended to be highly responsive and customizable for site building process. Thanks to its devoted, fastidious, and compact design, Mitech can be considered among plenty of unique themes that serve to create highly responsive websites.
+			</div>
+		</div>
+	</div>
+	<div class="card border-0 shadow-xxs-2 rounded-top">
+		<div class="card-header border-0 p-0" id="headingThree">
+			<h5 class="mb-0">
+				<button class="btn btn-link font-weight-500 pl-6 pr-5 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+					Do you store any of my information?
+				</button>
+			</h5>
+		</div>
+		<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-style-01">
+			<div class="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+				GrandHome is intended to be highly responsive and customizable for site building process. Thanks to its devoted, fastidious, and compact design, Mitech can be considered among plenty of unique themes that serve to create highly responsive websites.
+			</div>
+		</div>
+	</div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2 id="accordion-02">
+	<span>Accordion 02</span>
+	<a href="#accordion-02" class="anchorjs-link"></a>
+</h2>
+{% capture example %}
+<div id="accordion-style-02" class="accordion accordion-02">
+	<div class="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+		<div class="card-header border-0 bg-white p-0" id="headingFour">
+			<h5 class="mb-0">
+				<button class="btn btn-link fs-22 font-weight-500 p-0 border-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+					How can we help?
+				</button>
+			</h5>
+		</div>
+		<div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion-style-02">
+			<div class="card-body px-0 pt-2 pb-1 lh-214">
+				Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condime ntum esti  laiolainx bulum iscipit sagittis leo sit met con ndisse su
+				Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condime ntum esti  laiolainx bulum iscipit.
+			</div>
+		</div>
+	</div>
+	<div class="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+		<div class="card-header border-0 bg-white p-0" id="headingFive">
+			<h5 class="mb-0">
+				<button class="btn btn-link fs-22 font-weight-500 p-0 border-0 collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+					How do I delete my account?
+				</button>
+			</h5>
+		</div>
+		<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-style-02">
+			<div class="card-body px-0 pt-2 pb-1 lh-214">
+				Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condime ntum esti  laiolainx bulum iscipit sagittis leo sit met con ndisse su
+				Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condime ntum esti  laiolainx bulum iscipit.
+			</div>
+		</div>
+	</div>
+	<div class="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+		<div class="card-header border-0 bg-white p-0" id="headingSix">
+			<h5 class="mb-0">
+				<button class="btn btn-link fs-22 font-weight-500 p-0 border-0 collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+					What is cloud backup?
+				</button>
+			</h5>
+		</div>
+		<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion-style-02">
+			<div class="card-body px-0 pt-2 pb-1 lh-214">
+				Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condime ntum esti  laiolainx bulum iscipit sagittis leo sit met con ndisse su
+				Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condime ntum esti  laiolainx bulum iscipit.
+			</div>
+		</div>
+	</div>
+	<div class="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+		<div class="card-header border-0 bg-white p-0" id="headingSeven">
+			<h5 class="mb-0">
+				<button class="btn btn-link fs-22 font-weight-500 p-0 border-0 collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+					Do you store any of my information?
+				</button>
+			</h5>
+		</div>
+		<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion-style-02">
+			<div class="card-body px-0 pt-2 pb-1 lh-214">
+				Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condime ntum esti  laiolainx bulum iscipit sagittis leo sit met con ndisse su
+				Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condime ntum esti  laiolainx bulum iscipit.
+			</div>
+		</div>
+	</div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}

@@ -1,0 +1,295 @@
+---
+layout: home-3
+title: "Home 04"
+category_text: "Home"
+category_url: /home-04.html
+---
+
+<section>
+    <div class="slick-slider mx-0 custom-arrow-center"
+         data-slick-options='{"slidesToShow": 1, "autoplay":true,"responsive":[{"breakpoint": 1200,"settings": {"slidesToShow":1,"arrows":false,"dots":false}},{"breakpoint": 992,"settings": {"slidesToShow":1,"arrows":false,"dots":false}},{"breakpoint": 768,"settings": {"slidesToShow": 1,"arrows":false,"dots":false}},{"breakpoint": 576,"settings": {"slidesToShow": 1,"arrows":false,"dots":false}}]}'>
+        {% for property in site.data.home-4.properties-01 %}
+        <div class="box px-0 d-flex flex-column">
+            <div class="bg-cover d-flex align-items-center custom-vh-02"
+                 style="background-image: url('{{ property.bg-image | document_url }}')">
+                <div class="container">
+                    <div class="row py-8" data-animate="zoomIn">
+                        <div class="col-lg-5 col-md-6 d-md-block d-none">
+                            <a href="{{ property.url | document_url }}" class="d-inline-block"><img
+                                    src="{{ property.image | document_url }}" class="rounded-lg"
+                                    alt="{{ property.title }}"></a>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <p class="text-white fs-22 font-weight-500 letter-spacing-367 text-uppercase mt-7 mb-4">{{
+                                property.sub-title }}</p>
+                            <h2 class="lh-12 mb-4"><a href="{{ property.url | document_url }}"
+                                                      class="text-white fs-md-60 fs-48">{{ property.title }}</a></h2>
+                            <p class="text-white fs-22 font-weight-500">{{ property.des }}</p>
+                            <p class="text-white fs-32 font-weight-600 lh-16">{{ property.price }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+<section class="pt-9 mt-1 pb-8">
+    <div class="container">
+        <h2 class="text-dark text-center pt-3">
+            About This Property</h2>
+        <span class="heading-divider mx-auto"></span>
+        <div class="row mt-7">
+            {% for info-box in site.data.home-4.info-box-01 %}
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-6" data-animate="fadeInUp">
+                <div class="media rounded-lg bg-gray-02 px-4 h-100 align-items-center">
+                    {% if info-box.is_icon == true %}
+                    <span class="text-primary fs-64 d-inline-block mr-3">
+								<svg class="icon icon-{{ info-box.icon }}"><use
+                                        xlink:href="#icon-{{ info-box.icon }}"></use></svg>
+							</span>
+                    {% else %}
+                    <img src="{{ info-box.image | document_url }}" alt="{{ info-box.title }}"
+                         class="mr-3 my-6 my-sm-0">
+                    {% endif %}
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">{{ info-box.title }}</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">{{ info-box.sub-title }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container container-xxl">
+        <div class="slick-slider"
+             data-slick-options='{"slidesToShow": 1, "autoplay":true,"dots":false,"arrows":false}'>
+            {% for property in site.data.home-4.properties-02 %}
+            <div class="bg-cover"
+                 style="background-image: url({{ property.image | document_url }})" data-animate="zoomIn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6 col-md-8 offset-md-4 py-11">
+                            <div class="bg-white rounded-lg position-relative z-index-2 pl-sm-13 pr-sm-10 py-sm-9 p-6">
+                                <h2 class="mt-2"><a href="{{ property.url | document_url }}"
+                                                    class="text-heading hover-primary">{{ property.title }}</a></h2>
+                                <span class="heading-divider"></span>
+                                <p class="pt-2">{{ property.des }}</p>
+                                <ul class="list-unstyled row no-gutters mb-0">
+                                    {% for list in property.lists %}
+                                    <li class="col-sm-6 mb-2"><i class="far fa-check mr-2 text-primary"></i>{{
+                                        list.title }}
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="pt-11 pb-9">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 mb-6 mb-md-0" data-animate="fadeInLeft">
+                <h2 class="text-dark">Property On Map</h2>
+                <span class="heading-divider"></span>
+                <p class="pt-2 pr-xl-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex.</p>
+            </div>
+            <div class="col-md-7" data-animate="fadeInRight">
+                <div class="position-relative">
+                    <div id="map" class="mapbox-gl map-point-animate"  style="height: 303px;"
+                         data-mapbox-access-token="{{ site.data.map-access-token.access-token}}"
+                         data-mapbox-options='{"center":[-73.9927227, 40.6741035],"setLngLat":[-73.9927227, 40.6741035]}'
+                         data-mapbox-marker='[{"position":[-73.9947200, 40.6741035],"className":"marker","backgroundImage":"{{ "/images/googlle-market-01.png" | document_url }}","backgroundRepeat":"no-repeat","width":"30px","height":"40px"}]'>
+                    </div>
+                    <p class="mb-0 p-3 bg-white shadow rounded-lg position-absolute pos-fixed-bottom-right mb-7 mr-4 lh-17">
+                        62 Gresham St, Victoria Park <br/> WA 6100, Australia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pb-8">
+    <div class="container container-xxl">
+        <h2 class="text-dark text-center">Photo Gallery</h2>
+        <span class="heading-divider mx-auto"></span>
+        <div class="row galleries">
+            <div class="col-sm-6 col-md-5 mb-6">
+                <div class="item item-size-1-1">
+                    <a href="{{ '/images/gallery-lg-01.jpg' | document_url }}" class="card p-0 hover-zoom-in"
+                       data-gtf-mfp="true" data-gallery-id="01">
+                        <div class="card-img img"
+                             style="background-image:url('{{ "/images/gallery-01.jpg" | document_url }}')">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="row h-100">
+                    {% for gallery in site.data.home-4.galleries %}
+                    <div class="col-sm-6 col-md-4 mb-6">
+                        <div class="item item-size-1-1">
+                            <div class="card p-0 hover-zoom-in hover-change-image">
+                                <a href="{{ gallery.image | document_url }}" class="card-img"
+                                   data-gtf-mfp="true" data-gallery-id="01"
+                                   style="background-image:url('{{ gallery.image-popup | document_url }}')">
+                                </a>
+                                {% if gallery.is_view == true %}
+                                <a href="#"
+                                   class="card-img-overlay text-white d-flex align-items-center justify-content-center flex-column hover-white hover-image bg-dark-opacity-04">
+                                    <p class="mb-0 fs-40 font-weight-500 r lh-13 w-100 text-center">+20</p>
+                                    <p class="mb-0 fs-13 lh-2 text-uppercase w-100 text-center">View more</p>
+                                </a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-gray-02 pt-9 mt-1 pb-lg-8">
+    <div class="container">
+        <h2 class="text-heading text-center">Services Offered</h2>
+        <span class="heading-divider mx-auto"></span>
+        <div class="slick-slider arrow-haft-inner mt-2 mx-0"
+             data-slick-options='{"slidesToShow": 4, "autoplay":true,"dots":false,"responsive":[{"breakpoint": 1200,"settings": {"slidesToShow":3}},{"breakpoint": 992,"settings": {"slidesToShow":3}},{"breakpoint": 768,"settings": {"slidesToShow": 2,"arrows":false,"autoplay":true}},{"breakpoint": 576,"settings": {"slidesToShow": 1,"arrows":false,"autoplay":true}}]}'>
+            {% for info-box in site.data.home-4.info-box-02 %}
+            <div class="box px-0 py-6" data-animate="fadeInUp">
+                <div class="card border-0 py-7 px-4 shadow-hover-3 bg-transparent bg-hover-white">
+                    <div class="d-flex justify-content-center card-img-top">
+                        <img src="{{ info-box.image | document_url }}"
+                             alt="{{ info-box.title }}">
+                    </div>
+                    <div class="card-body px-0 pt-5 pb-0 text-center">
+                        <h4 class="card-title fs-16 lh-13 text-dark mb-2 px-10">{{ info-box.title }}</h4>
+                        <p class="card-text text-body px-lg-8">{{ info-box.des }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="py-11">
+    <div class="container container-xxl">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6 custom-lg-size-1-1 mb-lg-0 mb-6" data-animate="fadeInLeft">
+                <a href="#">
+                    <div class="bg-cover h-100 rounded-lg"
+                         style="background-image: url('{{ "/images/agent-creative-04.jpg" | document_url }}')"></div>
+                </a>
+            </div>
+            <div class="col-xl-7 col-lg-6" data-animate="fadeInRight">
+                <div class="bg-secondary rounded-lg pt-sm-9 px-sm-7 pb-sm-11 p-6">
+                    <h2 class="mt-1 mb-2"><a href="{{ '/agent-details-1.html' | document_url }}"
+                                             class="fs-30 font-weight-600 text-white">Blanche Gordon</a></h2>
+                    <p class="opacity-4 text-white fs-16 font-weight-500">Real estate broker, agent</p>
+                    <p class="text-white">Company Agent at <a href="#" class="text-white border-bottom pb-1">Modern
+                        House Real Estate</a></p>
+                    <p class="text-white">Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscorem
+                        ipsum dolor sit ametcipsum dolor sit t, consec tetur atetur cing elit. Suspe ndisse susco rem
+                        ipsum dolor sit ametcipsum doloamet.</p>
+                    <div class="row pt-2 pb-4 no-gutters border-opacity-025 border-bottom">
+                        <div class="col-xl-3 col-sm-6">
+                            <h4 class="text-white opacity-4 fs-14 mb-3">Phone</h4>
+                            <p class="text-white font-weight-50 lh-143">+98 0390 909 039<br/>+98 0900 098 888</p>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <h4 class="text-white opacity-4 fs-14">Language</h4>
+                            <p class="text-white font-weight-500">English, French, Spanish</p>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <h4 class="text-white opacity-4 fs-14">Email</h4>
+                            <p class="text-white font-weight-500">b.gordon@homeid.com</p>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <h4 class="text-white opacity-4 fs-14">Website</h4>
+                            <p class="text-white font-weight-500">thememove.com</p>
+                        </div>
+                    </div>
+                    <ul class="list-inline mb-0 mt-4">
+                        <li class="list-inline-item text-white font-weight-500">4.8/5</li>
+                        <li class="list-inline-item">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item mr-0">
+                                    <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+                                </li>
+                                <li class="list-inline-item mr-0">
+                                    <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+                                </li>
+                                <li class="list-inline-item mr-0">
+                                    <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+                                </li>
+                                <li class="list-inline-item mr-0">
+                                    <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+                                </li>
+                                <li class="list-inline-item mr-0">
+                                    <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-inline-item fs-13 text-muted">(67 reviews)</li>
+                        <li class="list-inline-item pl-xl-7">
+                            <ul class="list-inline mb-0 mt-4">
+                                <li class="list-inline-item mb-2">
+                                    <a href="#"
+                                       class="w-40px h-40 rounded-circle border-0 text-body bg-hover-primary hover-white d-flex align-items-center justify-content-center bg-white"><i
+                                            class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item mb-2">
+                                    <a href="#"
+                                       class="w-40px h-40 rounded-circle border-0 text-body bg-hover-primary hover-white d-flex align-items-center justify-content-center bg-white"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="list-inline-item mb-2">
+                                    <a href="#"
+                                       class="w-40px h-40 rounded-circle border-0 text-body bg-hover-primary hover-white d-flex align-items-center justify-content-center bg-white">
+                                        <i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li class="list-inline-item mb-2">
+                                    <a href="#"
+                                       class="w-40px h-40 rounded-circle border-0 text-body bg-hover-primary hover-white d-flex align-items-center justify-content-center bg-white"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-single-image-02 bg-accent py-lg-13 py-11">
+    <div class="container">
+        <div class="row">
+            <div class="col-ld-6 col-sm-7" data-animate="fadeInLeft">
+                <div class="pl-6 border-4x border-left border-primary">
+                    <h2 class="text-heading lh-15 fs-md-32 fs-25">For more information about our services,<span
+                            class="text-primary"> get in touch</span> with our expert consultants</h2>
+                    <p class="lh-2 fs-md-15 mb-0">10 new offers every day. 350 offers on site, Trusted by a community of
+                        thousands of users.</p>
+                </div>
+            </div>
+            <div class="col-ld-6 col-sm-5 text-center mt-sm-0 mt-8" data-animate="fadeInRight">
+                <i class="fal fa-phone fs-40 text-primary"></i>
+                <p class="fs-13 font-weight-500 letter-spacing-173 text-uppercase lh-2 mt-3">Call for help now!</p>
+                <p class="fs-md-42 fs-32 font-weight-600 text-secondary lh-1">1900 68668</p>
+                <a href="#" class="btn btn-lg btn-primary mt-2 px-10">Contact us</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% include compare.html %}

@@ -1,0 +1,25 @@
+.breadcrumb-item {
+	color: $text-muted;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	&:hover {
+		color: $breadcrumb-active-color;
+		text-decoration: none;
+	}
+}
+
+.breadcrumb.text-light {
+	.breadcrumb-item {
+		color: #b3b3b3;
+
+		&.active {
+			color: $white;
+		}
+	}
+}

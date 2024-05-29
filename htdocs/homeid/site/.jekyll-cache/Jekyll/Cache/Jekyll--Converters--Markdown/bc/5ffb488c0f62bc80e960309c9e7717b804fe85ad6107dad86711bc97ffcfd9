@@ -1,0 +1,4 @@
+I";
+<h5 id="input-group-validation">Input group validation</h5>
+<p>Input groups have difficulty with validation styles, unfortunately. Our recommendation is to place feedback messages as sibling elements of the <code class="language-plaintext highlighter-rouge">.input-group</code> that has <code class="language-plaintext highlighter-rouge">.is-{valid|invalid}</code>. Placing feedback messages within input groups breaks the <code class="language-plaintext highlighter-rouge">border-radius</code>. <a href="#input-group-validation-workaround">See this workaround</a>.</p>
+:ET

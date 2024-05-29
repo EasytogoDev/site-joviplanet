@@ -1,0 +1,72 @@
+.re-capchar {
+	max-width: 307px;
+	border-color: #d6d6d6;
+	background-color: #fafafa;
+}
+
+.login-register-modal {
+	.nav-link {
+		color: $body-color;
+		border-radius: 0;
+	}
+
+	.nav-link:not(.active), .nav-item:last-child {
+		background-color: #f8f8f8;
+	}
+
+	.nav-link.active {
+		box-shadow: none;
+		background-color: $white;
+		color: $black !important;
+
+		&::before {
+			display: none;
+		}
+	}
+
+	@include media-breakpoint-up(sm) {
+		.nav-link.active + .nav-item {
+			border-bottom-left-radius: 16px;
+		}
+
+		.nav-link:not(.active):first-child {
+			border-bottom-right-radius: 16px;
+		}
+	}
+
+
+}
+
+.login-register {
+	.facebook {
+		background: #3b5998;
+	}
+
+	.twitter {
+		background: #00aced;
+	}
+
+	.google {
+		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);;
+	}
+
+	.divider {
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: $border-color;
+		}
+
+		.text {
+			position: relative;
+			z-index: 2;
+		}
+	}
+}

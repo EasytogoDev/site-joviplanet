@@ -1,0 +1,90 @@
+properties-list-01:
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-list-01.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+      year: 2020
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+  - title: Garden Gingerbread House
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-list-02.jpg
+    for-rent: true
+    for-sale: false
+    price: $2500
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+      year: 2020
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+  - title: Affordable Urban House
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-list-07.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+      year: 2020
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-list-08.jpg
+    for-rent: true
+    for-sale: false
+    price: $2500
+    url: /single-property-8.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+      year: 2020
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-list-09.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+      year: 2020
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+
+  - title: Garden Gingerbread House
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-list-10.jpg
+    for-rent: true
+    for-sale: false
+    price: $2500
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+      year: 2020
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

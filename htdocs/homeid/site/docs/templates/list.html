@@ -1,0 +1,60 @@
+---
+layout: docs
+title: List
+description: List of objects (Including icons and text)
+group: templates
+toc: true
+---
+
+<h2>List 01</h2>
+
+{% capture example %}
+<div class="bg-white mxw-571 ml-auto py-8 px-9">
+    <h2 class="text-heading lh-1625">Property amenities</h2>
+    <span class="heading-divider mt-2"></span>
+    <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="col-6">
+            <ul class="list-group list-group-no-border">
+                <li class="list-group-item p-0">
+                    <span class="text-primary d-inline-block mr-2"><i class="far fa-check"></i></span>
+                    <span class="lh-26">Balcony</span>
+                </li>
+                <li class="list-group-item p-0">
+                    <span class="text-primary d-inline-block mr-2"><i class="far fa-check"></i></span>
+                    <span class="lh-26">Basement</span>
+                </li>
+                <li class="list-group-item p-0">
+                    <span class="text-primary d-inline-block mr-2"><i class="far fa-check"></i></span>
+                    <span class="lh-26">Dining room</span>
+                </li>
+                <li class="list-group-item p-0">
+                    <span class="text-primary d-inline-block mr-2"><i class="far fa-check"></i></span>
+                    <span class="lh-26">Swimming pool</span>
+                </li>
+            </ul>
+        </div>
+        <div class="col-6">
+            <ul class="list-group list-group-no-border">
+                <li class="list-group-item p-0">
+                    <span class="text-primary d-inline-block mr-2"><i class="far fa-check"></i></span>
+                    <span class="lh-26">Fireplace</span>
+                </li>
+                <li class="list-group-item p-0">
+                    <span class="text-primary d-inline-block mr-2"><i class="far fa-check"></i></span>
+                    <span class="lh-26">Cooling</span>
+                </li>
+                <li class="list-group-item p-0">
+                    <span class="text-primary d-inline-block mr-2"><i class="far fa-check"></i></span>
+                    <span class="lh-26">Dishwasher</span>
+                </li>
+                <li class="list-group-item p-0">
+                    <span class="text-primary d-inline-block mr-2"><i class="far fa-check"></i></span>
+                    <span class="lh-26">Garage</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}

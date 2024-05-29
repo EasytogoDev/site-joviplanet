@@ -1,0 +1,120 @@
+properties-grid-01:
+ -  title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-35.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+ -  title: Villa on Hollywood Boulevard
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-36.jpg
+    for-rent: true
+    for-sale: false
+    price: $550
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+ -  title: Affordable Urban House
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-37.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+ -  title: Explore Old Barcelona
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-73.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+ -  title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-67.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+ -  title: Garden Gingerbread House
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-68.jpg
+    for-rent: true
+    for-sale: false
+    price: $550
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+ -  title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-69.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+ -  title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-70.jpg
+    for-rent: true
+    for-sale: false
+    price: $550
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+ -  title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-71.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+ -  title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-72.jpg
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft

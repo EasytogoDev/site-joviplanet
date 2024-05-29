@@ -1,0 +1,45 @@
+<ul class="navbar-nav hover-menu main-menu px-0 mx-lg-n4">
+    {% for nav in site.data.menu-landing %}
+    {%- assign link_slug = nav.title | slugify -%}
+    <li id="navbar-{{link_slug}}" aria-haspopup="true" aria-expanded="false"
+        class="nav-item{% if nav.submenu != null %} dropdown{% endif %}{% if page.url == nav.url %} active{% endif %} py-2 py-lg-5 px-0 px-lg-4">
+        <a class="nav-link{% if nav.submenu != null %} dropdown-toggle{% endif %} p-0"
+           href="#{{ nav.url }}" {% if nav.submenu !=null %}data-toggle="dropdown" {% endif %}>
+            {{ nav.title }}
+            {% if nav.submenu != null %}
+            <span class="caret"></span>
+            {% endif %}
+        </a>
+        {% if nav.submenu != null %}
+        {% if !nav.submenu.first %}
+        <ul class="dropdown-menu pt-3 pb-0 pb-lg-3" aria-labelledby="navbar-{{link_slug}}">
+            {% for submenu_item in nav.submenu %}
+            {%- assign submenu_item_slug = submenu_item.title | slugify -%}
+            <li class="dropdown-item{% if submenu_item.submenu != null %} dropdown dropright{% endif %}{% if page.url == submenu_item.url %} active{% endif %}">
+                <a id="navbar-{{submenu_item_slug}}"
+                   class="dropdown-link{% if submenu_item.submenu != null %} dropdown-toggle{% endif %}"
+                   href="#{{ submenu_item.url }}" {% if submenu_item.submenu !=null
+                   %}data-toggle="dropdown" {% endif %}>
+                    {{ submenu_item.title }}
+                </a>
+                {% if submenu_item.submenu != null %}
+                <ul class="dropdown-menu dropdown-submenu pt-3 pb-0 pb-lg-3"
+                    aria-labelledby="navbar-{{submenu_item_slug}}">
+                    {% for submenu_item_lv2 in submenu_item.submenu %}
+                    <li class="dropdown-item{% if page.url == submenu_item_lv2.url %} active{% endif %}">
+                        <a class="dropdown-link" href="#{{ submenu_item_lv2.url }}">{{
+                            submenu_item_lv2.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        {% include {{nav.submenu}} %}
+        {% endif %}
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,423 @@
+I"=�<h2 id="examples">Examples</h2>
+
+<p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-28" role="tab" aria-controls="result-28" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-28" role="tab" aria-controls="html-28" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-28">
+        <div class="tab-pane fade show active" id="result-28" role="tabpanel" aria-labelledby="result-28"><div class="bd-example">
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-accent">Accent</button>
+<button type="button" class="btn btn-orange">Orange</button>
+
+<button type="button" class="btn btn-link">Link</button>
+</div></div>
+    <div class="tab-pane fade" id="html-28" role="tabpanel" aria-labelledby="html-28">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-accent"</span><span class="nt">&gt;</span>Accent<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-orange"</span><span class="nt">&gt;</span>Orange<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<div class="bd-callout bd-callout-warning">
+<h5 id="conveying-meaning-to-assistive-technologies">Conveying meaning to assistive technologies</h5>
+
+<p>Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the <code class="language-plaintext highlighter-rouge">.sr-only</code> class.</p>
+</div>
+
+<h2 id="disable-text-wrapping">Disable text wrapping</h2>
+
+<p>If you don’t want the button text to wrap, you can add the <code class="language-plaintext highlighter-rouge">.text-nowrap</code> class to the button. In Sass, you can set <code class="language-plaintext highlighter-rouge">$btn-white-space: nowrap</code> to disable text wrapping for each button.</p>
+
+<h2 id="button-tags">Button tags</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">.btn</code> classes are designed to be used with the <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> element. However, you can also use these classes on <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).</p>
+
+<p>When using button classes on <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a <code class="language-plaintext highlighter-rouge">role="button"</code> to appropriately convey their purpose to assistive technologies such as screen readers.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-29" role="tab" aria-controls="result-29" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-29" role="tab" aria-controls="html-29" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-29">
+        <div class="tab-pane fade show active" id="result-29" role="tabpanel" aria-labelledby="result-29"><div class="bd-example">
+<a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="Input" />
+<input class="btn btn-primary" type="submit" value="Submit" />
+<input class="btn btn-primary" type="reset" value="Reset" />
+</div></div>
+    <div class="tab-pane fade" id="html-29" role="tabpanel" aria-labelledby="html-29">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"Input"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"reset"</span> <span class="na">value=</span><span class="s">"Reset"</span><span class="nt">&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h2 id="outline-buttons">Outline buttons</h2>
+
+<p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the <code class="language-plaintext highlighter-rouge">.btn-outline-*</code> ones to remove all background images and colors on any button.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-30" role="tab" aria-controls="result-30" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-30" role="tab" aria-controls="html-30" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-30">
+        <div class="tab-pane fade show active" id="result-30" role="tabpanel" aria-labelledby="result-30"><div class="bd-example">
+
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+<button type="button" class="btn btn-outline-accent">Accent</button>
+<button type="button" class="btn btn-outline-orange">Orange</button>
+</div></div>
+    <div class="tab-pane fade" id="html-30" role="tabpanel" aria-labelledby="html-30">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-accent"</span><span class="nt">&gt;</span>Accent<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-orange"</span><span class="nt">&gt;</span>Orange<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h2 id="sizes">Sizes</h2>
+
+<p>Fancy larger or smaller buttons? Add <code class="language-plaintext highlighter-rouge">.btn-lg</code> or <code class="language-plaintext highlighter-rouge">.btn-sm</code> for additional sizes.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-31" role="tab" aria-controls="result-31" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-31" role="tab" aria-controls="html-31" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-31">
+        <div class="tab-pane fade show active" id="result-31" role="tabpanel" aria-labelledby="result-31"><div class="bd-example">
+<button type="button" class="btn btn-primary btn-lg">Large button</button>
+<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+</div></div>
+    <div class="tab-pane fade" id="html-31" role="tabpanel" aria-labelledby="html-31">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span><span class="nt">&gt;</span>Large button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-lg"</span><span class="nt">&gt;</span>Large button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-32" role="tab" aria-controls="result-32" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-32" role="tab" aria-controls="html-32" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-32">
+        <div class="tab-pane fade show active" id="result-32" role="tabpanel" aria-labelledby="result-32"><div class="bd-example">
+<button type="button" class="btn btn-primary btn-sm">Small button</button>
+<button type="button" class="btn btn-secondary btn-sm">Small button</button>
+</div></div>
+    <div class="tab-pane fade" id="html-32" role="tabpanel" aria-labelledby="html-32">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-sm"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-sm"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<p>Create block level buttons—those that span the full width of a parent—by adding <code class="language-plaintext highlighter-rouge">.btn-block</code>.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-33" role="tab" aria-controls="result-33" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-33" role="tab" aria-controls="html-33" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-33">
+        <div class="tab-pane fade show active" id="result-33" role="tabpanel" aria-labelledby="result-33"><div class="bd-example">
+<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+</div></div>
+    <div class="tab-pane fade" id="html-33" role="tabpanel" aria-labelledby="html-33">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg btn-block"</span><span class="nt">&gt;</span>Block level button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-lg btn-block"</span><span class="nt">&gt;</span>Block level button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h2 id="active-state">Active state</h2>
+
+<p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. <strong>There’s no need to add a class to <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code>s as they use a pseudo-class</strong>. However, you can still force the same active appearance with <code class="language-plaintext highlighter-rouge">.active</code> (and include the <code>aria-pressed="true"</code> attribute) should you need to replicate the state programmatically.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-34" role="tab" aria-controls="result-34" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-34" role="tab" aria-controls="html-34" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-34">
+        <div class="tab-pane fade show active" id="result-34" role="tabpanel" aria-labelledby="result-34"><div class="bd-example">
+<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+</div></div>
+    <div class="tab-pane fade" id="html-34" role="tabpanel" aria-labelledby="html-34">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg active"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;</span>Primary link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-lg active"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-pressed=</span><span class="s">"true"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h2 id="disabled-state">Disabled state</h2>
+
+<p>Make buttons look inactive by adding the <code class="language-plaintext highlighter-rouge">disabled</code> boolean attribute to any <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> element.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-35" role="tab" aria-controls="result-35" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-35" role="tab" aria-controls="html-35" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-35">
+        <div class="tab-pane fade show active" id="result-35" role="tabpanel" aria-labelledby="result-35"><div class="bd-example">
+<button type="button" class="btn btn-lg btn-primary" disabled="">Primary button</button>
+<button type="button" class="btn btn-secondary btn-lg" disabled="">Button</button>
+</div></div>
+    <div class="tab-pane fade" id="html-35" role="tabpanel" aria-labelledby="html-35">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-primary"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-lg"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<p>Disabled buttons using the <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> element behave a bit different:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>s don’t support the <code class="language-plaintext highlighter-rouge">disabled</code> attribute, so you must add the <code class="language-plaintext highlighter-rouge">.disabled</code> class to make it visually appear disabled.</li>
+  <li>Some future-friendly styles are included to disable all <code class="language-plaintext highlighter-rouge">pointer-events</code> on anchor buttons. In browsers which support that property, you won’t see the disabled cursor at all.</li>
+  <li>Disabled buttons should include the <code class="language-plaintext highlighter-rouge">aria-disabled="true"</code> attribute to indicate the state of the element to assistive technologies.</li>
+</ul>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-36" role="tab" aria-controls="result-36" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-36" role="tab" aria-controls="html-36" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-36">
+        <div class="tab-pane fade show active" id="result-36" role="tabpanel" aria-labelledby="result-36"><div class="bd-example">
+<a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+</div></div>
+    <div class="tab-pane fade" id="html-36" role="tabpanel" aria-labelledby="html-36">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg disabled"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>Primary link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-lg disabled"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<div class="bd-callout bd-callout-warning">
+<h5 id="link-functionality-caveat">Link functionality caveat</h5>
+
+<p>The <code class="language-plaintext highlighter-rouge">.disabled</code> class uses <code class="language-plaintext highlighter-rouge">pointer-events: none</code> to try to disable the link functionality of <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>s, but that CSS property is not yet standardized. In addition, even in browsers that do support <code class="language-plaintext highlighter-rouge">pointer-events: none</code>, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, add a <code class="language-plaintext highlighter-rouge">tabindex="-1"</code> attribute on these links (to prevent them from receiving keyboard focus) and use custom JavaScript to disable their functionality.</p>
+</div>
+
+<h2 id="button-plugin">Button plugin</h2>
+
+<p>Do more with buttons. Control button states or create groups of buttons for more components like toolbars.</p>
+
+<h3 id="toggle-states">Toggle states</h3>
+
+<p>Add <code class="language-plaintext highlighter-rouge">data-toggle="button"</code> to toggle a button’s <code class="language-plaintext highlighter-rouge">active</code> state. If you’re pre-toggling a button, you must manually add the <code class="language-plaintext highlighter-rouge">.active</code> class <strong>and</strong> <code class="language-plaintext highlighter-rouge">aria-pressed="true"</code> to the <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code>.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-37" role="tab" aria-controls="result-37" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-37" role="tab" aria-controls="html-37" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-37">
+        <div class="tab-pane fade show active" id="result-37" role="tabpanel" aria-labelledby="result-37"><div class="bd-example">
+<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+  Single toggle
+</button>
+</div></div>
+    <div class="tab-pane fade" id="html-37" role="tabpanel" aria-labelledby="html-37">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"button"</span> <span class="na">aria-pressed=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+  Single toggle
+<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h3 id="checkbox-and-radio-buttons">Checkbox and radio buttons</h3>
+
+<p>Bootstrap’s <code class="language-plaintext highlighter-rouge">.button</code> styles can be applied to other elements, such as <code class="language-plaintext highlighter-rouge">&lt;label&gt;</code>s, to provide checkbox or radio style button toggling. Add <code class="language-plaintext highlighter-rouge">data-toggle="buttons"</code> to a <code class="language-plaintext highlighter-rouge">.btn-group</code> containing those modified buttons to enable their toggling behavior via JavaScript and add <code class="language-plaintext highlighter-rouge">.btn-group-toggle</code> to style the <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code>s within your buttons. <strong>Note that you can create single input-powered buttons or groups of them.</strong></p>
+
+<p>The checked state for these buttons is <strong>only updated via <code class="language-plaintext highlighter-rouge">click</code> event</strong> on the button. If you use another method to update the input—e.g., with <code class="language-plaintext highlighter-rouge">&lt;input type="reset"&gt;</code> or by manually applying the input’s <code class="language-plaintext highlighter-rouge">checked</code> property—you’ll need to toggle <code class="language-plaintext highlighter-rouge">.active</code> on the <code class="language-plaintext highlighter-rouge">&lt;label&gt;</code> manually.</p>
+
+<p>Note that pre-checked buttons require you to manually add the <code class="language-plaintext highlighter-rouge">.active</code> class to the input’s <code class="language-plaintext highlighter-rouge">&lt;label&gt;</code>.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-38" role="tab" aria-controls="result-38" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-38" role="tab" aria-controls="html-38" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-38">
+        <div class="tab-pane fade show active" id="result-38" role="tabpanel" aria-labelledby="result-38"><div class="bd-example">
+<div class="btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="checkbox" checked="" /> Checked
+  </label>
+</div>
+</div></div>
+    <div class="tab-pane fade" id="html-38" role="tabpanel" aria-labelledby="html-38">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group-toggle"</span> <span class="na">data-toggle=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-secondary active"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span> Checked
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-39" role="tab" aria-controls="result-39" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-39" role="tab" aria-controls="html-39" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-39">
+        <div class="tab-pane fade show active" id="result-39" role="tabpanel" aria-labelledby="result-39"><div class="bd-example">
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1" checked="" /> Active
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" /> Radio
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3" /> Radio
+  </label>
+</div>
+</div></div>
+    <div class="tab-pane fade" id="html-39" role="tabpanel" aria-labelledby="html-39">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group btn-group-toggle"</span> <span class="na">data-toggle=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-secondary active"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"option1"</span> <span class="na">checked</span><span class="nt">&gt;</span> Active
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"option2"</span><span class="nt">&gt;</span> Radio
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"options"</span> <span class="na">id=</span><span class="s">"option3"</span><span class="nt">&gt;</span> Radio
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h3 id="methods">Methods</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">$().button('toggle')</code></td>
+      <td>Toggles push state. Gives the button the appearance that it has been activated.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">$().button('dispose')</code></td>
+      <td>Destroys an element’s button.</td>
+    </tr>
+  </tbody>
+</table>
+:ET

@@ -1,0 +1,87 @@
+---
+
+layout: page-title-docs
+title: "Property Search"
+category_text: Property Search
+category_url: /docs/templates/property-search.html
+
+---
+
+<div class="bg-cover bg-overlay py-8" style="background-image: url({{ "/images/properties-slider-10.jpg" | document_url }})">
+	<div class="overflow-x-auto">
+		<div class="container">
+			<div class="mxw-670 position-relative z-index-2">
+				<input class="search-field" type="hidden" name="status" value="for-sale"
+				       data-default-value="">
+				<ul class="nav nav-pills property-search-status-tab">
+					<li class="nav-item" role="presentation">
+						<a class="nav-link btn shadow-none rounded-bottom-0 fs-13 letter-spacing-087 bg-dark-opacity-05 text-white hover-white text-uppercase bg-active-primary active"
+						   data-toggle="pill" data-value="for-sale" aria-selected="true" href="#" role="tab">
+							sale
+						</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link btn shadow-none rounded-bottom-0 fs-13 letter-spacing-087 bg-dark-opacity-05 text-white hover-white bg-active-primary text-uppercase"
+						   data-toggle="pill" data-value="for-rent" aria-selected="false" href="#" role="tab">
+							rent
+						</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<div class="position-relative w-100">
+						<i class="far fa-search text-dark fs-18 position-absolute pl-4 pos-fixed-left-center"></i>
+						<input type="text" name="search"
+						       class="rounded-bottom-right-lg w-100 pl-8 py-4 bg-white border-0 fs-13 font-weight-500 text-gray-light rounded-0 lh-17"
+						       placeholder="Enter an address, neighborhood">
+					</div>
+					<button type="submit" class="btn btn-primary fs-16 font-weight-600 rounded-left-0 rounded-lg">
+						Search
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<section class="py-10">
+	<div class="container">
+		<div class="bg-gray-01 overflow-auto">
+{% highlight html %}
+<div class="bg-cover bg-overlay py-8" style="background-image: url({{ "/images/properties-slider-10.jpg" | document_url }})">
+	<div class="overflow-x-auto">
+		<div class="container">
+			<div class="mxw-670 position-relative z-index-2">
+				<input class="search-field" type="hidden" name="status" value="for-sale"
+				       data-default-value="">
+				<ul class="nav nav-pills property-search-status-tab">
+					<li class="nav-item" role="presentation">
+						<a class="nav-link btn shadow-none rounded-bottom-0 fs-13 letter-spacing-087 bg-dark-opacity-05 text-white hover-white text-uppercase bg-active-primary active"
+						   data-toggle="pill" data-value="for-sale" aria-selected="true" href="#" role="tab">
+							sale
+						</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link btn shadow-none rounded-bottom-0 fs-13 letter-spacing-087 bg-dark-opacity-05 text-white hover-white bg-active-primary text-uppercase"
+						   data-toggle="pill" data-value="for-rent" aria-selected="false" href="#" role="tab">
+							rent
+						</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<div class="position-relative w-100">
+						<i class="far fa-search text-dark fs-18 position-absolute pl-4 pos-fixed-left-center"></i>
+						<input type="text" name="search"
+						       class="rounded-bottom-right-lg w-100 pl-8 py-4 bg-white border-0 fs-13 font-weight-500 text-gray-light rounded-0 lh-17"
+						       placeholder="Enter an address, neighborhood">
+					</div>
+					<button type="submit" class="btn btn-primary fs-16 font-weight-600 rounded-left-0 rounded-lg">
+						Search
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+{% endhighlight %}
+		</div>
+	</div>
+</section>

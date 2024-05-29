@@ -1,0 +1,19 @@
+.footer {
+	.divider {
+		content: '';
+		vertical-align: middle;
+		height: 16px;
+		width: 2px;
+		border: solid 1px $white;
+		opacity: 0.5;
+	}
+
+	.dropdown .nav-link {
+		letter-spacing: 1.73px;
+	}
+
+	hr {
+		border-color: $white;
+		opacity: 0.2;
+	}
+}

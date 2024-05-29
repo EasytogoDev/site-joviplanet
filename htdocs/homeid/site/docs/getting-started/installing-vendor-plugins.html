@@ -1,0 +1,24 @@
+---
+layout: get-started
+title: Installing Vendor plugins
+group: getting-started
+toc: true
+---
+<h2 class="fs-20 mb-4">Follow this 4 easy steps to install 3rd party plugin and use it in your HomeID
+    based project:</h2>
+<div>
+    <ol>
+        <li>Download plugin from home page of plugin.</li>
+        <li>Extract folder of plugin</li>
+        <li>Copy folder of plugin to <code>site/_assets/vendors</code></li>
+        <li>And last step is to link to plugin's scripts and styles into file <code>scripts.html</code> and <code>stylesheet.html</code>
+            in folder <code>site/_includes</code>.
+        </li>
+        <li>Run <kbd>gulp vendor</kbd>. This command will clean <code>dist/vendors</code> folder then moves vendor
+            libraries from <code>/site/_assets/vendors</code> directory
+            to <code>dist/vendors/bootstrap</code> including your newly downloaded plugins.
+        </li>
+    </ol>
+</div>
+
+

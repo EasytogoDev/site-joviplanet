@@ -1,0 +1,43 @@
+.custom-switch-right.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+	background-color: #fff;
+	content: '\f00c';
+	font-family: "Font Awesome 5 Pro";
+	line-height: 18px;
+	font-size: 13px;
+	text-align: center;
+	color: $primary;
+	right: 0;
+	left: unset;
+}
+
+.custom-switch-right.custom-switch .custom-control-input {
+	~ .custom-control-label::before,
+	~ .custom-control-label::after {
+		left: -1.359375rem;
+	}
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+	background-color: #fff;
+}
+
+.custom-switch .custom-control-label::after {
+	background-color: $primary;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+	background-image: none;
+	content: '\f00c';
+	font-family: "Font Awesome 5 Pro";
+	top: 0.01rem;
+	left: -1.75rem;
+	color: $white;
+}
+
+.custom-checkbox .custom-control-label {
+	cursor: pointer;
+}
+
+.form-control::placeholder {
+	color: $text-muted;
+}

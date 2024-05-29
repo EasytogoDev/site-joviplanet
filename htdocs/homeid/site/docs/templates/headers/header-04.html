@@ -1,0 +1,86 @@
+---
+layout: header-docs
+title: "Header 04"
+category_text: Headers
+category_url: /docs/templates/header.html
+---
+<header class="main-header navbar-dark position-absolute fixed-top m-0 header-sticky header-sticky-smart header-mobile-lg">
+    <div class="sticky-area">
+        <div class="{{ page.header_container| default: 'container' }}">
+            <nav class="navbar navbar-expand-lg bg-transparent px-0">
+                <a class="navbar-brand px-0 mr-auto" href="{{ '/' | document_url }}">
+                    <img src="{{ '/images/logo-white.png' | document_url }}" alt="{{site.title}}" class="normal-logo">
+                    <img src="{{ '/images/logo.png' | document_url }}" alt="{{site.title}}" class="sticky-logo">
+                </a>
+                <div class="d-flex d-lg-none ml-auto">
+                    <a class="d-block mr-4 position-relative text-white p-2" href="#">
+                        <i class="fal fa-heart fs-large-4"></i>
+                        <span class="badge badge-primary badge-circle badge-absolute">1</span>
+                    </a>
+                    <button class="navbar-toggler border-0 pl-3 pr-0" type="button" data-toggle="collapse"
+                            data-target="#primaryMenu04"
+                            aria-controls="primaryMenu04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="text-white fs-24"><i class="fal fa-bars"></i></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse mt-3 mt-lg-0 px-3 px-lg-0 flex-grow-0 mx-auto" id="primaryMenu04">
+                    {% include navbar-main.html %}
+                    <div class="d-block d-lg-none">
+                        {% include navbar-right-mobile-03.html %}
+                    </div>
+                </div>
+                <div class="d-none d-lg-block ml-auto">
+                    {% include navbar-right-03.html %}
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <section
+            style="background-image: url('{{ "/images/bg-home-01.jpg" | document_url }}');background-position: center;background-size: cover;"
+            class="py-16 bg-overlay">
+    </section>
+    {% include components/page-title/docs.html %}
+    <section class="py-10">
+        <div class="container">
+            <div class="bg-gray-01 overflow-auto">
+{% highlight html %}
+<header class="main-header navbar-dark position-absolute fixed-top m-0 header-sticky header-sticky-smart header-mobile-lg">
+    <div class="sticky-area">
+        <div class="{{ page.header_container| default: 'container' }}">
+            <nav class="navbar navbar-expand-lg bg-transparent px-0">
+                <a class="navbar-brand px-0 mr-auto" href="{{ '/' | document_url }}">
+                    <img src="{{ '/images/logo-white.png' | document_url }}" alt="{{site.title}}" class="normal-logo">
+                    <img src="{{ '/images/logo.png' | document_url }}" alt="{{site.title}}" class="sticky-logo">
+                </a>
+                <div class="d-flex d-lg-none ml-auto">
+                    <a class="d-block mr-4 position-relative text-white p-2" href="#">
+                        <i class="fal fa-heart fs-large-4"></i>
+                        <span class="badge badge-primary badge-circle badge-absolute">1</span>
+                    </a>
+                    <button class="navbar-toggler border-0 pl-3 pr-0" type="button" data-toggle="collapse"
+                            data-target="#primaryMenu04-1"
+                            aria-controls="primaryMenu04-1" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="text-white fs-24"><i class="fal fa-bars"></i></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse mt-3 mt-lg-0 px-3 px-lg-0 flex-grow-0 mx-auto" id="primaryMenu04-1">
+                    {% include navbar-main.html %}
+                    <div class="d-block d-lg-none">
+                        {% include navbar-right-mobile-03.html %}
+                    </div>
+                </div>
+                <div class="d-none d-lg-block ml-auto">
+                    {% include navbar-right-03.html %}
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+{% endhighlight %}
+            </div>
+        </div>
+    </section>
+
+</main>

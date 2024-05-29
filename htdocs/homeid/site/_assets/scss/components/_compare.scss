@@ -1,0 +1,31 @@
+#compare {
+	position: fixed;
+	right: -1px;
+	top:50%;
+	z-index: 999999;
+	transition: all .5s;
+	transform: translateX(100%) translateY(-50%);
+	max-width: 138px;
+
+	&.show {
+		transform: translateX(0) translateY(-50%);
+		.btn-open:before {
+			content: "\f105";
+		}
+	}
+	&:not(.show) .btn-open:before {
+		content: "\f104";
+	}
+	.btn-open {
+		position: absolute;
+		right: 100%;
+		top:50%;
+		display: block;
+		transform: translateX(0) translateY(-50%);
+	}
+	.btn-open:before {
+		font-family: "Font Awesome 5 Pro";
+		font-size: 22px;
+		font-weight: 400;
+	}
+}

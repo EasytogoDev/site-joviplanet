@@ -1,0 +1,117 @@
+---
+layout: docs
+title: Heading
+description: Different title types. Include title, sub title description, separator
+group: templates
+toc: true
+---
+<h2>Heading 1</h2>
+<p>Heading default style.</p>
+
+{% capture example %}
+<h2 class="text-heading">Best Properties For Sale</h2>
+<span class="heading-divider"></span>
+<p>Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscipit</p>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Heading 2</h2>
+<p>Heading with secondary background.</p>
+
+{% capture example %}
+<div class="bg-secondary text-white p-4">
+    <h2 class="text-white">Best Properties For Sale</h2>
+    <span class="heading-divider"></span>
+    <p>Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscipit</p>
+</div>
+{% endcapture %}
+
+{% include docs/example.html content=example %}
+
+<h2>Heading 3</h2>
+<p>Heading content with html.</p>
+
+{% capture example %}
+<h2 class="text-heading">Explore <br> by Property Type</h2>
+<span class="heading-divider"></span>
+<p class="w-50">Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscipit</p>
+{% endcapture %}
+
+{% include docs/example.html content=example %}
+
+<h2>Heading 4</h2>
+<p>Heading content center without description</p>
+
+{% capture example %}
+<h2 class="text-heading text-center line-height-base">
+    We have the most listings and constant updates. <br>
+    So you’ll never miss out.
+</h2>
+<span class="heading-divider mx-auto"></span>
+
+{% endcapture %}
+
+{% include docs/example.html content=example %}
+
+<h2>Heading 5</h2>
+<p>Heading content center with sub title</p>
+
+{% capture example %}
+<p class="text-primary letter-spacing-263 text-uppercase lh-186 text-center mb-0">testimonials</p>
+<h2 class="text-heading text-center lh-1625">
+    Check Out Recent News & Articles
+</h2>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Heading 6</h2>
+<p>Heading content center with text white</p>
+
+{% capture example %}
+<div class="bg-secondary p-4">
+    <h2 class="line-height-base text-white text-center font-weight-normal">Looking to Buy a new property or Sell <br/>
+        an existing one?</h2>
+    <span class="heading-divider mx-auto"></span>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Heading 7</h2>
+<p>Heading content left with sub title</p>
+
+{% capture example %}
+<p class="text-primary letter-spacing-263 text-uppercase mb-4">Blog & news</p>
+<h2 class="text-heading lh-15">
+    Interesting Articles<br/>
+    Updated Daily
+</h2>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Heading 8</h2>
+<p>Heading with border left</p>
+
+{% capture example %}
+<div style="max-width: 540px">
+    <div class="pl-6 border-4x border-left border-primary">
+        <h2 class="text-heading lh-15">For more information about our services,<span class="text-primary"> get in touch</span> with our expert consultants</h2>
+        <p class="lh-2 fs-md-15 mb-0 pr-lg-6">10 new offers every day. 350 offers on site, Trusted by a community of thousands of users.</p>
+    </div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Heading 9</h2>
+<p>Heading white with sub title</p>
+
+{% capture example %}
+<div class="py-6 text-center bg-cover" style="background-image: url('{{ "/images/bg-home-8.jpg" | document_url }}')">
+    <p class="text-white letter-spacing-34 fs-15 text-uppercase lh-186 mb-0 pt-1">let us find your home</p>
+    <h2 class="fs-md-42 text-white pt-5">
+        We have the most Listing in
+        <span class="fs-md-52 font-weight-bold text-white pt-2 d-block">Los Angeles</span>
+    </h2>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}

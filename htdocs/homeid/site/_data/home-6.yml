@@ -1,0 +1,255 @@
+properties-grid-01:
+  - title: Home in Metric Way
+    url: /single-property-1.html
+    img: /images/properties-grid-17.jpg
+    address: 1421 San Pedro St, Los Angeles
+    price: $1.250.000
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+
+  - title: Affordable Urban House
+    url: /single-property-1.html
+    img: /images/properties-grid-18.jpg
+    address: 1421 San Pedro St, Los Angeles
+    price: $1.250.000
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+
+  - title: Villa on Hollywood Boulevard
+    url: /single-property-1.html
+    img: /images/properties-grid-19.jpg
+    address: 1421 San Pedro St, Los Angeles
+    price: $1.250.000
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+
+  - title: Home in Metric Way
+    url: /single-property-1.html
+    img: /images/properties-grid-17.jpg
+    address: 1421 San Pedro St, Los Angeles
+    price: $1.250.000
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+
+  - title: Affordable Urban House
+    url: /single-property-1.html
+    img: /images/properties-grid-18.jpg
+    address: 1421 San Pedro St, Los Angeles
+    price: $1.250.000
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+
+  - title: Villa on Hollywood Boulevard
+    url: /single-property-1.html
+    img: /images/properties-grid-19.jpg
+    address: 1421 San Pedro St, Los Angeles
+    price: $1.250.000
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+
+icon-box-01:
+  - title: Wider range of properties
+    img: /images/urban.png
+    description: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscorem ipsum dolor sit ametcipsum suscorein ipsumg elit.
+
+  - title: Financing made easy
+    img: /images/bank.png
+    description: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscorem ipsum dolor sit ametcipsum suscorein ipsumg elit.
+
+  - title: Transparentcy
+    img: /images/buy.png
+    description: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscorem ipsum dolor sit ametcipsum suscorein ipsumg elit.
+
+properties-grid-02:
+  - title: Home in Metric Way
+    url: /single-property-1.html
+    img: /images/properties-grid-27.jpg
+    address: 1421 San Pedro St, Los Angeles
+    price: $2500
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+
+  - title: Affordable Urban House
+    url: /single-property-1.html
+    img: /images/properties-grid-28.jpg
+    address: 1421 San Pedro St, Los Angeles
+    price: $2500
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+
+  - title: Villa on Hollywood Boulevard
+    url: /single-property-1.html
+    img: /images/properties-grid-29.jpg
+    address: 1421 San Pedro St, Los Angeles
+    price: $2500
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+
+  - title: Garden Gingerbread House
+    url: /single-property-1.html
+    img: /images/properties-grid-30.jpg
+    address: 1421 San Pedro St, Los Angeles
+    price: $2500
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+
+  - title: Home in Metric Way
+    url: /single-property-1.html
+    img: /images/properties-grid-27.jpg
+    address: 1421 San Pedro St, Los Angeles
+    price: $2500
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+
+  - title: Affordable Urban House
+    url: /single-property-1.html
+    img: /images/properties-grid-28.jpg
+    address: 1421 San Pedro St, Los Angeles
+    price: $2500
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+
+  - title: Villa on Hollywood Boulevard
+    url: /single-property-1.html
+    img: /images/properties-grid-29.jpg
+    address: 1421 San Pedro St, Los Angeles
+    price: $2500
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+
+  - title: Garden Gingerbread House
+    url: /single-property-1.html
+    img: /images/properties-grid-30.jpg
+    address: 1421 San Pedro St, Los Angeles
+    price: $2500
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+
+properties-slider-01:
+  - title: Villa in Coral Gables
+    sub-title: Stourbridge, West Midlands, DY9 9TA
+    image: /images/properties-slider-01.jpg
+    url: /single-property-1.html
+    categories:
+      - name: Featured
+        class: badge-orange
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Bedrooms
+      bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      garage: 1 Garage
+    price: $1.250.000
+    address: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspeor sit amet, cons ndisse suscorem ipsum dolor sit.
+
+  - title: Home in Metric Way
+    sub-title: Stourbridge, West Midlands, DY9 9TA
+    image: /images/properties-slider-02.jpg
+    url: /single-property-1.html
+    categories:
+      - name: Featured
+        class: badge-orange
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Bedrooms
+      bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      garage: 1 Garage
+    price: $1.250.000
+    address: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspeor sit amet, cons ndisse suscorem ipsum dolor sit.
+
+  - title: Affordable Urban House
+    sub-title: Stourbridge, West Midlands, DY9 9TA
+    image: /images/properties-slider-03.jpg
+    url: /single-property-1.html
+    categories:
+      - name: Featured
+        class: badge-orange
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Bedrooms
+      bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      garage: 1 Garage
+    price: $1.250.000
+    address: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspeor sit amet, cons ndisse suscorem ipsum dolor sit.
+
+blog-01:
+  - title: Opening a new store in NYC
+    url: /blog-details-1.html
+
+  - title: 5 Famous Progressive Web Apps
+    url: /blog-details-1.html
+
+  - title: How to Create an Effective Elevator Pitch
+    url: /blog-details-1.html
+
+  - title: Top Strategic Technology Trends for 2020
+    url: /blog-details-1.html
+
+  - title: The Quest for Better Web Accessibility
+    url: /blog-details-1.html
+
+blog-02:
+  - title: Retail banks wake up to digital lending this year
+    des: Lorem ipsum dolor sit amet, consecte tur cing elit. Suspe ndisse suscipit sagittis leo sit met condim entum, consecte tur cineoi
+    image: /images/post-03.jpg
+    time: 30th Dec, 2020
+    view: 149 views
+    badge: rental
+    url: /blog-details-1.html
+    url-cat: /#
+
+  - title: Within the construction industry as their overdraft
+    des: Lorem ipsum dolor sit amet, consecte tur cing elit. Suspe ndisse suscipit sagittis leo sit met condim entum, consecte tur cineoi
+    image: /images/post-04.jpg
+    time: 30th Dec, 2020
+    view: 149 views
+    badge: rental
+    url: /blog-details-1.html
+    url-cat: /#

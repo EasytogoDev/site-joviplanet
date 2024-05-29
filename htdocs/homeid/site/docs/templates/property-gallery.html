@@ -1,0 +1,900 @@
+---
+layout: docs
+title: Property Gallery
+description: Display the elements of the property in the gallery layout
+group: templates
+toc: true
+---
+
+<h2>Property Gallery 01</h2>
+
+{% capture example %}
+<div class="position-relative">
+    <div class="position-absolute pos-fixed-top-right z-index-3">
+        <ul class="list-inline pt-4 pr-5">
+            <li class="list-inline-item mr-2">
+                <a href="#" data-toggle="tooltip" title="Favourite"
+                   class="d-flex align-items-center justify-content-center w-40px h-40 bg-white text-heading bg-hover-primary hover-white rounded-circle">
+                    <i class="far fa-heart"></i></a>
+            </li>
+            <li class="list-inline-item mr-2">
+                <button type="button"
+                        class="btn btn-white p-0 d-flex align-items-center justify-content-center w-40px h-40 text-heading bg-hover-primary hover-white rounded-circle border-0 shadow-none"
+                        data-container="body"
+                        data-toggle="popover" data-placement="top" data-html="true" data-content=' <ul class="list-inline mb-0">
+                                            <li class="list-inline-item">
+                                                <a href="#" class="text-muted fs-15 hover-dark lh-1 px-2"><i
+                                                        class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li class="list-inline-item ">
+                                                <a href="#" class="text-muted fs-15 hover-dark lh-1 px-2"><i
+                                                        class="fab fa-facebook-f"></i></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#" class="text-muted fs-15 hover-dark lh-1 px-2"><i
+                                                        class="fab fa-instagram"></i></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#" class="text-muted fs-15 hover-dark lh-1 px-2"><i
+                                                        class="fab fa-youtube"></i></a>
+                                            </li>
+                                        </ul>'>
+                    <i class="far fa-share-alt"></i>
+                </button>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" data-toggle="tooltip" title="Print"
+                   class="d-flex align-items-center justify-content-center w-40px h-40 bg-white text-heading bg-hover-primary hover-white rounded-circle">
+                    <i class="far fa-print"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="row galleries m-n1">
+        <div class="col-md-6 p-1">
+            <div class="item item-size-4-3">
+                <div class="card p-0 hover-zoom-in">
+                    <a href="{{ '/images/single-property-lg-1.jpg' | document_url }}" class="card-img"
+                       data-gtf-mfp="true"
+                       data-gallery-id="01"
+                       style="background-image:url('{{ "/images/single-property-2.jpg" | document_url }}')">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 p-1">
+            <div class="row m-n1">
+                <div class="col-md-6 p-1">
+                    <div class="item item-size-4-3">
+                        <div class="card p-0 hover-zoom-in">
+                            <a href="{{ '/images/single-property-lg-2.jpg' | document_url }}" class="card-img"
+                               data-gtf-mfp="true"
+                               data-gallery-id="01"
+                               style="background-image:url('{{ "/images/single-property-22.jpg" | document_url }}')">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-1">
+                    <div class="item item-size-4-3">
+                        <div class="card p-0 hover-zoom-in">
+                            <a href="{{ '/images/single-property-lg-3.jpg' | document_url }}" class="card-img"
+                               data-gtf-mfp="true"
+                               data-gallery-id="01"
+                               style="background-image:url('{{ "/images/single-property-3.jpg" | document_url }}')">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-1">
+                    <div class="item item-size-4-3">
+                        <div class="card p-0 hover-zoom-in">
+                            <a href="{{ '/images/single-property-lg-4.jpg' | document_url }}" class="card-img"
+                               data-gtf-mfp="true"
+                               data-gallery-id="01"
+                               style="background-image:url('{{ "/images/single-property-4.jpg" | document_url }}')">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-1">
+                    <div class="item item-size-4-3">
+                        <div class="card p-0 hover-zoom-in">
+                            <a href="{{ '/images/single-property-lg-5.jpg' | document_url }}" class="card-img"
+                               data-gtf-mfp="true"
+                               data-gallery-id="01"
+                               style="background-image:url('{{ "/images/single-property-5.jpg" | document_url }}')">
+                            </a>
+                            <a href="#"
+                               class="card-img-overlay d-flex flex-column align-items-center justify-content-center hover-image bg-dark-opacity-04">
+                                <p class="fs-48 font-weight-600 text-white lh-1 mb-4">+12</p>
+                                <p class="fs-16 font-weight-bold text-white lh-1625 text-uppercase">View
+                                    more</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Property Gallery 02</h2>
+
+{% capture example %}
+<div class="galleries position-relative">
+    <div class="position-absolute pos-fixed-top-right z-index-3">
+        <ul class="list-inline pt-4 pr-5">
+            <li class="list-inline-item mr-2">
+                <a href="#" data-toggle="tooltip" title="Favourite"
+                   class="d-flex align-items-center justify-content-center w-40px h-40 bg-white text-heading bg-hover-primary hover-white rounded-circle">
+                    <i class="far fa-heart"></i></a>
+            </li>
+            <li class="list-inline-item mr-2">
+                <button type="button"
+                        class="btn btn-white p-0 d-flex align-items-center justify-content-center w-40px h-40 text-heading bg-hover-primary hover-white rounded-circle border-0 shadow-none"
+                        data-container="body"
+                        data-toggle="popover" data-placement="top" data-html="true" data-content=' <ul class="list-inline mb-0">
+                                            <li class="list-inline-item">
+                                                <a href="#" class="text-muted fs-15 hover-dark lh-1 px-2"><i
+                                                        class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li class="list-inline-item ">
+                                                <a href="#" class="text-muted fs-15 hover-dark lh-1 px-2"><i
+                                                        class="fab fa-facebook-f"></i></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#" class="text-muted fs-15 hover-dark lh-1 px-2"><i
+                                                        class="fab fa-instagram"></i></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#" class="text-muted fs-15 hover-dark lh-1 px-2"><i
+                                                        class="fab fa-youtube"></i></a>
+                                            </li>
+                                        </ul>'>
+                    <i class="far fa-share-alt"></i>
+                </button>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" data-toggle="tooltip" title="Print"
+                   class="d-flex align-items-center justify-content-center w-40px h-40 bg-white text-heading bg-hover-primary hover-white rounded-circle">
+                    <i class="far fa-print"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="slick-slider slider-for"
+         data-slick-options='{"slidesToShow": 1, "autoplay":false,"dots":false,"arrows":false,"asNavFor": ".slider-nav"}'>
+        <div class="box">
+            <div class="item item-size-3-2">
+                <div class="card p-0">
+                    <a href="{{ '/images/single-property-lg-1.jpg' | document_url }}" class="card-img"
+                       data-gtf-mfp="true"
+                       data-gallery-id="02"
+                       style="background-image:url('{{ "/images/single-property-lg-1.jpg" | document_url }}')">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="item item-size-3-2">
+                <div class="card p-0">
+                    <a href="{{ '/images/single-property-lg-4.jpg' | document_url }}" class="card-img"
+                       data-gtf-mfp="true"
+                       data-gallery-id="02"
+                       style="background-image:url('{{ "/images/single-property-lg-4.jpg" | document_url }}')">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="item item-size-3-2">
+                <div class="card p-0">
+                    <a href="{{ '/images/single-property-17.jpg' | document_url }}" class="card-img"
+                       data-gtf-mfp="true"
+                       data-gallery-id="02"
+                       style="background-image:url('{{ "/images/single-property-17.jpg" | document_url }}')">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="item item-size-3-2">
+                <div class="card p-0">
+                    <a href="{{ '/images/single-property-lg-3.jpg' | document_url }}" class="card-img"
+                       data-gtf-mfp="true"
+                       data-gallery-id="02"
+                       style="background-image:url('{{ "/images/single-property-lg-3.jpg" | document_url }}')">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="item item-size-3-2">
+                <div class="card p-0">
+                    <a href="{{ '/images/single-property-7.jpg' | document_url }}" class="card-img"
+                       data-gtf-mfp="true"
+                       data-gallery-id="02"
+                       style="background-image:url('{{ "/images/single-property-7.jpg" | document_url }}')">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="item item-size-3-2">
+                <div class="card p-0">
+                    <a href="{{ '/images/single-property-18.jpg' | document_url }}" class="card-img"
+                       data-gtf-mfp="true"
+                       data-gallery-id="02"
+                       style="background-image:url('{{ "/images/single-property-18.jpg" | document_url }}')">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="item item-size-3-2">
+                <div class="card p-0">
+                    <a href="{{ '/images/single-property-8.jpg' | document_url }}" class="card-img"
+                       data-gtf-mfp="true"
+                       data-gallery-id="02"
+                       style="background-image:url('{{ "/images/single-property-8.jpg" | document_url }}')">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slick-slider slider-nav mt-1 mx-n1 arrow-haft-inner"
+         data-slick-options='{"slidesToShow": 6, "autoplay":false,"dots":false,"arrows":true,"asNavFor": ".slider-for","focusOnSelect": true,"responsive":[{"breakpoint": 768,"settings": {"slidesToShow": 4}},{"breakpoint": 576,"settings": {"slidesToShow": 2}}]}'>
+        <div class="box pb-6 px-0">
+            <div class="bg-white p-1 shadow-hover-xs-3 h-100 rounded-lg">
+                <img src="{{ '/images/single-property-sm-7.jpg' | document_url }}" alt="Gallery 01"
+                     class="h-100 w-100 rounded-lg">
+            </div>
+        </div>
+        <div class="box px-0 pb-6">
+            <div class="bg-white p-1 shadow-hover-xs-3 h-100 rounded-lg">
+                <img src="{{ '/images/single-property-sm-2.jpg' | document_url }}" alt="Gallery 02"
+                     class="h-100 w-100 rounded-lg">
+            </div>
+        </div>
+        <div class="box px-0 pb-6">
+            <div class="bg-white p-1 shadow-hover-xs-3 h-100 rounded-lg">
+                <img src="{{ '/images/single-property-sm-3.jpg' | document_url }}" alt="Gallery 03"
+                     class="h-100 w-100 rounded-lg">
+            </div>
+        </div>
+        <div class="box px-0 pb-6">
+            <div class="bg-white p-1 shadow-hover-xs-3 h-100 rounded-lg">
+                <img src="{{ '/images/single-property-sm-4.jpg' | document_url }}" alt="Gallery 04"
+                     class="h-100 w-100 rounded-lg">
+            </div>
+        </div>
+        <div class="box px-0 pb-6">
+            <div class="bg-white p-1 shadow-hover-xs-3 h-100 rounded-lg">
+                <img src="{{ '/images/single-property-sm-5.jpg' | document_url }}" alt="Gallery 05"
+                     class="h-100 w-100 rounded-lg">
+            </div>
+        </div>
+        <div class="box px-0 pb-6">
+            <div class="bg-white p-1 shadow-hover-xs-3 h-100 rounded-lg">
+                <img src="{{ '/images/single-property-sm-6.jpg' | document_url }}" alt="Gallery 01"
+                     class="h-100 w-100 rounded-lg">
+            </div>
+        </div>
+        <div class="box px-0 pb-6">
+            <div class="bg-white p-1 shadow-hover-xs-3 h-100 rounded-lg">
+                <img src="{{ '/images/single-property-sm-8.jpg' | document_url }}" alt="Gallery 06"
+                     class="h-100 w-100 rounded-lg">
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+
+<h2>Property Gallery 03</h2>
+
+{% capture example %}
+<div class="galleries position-relative">
+    <ul class="nav nav-pills position-absolute pos-fixed-top-right z-index-3 pt-4 pr-5 flex-nowrap nav-gallery"
+        id="pills-tab"
+        role="tablist">
+        <li class="nav-item mr-2" role="presentation">
+            <a class="nav-link p-0 active d-flex align-items-center justify-content-center w-48px h-48 bg-white text-heading bg-hover-primary hover-white rounded-circle fs-18"
+               data-toggle="pill" href="#image" role="tab"
+               aria-selected="true">
+                <i class="fal fa-camera"></i>
+            </a>
+        </li>
+        <li class="nav-item mr-2" role="presentation">
+            <a class="nav-link p-0 d-flex align-items-center justify-content-center w-48px h-48 bg-white text-heading bg-hover-primary hover-white rounded-circle fs-18"
+               data-toggle="pill" href="#map-view" role="tab"
+               aria-selected="false">
+                <i class="fal fa-map-marked-alt"></i>
+            </a>
+        </li>
+        <li class="nav-item mr-2" role="presentation">
+            <a class="nav-link p-0 d-flex align-items-center justify-content-center w-48px h-48 bg-white text-heading bg-hover-primary hover-white rounded-circle fs-18"
+               data-toggle="pill" href="#street-view" role="tab"
+               aria-selected="false">
+                <i class="fal fa-street-view"></i>
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content p-0 shadow-none">
+        <div class="tab-pane fade show active" id="image" role="tabpanel">
+            <div class="slick-slider dots-white arrow-inner"
+                 data-slick-options='{"slidesToShow": 1, "autoplay":false}'>
+                <div class="box">
+                    <div class="item item-size-3-2">
+                        <div class="card p-0">
+                            <a href="{{ '/images/single-property-lg-1.jpg' | document_url }}" class="card-img"
+                               data-gtf-mfp="true"
+                               data-gallery-id="03"
+                               style="background-image:url('{{ "/images/single-property-lg-1.jpg" | document_url }}')">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item item-size-3-2">
+                        <div class="card p-0">
+                            <a href="{{ '/images/single-property-lg-4.jpg' | document_url }}" class="card-img"
+                               data-gtf-mfp="true"
+                               data-gallery-id="03"
+                               style="background-image:url('{{ "/images/single-property-lg-4.jpg" | document_url }}')">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item item-size-3-2">
+                        <div class="card p-0">
+                            <a href="{{ '/images/single-property-6.jpg' | document_url }}" class="card-img"
+                               data-gtf-mfp="true"
+                               data-gallery-id="03"
+                               style="background-image:url('{{ "/images/single-property-6.jpg" | document_url }}')">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item item-size-3-2">
+                        <div class="card p-0">
+                            <a href="{{ '/images/single-property-lg-3.jpg' | document_url }}" class="card-img"
+                               data-gtf-mfp="true"
+                               data-gallery-id="03"
+                               style="background-image:url('{{ "/images/single-property-lg-3.jpg" | document_url }}')">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item item-size-3-2">
+                        <div class="card p-0">
+                            <a href="{{ '/images/single-property-7.jpg' | document_url }}" class="card-img"
+                               data-gtf-mfp="true"
+                               data-gallery-id="03"
+                               style="background-image:url('{{ "/images/single-property-7.jpg" | document_url }}')">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item item-size-3-2">
+                        <div class="card p-0">
+                            <a href="{{ '/images/single-property-8.jpg' | document_url }}" class="card-img"
+                               data-gtf-mfp="true"
+                               data-gallery-id="03"
+                               style="background-image:url('{{ "/images/single-property-8.jpg" | document_url }}')">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item item-size-3-2">
+                        <div class="card p-0">
+                            <a href="{{ '/images/single-property-lg-2.jpg' | document_url }}" class="card-img"
+                               data-gtf-mfp="true"
+                               data-gallery-id="03"
+                               style="background-image:url('{{ "/images/single-property-lg-2.jpg" | document_url }}')">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="map-view" role="tabpanel">
+            <div id="map" class="mapbox-gl map-point-animate"
+                 style="height: 620px"
+                 data-mapbox-access-token="{{ site.data.map-access-token.access-token}}"
+                 data-mapbox-options='{"center":[-73.981566, 40.739011],"setLngLat":[-73.981566, 40.739011]}'
+                 data-mapbox-marker='[{"position":[-73.981566, 40.739011],"className":"marker","backgroundImage":"{{ "/images/googlle-market-01.png" | document_url }}","backgroundRepeat":"no-repeat","width":"32px","height":"40px"}]'
+            ></div>
+        </div>
+        <div class="tab-pane fade" id="street-view" role="tabpanel">
+            <div class="py-10"
+                 style="background-image: url('{{ "/images/BG2.jpg" | document_url }}');background-size: cover;background-position: center"></div>
+        </div>
+    </div>
+
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Property Gallery 04</h2>
+
+{% capture example %}
+<div class="galleries position-relative">
+    <div class="position-absolute pos-fixed-top-right z-index-3">
+        <ul class="list-inline pt-4 pr-5">
+            <li class="list-inline-item mr-2">
+                <a href="#" data-toggle="tooltip" title="Favourite"
+                   class="d-flex align-items-center justify-content-center w-40px h-40 bg-white text-heading bg-hover-primary hover-white rounded-circle">
+                    <i class="far fa-heart"></i></a>
+            </li>
+            <li class="list-inline-item mr-2">
+                <button type="button"
+                        class="btn btn-white p-0 d-flex align-items-center justify-content-center w-40px h-40 text-heading bg-hover-primary hover-white rounded-circle border-0 shadow-none"
+                        data-container="body"
+                        data-toggle="popover" data-placement="top" data-html="true" data-content=' <ul class="list-inline mb-0">
+                                            <li class="list-inline-item">
+                                                <a href="#" class="text-muted fs-15 hover-dark lh-1 px-2"><i
+                                                        class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li class="list-inline-item ">
+                                                <a href="#" class="text-muted fs-15 hover-dark lh-1 px-2"><i
+                                                        class="fab fa-facebook-f"></i></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#" class="text-muted fs-15 hover-dark lh-1 px-2"><i
+                                                        class="fab fa-instagram"></i></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#" class="text-muted fs-15 hover-dark lh-1 px-2"><i
+                                                        class="fab fa-youtube"></i></a>
+                                            </li>
+                                        </ul>'>
+                    <i class="far fa-share-alt"></i>
+                </button>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" data-toggle="tooltip" title="Print"
+                   class="d-flex align-items-center justify-content-center w-40px h-40 bg-white text-heading bg-hover-primary hover-white rounded-circle">
+                    <i class="far fa-print"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="slick-slider slider-for-01 arrow-haft-inner mx-0"
+         data-slick-options='{"slidesToShow": 1, "autoplay":false,"dots":false,"arrows":true,"asNavFor": ".slider-nav-01"}'>
+        <div class="box px-0">
+            <div class="item item-size-3-2">
+                <div class="card p-0">
+                    <a href="{{ '/images/single-property-lg-1.jpg' | document_url }}" class="card-img"
+                       data-gtf-mfp="true"
+                       data-gallery-id="04"
+                       style="background-image:url('{{ "/images/single-property-lg-1.jpg" | document_url }}')">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box px-0">
+            <div class="item item-size-3-2">
+                <div class="card p-0">
+                    <a href="{{ '/images/single-property-lg-4.jpg' | document_url }}" class="card-img"
+                       data-gtf-mfp="true"
+                       data-gallery-id="04"
+                       style="background-image:url('{{ "/images/single-property-lg-4.jpg" | document_url }}')">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box px-0">
+            <div class="item item-size-3-2">
+                <div class="card p-0">
+                    <a href="{{ '/images/single-property-lg-3.jpg' | document_url }}" class="card-img"
+                       data-gtf-mfp="true"
+                       data-gallery-id="04"
+                       style="background-image:url('{{ "/images/single-property-lg-3.jpg" | document_url }}')">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box px-0">
+            <div class="item item-size-3-2">
+                <div class="card p-0">
+                    <a href="{{ '/images/single-property-lg-2.jpg' | document_url }}" class="card-img"
+                       data-gtf-mfp="true"
+                       data-gallery-id="04"
+                       style="background-image:url('{{ "/images/single-property-lg-2.jpg" | document_url }}')">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box px-0">
+            <div class="item item-size-3-2">
+                <div class="card p-0">
+                    <a href="{{ '/images/single-property-lg-9.jpg' | document_url }}" class="card-img"
+                       data-gtf-mfp="true"
+                       data-gallery-id="04"
+                       style="background-image:url('{{ "/images/single-property-9.jpg" | document_url }}')">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box px-0">
+            <div class="item item-size-3-2">
+                <div class="card p-0">
+                    <a href="{{ '/images/single-property-lg-10.jpg' | document_url }}" class="card-img"
+                       data-gtf-mfp="true"
+                       data-gallery-id="04"
+                       style="background-image:url('{{ "/images/single-property-1.jpg" | document_url }}')">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slick-slider slider-nav-01 mt-4 mx-n1 arrow-haft-inner"
+         data-slick-options='{"slidesToShow": 5, "autoplay":false,"dots":false,"arrows":false,"asNavFor": ".slider-for-01","focusOnSelect": true,"responsive":[{"breakpoint": 768,"settings": {"slidesToShow": 4}},{"breakpoint": 576,"settings": {"slidesToShow": 2}}]}'>
+        <div class="box pb-6 px-0">
+            <div class="bg-white p-1 shadow-hover-xs-3 h-100 rounded-lg">
+                <img src="{{ '/images/single-property-sm-7.jpg' | document_url }}" alt="Gallery 01"
+                     class="h-100 w-100 rounded-lg">
+            </div>
+        </div>
+        <div class="box px-0 pb-6">
+            <div class="bg-white p-1 shadow-hover-xs-3 h-100 rounded-lg">
+                <img src="{{ '/images/single-property-sm-2.jpg' | document_url }}" alt="Gallery 02"
+                     class="h-100 w-100 rounded-lg">
+            </div>
+        </div>
+        <div class="box px-0 pb-6">
+            <div class="bg-white p-1 shadow-hover-xs-3 h-100 rounded-lg">
+                <img src="{{ '/images/single-property-sm-4.jpg' | document_url }}" alt="Gallery 04"
+                     class="h-100 w-100 rounded-lg">
+            </div>
+        </div>
+        <div class="box px-0 pb-6">
+            <div class="bg-white p-1 shadow-hover-xs-3 h-100 rounded-lg">
+                <img src="{{ '/images/single-property-sm-1.jpg' | document_url }}" alt="Gallery 01"
+                     class="h-100 w-100 rounded-lg">
+            </div>
+        </div>
+        <div class="box px-0 pb-6">
+            <div class="bg-white p-1 shadow-hover-xs-3 h-100 rounded-lg">
+                <img src="{{ '/images/single-property-9.jpg' | document_url }}" alt="Gallery 01"
+                     class="h-100 w-100 rounded-lg">
+            </div>
+        </div>
+        <div class="box px-0 pb-6">
+            <div class="bg-white p-1 shadow-hover-xs-3 h-100 rounded-lg">
+                <img src="{{ '/images/single-property-1.jpg' | document_url }}" alt="Gallery 01"
+                     class="h-100 w-100 rounded-lg">
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Property Gallery 05</h2>
+
+{% capture example %}
+<div class="row galleries">
+    <div class="col-sm-6 col-lg-4 mb-6">
+        <div class="item item-size-4-3">
+            <div class="card p-0 hover-zoom-in">
+                <a href="{{ '/images/single-property-lg-11.jpg' | document_url }}" class="card-img"
+                   data-gtf-mfp="true"
+                   data-gallery-id="05"
+                   style="background-image:url('{{ "/images/single-property-11.jpg" | document_url }}')">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-6">
+        <div class="item item-size-4-3">
+            <div class="card p-0 hover-zoom-in">
+                <a href="{{ '/images/single-property-lg-12.jpg' | document_url }}" class="card-img"
+                   data-gtf-mfp="true"
+                   data-gallery-id="05"
+                   style="background-image:url('{{ "/images/single-property-12.jpg" | document_url }}')">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-6">
+        <div class="item item-size-4-3">
+            <div class="card p-0 hover-zoom-in">
+                <a href="{{ '/images/single-property-lg-13.jpg' | document_url }}" class="card-img"
+                   data-gtf-mfp="true"
+                   data-gallery-id="05"
+                   style="background-image:url('{{ "/images/single-property-13.jpg" | document_url }}')">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-6">
+        <div class="item item-size-4-3">
+            <div class="card p-0 hover-zoom-in">
+                <a href="{{ '/images/single-property-lg-14.jpg' | document_url }}" class="card-img"
+                   data-gtf-mfp="true"
+                   data-gallery-id="05"
+                   style="background-image:url('{{ "/images/single-property-14.jpg" | document_url }}')">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-6">
+        <div class="item item-size-4-3">
+            <div class="card p-0 hover-zoom-in">
+                <a href="{{ '/images/single-property-lg-15.jpg' | document_url }}" class="card-img"
+                   data-gtf-mfp="true"
+                   data-gallery-id="05"
+                   style="background-image:url('{{ "/images/single-property-15.jpg" | document_url }}')">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 mb-6">
+        <div class="item item-size-4-3">
+            <div class="card p-0 hover-zoom-in hover-change-image">
+                <a href="{{ '/images/single-property-lg-16.jpg' | document_url }}" class="card-img"
+                   data-gtf-mfp="true"
+                   data-gallery-id="05"
+                   style="background-image:url('{{ "/images/single-property-16.jpg" | document_url }}')">
+                </a>
+                <a href="#"
+                   class="card-img-overlay d-flex flex-column align-items-center justify-content-center hover-image bg-dark-opacity-04">
+                    <p class="fs-48 font-weight-600 text-white lh-1 mb-4">+12</p>
+                    <p class="fs-16 font-weight-bold text-white lh-1625 text-uppercase">View
+                        more</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Property Gallery 06</h2>
+
+{% capture example %}
+<div class="row galleries">
+    <div class="col-lg-8 mb-6 mb-lg-0">
+        <div class="item custom-size-1">
+            <div class="card p-0 hover-zoom-in">
+                <a href="{{ '/images/single-property-lg-9.jpg' | document_url }}" class="card-img"
+                   data-gtf-mfp="true"
+                   data-gallery-id="06"
+                   style="background-image:url('{{ "/images/single-property-9.jpg" | document_url }}')">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="row no-gutters m-n1 pb-7">
+            <div class="col-6 col-sm-4">
+                <div class="item item-size-1-1">
+                    <div class="card shadow-hover-xs-3 bg-white p-1">
+                        <a href="{{ '/images/single-property-lg-3.jpg' | document_url }}" class="card-img"
+                           data-gtf-mfp="true"
+                           data-gallery-id="06"
+                           style="background-image:url('{{ "/images/single-property-sm-4.jpg" | document_url }}')">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="item item-size-1-1">
+                    <div class="card shadow-hover-xs-3 bg-white p-1">
+                        <a href="{{ '/images/single-property-lg-2.jpg' | document_url }}" class="card-img"
+                           data-gtf-mfp="true"
+                           data-gallery-id="06"
+                           style="background-image:url('{{ "/images/single-property-sm-1.jpg" | document_url }}')">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="item item-size-1-1">
+                    <div class="card shadow-hover-xs-3 bg-white p-1">
+                        <a href="{{ '/images/single-property-lg-4.jpg' | document_url }}" class="card-img"
+                           data-gtf-mfp="true"
+                           data-gallery-id="06"
+                           style="background-image:url('{{ "/images/single-property-sm-2.jpg" | document_url }}')">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="item item-size-1-1">
+                    <div class="card shadow-hover-xs-3 bg-white p-1">
+                        <a href="{{ '/images/single-property-lg-1.jpg' | document_url }}" class="card-img"
+                           data-gtf-mfp="true"
+                           data-gallery-id="06"
+                           style="background-image:url('{{ "/images/single-property-sm-7.jpg" | document_url }}')">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="item item-size-1-1">
+                    <div class="card shadow-hover-xs-3 bg-white p-1">
+                        <a href="{{ '/images/single-property-lg-17.jpg' | document_url }}" class="card-img"
+                           data-gtf-mfp="true"
+                           data-gallery-id="06"
+                           style="background-image:url('{{ "/images/single-property-sm-17.jpg" | document_url }}')">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="item item-size-1-1">
+                    <div class="card shadow-hover-xs-3 bg-white p-1">
+                        <a href="{{ '/images/single-property-7.jpg' | document_url }}" class="card-img"
+                           data-gtf-mfp="true"
+                           data-gallery-id="06"
+                           style="background-image:url('{{ "/images/single-property-sm-5.jpg" | document_url }}')">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="item item-size-1-1">
+                    <div class="card shadow-hover-xs-3 bg-white p-1">
+                        <a href="{{ '/images/single-property-lg-15.jpg' | document_url }}" class="card-img"
+                           data-gtf-mfp="true"
+                           data-gallery-id="06"
+                           style="background-image:url('{{ "/images/single-property-sm-18.jpg" | document_url }}')">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4">
+                <div class="item item-size-1-1">
+                    <div class="card shadow-hover-xs-3 bg-white p-1">
+                        <a href="{{ '/images/single-property-lg-19.jpg' | document_url }}" class="card-img"
+                           data-gtf-mfp="true"
+                           data-gallery-id="06"
+                           style="background-image:url('{{ "/images/single-property-sm-19.jpg" | document_url }}')">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 p-1">
+                <div class="item item-size-1-1">
+                    <div class="card shadow-hover-xs-3 hover-change-image">
+                        <a href="{{ '/images/single-property-19.jpg' | document_url }}" class="card-img"
+                           data-gtf-mfp="true"
+                           data-gallery-id="06"
+                           style="background-image:url('{{ "/images/single-property-sm-19.jpg" | document_url }}')">
+                        </a>
+                        <a href="#"
+                           class="card-img-overlay d-flex flex-column align-items-center justify-content-center hover-image bg-dark-opacity-04 rounded-lg">
+                            <p class="fs-24 font-weight-600 text-white lh-1 mb-0">+3</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+
+<h2>Property Gallery 07</h2>
+
+{% capture example %}
+<div class="py-8">
+    <div class="galleries">
+        <div class="container position-relative">
+            <ul class="nav nav-pills position-absolute pos-fixed-top-right z-index-3 pt-4 pr-5 flex-nowrap nav-gallery"
+                role="tablist">
+                <li class="nav-item mr-2" role="presentation">
+                    <a class="nav-link p-0 active d-flex align-items-center justify-content-center w-48px h-48 bg-white text-heading bg-hover-primary hover-white rounded-circle fs-18"
+                       data-toggle="pill" href="#image-1" role="tab"
+                       aria-selected="true">
+                        <i class="fal fa-camera"></i>
+                    </a>
+                </li>
+                <li class="nav-item mr-2" role="presentation">
+                    <a class="nav-link p-0 d-flex align-items-center justify-content-center w-48px h-48 bg-white text-heading bg-hover-primary hover-white rounded-circle fs-18"
+                       data-toggle="pill" href="#map-view-1" role="tab"
+                       aria-selected="false">
+                        <i class="fal fa-map-marked-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item mr-2" role="presentation">
+                    <a class="nav-link p-0 d-flex align-items-center justify-content-center w-48px h-48 bg-white text-heading bg-hover-primary hover-white rounded-circle fs-18"
+                       data-toggle="pill" href="#street-view-1" role="tab"
+                       aria-selected="false">
+                        <i class="fal fa-street-view"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content p-0 shadow-none">
+            <div class="tab-pane fade show active" id="image-1" role="tabpanel">
+                <div class="slick-slider mx-lg-n5"
+                     data-slick-options='{"slidesToShow": 1, "autoplay":false,"centerMode":true,"infinite":true,"arrows":false,"centerPadding":"80px","responsive":[{"breakpoint": 992,"settings": {"centerMode":false}}]}'>
+                    <div class="box px-lg-5">
+                        <div class="item item-size-3-2">
+                            <div class="card p-0">
+                                <div class="card-img"
+                                     style="background-image:url('{{ "/images/single-property-21.jpg" | document_url }}')">
+                                </div>
+                                <div class="card-img-overlay d-flex align-items-center justify-content-center p-4">
+                                    <a href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                                       class="d-inline-block position-relative play-animation"
+                                       data-gtf-mfp="true" data-mfp-options='{"type":"iframe"}'>
+                                        <span class="text-primary bg-white w-78px h-78 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-play"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box px-lg-5">
+                        <div class="item item-size-3-2">
+                            <div class="card p-0">
+                                <div class="card-img"
+                                     style="background-image:url('{{ "/images/single-property-20.jpg" | document_url }}')">
+                                </div>
+                                <div class="card-img-overlay d-flex align-items-center justify-content-center p-4">
+                                    <a href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                                       class="d-inline-block position-relative play-animation"
+                                       data-gtf-mfp="true" data-mfp-options='{"type":"iframe"}'>
+                                        <span class="text-primary bg-white w-78px h-78 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-play"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box px-lg-5">
+                        <div class="item item-size-3-2">
+                            <div class="card p-0">
+                                <div class="card-img"
+                                     style="background-image:url('{{ "/images/single-property-lg-1.jpg" | document_url }}')">
+                                </div>
+                                <div class="card-img-overlay d-flex align-items-center justify-content-center p-4">
+                                    <a href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                                       class="d-inline-block position-relative play-animation"
+                                       data-gtf-mfp="true" data-mfp-options='{"type":"iframe"}'>
+                                        <span class="text-primary bg-white w-78px h-78 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-play"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="map-view-1" role="tabpanel">
+                <div style="height:620px;" class="position-relative">
+                    <div id="map2" class="mapbox-gl map-point-animate"
+                         style="height: 620px"
+                         data-mapbox-access-token="{{ site.data.map-access-token.access-token}}"
+                         data-mapbox-options='{"center":[-73.981566, 40.739011],"setLngLat":[-73.981566, 40.739011],"container":"map2"}'
+                         data-mapbox-marker='[{"position":[-73.981566, 40.739011],"className":"marker","backgroundImage":"{{ "/images/googlle-market-01.png" | document_url }}","backgroundRepeat":"no-repeat","width":"32px","height":"40px"}]'
+                    ></div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="street-view-1" role="tabpanel">
+                <div class="py-10"
+                     style="background-image: url('{{ "/images/BG2.jpg" | document_url }}');background-size: cover;background-position: center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}

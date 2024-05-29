@@ -1,0 +1,29 @@
+---
+layout: page-title-docs
+title: "Page Tile 06"
+category_text: Page Title
+category_url: /docs/templates/page-title.html
+---
+{% include components/page-title/docs.html %}
+<div class="py-16 page-title bg-white-overlay"
+     style="background-image: url('{{ "/images/BG4.jpg" | document_url }}');background-size: cover;background-position: center">
+    <div class="container">
+        <h1 class="fs-42 lh-15 mb-0 text-heading font-weight-500 text-center mxw-521 py-3">Latest news are on
+            top all times</h1>
+    </div>
+</div>
+<section class="py-10">
+    <div class="container">
+        <div class="bg-gray-01 overflow-auto">
+{% highlight html %}
+<div class="py-16 page-title bg-white-overlay"
+     style="background-image: url('{{ "/images/BG4.jpg" | document_url }}');background-size: cover;background-position: center">
+    <div class="container">
+        <h1 class="fs-42 lh-15 mb-0 text-heading font-weight-500 text-center mxw-521 py-3">Latest news are on
+            top all times</h1>
+    </div>
+</div>
+{% endhighlight %}
+        </div>
+    </div>
+</section>

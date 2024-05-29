@@ -1,0 +1,156 @@
+properties-grid-01:
+  - title: Villa on Hollywood Boulevard
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-12.jpg
+    for-rent: false
+    for-sale: true
+    featured: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-13.jpg
+    for-rent: false
+    for-sale: true
+    featured: false
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Affordable Urban House
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-14.jpg
+    for-rent: false
+    for-sale: true
+    featured: false
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Villa on Hollywood Boulevard
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-78.jpg
+    for-rent: true
+    for-sale: false
+    featured: false
+    price: $550
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-74.jpg
+    for-rent: true
+    for-sale: false
+    featured: false
+    price: $550
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Garden Gingerbread House
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-16.jpg
+    for-rent: false
+    for-sale: true
+    featured: false
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Affordable Urban House
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-14.jpg
+    for-rent: false
+    for-sale: true
+    featured: false
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Villa on Hollywood Boulevard
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-15.jpg
+    for-rent: false
+    for-sale: true
+    featured: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Explore Old Barcelona
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-75.jpg
+    for-rent: true
+    for-sale: false
+    featured: false
+    price: $550
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Affordable Urban House
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-76.jpg
+    for-rent: true
+    for-sale: false
+    featured: true
+    price: $5.700
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Affordable Urban House
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-13.jpg
+    for-rent: false
+    for-sale: true
+    featured: false
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+
+  - title: Affordable Urban House
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-77.jpg
+    for-rent: true
+    for-sale: false
+    featured: true
+    price: $5.700
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft

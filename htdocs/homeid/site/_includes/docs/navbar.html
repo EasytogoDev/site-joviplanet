@@ -1,0 +1,18 @@
+<header class="navbar navbar-expand navbar-dark bg-secondary py-2 px-0 flex-column flex-md-row bd-navbar">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="{{ '/docs/index.html' | document_url }}">
+			<img src="{{ '/images/logo-white.png' | document_url }}" alt="{{site.title}}">
+		</a>
+		<div class="navbar-nav-scroll ml-auto">
+			<ul class="navbar-nav flex-row">
+				<li class="nav-item">
+					<a class="nav-link px-3 {% if page.title == 'Get Started' %}active{% endif %}" href="{{ '/docs/getting-started/dev-environment-setup.html' | document_url }}"><i class="fal fa-th mr-1"></i> Get Started</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link px-3 {% if page.title == 'Components' %}active{% endif %}" href="{{ '/docs/index.html' | document_url }}"><i class="fal fa-laptop-code mr-1"></i> Documentation</a>
+				</li>
+			</ul>
+		</div>
+		<a class="btn btn-primary d-none d-lg-inline-block ml-5 btn-md px-6 py-2" href="{{ '/index.html' | document_url }}">Live Preview</a>
+	</div>
+</header>

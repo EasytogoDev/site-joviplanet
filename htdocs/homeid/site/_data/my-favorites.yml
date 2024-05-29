@@ -1,0 +1,88 @@
+- title: Home in Metric Way
+  image: /images/properties-grid-38.jpg
+  url: /single-property-1.html
+  address: 1421 San Pedro St, Los Angeles
+  price: $.1250.000
+  type: sale
+  feature:
+    bed: 3 Br
+    bath: 3 Ba
+    area: 2300 Sq.Ft
+    garage: 1 Gr
+- title: Affordable Urban House
+  image: /images/properties-grid-01.jpg
+  url: /single-property-1.html
+  address: 1421 San Pedro St, Los Angeles
+  price: $550
+  type: rent
+  feature:
+    bed: 3 Br
+    bath: 3 Ba
+    area: 2300 Sq.Ft
+    garage: 1 Gr
+- title: Villa on Hollywood Boulevard
+  image: /images/properties-grid-03.jpg
+  url: /single-property-1.html
+  address: 1421 San Pedro St, Los Angeles
+  price: $550
+  type: rent
+  feature:
+    bed: 3 Br
+    bath: 3 Ba
+    area: 2300 Sq.Ft
+    garage: 1 Gr
+- title: Villa on Hollywood Boulevard
+  image: /images/properties-grid-02.jpg
+  url: /single-property-1.html
+  address: 1421 San Pedro St, Los Angeles
+  price: $.1250.000
+  type: sale
+  feature:
+    bed: 3 Br
+    bath: 3 Ba
+    area: 2300 Sq.Ft
+    garage: 1 Gr
+- title: Home in Metric Way
+  image: /images/properties-grid-04.jpg
+  url: /single-property-1.html
+  address: 1421 San Pedro St, Los Angeles
+  price: $.1250.000
+  type: sale
+  feature:
+    bed: 3 Br
+    bath: 3 Ba
+    area: 2300 Sq.Ft
+    garage: 1 Gr
+- title: Home in Metric Way
+  image: /images/properties-grid-06.jpg
+  url: /single-property-1.html
+  address: 1421 San Pedro St, Los Angeles
+  price: $.1250.000
+  type: sale
+  feature:
+    bed: 3 Br
+    bath: 3 Ba
+    area: 2300 Sq.Ft
+    garage: 1 Gr
+- title: Home in Metric Way
+  image: /images/properties-grid-05.jpg
+  url: /single-property-1.html
+  address: 1421 San Pedro St, Los Angeles
+  price: $.1250.000
+  type: sale
+  feature:
+    bed: 3 Br
+    bath: 3 Ba
+    area: 2300 Sq.Ft
+    garage: 1 Gr
+- title: Affordable Urban House
+  image: /images/properties-grid-39.jpg
+  url: /single-property-1.html
+  address: 1421 San Pedro St, Los Angeles
+  price: $550
+  type: rent
+  feature:
+    bed: 3 Br
+    bath: 3 Ba
+    area: 2300 Sq.Ft
+    garage: 1 Gr

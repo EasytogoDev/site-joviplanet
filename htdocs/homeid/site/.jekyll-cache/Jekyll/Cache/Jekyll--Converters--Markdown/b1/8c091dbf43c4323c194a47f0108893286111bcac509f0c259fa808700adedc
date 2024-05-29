@@ -1,0 +1,127 @@
+I"u<h2 id="inline-code">Inline code</h2>
+
+<p>Wrap inline snippets of code with <code class="language-plaintext highlighter-rouge">&lt;code&gt;</code>. Be sure to escape HTML angle brackets.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-81" role="tab" aria-controls="result-81" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-81" role="tab" aria-controls="html-81" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-81">
+        <div class="tab-pane fade show active" id="result-81" role="tabpanel" aria-labelledby="result-81"><div class="bd-example">
+For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+</div></div>
+    <div class="tab-pane fade" id="html-81" role="tabpanel" aria-labelledby="html-81">
+<figure class="highlight"><pre><code class="language-html" data-lang="html">For example, <span class="nt">&lt;code&gt;</span><span class="ni">&amp;lt;</span>section<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> should be wrapped as inline.</code></pre></figure>
+</div>
+</div>
+</div>
+
+<h2 id="code-blocks">Code blocks</h2>
+
+<p>Use <code class="language-plaintext highlighter-rouge">&lt;pre&gt;</code>s for multiple lines of code. Once again, be sure to escape any angle brackets in the code for proper rendering. You may optionally add the <code class="language-plaintext highlighter-rouge">.pre-scrollable</code> class, which will set a max-height of 340px and provide a y-axis scrollbar.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-82" role="tab" aria-controls="result-82" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-82" role="tab" aria-controls="html-82" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-82">
+        <div class="tab-pane fade show active" id="result-82" role="tabpanel" aria-labelledby="result-82"><div class="bd-example">
+<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;
+</code></pre>
+</div></div>
+    <div class="tab-pane fade" id="html-82" role="tabpanel" aria-labelledby="html-82">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;pre&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>Sample text here...<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>And another line of sample text here...<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span>
+<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h2 id="variables">Variables</h2>
+
+<p>For indicating variables use the <code class="language-plaintext highlighter-rouge">&lt;var&gt;</code> tag.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-83" role="tab" aria-controls="result-83" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-83" role="tab" aria-controls="html-83" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-83">
+        <div class="tab-pane fade show active" id="result-83" role="tabpanel" aria-labelledby="result-83"><div class="bd-example">
+<var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+</div></div>
+    <div class="tab-pane fade" id="html-83" role="tabpanel" aria-labelledby="html-83">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;var&gt;</span>y<span class="nt">&lt;/var&gt;</span> = <span class="nt">&lt;var&gt;</span>m<span class="nt">&lt;/var&gt;&lt;var&gt;</span>x<span class="nt">&lt;/var&gt;</span> + <span class="nt">&lt;var&gt;</span>b<span class="nt">&lt;/var&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h2 id="user-input">User input</h2>
+
+<p>Use the <code class="language-plaintext highlighter-rouge">&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-84" role="tab" aria-controls="result-84" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-84" role="tab" aria-controls="html-84" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-84">
+        <div class="tab-pane fade show active" id="result-84" role="tabpanel" aria-labelledby="result-84"><div class="bd-example">
+To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br />
+To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+</div></div>
+    <div class="tab-pane fade" id="html-84" role="tabpanel" aria-labelledby="html-84">
+<figure class="highlight"><pre><code class="language-html" data-lang="html">To switch directories, type <span class="nt">&lt;kbd&gt;</span>cd<span class="nt">&lt;/kbd&gt;</span> followed by the name of the directory.<span class="nt">&lt;br&gt;</span>
+To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span class="nt">&lt;/kbd&gt;</span> + <span class="nt">&lt;kbd&gt;</span>,<span class="nt">&lt;/kbd&gt;&lt;/kbd&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+<h2 id="sample-output">Sample output</h2>
+
+<p>For indicating sample output from a program use the <code class="language-plaintext highlighter-rouge">&lt;samp&gt;</code> tag.</p>
+
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-85" role="tab" aria-controls="result-85" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-85" role="tab" aria-controls="html-85" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-85">
+        <div class="tab-pane fade show active" id="result-85" role="tabpanel" aria-labelledby="result-85"><div class="bd-example">
+<samp>This text is meant to be treated as sample output from a computer program.</samp>
+</div></div>
+    <div class="tab-pane fade" id="html-85" role="tabpanel" aria-labelledby="html-85">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;samp&gt;</span>This text is meant to be treated as sample output from a computer program.<span class="nt">&lt;/samp&gt;</span></code></pre></figure>
+</div>
+</div>
+</div>
+
+:ET

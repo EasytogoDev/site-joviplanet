@@ -1,0 +1,110 @@
+{%- comment -%}
+  Usage: include example.html content=markup [args],
+  where content is a capture with the HTML content
+
+  args can be one of the following:
+    id - null (default)
+    class - "bd-example" (default)
+    optional: hide_preview - disabled (default)
+    optional: hide_markup - disabled (default)
+{%- endcomment -%}
+
+{%- assign id = include.id -%}
+{%- assign class = include.class -%}
+
+{% capture no_print_increment %}
+{% increment index_id %}
+{% endcapture %}
+{% if include.hide_preview != null or include.hide_markup != null %}
+    {%- if include.hide_preview == null -%}
+    <div{% if id %} id="{{ id }}"{% endif %} class="bd-example{% if class %} {{ class }}{% endif %}">
+    {{- include.content -}}
+    </div>
+    {%- if include.hide_markup == null -%}
+    {%- highlight html -%}
+    {%- if include.content contains '<svg class="bd-placeholder-img' -%}
+              {%- assign modified_content = include.content
+                | replace: '<svg class="bd-placeholder-img', '✂️<svg class="bd-placeholder-img'
+                | replace: '</svg>', '</svg>✂️'
+                | split: '✂️' -%}
+
+              {%- if include.content contains 'bd-placeholder-img ' -%}
+                {%- assign image_class = include.content
+                  | replace_first: 'bd-placeholder-img', 'bd-placeholder-img ✂️'
+                  | replace: '" width="', '✂️" width="'
+                  | split: '✂️' -%}
+                {%- assign image_class = image_class[1] | replace: 'bd-placeholder-img-lg', '' | strip -%}
+              {%- endif -%}
+
+              {%- for content_chunk in modified_content -%}
+                {%- if content_chunk contains '<svg class="bd-placeholder-img' -%}
+    {%- capture img_placeholder -%}
+    <img src="..." {% if image_class %}class="{{ image_class }}" {% endif %}alt="...">
+    {%- endcapture -%}
+    {{- img_placeholder -}}
+    {%- else -%}
+    {{- content_chunk -}}
+    {%- endif -%}
+    {%- endfor -%}
+    {%- else -%}
+    {{- include.content -}}
+    {%- endif -%}
+    {%- endhighlight -%}
+    {%- endif -%}
+    {%- endif -%}
+{% else %}
+<div class="bd-example-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#result-{{index_id}}" role="tab" aria-controls="result-{{index_id}}" aria-selected="true">Result</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#html-{{index_id}}" role="tab" aria-controls="html-{{index_id}}" aria-selected="false">HTML Code</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="examplte-tab-content-{{index_id}}">
+        <div class="tab-pane fade show active" id="result-{{index_id}}" role="tabpanel" aria-labelledby="result-{{index_id}}">
+            {%- if include.hide_preview == null -%}
+            <div{% if id %} id="{{ id }}"{% endif %} class="bd-example{% if class %} {{ class }}{% endif %}">
+            {{- include.content -}}
+        </div>
+        {%- endif -%}
+    </div>
+    <div class="tab-pane fade" id="html-{{index_id}}" role="tabpanel" aria-labelledby="html-{{index_id}}">
+        {%- if include.hide_markup == null -%}
+        {%- highlight html -%}
+        {%- if include.content contains '<svg class="bd-placeholder-img' -%}
+                  {%- assign modified_content = include.content
+                    | replace: '<svg class="bd-placeholder-img', '✂️<svg class="bd-placeholder-img'
+                    | replace: '</svg>', '</svg>✂️'
+                    | split: '✂️' -%}
+
+                  {%- if include.content contains 'bd-placeholder-img ' -%}
+                    {%- assign image_class = include.content
+                      | replace_first: 'bd-placeholder-img', 'bd-placeholder-img ✂️'
+                      | replace: '" width="', '✂️" width="'
+                      | split: '✂️' -%}
+                    {%- assign image_class = image_class[1] | replace: 'bd-placeholder-img-lg', '' | strip -%}
+                  {%- endif -%}
+
+                  {%- for content_chunk in modified_content -%}
+                    {%- if content_chunk contains '<svg class="bd-placeholder-img' -%}
+        {%- capture img_placeholder -%}
+        <img src="..." {% if image_class %}class="{{ image_class }}" {% endif %}alt="...">
+        {%- endcapture -%}
+        {{- img_placeholder -}}
+        {%- else -%}
+        {{- content_chunk -}}
+        {%- endif -%}
+        {%- endfor -%}
+        {%- else -%}
+        {{- include.content -}}
+        {%- endif -%}
+        {%- endhighlight -%}
+        {%- endif -%}
+    </div>
+</div>
+</div>
+{% endif %}
+

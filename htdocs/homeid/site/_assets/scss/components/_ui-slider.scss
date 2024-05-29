@@ -1,0 +1,44 @@
+.slider-range {
+	.ui-slider {
+		height: 3px;
+		border: none;
+	}
+
+	.ui-slider-handle {
+		width: 18px;
+		height: 18px;
+		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.22);
+		border: none;
+		border-radius: 50%;
+		top: -9px;
+		margin-left: 0;
+		background-color: $white;
+
+		&:focus {
+			border: none;
+			outline: none;
+		}
+	}
+
+
+	.amount:focus {
+		border: none;
+		outline: none;
+	}
+}
+.slider-range-secondary{
+	.ui-slider {
+		background-color: #ededed;
+	}
+	.ui-slider-range {
+		background-color: $indigo;
+	}
+}
+.slider-range-primary{
+	.ui-slider {
+		background-color: $white;
+	}
+	.ui-slider-range {
+		background-color: $primary;
+	}
+}

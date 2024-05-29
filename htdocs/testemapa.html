@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocomplete de Cidades</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/algolia-places/dist/algolia-places.min.css">
+    <style>
+        #autocomplete {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Autocomplete de Cidades</h1>
+    <input type="text" id="autocomplete" placeholder="Digite o nome da cidade">
+
+    <script src="https://cdn.jsdelivr.net/npm/algolia-places/dist/algolia-places.min.js"></script>
+    <script>
+        (function() {
+            var placesAutocomplete = places({
+                appId: 'YYDPC5R6HY',
+                apiKey: '690a43492414704f73fe254bd0ba61c6"',
+                container: document.querySelector('#autocomplete'),
+                templates: {
+                    suggestion: function(suggestion) {
+                        return suggestion.name + ', ' + suggestion.administrative || suggestion.city || '';
+                    }
+                }
+            }).configure({
+                type: 'city',
+                aroundLatLngViaIP: false,
+                countries: ['us', 'fr', 'br', 'cn', 'ru', 'jp', 'in', 'es', 'pt', 'de']
+            });
+
+            placesAutocomplete.on('change', function resultSelected(e) {
+                console.log(e.suggestion);
+            });
+        })();
+    </script>
+</body>
+</html>

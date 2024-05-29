@@ -1,0 +1,90 @@
+---
+layout: get-started
+title: Project structure
+group: getting-started
+toc: true
+---
+<div class="mb-5">
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th class="w-25">Folder / File name</th>
+                    <th class="w-75">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="w-25"><span class="font-weight-medium">homeid</span></td>
+                    <td class="w-75">Folder contains all template source and production files.</td>
+                </tr>
+                <tr>
+                    <td class="w-25"><span class="font-weight-medium">homeid / site</span></td>
+                    <td class="w-75">This folder holds all template source files like .md, .html, .yml, .scss, .js that
+                        are then processed (compiled / minified) to <code>dist</code> folder.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w-25"><span class="font-weight-medium">homeid / dist</span></td>
+                    <td class="w-75">Folder contains all template distribution files like .html, .css, .js that have
+                        been processed (compiled / minified) from <code>site</code> folder using Node.js and Gulp.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w-25"><span class="font-weight-medium">homeid / dist / vendors</span></td>
+                    <td class="w-75">This folder contains all vendor plugins' <code>.js / .css</code> files.</td>
+                </tr>
+                <tr>
+                    <td class="w-25"><span class="font-weight-medium">homeid / package.json</span></td>
+                    <td class="w-75">File contains meta data about your app or module. Most importantly, it includes the
+                        list of dependencies to install from npm when running <kbd>npm install</kbd>.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w-25"><span class="font-weight-medium">homeid / gulpfile.js</span></td>
+                    <td class="w-75">Configuration file for Gulp library. It contains all tasks you want to perform with
+                        Gulp. Learn more about it from <a href="working-with-gulp.html">Working with Gulp</a> section or
+                        <a href="https://github.com/gulpjs/gulp/blob/v4.0.0/docs/API.md" target="_blank">official Gulp
+                            documentation</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w-25"><span class="font-weight-medium">homeid / site/_assets / js</span></td>
+                    <td class="w-75">This folder contains main <code>theme.js</code> that is processed (compiled /
+                        minified) to <code>dist/js/theme.min.js</code>.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w-25"><span class="font-weight-medium">homeid / site/_assets / scss</span></td>
+                    <td class="w-75">This folder contains all project <code>sass</code> files that are compiled and
+                        minified to styles in <code>dist/css/</code> folder.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w-25"><span class="font-weight-medium">homeid / scss /</span></td>
+                    <td class="w-75">This folder contains all <code>.scss</code> of bootstrap framework
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w-25"><span class="font-weight-medium">homeid / js /</span></td>
+                    <td class="w-75">This folder contains all <code>.js</code> of bootstrap framework
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="alert alert-info mb-4 rounded-lg" role="alert">
+        <div class="d-flex align-items-center"><span class="d-none d-sm-block fs-20 mr-4">
+            <i class="fal fa-info-circle"></i>
+        </span>
+            <p class="fs-16 mb-0"><span class="font-weight-semibold">Note:</span> if you do not use Pro Front-End
+                setup with Node.js and Gulp and want directly edit html / css / js files you should be looking into
+                <span class="font-weight-semibold">dist</span> folder.</p>
+        </div>
+    </div>
+    <p>Whether you work with Node.js and Gulp or not you can still take advantage of preprocessors for HTML and CSS.<br>In
+        this case you might want to learn <a href="using-jekyll-sass.html" class="font-weight-medium">how to use Jekyll
+            and Sass</a>.</p>
+</div>
+
+

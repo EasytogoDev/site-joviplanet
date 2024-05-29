@@ -1,0 +1,25 @@
+---
+layout: get-started
+title: Browser support
+group: getting-started
+toc: true
+---
+<div class="mb-5">
+    <p class="mb-3">Vendor prefixes are not used inside SCSS instead we use <a
+            href="https://github.com/postcss/autoprefixer"
+            class="font-weight-500" target="_blank"
+            rel="noopener">Autoprefixer</a> to handle intended
+        browser support via CSS prefixes. After compilation CSS styles are passed through Autoprefixer to add necessary
+        vendor prefixes. As you know vendor prefixes are important to ensure cross-browser compatibility of latest CSS3
+        features.</p>
+    <p class="fs-20 mb-3">Customize browser support via Autoprefixer settings</p>
+    <p>Autoprefixer is integral part of Gulp / Node building process. So to customize its settings you need to go to
+        <code>package.json</code> and find <code>"browserslist"</code> array. It's currently set to the Bootstrap's
+        default list of browsers.</p>
+    <p>Generally it's a good practice to collect some analytics about what Browsers/OSs your visitors use. And then
+        customize Autoprefixer settings based on this data.</p>
+    <p class="mb-5">For more information about available Browserlist options visit <a
+            href="https://github.com/browserslist/browserslist" class="font-weight-medium" target="_blank"
+            rel="noopener">https://github.com/browserslist/browserslist</a>.</p>
+    <img src="{{ '/images/browser-list.jpg' | document_url }}" alt="Browser list">
+</div>

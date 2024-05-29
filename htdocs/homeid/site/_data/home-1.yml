@@ -1,0 +1,278 @@
+properties-01:
+  - title: Home in Metric Way
+    image: /images/properties-grid-02.jpg
+    url: /single-property-1.html
+    categories:
+      - name: featured
+        class: badge-orange
+      - name: for Sale
+        class: badge-primary
+    address: 1421 San Pedro St, Los Angeles
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $1.250.000
+    is_favorite: true
+  - title: Affordable Urban House
+    image: /images/properties-grid-01.jpg
+    url: /single-property-1.html
+    categories:
+      - name: for Sale
+        class: badge-primary
+    address: 1421 San Pedro St, Los Angeles
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $1.250.000
+    is_favorite: false
+  - title: Villa on Hollywood Boulevard
+    image: /images/properties-grid-03.jpg
+    url: /single-property-1.html
+    categories:
+      - name: for Sale
+        class: badge-primary
+    address: 1421 San Pedro St, Los Angeles
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $1.250.000
+    is_favorite: false
+  - title: Home in Metric Way
+    image: /images/properties-grid-04.jpg
+    url: /single-property-1.html
+    categories:
+      - name: featured
+        class: badge-orange
+      - name: for Sale
+        class: badge-primary
+    address: 1421 San Pedro St, Los Angeles
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $1.250.000
+    is_favorite: false
+  - title: Home in Metric Way
+    image: /images/properties-grid-02.jpg
+    url: /single-property-1.html
+    categories:
+      - name: featured
+        class: badge-orange
+      - name: for Sale
+        class: badge-primary
+    address: 1421 San Pedro St, Los Angeles
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $1.250.000
+    is_favorite: false
+
+info-box:
+  - title: Apartment
+    image: /images/verified.png
+    url: /listing-grid-with-left-filter.html
+  - title: House
+    image: /images/sofa.png
+    url: /listing-grid-with-left-filter.html
+  - title: Office
+    image: /images/architecture-and-city.png
+    url: /listing-grid-with-left-filter.html
+  - title: Villa
+    image: /images/eco-house.png
+    url: /listing-grid-with-left-filter.html
+  - title: Apartment
+    image: /images/verified.png
+    url: /listing-grid-with-left-filter.html
+
+properties-02:
+  - title: Home in Metric Way
+    image: /images/properties-grid-02.jpg
+    url: /single-property-1.html
+    categories:
+      - name: featured
+        class: badge-orange
+      - name: for Sale
+        class: badge-indigo
+    address: 1421 San Pedro St, Los Angeles
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $550
+    time: month
+    is_favorite: true
+  - title: Affordable Urban House
+    image: /images/properties-grid-05.jpg
+    url: /single-property-1.html
+    categories:
+      - name: for Sale
+        class: badge-indigo
+    address: 1421 San Pedro St, Los Angeles
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $5.700
+    time: year
+    is_favorite: false
+  - title: Villa on Hollywood Boulevard
+    image: /images/properties-grid-06.jpg
+    url: /single-property-1.html
+    categories:
+      - name: for Sale
+        class: badge-indigo
+    address: 1421 San Pedro St, Los Angeles
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $550
+    time: month
+    is_favorite: false
+  - title: Home in Metric Way
+    image: /images/properties-grid-07.jpg
+    url: /single-property-1.html
+    categories:
+      - name: featured
+        class: badge-orange
+      - name: for Sale
+        class: badge-indigo
+    address: 1421 San Pedro St, Los Angeles
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $5.700
+    time: year
+    is_favorite: false
+  - title: Home in Metric Way
+    image: /images/properties-grid-02.jpg
+    url: /single-property-1.html
+    categories:
+      - name: featured
+        class: badge-orange
+      - name: for Sale
+        class: badge-indigo
+    address: 1421 San Pedro St, Los Angeles
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $550
+    time: month
+    is_favorite: true
+
+properties-03:
+  - title: New York
+    image: /images/properties-city-01.jpg
+    url: /single-property-1.html
+    price: $540.000 - $900.000
+  - title: Los Angeles
+    image: /images/properties-city-02.jpg
+    url: /single-property-1.html
+    price: $520.000 - $700.000
+  - title: San Jose
+    image: /images/properties-city-03.jpg
+    url: /single-property-1.html
+    price: $340.000 - $600.000
+  - title: Fort Worth
+    image: /images/properties-city-04.jpg
+    url: /single-property-1.html
+    price: $240.000 - $660.000
+  - title: Kansas City
+    image: /images/properties-city-05.jpg
+    url: /single-property-1.html
+    price: $380.000 - $680.000
+
+partner:
+  - is_hover_image: true
+    image: /images/partner-1.png
+    hover_image: /images/partner-hover-1.png
+    image_alt: Partner 1
+  - is_hover_image: true
+    image: /images/partner-2.png
+    hover_image: /images/partner-hover-2.png
+    image_alt: Partner 2
+  - is_hover_image: true
+    image: /images/partner-3.png
+    hover_image: /images/partner-hover-3.png
+    image_alt: Partner 3
+  - is_hover_image: false
+    image: /images/partner-4.png
+    image_alt: Partner 4
+  - is_hover_image: true
+    image: /images/partner-5.png
+    hover_image: /images/partner-hover-5.png
+    image_alt: Partner 5
+  - is_hover_image: false
+    image: /images/partner-6.png
+    image_alt: Partner 6
+
+info-box-02:
+  - title: Buy a new home
+    descriptions: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    image: /images/group-16.png
+    url: /single-property-1.html
+  - title: Sell a home
+    descriptions: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    image: /images/group-17.png
+    url: /single-property-1.html
+  - title: Rent a home
+    descriptions: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    image: /images/group-21.png
+    url: /single-property-1.html
+

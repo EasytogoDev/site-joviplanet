@@ -1,0 +1,78 @@
+.accordion .btn {
+	transition: all .3s;
+	&:focus {
+		box-shadow: none !important;
+	}
+	&:focus, &:hover {
+		text-decoration: none;
+	}
+	&:before {
+		position: absolute;
+		font-family: "Font Awesome 5 Pro";
+	}
+}
+
+.accordion-01 .btn {
+	&:before {
+		right: 1.5rem;
+		font-size: 18px;
+	}
+	&.collapsed {
+		color: $dark;
+		background-color: #fff;
+		&:before {
+			content: "\f107";
+		}
+	}
+	&:not(.collapsed) {
+		color: #fff;
+		background-color: $secondary;
+		&::before {
+			content: "\f106";
+		}
+	}
+}
+
+.accordion-02 .btn {
+	&:before {
+		left: 0;
+		font-size: 22px;
+	}
+	&.collapsed {
+		color: $text-muted;
+		&:before {
+			content: "\f32d";
+		}
+	}
+	&:not(.collapsed) {
+		color: $heading-color;
+		&::before {
+			color: $primary;
+			content: "\f331";
+		}
+	}
+}
+
+.accordion-03 .heading{
+	cursor: pointer;
+	&:before {
+		position: absolute;
+		font-family: "Font Awesome 5 Pro";
+		right: 30px;
+		font-size: 18px;
+	}
+	&.collapsed {
+		&:before {
+			content: "\f107";
+		}
+	}
+	&:not(.collapsed) {
+		background-color: #ffffff !important;
+		&::before {
+			content: "\f106";
+		}
+	}
+	&.bg-gray-01{
+		background-color: #f8f8f8 !important;
+	}
+}

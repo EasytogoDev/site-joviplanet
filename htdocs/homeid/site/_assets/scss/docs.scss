@@ -1,0 +1,30 @@
+// Contain custom variables for current template
+@import "custom-variables";
+// Override Bootstrap core variables
+@import "theme-variables";
+@import "../../../scss/bootstrap/functions";
+@import "../../../scss/bootstrap/variables";
+@import "../../../scss/bootstrap/mixins";
+// Load docs reboot
+@import "docs/reboot";
+// Load docs components
+@import "docs/variables";
+@import "docs/nav";
+@import "docs/masthead";
+@import "docs/content";
+@import "docs/skippy";
+@import "docs/sidebar";
+@import "docs/footer";
+@import "docs/component-examples";
+@import "docs/buttons";
+@import "docs/callouts";
+@import "docs/browser-bugs";
+@import "docs/brand";
+@import "docs/colors";
+@import "docs/clipboard-js";
+@import "docs/placeholder-img";
+// Load docs dependencies
+@import "docs/syntax";
+@import "docs/anchor";
+@import "docs/algolia";
+

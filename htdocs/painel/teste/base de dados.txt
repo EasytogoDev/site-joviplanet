@@ -1,0 +1,17 @@
+CREATE DATABASE IF NOT EXISTS `data_prod`;
+USE `data_prod`;
+
+CREATE TABLE IF NOT EXISTS `cad_itens` (
+  `cad_id_item` int(11) NOT NULL AUTO_INCREMENT,
+  `cad_descricao` varchar(100) NOT NULL DEFAULT '',
+  `cad_ordem` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`cad_id_item`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `cad_itens` (`cad_id_item`, `cad_descricao`, `cad_ordem`) VALUES
+	(1, 'ABACATE', 1),
+	(2, 'BANANA', 2),
+	(3, 'MORANGO', 3),
+	(4, 'AMEIXA', 4),
+	(5, 'UVA', 5);

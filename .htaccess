@@ -1,0 +1,26 @@
+##RewriteEngine on
+##RewriteCond %{REQUEST_FILENAME} !-f 
+##RewriteCond %{REQUEST_FILENAME} !-d  
+##RewriteRule ^([a-z0-9+_-]+)\/?([a-z0-9+_-]+)?\/?([a-z0-9+_-]+)?\/?([a-z0-9+_-]+)?\/?([a-z0-9+_-]+)?\/?([a-�-�a-zA-Z0-9+_\-\/.]+)?$ /index.php?make=$1&pga=$2&pgb=$3&pgc=$4&pgd=$5
+##Options All
+Options All
+
+RewriteEngine On
+
+# Excluir regras de reescrita para URLs que correspondem a arquivos reais
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# URLs amigáveis para a index.php
+RewriteRule ^([a-zA-Z0-9+_-]+)$ index.php?make=$1 [L,QSA]
+RewriteRule ^([a-zA-Z0-9+_-]+)/([a-zA-Z0-9+_-]+)$ index.php?make=$1&pga=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9+_-]+)/([a-zA-Z0-9+_-]+)/([a-zA-Z0-9+_-]+)$ index.php?make=$1&pga=$2&pgb=$3 [L,QSA]
+RewriteRule ^([a-zA-Z0-9+_-]+)/([a-zA-Z0-9+_-]+)/([a-zA-Z0-9+_-]+)/([a-zA-Z0-9+_-]+)$ index.php?make=$1&pga=$2&pgb=$3&pgc=$4 [L,QSA]
+RewriteRule ^([a-zA-Z0-9+_-]+)/([a-zA-Z0-9+_-]+)/([a-zA-Z0-9+_-]+)/([a-zA-Z0-9+_-]+)/([a-zA-Z0-9+_-]+)$ index.php?make=$1&pga=$2&pgb=$3&pgc=$4&pgd=$5 [L,QSA]
+
+# Permitir acesso direto à página de busca
+RewriteRule ^result-search$ /result-search.php [L]
+
+# Manipular a busca
+RewriteCond %{QUERY_STRING} ^(.+)$
+RewriteRule ^result-search$ /result-search.php?%1 [L]

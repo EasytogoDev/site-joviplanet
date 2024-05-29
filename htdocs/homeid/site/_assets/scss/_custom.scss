@@ -1,0 +1,150 @@
+a {
+	transition: all 0.2s;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+svg.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+}
+
+button:focus {
+	outline: none;
+}
+
+.map-info {
+	max-width: 370px;
+	bottom: 72px;
+}
+
+[data-animate] {
+	opacity: 0;
+}
+
+[data-animate].animated {
+	opacity: 1;
+}
+
+.custom-input-group {
+	.form-control, .btn {
+		height: 62px;
+		line-height: 20px;
+	}
+}
+
+.list-layout {
+	.active {
+		color: $dark !important;
+	}
+}
+
+.rating-progress {
+	height: 4px;
+	background-color: #ededed;
+}
+
+.rate-input {
+	direction: rtl;
+
+	input {
+		display: none;
+	}
+
+	label {
+		margin-left: -2px;
+		margin-right: -2px;
+		color: $border-color;
+		font-size: 20px;
+	}
+
+	label:hover,
+	label:hover ~ label {
+		color: $warning;
+	}
+
+	input:checked ~ label {
+		color: $warning;
+	}
+
+	&:hover > input:checked ~ label {
+		color: $warning;
+	}
+
+}
+
+.gtf-back-to-top {
+	opacity: 0;
+	transition: opacity 0.5s;
+
+	&.in {
+		opacity: 1;
+	}
+}
+
+.custom-img-ft-landing {
+	top: -35px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.landing-banner {
+	background-image: url('../images/bg-banner-landing-02.png'), url('../images/bg-banner-landing-01.png');
+	background-position: left bottom, right top;
+	background-repeat: no-repeat;
+	@include media-breakpoint-down(lg) {
+		height: calc(100vh - 72px) !important;
+	}
+	@include media-breakpoint-down(md) {
+		.display-3 {
+			font-size: 30px;
+		}
+	}
+}
+
+.landing-title-light {
+	color: #eaeff6;
+}
+
+.bg-landing-featur-01 {
+	background-image: url("../images/bg-landing-feature.png");
+	background-color: #e9edf2;
+	background-position: center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: auto, auto;
+}
+
+.powerful-dashboard-img {
+	@include media-breakpoint-up(xl) {
+		position: absolute;
+		top: -100px;
+		left: -50px;
+		max-width: 450px;
+	}
+	@include media-breakpoint-up(xxl) {
+		position: absolute;
+		top: -200px;
+		left: -150px;
+		max-width: 520px;
+	}
+
+}
+
+.lading-dashboard-img {
+	@include media-breakpoint-up(xl) {
+		position: relative;
+		right: -9%;
+	}
+}
+

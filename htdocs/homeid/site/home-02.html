@@ -1,0 +1,483 @@
+---
+layout: home-2
+title: "Home 02"
+category_text: "Home"
+category_url: /home-02.html
+---
+
+<section>
+    <div style="background-image: url('{{ "/images/bg-home-02.jpg" | document_url }}')" class="py-lg-17 py-11 bg-cover">
+        <div class="container mt-lg-9" data-animate="zoomIn">
+            <p class="mb-5 text-white text-center fs-md-22 fs-18 font-weight-600">Find Your Dream Home</p>
+            <h2 class="text-white text-center display-2 font-weight-light mb-10">Searching for the Best Places</h2>
+            <div class="mxw-670 position-relative z-index-2">
+                <input class="search-field" type="hidden" name="status" value="for-sale"
+                       data-default-value="">
+                <ul class="nav nav-pills property-search-status-tab">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link btn shadow-none rounded-bottom-0 fs-13 letter-spacing-087 bg-dark-opacity-05 text-white hover-white text-uppercase bg-active-primary active"
+                           data-toggle="pill" data-value="for-sale" href="#" role="tab" aria-selected="true">
+                            sale
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link btn shadow-none rounded-bottom-0 fs-13 letter-spacing-087 bg-dark-opacity-05 text-white hover-white bg-active-primary text-uppercase"
+                           data-toggle="pill" data-value="for-rent" href="#" role="tab" aria-selected="false">
+                            rent
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <div class="position-relative w-100">
+                        <i class="far fa-search text-dark fs-18 position-absolute pl-4 pos-fixed-left-center"></i>
+                        <input type="text"
+                               class="rounded-bottom-right-lg w-100 pl-8 py-4 bg-white border-0 fs-13 font-weight-500 text-gray-light rounded-0 lh-17"
+                               placeholder="Enter an address, neighborhood" name="search">
+                    </div>
+                    <button type="submit" class="btn btn-primary fs-16 font-weight-600 rounded-left-0 rounded-lg">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-lg-12 pt-11 pb-11">
+    <div class="container container-xxl">
+        <div class="row flex-lg-row flex-cloumn">
+            <div class="col-lg-5 col-xxl-6">
+                <h2 class="text-heading">Popular Properties</h2>
+                <span class="heading-divider"></span>
+                <p class="mb-7">Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscipit</p>
+            </div>
+            <div class="col-lg-7 col-xxl-6">
+                <ul class="nav nav-pills mt-lg-4 justify-content-lg-end mb-lg-0 mb-6" role="tablist">
+                    {% for tab in site.data.home-2.tabs-id %}
+                    <li class="nav-item pl-lg-3 pr-3 pr-lg-0 mb-3">
+                        <a class="pointer nav-link {% if tab.is_active == true %}active{% endif %} fs-13 letter-spacing-087 text-secondary text-uppercase px-4 bg-gray-01 text-active-white bg-active-primary rounded-lg"
+                           id="pills-{{ tab.name }}-tab" data-toggle="pill" href="#pills-{{ tab.name }}" role="tab"
+                           aria-controls="pills-{{ tab.name }}" aria-selected="true">{{ tab.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content p-0 shadow-none" id="pills-tabContent">
+            {% for tab in site.data.home-2.tabs %}
+            <div class="tab-pane fade {% if tab.is_active == true %}show active{% endif %}" id="pills-{{ tab.title }}"
+                 role="tabpanel" aria-labelledby="pills-{{ tab.title }}-tab">
+                <div class="row">
+                    {% for property in tab.properties-01 %}
+                    <div class="col-xxl-3 col-lg-4 col-md-6 mb-6" data-animate="zoomIn">
+                        <div class="card border-0 bg-overlay-gradient-3 rounded-lg hover-change-image">
+                            <img src="{{ property.image | document_url }}" class="card-img"
+                                 alt="{{ property.title }}">
+                            <div class="card-img-overlay d-flex flex-column position-relative-sm">
+                                <div class="d-flex">
+                                    <div class="mr-auto h-24 d-flex">
+                                        {% for category in property.categories %}
+                                        <span class="badge {{ category.class }} mr-2">{{ category.name }}</span>
+                                        {% endfor %}
+                                    </div>
+                                    <ul class="list-inline mb-0 d-flex justify-content-center align-items-center h-100 hover-image">
+                                        <li class="list-inline-item">
+                                            <a href="#"
+                                               class="w-40px h-40 rounded-circle d-inline-flex align-items-center justify-content-center text-white bg-dark-opacity-03 bg-hover-primary hover-white"
+                                               data-toggle="tooltip" title="Wishlist">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"
+                                               class="w-40px h-40 rounded-circle d-inline-flex align-items-center justify-content-center text-white bg-dark-opacity-03 bg-hover-primary hover-white"
+                                               data-toggle="tooltip" title="Compare">
+                                                <i class="fas fa-exchange-alt"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mt-auto px-2">
+                                    {% if property.is_price_time == true %}
+                                    <p class="fs-17 font-weight-bold text-white mb-0 lh-13">{{ property.price }}<span
+                                            class="fs-14 font-weight-500"> / {{ property.time }}</span></p>
+                                    {% else %}
+                                    <p class="fs-17 font-weight-bold text-white mb-0 lh-13">{{ property.price }}</p>
+                                    {% endif %}
+                                    <h4 class="mt-0 mb-2 lh-1"><a href="{{ property.url | document_url }}"
+                                                                  class="fs-16 text-white">{{ property.title }}</a></h4>
+                                    <div class="border-top border-white-opacity-03 pt-2">
+                                        <ul class="list-inline d-flex mb-0 flex-wrap mt-2 mt-lg-0 mr-n5">
+                                            <li class="list-inline-item text-white font-weight-500 fs-13 d-flex align-items-center mr-5"
+                                                data-toggle="tooltip" title="{{ property.feature.tooltip_bed }}">
+                                                <svg class="icon icon-bedroom fs-18 text-primary mr-1">
+                                                    <use xlink:href="#icon-bedroom"></use>
+                                                </svg>
+                                                {{
+                                                property.feature.bed }}
+                                            </li>
+                                            <li class="list-inline-item text-white font-weight-500 fs-13 d-flex align-items-center mr-5"
+                                                data-toggle="tooltip" title="{{ property.feature.tooltip_bed }}">
+                                                <svg class="icon icon-shower fs-18 text-primary mr-1">
+                                                    <use xlink:href="#icon-shower"></use>
+                                                </svg>
+                                                {{
+                                                property.feature.bath }}
+                                            </li>
+                                            <li class="list-inline-item text-white font-weight-500 fs-13 d-flex align-items-center mr-5"
+                                                data-toggle="tooltip" title="{{ property.feature.tooltip_bed }}">
+                                                <svg class="icon icon-square fs-18 text-primary mr-1">
+                                                    <use xlink:href="#icon-square"></use>
+                                                </svg>
+                                                {{
+                                                property.feature.area }}
+                                            </li>
+                                            <li class="list-inline-item text-white font-weight-500 fs-13 d-flex align-items-center mr-5"
+                                                data-toggle="tooltip" title="{{ property.feature.tooltip_bed }}">
+                                                <svg class="icon icon-Garage fs-18 text-primary mr-1">
+                                                    <use xlink:href="#icon-Garage"></use>
+                                                </svg>
+                                                {{
+                                                property.feature.garage }}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="text-center">
+            <a href="{{ '/listing-grid-with-left-filter.html' | document_url }}"
+               class="btn btn-lg text-secondary btn-accent rounded-lg mt-6">See all properties
+                <i class="far fa-long-arrow-right ml-1"></i>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="bg-gray-02 pt-10 pb-11">
+    <div class="container container-xxl">
+        <h2 class="text-dark lh-1625 text-center">Why Choose Us?</h2>
+        <span class="heading-divider mx-auto"></span>
+        <div class="row justify-content-between mt-10">
+            {% for info-box in site.data.home-2.info-box-01 %}
+            <div class="col-lg-4 mb-6 mb-lg-0" data-animate="fadeInUp">
+                <div class="card border-0 bg-transparent">
+                    <div class="card-img-top d-flex align-items-end justify-content-center">
+                        <img src="{{ info-box.image | document_url }}"
+                             alt="{{ info-box.title }}">
+                    </div>
+                    <div class="card-body px-0 px-xxl-10 pt-7 pb-0 text-center">
+                        <h4 class="card-title fs-18 lh-17 text-dark mb-2">{{ info-box.title }}</h4>
+                        <p class="card-text px-sm-2">
+                            {{ info-box.descriptions }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="py-lg-12 my-lg-1 py-11">
+    <div class="container container-xxl">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-heading">Properties For Sale</h2>
+                <span class="heading-divider"></span>
+                <p class="mb-7">Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscipit</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <a href="{{ '/listing-grid-with-left-filter.html' | document_url }}"
+                   class="btn btn-lg text-secondary btn-accent rounded-lg mb-8">See all properties
+                    <i class="far fa-long-arrow-right ml-1"></i>
+                </a>
+            </div>
+        </div>
+        <div class="slick-slider mx-n2 custom-arrow-spacing-30"
+             data-slick-options='{"slidesToShow": 5, "autoplay":true,"dots":false,"arrows":true,"responsive":[{"breakpoint": 1600,"settings": {"slidesToShow":3,"arrows":false}},{"breakpoint": 992,"settings": {"slidesToShow":3,"arrows":false}},{"breakpoint": 768,"settings": {"slidesToShow": 2,"arrows":false,"dots":true,"autoplay":true}},{"breakpoint": 576,"settings": {"slidesToShow": 1,"arrows":false,"dots":true,"autoplay":true}}]}'>
+            {% for property in site.data.home-2.properties-02 %}
+            <div class="box px-2" data-animate="fadeInUp">
+                <div class="card border-0 hover-change-image">
+                    <div class="bg-overlay-gradient-1 bg-hover-overlay-gradient-3 rounded-lg card-img">
+                        <img src="{{ property.image | document_url }}"
+                             alt="{{ property.title }}">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div>
+                                {% for category in property.categories %}
+                                <span class="badge mr-2 {{ category.class }}">{{ category.name }}</span>
+                                {% endfor %}
+                            </div>
+                            <ul class="list-inline mb-0 hover-image text-center">
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                       class="w-52px h-52 rounded-circle d-inline-flex align-items-center justify-content-center text-heading bg-white bg-hover-primary hover-white"
+                                       data-toggle="tooltip" title="Wishlist">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                       class="w-52px h-52 rounded-circle d-inline-flex align-items-center justify-content-center text-heading bg-white bg-hover-primary hover-white"
+                                       data-toggle="tooltip" title="Compare">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="list-inline d-flex mb-0 flex-wrap px-2 mr-n5">
+                                <li class="list-inline-item text-white font-weight-500 fs-13 d-flex align-items-center mr-5"
+                                    data-toggle="tooltip" title="{{ property.feature.tooltip_bed }}">
+                                    <svg class="icon icon-bedroom fs-18 text-primary mr-1">
+                                        <use xlink:href="#icon-bedroom"></use>
+                                    </svg>
+                                    {{ property.feature.bed }}
+                                </li>
+                                <li class="list-inline-item text-white font-weight-500 fs-13 d-flex align-items-center mr-5"
+                                    data-toggle="tooltip" title="{{ property.feature.tooltip_bath }}">
+                                    <svg class="icon icon-shower fs-18 text-primary mr-1">
+                                        <use xlink:href="#icon-shower"></use>
+                                    </svg>
+                                    {{
+                                    property.feature.bath }}
+                                </li>
+                                <li class="list-inline-item text-white font-weight-500 fs-13 d-flex align-items-center mr-5"
+                                    data-toggle="tooltip" title="{{ property.feature.tooltip_area }}">
+                                    <svg class="icon icon-square fs-18 text-primary mr-1">
+                                        <use xlink:href="#icon-square"></use>
+                                    </svg>
+                                    {{
+                                    property.feature.area }}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <h2 class="my-0 mt-1"><a href="{{ property.url | document_url }}"
+                                                 class="fs-16 text-dark hover-primary lh-2">{{ property.title }}</a>
+                        </h2>
+                        <p class="text-gray-light font-weight-500 mb-1">{{ property.descriptions }}</p>
+                        <p class="fs-17 font-weight-bold text-heading mb-0">{{ property.price }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="pb-lg-13 pb-11">
+    <div class="container container-xxl">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-heading">Properties For Rent</h2>
+                <span class="heading-divider"></span>
+                <p class="mb-7">Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscipit</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <a href="{{ '/listing-grid-with-left-filter.html' | document_url }}"
+                   class="btn btn-lg text-secondary btn-accent rounded-lg mb-8">See all properties
+                    <i class="far fa-long-arrow-right ml-1"></i>
+                </a>
+            </div>
+        </div>
+        <div class="slick-slider mx-n2"
+             data-slick-options='{"slidesToShow": 5, "autoplay":true,"dots":false,"arrows":true,"responsive":[{"breakpoint": 1600,"settings": {"slidesToShow":3,"arrows":false}},{"breakpoint": 992,"settings": {"slidesToShow":3,"arrows":false}},{"breakpoint": 768,"settings": {"slidesToShow": 2,"arrows":false,"dots":true,"autoplay":true}},{"breakpoint": 576,"settings": {"slidesToShow": 1,"arrows":false,"dots":true,"autoplay":true}}]}'>
+            {% for property in site.data.home-2.properties-03 %}
+            <div class="box px-2" data-animate="fadeInUp">
+                <div class="card border-0 hover-change-image">
+                    <div class="rounded-lg bg-overlay-gradient-7 bg-hover-overlay-gradient-3 card-img">
+                        <img src="{{ property.image | document_url }}"
+                             alt="{{ property.title }}">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div>
+                                {% for category in property.categories %}
+                                <span class="badge mr-2 {{ category.class }}">{{ category.name }}</span>
+                                {% endfor %}
+                            </div>
+                            <ul class="list-inline mb-0 hover-image text-center">
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                       class="w-52px h-52 rounded-circle d-inline-flex align-items-center justify-content-center text-heading bg-white bg-hover-primary hover-white"
+                                       data-toggle="tooltip" title="Wishlist">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"
+                                       class="w-52px h-52 rounded-circle d-inline-flex align-items-center justify-content-center text-heading bg-white bg-hover-primary hover-white"
+                                       data-toggle="tooltip" title="Compare">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="list-inline d-flex mb-0 flex-wrap px-2 mr-n5">
+                                <li class="list-inline-item text-white font-weight-500 fs-13 d-flex align-items-center mr-5"
+                                    data-toggle="tooltip" title="{{ property.feature.tooltip_bed }}">
+                                    <svg class="icon icon-bedroom fs-18 text-primary mr-1">
+                                        <use xlink:href="#icon-bedroom"></use>
+                                    </svg>
+                                    {{
+                                    property.feature.bed }}
+                                </li>
+                                <li class="list-inline-item text-white font-weight-500 fs-13 d-flex align-items-center mr-5"
+                                    data-toggle="tooltip" title="{{ property.feature.tooltip_bath }}">
+                                    <svg class="icon icon-shower fs-18 text-primary mr-1">
+                                        <use xlink:href="#icon-shower"></use>
+                                    </svg>
+                                    {{
+                                    property.feature.bath }}
+                                </li>
+                                <li class="list-inline-item text-white font-weight-500 fs-13 d-flex align-items-center mr-5"
+                                    data-toggle="tooltip" title="{{ property.feature.tooltip_area }}">
+                                    <svg class="icon icon-square fs-18 text-primary mr-1">
+                                        <use xlink:href="#icon-square"></use>
+                                    </svg>
+                                    {{
+                                    property.feature.area }}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <h2 class="my-0 mt-1"><a href="{{ property.url | document_url }}"
+                                                 class="fs-16 text-dark hover-primary lh-2">{{ property.title }}</a>
+                        </h2>
+                        <p class="text-gray-light font-weight-500 mb-1">{{ property.descriptions }}</p>
+                        <p class="fs-17 font-weight-bold text-heading mb-0">{{ property.price }}<span
+                                class="text-gray-light font-weight-500 fs-14"> / {{ property.time }}</span></p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section>
+    <div class="bg-patten-01 pt-12 pb-10 bg-secondary">
+        <div class="container">
+            <h2 class="text-white text-center lh-1625 mxw-589 font-weight-normal">Looking to Buy a new property or Sell
+                an existing
+                one?</h2>
+            <span class="heading-divider mx-auto"></span>
+            <div class="row info-box-3 mt-7 no-gutters mx-auto">
+                {% for info-box in site.data.home-2.info-box-02 %}
+                <div class="col-md-3 col-sm-6 mb-6 mb-md-0" data-animate="zoomIn">
+                    <a href="{{ info-box.url | document_url }}"
+                       class="card border-0 align-items-center justify-content-center pb-5 pt-7 px-0 shadow-hover-3 bg-transparent bg-hover-white text-decoration-none hover-change-image">
+                        <div class="card-img-top d-flex align-items-center justify-content-center {% if info-box.is_border == true %}border-md-right{% endif %} rounded-0">
+                            <div class=" position-relative">
+                                <img src="{{ info-box.image-hover | document_url }}"
+                                     class="hover-image position-absolute pos-fixed-top" alt="{{ info-box.title }}">
+                                <img src="{{ info-box.image | document_url }}" class="image"
+                                     alt="{{ info-box.title }}">
+                            </div>
+                        </div>
+                        <div class="card-body px-0 pt-5 pb-0">
+                            <h4 class="card-title fs-16 lh-2 text-white mb-0">{{ info-box.title }}</h4>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-lg-13 pb-lg-9 mt-lg-1 py-11">
+    <div class="container container-xxl">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="text-heading mb-6">From Our Blog</h2>
+                {% for blog in site.data.home-2.blogs %}
+                <div class="card border-0 mb-7" data-animate="fadeInLeft">
+                    <div class="row no-gutters align-items-lg-center h-100">
+                        <div class="d-flex align-items-end p-0 col-sm-4">
+                            <a href="{{ blog.url | document_url }}" class="hover-shine">
+                                <img src="{{ blog.image | document_url }}" class="card-img"
+                                     alt="{{ blog.title }}">
+                            </a>
+                            <a href="#"
+                               class="badge pos-fixed-bottom text-white bg-dark-opacity-04 fs-13 m-2 font-weight-500 bg-hover-primary hover-white position-absolute">
+                                {{ blog.badge }}
+                            </a>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="card-body pl-sm-6 px-0 pt-5 pt-lg-0 pb-0">
+                                <div class="fs-15 mb-0 mb-md-2 text-gray">
+                                    {{ blog.time }}
+                                </div>
+                                <h3 class="fs-sm-22 fs-18 font-weight-normal lh-182 pr-xl-14">
+                                    <a href="{{ blog.url | document_url }}" class="text-heading hover-primary">{{
+                                        blog.title }}</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-accent px-3 pl-md-11 pr-md-10 pt-6 pb-7" data-animate="fadeInRight">
+                    <div class="slick-slider custom-slider-1 mx-0"
+                         data-slick-options='{"slidesToShow": 1, "autoplay":true,"dots":true}'>
+                        {% for testimonial in site.data.home-2.testimonials %}
+                        <div class="box px-0">
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body p-0">
+                                    <div class="d-flex mb-6 align-items-end">
+                                        <h5 class="card-title fs-24 text-secondary mb-0">{{ testimonial.title }}</h5>
+                                        <div class="ml-auto opacity-2">
+                                            <img src="{{ '/images/quote.png' | document_url }}" alt="quote">
+                                        </div>
+                                    </div>
+                                    <p class="card-text fs-18 lh-2 text-heading mb-5">
+                                        {{ testimonial.descriptions }}
+                                    </p>
+                                    <div class="media align-items-center">
+                                        <div class="rounded-circle mr-4 bg-white w-70px h-70 d-flex align-items-end justify-content-center">
+                                            <img src="{{ testimonial.image | document_url }}"
+                                                 alt="{{ testimonial.name }}">
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="fs-17 lh-1 text-heading font-weight-600 mb-2">{{ testimonial.name
+                                                }}</p>
+                                            <p class="fs-15 lh-12 mb-0">{{ testimonial.jobs }}</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-gray-02 pt-9 pb-lg-13 pb-11">
+    <div class="container container-xxl">
+        <h2 class="text-heading">Destinations We Love The Most</h2>
+        <span class="heading-divider"></span>
+        <p class="mb-7">Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscipit</p>
+        <div class="slick-slider mx-n2"
+             data-slick-options='{"slidesToShow": 5,"arrows":false, "autoplay":false,"dots":false,"responsive":[{"breakpoint": 1600,"settings": {"slidesToShow":4}},{"breakpoint": 1200,"settings": {"slidesToShow":3}},{"breakpoint": 992,"settings": {"slidesToShow":2}},{"breakpoint": 768,"settings": {"slidesToShow": 2}},{"breakpoint": 576,"settings": {"slidesToShow": 1}}]}'>
+            {% for property in site.data.home-2.properties-04 %}
+            <div class="box px-2" data-animate="zoomIn">
+                <div class="card text-white bg-overlay-gradient-5 hover-zoom-in">
+                    <img src="{{ property.image | document_url }}" class="card-img" alt="{{ property.title }}">
+                    <div class="card-img-overlay d-flex justify-content-end flex-column p-4">
+                        <h2 class="mb-0 fs-20 lh-182"><a href="{{ property.url | document_url }}" class="text-white">{{
+                            property.title }}</a></h2>
+                        <p class="fs-13 font-weight-500 letter-spacing-087 mb-0">FROM<span
+                                class="ml-2 fs-15 font-weight-bold">{{ property.min-price }} - {{ property.max-price }}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% include compare.html %}

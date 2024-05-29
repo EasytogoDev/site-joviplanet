@@ -1,0 +1,865 @@
+---
+layout: home-5
+title: "Home 05"
+category_text: "Home"
+category_url: /home-05.html
+---
+<section>
+	<div class="container">
+		<form class="property-search position-relative d-none d-lg-block">
+			<div class="row align-items-center ml-lg-0 py-lg-0 shadow-sm-2 rounded bg-white position-lg-absolute top-lg-n50px py-lg-0 py-6 px-3 z-index-1 w-md-100"
+			     data-animate="fadeInDown" id="accordion-3">
+				<div class="col-md-6 col-lg-3 order-1">
+					<label class="text-uppercase font-weight-500 letter-spacing-093 mb-1">Home Type</label>
+					<select class="form-control selectpicker bg-transparent border-bottom rounded-0 border-color-input"
+					        title="Select" data-style="p-0 h-24 lh-17 text-dark" name="type">
+						<option>Condominium</option>
+						<option>Single-Family Home</option>
+						<option>Townhouse</option>
+						<option>Multi-Family Home</option>
+					</select>
+				</div>
+				<div class="col-md-6 col-lg-4 col-xl-5 pt-6 pt-md-0 order-2">
+					<label class="text-uppercase font-weight-500 letter-spacing-093">Search</label>
+					<div class="position-relative">
+						<input type="text" name="search"
+						       class="form-control bg-transparent shadow-none border-top-0 border-right-0 border-left-0 border-bottom rounded-0 h-24 lh-17 pl-0 pr-4 font-weight-600 border-color-input placeholder-muted"
+						       placeholder="Find something...">
+
+						<i class="far fa-search position-absolute pos-fixed-right-center pr-0 fs-18 mt-n3"></i>
+					</div>
+				</div>
+				<div class="col-sm pr-lg-0 pt-6 pt-lg-0 order-3">
+					<a href="#advanced-search-filters-3"
+					   class="btn advanced-search btn-accent h-lg-100 w-100 shadow-none text-secondary rounded-0 fs-14 fs-sm-16 font-weight-600 text-left d-flex align-items-center collapsed"
+					   data-toggle="collapse" data-target="#advanced-search-filters-3" aria-expanded="true"
+					   aria-controls="advanced-search-filters-3">
+						Advanced Search
+					</a>
+				</div>
+				<div class="col-sm pt-6 pt-lg-0 order-sm-4 order-5">
+					<button type="submit"
+					        class="btn btn-primary shadow-none fs-16 font-weight-600 w-100 py-lg-3">
+						Search
+					</button>
+
+				</div>
+				<div id="advanced-search-filters-3" class="col-12 py-sm-4 order-4 order-sm-5 collapse"
+				     data-parent="#accordion-3">
+					<div class="row">
+						<div class="col-sm-6 col-lg-3 pt-6">
+							<label class="text-uppercase font-weight-500 letter-spacing-093 mb-1">Bedrooms</label>
+							<select class="form-control selectpicker bg-transparent border-bottom rounded-0 border-color-input"
+							        name="bedroom"
+							        title="All Bedrooms" data-style="p-0 h-24 lh-17 text-dark">
+								<option>All Bedrooms</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+							</select>
+						</div>
+						<div class="col-sm-6 col-lg-3 pt-6">
+							<label class="text-uppercase font-weight-500 letter-spacing-093 mb-1">Bathrooms</label>
+							<select class="form-control selectpicker bg-transparent border-bottom rounded-0 border-color-input"
+							        title="All Bathrooms" data-style="p-0 h-24 lh-17 text-dark" name="bathroom">
+								<option>All Bathrooms</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+							</select>
+						</div>
+						<div class="col-sm-6 col-lg-3 pt-6">
+							<label class="text-uppercase font-weight-500 letter-spacing-093 mb-1">Cities</label>
+							<select class="form-control selectpicker bg-transparent border-bottom rounded-0 border-color-input"
+							        name="city"
+							        title="All Cities" data-style="p-0 h-24 lh-17 text-dark">
+								<option>All Cities</option>
+								<option>New York</option>
+								<option>Los Angeles</option>
+								<option>Chicago</option>
+								<option>Houston</option>
+								<option>San Diego</option>
+								<option>Las Vegas</option>
+								<option>Las Vegas</option>
+								<option>Atlanta</option>
+							</select>
+						</div>
+						<div class="col-sm-6 col-lg-3 pt-6">
+							<label class="text-uppercase font-weight-500 letter-spacing-093 mb-1">All Areas</label>
+							<select class="form-control selectpicker bg-transparent border-bottom rounded-0 border-color-input"
+							        name="areas"
+							        title="All Areas" data-style="p-0 h-24 lh-17 text-dark">
+								<option>All Areas</option>
+								<option>Albany Park</option>
+								<option>Altgeld Gardens</option>
+								<option>Andersonville</option>
+								<option>Beverly</option>
+								<option>Brickel</option>
+								<option>Central City</option>
+								<option>Coconut Grove</option>
+							</select>
+						</div>
+					</div>
+					<div class="row pt-2">
+						<div class="col-md-6 col-lg-4 pt-6 slider-range slider-range-secondary">
+							<label for="price-1-3" class="mb-4 text-gray-light">Price Range</label>
+							<div data-slider="true"
+							     data-slider-options='{"min":0,"max":1000000,"values":[100000,700000],"type":"currency"}'></div>
+							<div class="text-center mt-2">
+								<input id="price-1-3" type="text" readonly name="price"
+								       class="border-0 amount text-center text-body font-weight-500">
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 pt-6 slider-range slider-range-secondary">
+							<label for="area-size-3" class="mb-4 text-gray-light">Area Size</label>
+							<div data-slider="true"
+							     data-slider-options='{"min":0,"max":15000,"values":[0,13000],"type":"sqrt"}'></div>
+							<div class="text-center mt-2">
+								<input id="area-size-3" type="text" readonly name="price"
+								       class="border-0 amount text-center text-body font-weight-500">
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-4 pt-6">
+							<label class="text-uppercase font-weight-500 letter-spacing-093 mb-1">Property
+								ID</label>
+							<input type="text" name="search"
+							       class="form-control bg-transparent shadow-none border-top-0 border-right-0 border-left-0 border-bottom rounded-0 h-24 lh-17 p-0 font-weight-600 border-color-input"
+							       placeholder="Enter ID...">
+						</div>
+						<div class="col-12 pt-6 pb-2">
+							<a class="lh-17 d-inline-block other-feature collapsed" data-toggle="collapse"
+							   href="#other-feature-3"
+							   role="button"
+							   aria-expanded="false" aria-controls="other-feature-3">
+								<span class="fs-15 text-heading font-weight-500 hover-primary">Other Features</span>
+							</a>
+						</div>
+						<div class="collapse row mx-0" id="other-feature-3">
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check1-3" name="features[]">
+									<label class="custom-control-label" for="check1-3">Air Conditioning</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check2-3" name="features[]">
+									<label class="custom-control-label" for="check2-3">Laundry</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check4-3" name="features[]">
+									<label class="custom-control-label" for="check4-3">Washer</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check5-3" name="features[]">
+									<label class="custom-control-label" for="check5-3">Barbeque</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check6-3" name="features[]">
+									<label class="custom-control-label" for="check6-3">Lawn</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check7-3" name="features[]">
+									<label class="custom-control-label" for="check7-3">Sauna</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check8-3" name="features[]">
+									<label class="custom-control-label" for="check8-3">WiFi</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check9-3" name="features[]">
+									<label class="custom-control-label" for="check9-3">Dryer</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check10-3"
+									       name="features[]">
+									<label class="custom-control-label" for="check10-3">Microwave</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check11-3"
+									       name="features[]">
+									<label class="custom-control-label" for="check11-3">Swimming Pool</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check12-3"
+									       name="features[]">
+									<label class="custom-control-label" for="check12-3">Window Coverings</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check13-3"
+									       name="features[]">
+									<label class="custom-control-label" for="check13-3">Gym</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check14-3"
+									       name="features[]">
+									<label class="custom-control-label" for="check14-3">Outdoor Shower</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check15-3"
+									       name="features[]">
+									<label class="custom-control-label" for="check15-3">TV Cable</label>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-3 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check16-3"
+									       name="features[]">
+									<label class="custom-control-label" for="check16-3">Refrigerator</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<form class="property-search property-search-mobile d-lg-none py-6">
+			<div class="row align-items-lg-center" id="accordion-3-mobile">
+				<div class="col-12">
+					<div class="form-group mb-0 position-relative">
+						<a href="#advanced-search-filters-3-mobile"
+						   class="text-secondary btn advanced-search shadow-none pr-3 pl-0 d-flex align-items-center position-absolute pos-fixed-left-center py-0 h-100 border-right collapsed"
+						   data-toggle="collapse" data-target="#advanced-search-filters-3-mobile"
+						   aria-expanded="true"
+						   aria-controls="advanced-search-filters-3-mobile">
+						</a>
+						<input type="text"
+						       class="form-control form-control-lg border shadow-none pr-9 pl-11 bg-white placeholder-muted"
+						       name="key-word"
+						       placeholder="Search...">
+						<button type="submit"
+						        class="btn position-absolute pos-fixed-right-center p-0 text-heading fs-20 px-3 shadow-none h-100 border-left">
+							<i class="far fa-search"></i>
+						</button>
+					</div>
+				</div>
+				<div id="advanced-search-filters-3-mobile" class="col-12 pt-2 collapse"
+				     data-parent="#accordion-3-mobile">
+					<div class="row mx-n2">
+						<div class="col-sm-6 pt-4 px-2">
+							<select class="form-control border shadow-none form-control-lg selectpicker bg-transparent"
+							        title="Select" data-style="btn-lg py-2 h-52 bg-transparent" name="type">
+								<option>All status</option>
+								<option>For Rent</option>
+								<option>For Sale</option>
+							</select>
+						</div>
+						<div class="col-sm-6 pt-4 px-2">
+							<select class="form-control border shadow-none form-control-lg selectpicker bg-transparent"
+							        title="All Types" data-style="btn-lg py-2 h-52 bg-transparent" name="type">
+								<option>Condominium</option>
+								<option>Single-Family Home</option>
+								<option>Townhouse</option>
+								<option>Multi-Family Home</option>
+							</select>
+						</div>
+						<div class="col-sm-6 pt-4 px-2">
+							<select class="form-control border shadow-none form-control-lg selectpicker bg-transparent"
+							        name="bedroom"
+							        title="Bedrooms" data-style="btn-lg py-2 h-52 bg-transparent">
+								<option>All Bedrooms</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+							</select>
+						</div>
+						<div class="col-sm-6 pt-4 px-2">
+							<select class="form-control border shadow-none form-control-lg selectpicker bg-transparent"
+							        name="bathrooms"
+							        title="Bathrooms" data-style="btn-lg py-2 h-52 bg-transparent">
+								<option>All Bathrooms</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+							</select>
+						</div>
+						<div class="col-sm-6 pt-4 px-2">
+							<select class="form-control border shadow-none form-control-lg selectpicker bg-transparent"
+							        title="All Cities" data-style="btn-lg py-2 h-52 bg-transparent" name="city">
+								<option>All Cities</option>
+								<option>New York</option>
+								<option>Los Angeles</option>
+								<option>Chicago</option>
+								<option>Houston</option>
+								<option>San Diego</option>
+								<option>Las Vegas</option>
+								<option>Las Vegas</option>
+								<option>Atlanta</option>
+							</select>
+						</div>
+						<div class="col-sm-6 pt-4 px-2">
+							<select class="form-control border shadow-none form-control-lg selectpicker bg-transparent"
+							        name="areas"
+							        title="All Areas" data-style="btn-lg py-2 h-52 bg-transparent">
+								<option>All Areas</option>
+								<option>Albany Park</option>
+								<option>Altgeld Gardens</option>
+								<option>Andersonville</option>
+								<option>Beverly</option>
+								<option>Brickel</option>
+								<option>Central City</option>
+								<option>Coconut Grove</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 pt-6 slider-range slider-range-secondary">
+							<label for="price-3-mobile" class="mb-4 text-white">Price Range</label>
+							<div data-slider="true"
+							     data-slider-options='{"min":0,"max":1000000,"values":[100000,700000],"type":"currency"}'></div>
+							<div class="text-center mt-2">
+								<input id="price-3-mobile" type="text" readonly
+								       class="border-0 amount text-center bg-transparent font-weight-500"
+								       name="price">
+							</div>
+						</div>
+						<div class="col-md-6 pt-6 slider-range slider-range-secondary">
+							<label for="area-size-3-mobile" class="mb-4">Area Size</label>
+							<div data-slider="true"
+							     data-slider-options='{"min":0,"max":15000,"values":[0,12000],"type":"sqrt"}'></div>
+							<div class="text-center mt-2">
+								<input id="area-size-3-mobile" type="text" readonly
+								       class="border-0 amount text-center bg-transparent font-weight-500"
+								       name="area">
+							</div>
+						</div>
+						<div class="col-12 pt-4 pb-2">
+							<a class="lh-17 d-inline-block other-feature collapsed" data-toggle="collapse"
+							   href="#other-feature-3-mobile"
+							   role="button"
+							   aria-expanded="false" aria-controls="other-feature-3-mobile">
+								<span class="fs-15 font-weight-500 hover-primary">Other Features</span>
+							</a>
+						</div>
+						<div class="collapse row mx-0" id="other-feature-3-mobile">
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check1-3-mobile"
+									       name="feature[]">
+									<label class="custom-control-label" for="check1-3-mobile">Air
+										Conditioning</label>
+								</div>
+							</div>
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check2-3-mobile"
+									       name="feature[]">
+									<label class="custom-control-label" for="check2-3-mobile">Laundry</label>
+								</div>
+							</div>
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input"
+									       id="check4-3-mobile" name="feature[]">
+									<label class="custom-control-label" for="check4-3-mobile">Washer</label>
+								</div>
+							</div>
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input"
+									       id="check5-3-mobile" name="feature[]">
+									<label class="custom-control-label" for="check5-3-mobile">Barbeque</label>
+								</div>
+							</div>
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input"
+									       id="check6-3-mobile" name="feature[]">
+									<label class="custom-control-label" for="check6-3-mobile">Lawn</label>
+								</div>
+							</div>
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input"
+									       id="check7-3-mobile" name="feature[]">
+									<label class="custom-control-label" for="check7-3-mobile">Sauna</label>
+								</div>
+							</div>
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input"
+									       id="check8-3-mobile" name="feature[]">
+									<label class="custom-control-label" for="check8-3-mobile">WiFi</label>
+								</div>
+							</div>
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input"
+									       id="check9-3-mobile" name="feature[]">
+									<label class="custom-control-label" for="check9-3-mobile">Dryer</label>
+								</div>
+							</div>
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input"
+									       id="check10-3-mobile" name="feature[]">
+									<label class="custom-control-label" for="check10-3-mobile">Microwave</label>
+								</div>
+							</div>
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input"
+									       id="check11-3-mobile" name="feature[]">
+									<label class="custom-control-label" for="check11-3-mobile">Swimming
+										Pool</label>
+								</div>
+							</div>
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input"
+									       id="check12-3-mobile" name="feature[]">
+									<label class="custom-control-label" for="check12-3-mobile">Window
+										Coverings</label>
+								</div>
+							</div>
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input"
+									       id="check13-3-mobile" name="feature[]">
+									<label class="custom-control-label" for="check13-3-mobile">Gym</label>
+								</div>
+							</div>
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input"
+									       id="check14-3-mobile" name="feature[]">
+									<label class="custom-control-label" for="check14-3-mobile">Outdoor
+										Shower</label>
+								</div>
+							</div>
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input"
+									       id="check15-3-mobile" name="feature[]">
+									<label class="custom-control-label" for="check15-3-mobile">TV Cable</label>
+								</div>
+							</div>
+							<div class="col-sm-6 py-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input"
+									       id="check16-3-mobile" name="feature[]">
+									<label class="custom-control-label"
+									       for="check16-3-mobile">Refrigerator</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+<section>
+	<div class="slick-slider mx-0" data-slick-options='{"slidesToShow": 1, "autoplay":false,"dots":false,"arrows":false}'>
+		{% for items in site.data.home-5.properties-slider-01 %}
+		<div class="box px-0 d-flex flex-column">
+			<div class="bg-cover custom-vh-04 d-flex align-items-center" style="background-image: url('{{ items.image | document_url }}')">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 offset-lg-7 col-md-6 offset-md-3 col-sm-8 offset-sm-2 mt-xl-1 py-8 pt-lg-12">
+							<div class="bg-white  px-7 pt-6 pb-4 rounded-lg ml-lg-n1 mb-xl-15" data-animate="flipInX">
+								<div class="mt-n7 position-absolute">
+									<span class="badge badge-orange">Featured</span>
+								</div>
+								<h2 class="my-0"><a href="{{ items.url | document_url }}" class="fs-30 lh-12 text-dark hover-primary">{{
+									items.title}}</a></h2>
+								<p class="my-3 font-weight-500 text-gray-light lh-15">{{ items.address}}</p>
+								<p class="fs-14 font-weight-500 letter-spacing-087 text-primary text-uppercase lh-15 mb-1">
+									For Sale</p>
+								<p class="fs-22 font-weight-bold text-heading">$1.250.000</p>
+								<ul class="list-inline d-flex mb-0 flex-wrap border-top justify-content-between pt-4 mr-n2">
+									<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2" data-toggle="tooltip" title="3 Bedroom">
+										<svg class="icon icon-bedroom fs-18 text-primary mr-2">
+											<use xlink:href="#icon-bedroom"></use>
+										</svg>
+										{{ items.meta.bed}}
+									</li>
+									<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2" data-toggle="tooltip" title="3 Bathrooms">
+										<svg class="icon icon-shower fs-18 text-primary mr-2">
+											<use xlink:href="#icon-shower"></use>
+										</svg>
+										{{ items.meta.bath}}
+									</li>
+									<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2" data-toggle="tooltip" title="Size">
+										<svg class="icon icon-square fs-18 text-primary mr-2">
+											<use xlink:href="#icon-square"></use>
+										</svg>
+										{{ items.meta.area}}
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>
+<section class="pt-9 pb-9 pb-lg-11">
+	<div class="container">
+		<h2 class="text-center text-dark line-height-base">
+			Latest Properties For Sale
+		</h2>
+		<span class="heading-divider mx-auto mb-7"></span>
+		<div class="slick-slider custom-arrow-spacing-30"
+		     data-slick-options='{"slidesToShow": 3, "autoplay":true,"dots":true,"responsive":[{"breakpoint": 1200,"settings": {"slidesToShow":3,"arrows":false}},{"breakpoint": 992,"settings": {"slidesToShow": 2,"arrows":false,"autoplay":true}},{"breakpoint": 768,"settings": {"slidesToShow": 1,"autoplay":true,"arrows":false}}]}'>
+			{% for items in site.data.home-5.properties-grid-01 %}
+			<div class="box">
+				<div class="card" data-animate="fadeInUp">
+					<div class="hover-change-image bg-hover-overlay rounded-lg card-img-top">
+						<img src="{{ items.img | document_url }}"
+						     alt="Home in Metric Way">
+						<div class="card-img-overlay p-2 d-flex flex-column">
+							<div class="mt-auto d-flex hover-image">
+								<ul class="list-inline mb-0 d-flex align-items-end mr-auto">
+									<li class="list-inline-item mr-2" data-toggle="tooltip" title="9 Images">
+										<a href="#" class="text-white hover-primary">
+											<i class="far fa-images"></i><span class="pl-1">9</span>
+										</a>
+									</li>
+									<li class="list-inline-item" data-toggle="tooltip" title="2 Video">
+										<a href="#" class="text-white hover-primary">
+											<i class="far fa-play-circle"></i><span class="pl-1">2</span>
+										</a>
+									</li>
+								</ul>
+								<ul class="list-inline mb-0 d-flex align-items-end mr-n3">
+									<li class="list-inline-item mr-3 h-32" data-toggle="tooltip" title="Wishlist">
+										<a href="#" class="text-white fs-20 hover-primary">
+											<i class="far fa-heart"></i>
+										</a>
+									</li>
+									<li class="list-inline-item mr-3 h-32" data-toggle="tooltip" title="Compare">
+										<a href="#" class="text-white fs-20 hover-primary">
+											<i class="fas fa-exchange-alt"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card-header bg-transparent d-flex justify-content-between align-items-center py-3">
+						<p class="fs-17 font-weight-bold text-heading mb-0 lh-1">{{ items.price}}</p>
+						<span class="badge badge-primary">For Sale</span>
+					</div>
+					<div class="card-body py-2">
+						<h2 class="fs-16 lh-2 mb-0"><a href="{{ items.url | document_url }}"
+						                               class="text-dark hover-primary">{{ items.title}}</a>
+						</h2>
+						<p class="font-weight-500 text-gray-light mb-0">{{ items.address}}</p>
+					</div>
+					<div class="card-footer bg-transparent pt-3 pb-4">
+						<ul class="list-inline d-flex justify-content-between mb-0 flex-wrap">
+							<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+							    data-toggle="tooltip" title="3 Bedroom">
+								<svg class="icon icon-bedroom fs-18 text-primary mr-1">
+									<use xlink:href="#icon-bedroom"></use>
+								</svg>
+								{{ items.meta.bed}}
+							</li>
+							<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+							    data-toggle="tooltip" title="3 Bathrooms">
+								<svg class="icon icon-shower fs-18 text-primary mr-1">
+									<use xlink:href="#icon-shower"></use>
+								</svg>
+								{{ items.meta.bath}}
+							</li>
+							<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+							    data-toggle="tooltip" title="Size">
+								<svg class="icon icon-square fs-18 text-primary mr-1">
+									<use xlink:href="#icon-square"></use>
+								</svg>
+								{{ items.meta.area}}
+							</li>
+							<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+							    data-toggle="tooltip" title="1 Garage">
+								<svg class="icon icon-Garage fs-18 text-primary mr-1">
+									<use xlink:href="#icon-Garage"></use>
+								</svg>
+								{{ items.meta.garage}}
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<section class="bg-gray-02 pt-9 pb-9 pb-lg-11">
+	<div class="container">
+		<h2 class="text-center text-dark line-height-base">
+			Latest Properties For Rent
+		</h2>
+		<span class="heading-divider mx-auto mb-7"></span>
+		<div class="slick-slider custom-arrow-spacing-30"
+		     data-slick-options='{"slidesToShow": 3, "autoplay":true,"dots":true,"responsive":[{"breakpoint": 992,"settings": {"slidesToShow":2,"arrows":false}},{"breakpoint": 768,"settings": {"slidesToShow": 1,"arrows":false,"dots":true,"autoplay":true}},{"breakpoint": 576,"settings": {"slidesToShow": 1,"arrows":false,"dots":true,"autoplay":true}}]}'>
+			{% for items in site.data.home-5.properties-grid-02 %}
+			<div class="box">
+				<div class="card" data-animate="fadeInUp">
+					<div class="hover-change-image bg-hover-overlay rounded-lg card-img-top">
+						<img src="{{ items.img | document_url }}" alt="{{ items.title}}">
+						<div class="card-img-overlay p-2 d-flex flex-column">
+							<div class="mt-auto d-flex hover-image">
+								<ul class="list-inline mb-0 d-flex align-items-end mr-auto">
+									<li class="list-inline-item mr-2" data-toggle="tooltip" title="9 Images">
+										<a href="#" class="text-white hover-primary">
+											<i class="far fa-images"></i><span class="pl-1">9</span>
+										</a>
+									</li>
+									<li class="list-inline-item" data-toggle="tooltip" title="2 Video">
+										<a href="#" class="text-white hover-primary">
+											<i class="far fa-play-circle"></i><span class="pl-1">2</span>
+										</a>
+									</li>
+								</ul>
+								<ul class="list-inline mb-0 d-flex align-items-end mr-n3">
+									<li class="list-inline-item mr-3 h-32" data-toggle="tooltip" title="Wishlist">
+										<a href="#" class="text-white fs-20 hover-primary">
+											<i class="far fa-heart"></i>
+										</a>
+									</li>
+									<li class="list-inline-item mr-3 h-32" data-toggle="tooltip" title="Compare">
+										<a href="#" class="text-white fs-20 hover-primary">
+											<i class="fas fa-exchange-alt"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card-header bg-transparent d-flex justify-content-between align-items-center py-3">
+						<p class="fs-17 font-weight-bold text-heading mb-0">{{ items.price}}<span
+								class="text-gray-light font-weight-500 fs-14"> / month</span></p>
+						<span class="badge badge-indigo">For Sale</span>
+					</div>
+					<div class="card-body py-2">
+						<h2 class="fs-16 lh-2 mb-0"><a href="{{ items.url | document_url }}"
+						                               class="text-dark hover-primary">{{ items.title}}</a></h2>
+						<p class="font-weight-500 text-gray-light mb-0">{{ items.address}}</p>
+					</div>
+					<div class="card-footer bg-transparent pt-3 pb-4">
+						<ul class="list-inline d-flex justify-content-between mb-0 flex-wrap">
+							<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+							    data-toggle="tooltip" title="3 Bedroom">
+								<svg class="icon icon-bedroom fs-18 text-primary mr-1">
+									<use xlink:href="#icon-bedroom"></use>
+								</svg>
+								{{ items.meta.bed}}
+							</li>
+							<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+							    data-toggle="tooltip" title="3 Bathrooms">
+								<svg class="icon icon-shower fs-18 text-primary mr-1">
+									<use xlink:href="#icon-shower"></use>
+								</svg>
+								{{ items.meta.bath}}
+							</li>
+							<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+							    data-toggle="tooltip" title="Size">
+								<svg class="icon icon-square fs-18 text-primary mr-1">
+									<use xlink:href="#icon-square"></use>
+								</svg>
+								{{ items.meta.area}}
+							</li>
+							<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+							    data-toggle="tooltip" title="1 Garage">
+								<svg class="icon icon-Garage fs-18 text-primary mr-1">
+									<use xlink:href="#icon-Garage"></use>
+								</svg>
+								{{ items.meta.garage}}
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<section class="bg-single-image-03 pt-9">
+	<div class="container">
+		<h2 class="text-dark text-center mxw-751 px-md-8 lh-163">
+			We have the most listings and constant updates.
+			So you’ll never miss out.</h2>
+		<span class="heading-divider mx-auto"></span>
+		<div class="row mt-7 mb-6 mb-lg-11">
+			{% for items in site.data.home-5.icon-box-01 %}
+			<div class="col-lg-6 mb-6 mb-lg-0">
+				<div class="media rounded-lg bg-white border border-hover shadow-xs-2 shadow-hover-lg-1 px-7 py-8 hover-change-image flex-column flex-sm-row h-100"
+				     data-animate="fadeInUp">
+					<img src="{{ items.img | document_url }}"
+					     alt="{{ items.title}}" class="mb-6 mb-sm-0 mr-sm-6">
+					<div class="media-body">
+						<a href="{{ items.url | document_url }}"
+						   class="text-decoration-none d-flex align-items-center">
+							<h4 class="fs-20 lh-1625 text-secondary mb-1">{{ items.title}}</h4>
+							<div class="position-relative d-flex align-items-center ml-2">
+                                        <span class="image text-primary position-absolute pos-fixed-left-center fs-16"><i
+		                                        class="fal fa-long-arrow-right"></i></span>
+								<span class="text-primary fs-42 lh-1 hover-image d-flex align-items-center"><svg
+										class="icon icon-long-arrow"><use
+										xlink:href="#icon-long-arrow"></use></svg></span>
+							</div>
+						</a>
+						<p class="mb-0">
+							{{ items.desc}}
+						</p>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="row pb-8 pb-sm-10">
+			<div class="col-md-4 pr-xl-14" data-animate="fadeInLeft">
+				<h2 class="text-heading lh-163 mt-md-4">Explore Neighborhoods</h2>
+				<p class="mb-6">Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscipit</p>
+				<a href="{{ '/listing-full-map-1.html' | document_url }}" class="btn btn-lg text-secondary btn-accent rounded-lg mb-md-0 mb-8">Explore all
+					<i class="far fa-long-arrow-right ml-1"></i>
+				</a>
+			</div>
+			<div class="col-md-8" data-animate="fadeInRight">
+				<div class="slick-slider custom-arrow-spacing-30"
+				     data-slick-options='{"slidesToShow": 3, "autoplay":true,"arrows":true,"dots":false,"responsive":[{"breakpoint": 992,"settings": {"slidesToShow":2,"arrows":false,"autoplay":true}},{"breakpoint": 768,"settings": {"slidesToShow": 3,"arrows":false,"autoplay":true}},{"breakpoint": 576,"settings": {"slidesToShow": 1,"arrows":false,"dots":true,"autoplay":true}}]}'>
+					{% for property in site.data.home-5.properties-slider-02 %}
+					<div class="card border-0 bg-transparent">
+						<a href="{{ property.url | document_url }}" class="hover-zoom-in d-block">
+							<img src="{{ property.image | document_url }}" class="card-img"
+							     alt="{{ property.title }}">
+						</a>
+						<div class="card-body p-0 mt-2">
+							<h2 class="mb-0"><a href="{{ property.url | document_url }}"
+							                    class="text-dark hover-primary fs-16 lh-2 ">{{ property.title }}</a>
+							</h2>
+							<p class="font-weight-500 text-gray-light mb-0">{{ property.sub-title }}</p>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="bg-gray-02 pt-10 pb-11">
+	<div class="container">
+		<p class="text-primary letter-spacing-263 text-uppercase lh-186 text-center mb-0">testimonials</p>
+		<h2 class="text-center lh-1625 text-dark mb-5">
+			What Our Clients Say About Us
+		</h2>
+		<div class="slick-slider testimonials"
+		     data-slick-options='{"slidesToShow": 3, "autoplay":true,"dots":true,"arrows":false,"responsive":[{"breakpoint": 992,"settings": {"slidesToShow": 2}},{"breakpoint": 768,"settings": {"slidesToShow": 2}},{"breakpoint": 576,"settings": {"slidesToShow": 1}}]}'>
+			{% for items in site.data.home-5.testimonials-01 %}
+			<div class="box">
+				<div class="card p-6" data-animate="fadeInUp">
+					<div class="card-body p-0 text-center">
+                            <span class="text-primary fs-26 lh-1 mb-4 d-block">
+                                <i class="fas fa-quote-left"></i>
+                            </span>
+						<p class="card-text fs-15 lh-2 mb-4">
+							{{ items.quote }}
+						</p>
+						<span class="mx-auto divider mb-5"></span>
+						<img src="{{ items.img | document_url }}" class="rounded-circle d-inline-block mb-2"
+						     alt="{{ items.name }}">
+						<p class="fs-16 lh-214 text-dark font-weight-500 mb-0">{{ items.name }}</p>
+						<p class="mb-0">{{ items.job }}</p>
+
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<section class="pt-10 pb-9">
+	<div class="container">
+		<p class="text-primary letter-spacing-263 text-uppercase lh-186 text-center mb-0">new & articles</p>
+		<h2 class="text-center lh-1625 text-dark pb-1">
+			Check Out Recent News & Articles
+		</h2>
+		<div class="mx-n2">
+			<div class="slick-slider mt-6 mx-n1 slick-dots-mt-0"
+			     data-slick-options='{"slidesToShow": 3, "autoplay":false,"arrows":false,"dots":false,"responsive":[{"breakpoint": 992,"settings": {"slidesToShow":2}},{"breakpoint": 768,"settings": {"slidesToShow": 2,"autoplay":true}},{"breakpoint": 576,"settings": {"slidesToShow": 1,"arrows":false,"dots":true,"autoplay":true}}]}'>
+				{% for post in site.data.home-5.post-01 %}
+				<div class="item py-4" data-animate="fadeInUp">
+					<div class="card border-0 shadow-xxs-3" data-animate="fadeInUp">
+						<div class="position-relative d-flex align-items-end card-img-top">
+							<a href="{{ post.url | document_url }}" class="hover-shine">
+								<img src="{{ post.image | document_url }}"
+								     alt="{{ post.title }}">
+							</a>
+							<a href="{{ post.url-cat | document_url }}"
+							   class="badge text-white bg-dark-opacity-04 fs-13 font-weight-500 bg-hover-primary hover-white mx-2 my-4 position-absolute pos-fixed-bottom">
+								{{ post.category }}
+							</a>
+						</div>
+						<div class="card-body px-5 pt-3 pb-5">
+							<p class="mb-1 fs-13">{{ post.date }}</p>
+							<h3 class="fs-18 text-heading lh-194 mb-1">
+								<a href="{{ post.url | document_url }}" class="text-heading hover-primary">{{
+									post.title }}</a>
+							</h3>
+							<p class="mb-3">{{ post.description }}</p>
+							<a class="text-heading font-weight-500" href="{{ post.url | document_url }}">Learn more <i
+									class="far fa-long-arrow-right text-primary ml-1"></i></a>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+{% include compare.html %}

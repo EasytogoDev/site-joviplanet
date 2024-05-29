@@ -1,0 +1,226 @@
+icon-box-1:
+  - title: Buy a new home
+    image: /images/group-16.png
+    url: /#
+    description: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscipit
+
+  - title: Sell a home
+    image: /images/group-17.png
+    url: /#
+    description: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscipit
+
+  - title: Rent a home
+    image: /images/group-21.png
+    url: /#
+    description: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscipit
+
+city-grid-01:
+  city-grid-md:
+    - title: New York
+      image: /images/properties-city-15.jpg
+      min-price: $540.000
+      max-price: $900.000
+      url: /listing-full-width-list.html
+
+    - title: Los Angeles
+      image: /images/properties-city-16.jpg
+      min-price: $340.000
+      max-price: $600.000
+      url: /listing-full-width-list.html
+
+    - title: Chicago
+      image: /images/properties-city-17.jpg
+      min-price: $310.000
+      max-price: $700.000
+      url: /listing-full-width-list.html
+
+    - title: Las Vegas
+      image: /images/properties-city-18.jpg
+      min-price: $150.000
+      max-price: $700.000
+      url: /listing-full-width-list.html
+
+  city-grid-lg:
+    - title: Atlanta
+      image: /images/properties-city-14.jpg
+      min-price: $250.000
+      max-price: $900.000
+      url: /listing-full-width-list.html
+
+
+
+properties-grid-01:
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-31.jpg
+    featured: true
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-32.jpg
+    featured: false
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-33.jpg
+    featured: true
+    for-rent: true
+    for-sale: false
+    price: $5.700
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-34.jpg
+    featured: true
+    for-rent: true
+    for-sale: false
+    price: $5.700
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-32.jpg
+    featured: false
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-33.jpg
+    featured: true
+    for-rent: true
+    for-sale: false
+    price: $5.700
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+  - title: Home in Metric Way
+    address: 1421 San Pedro St, Los Angeles
+    image: /images/properties-grid-34.jpg
+    featured: true
+    for-rent: true
+    for-sale: false
+    price: $5.700
+    url: /single-property-1.html
+    info:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+
+icon-box-2:
+  - title: Property Management
+    image: /images/house.png
+    description: Suspe ndisse suscipit sagittis leo sit met condim entum
+
+  - title: Mortgage Service
+    image: /images/mortgage.png
+    description: Suspe ndisse suscipit sagittis leo sit met condim entum
+
+  - title: Consulting Service
+    image: /images/clipboard.png
+    description: Suspe ndisse suscipit sagittis leo sit met condim entum
+
+  - title: Recover Asset Value
+    image: /images/building.png
+    description: Suspe ndisse suscipit sagittis leo sit met condim entum
+
+  - title: Property Management
+    image: /images/house.png
+    description: Suspe ndisse suscipit sagittis leo sit met condim entum
+
+post-01:
+  - title: The Interior Design The Hall On str. Filimonovo
+    image: /images/post-05.jpg
+    url: /blog-details-1.html
+    url-cat: /#
+    date: Dec 16, 2020
+    category: Creative
+    description: Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issim
+
+  - title: Ten Benefits Of Rentals That May Change Your Perspective
+    image: /images/post-06.jpg
+    url: /blog-details-1.html
+    url-cat: /#
+    date: Dec 16, 2020
+    category: Rentals
+    description: Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issim
+
+  - title: Future Office Buldings Intelligent by Design
+    image: /images/post-07.jpg
+    url: /blog-details-1.html
+    url-cat: /#
+    date: Dec 16, 2020
+    category: Rentals
+    description: Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issim
+
+  - title: The Interior Design The Hall On str. Filimonovo
+    image: /images/post-05.jpg
+    url: /blog-details-1.html
+    url-cat: /#
+    date: Dec 16, 2020
+    category: Creative
+    description: Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issim
+
+  - title: Ten Benefits Of Rentals That May Change Your Perspective
+    image: /images/post-06.jpg
+    url: /blog-details-1.html
+    url-cat: /#
+    date: Dec 16, 2020
+    category: Rentals
+    description: Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issim
+
+  - title: Future Office Buldings Intelligent by Design
+    image: /images/post-07.jpg
+    url: /blog-details-1.html
+    url-cat: /#
+    date: Dec 16, 2020
+    category: Rentals
+    description: Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issim

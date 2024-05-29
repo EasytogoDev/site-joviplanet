@@ -1,0 +1,195 @@
+---
+layout: dashboard
+title: "Invoice Preview"
+category_text: "Page"
+category_url: /dashboard-preview-invoice.html
+---
+<div class="px-3 px-lg-6 px-xxl-13 py-5 py-lg-10 add-new-invoice">
+    <div class="row">
+        <div class="col-xl-9 mb-6 mb-xl-0">
+            <div class="card card-body main-invoice-info p-6">
+
+                <div class="row mb-7">
+
+                    <div class="col-sm-6 col-12 mr-auto mb-6">
+                        <div class="d-flex align-items-center">
+                            <img class="company-logo" src="{{ '/images/logo.png' | document_url }}"
+                                 alt="company">
+                            <h3 class="mb-0 ml-2 fs-18">G5Themes</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 text-sm-right mb-6">
+                        <p class="fs-18 mb-0"><span class="inv-title">Invoice : </span> <span
+                                class="text-primary">#0001</span></p>
+                    </div>
+
+                    <div class="col-sm-6 align-self-center mt-3">
+                        <p class="mb-0">XYZ Delta Street</p>
+                        <p class="mb-0">info@company.com</p>
+                        <p class="mb-0">(120) 456 789</p>
+                    </div>
+                    <div class="col-sm-6 align-self-center mt-3 text-sm-right">
+                        <p class="mb-0"><span class="text-heading font-weight-500">Invoice Date : </span>
+                            <span class="inv-date">20 Aug 2020</span></p>
+                        <p class="mb-0"><span class="text-heading font-weight-500">Due Date : </span> <span
+                                class="inv-date">26 Aug 2020</span></p>
+                    </div>
+
+                </div>
+
+                <div class="border-top pt-7 mb-7">
+                    <div class="row">
+                        <div class="col-xl-8 col-md-6 col-sm-4 align-self-center">
+                            <h6 class="card-title mb-5 text-heading fs-22 lh-15">Invoice To</h6>
+                        </div>
+
+                        <div class="col-xl-4 col-md-6 col-sm-8 align-self-center order-sm-0 order-1 text-sm-right">
+                            <h6 class="card-title mb-5 text-heading fs-22 lh-15">Payment Info:</h6>
+                        </div>
+                        <div class="col-xl-8 col-md-6 col-sm-4 align-self-center mb-6 mb-md-0">
+                            <p class="mb-0">Jesse Cory</p>
+                            <p class="mb-0">405 Mulberry Rd. Mc Grady, NC, 28649</p>
+                            <p class="mb-0">redq@company.com</p>
+                            <p class="mb-0">(128) 666 070</p>
+                        </div>
+                        <div class="col-xl-4 col-md-6 col-sm-8 align-self-center order-sm-0 order-1 text-sm-right">
+                            <p class="mb-0"><span class="text-heading font-weight-500">Bank Name:</span>
+                                <span>Bank of America</span></p>
+                            <p class="mb-0"><span class="text-heading font-weight-500">Account Number: </span>
+                                <span>1234567890</span></p>
+                            <p class="mb-0"><span class="text-heading font-weight-500">SWIFT code:</span>
+                                <span>VS70134</span>
+                            </p>
+                            <p class="mb-0"><span class="text-heading font-weight-500">Country: </span>
+                                <span>United States</span></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="">
+                            <tr>
+                                <th scope="col">S.No</th>
+                                <th scope="col">Items Name</th>
+                                <th class="text-right" scope="col">Qty</th>
+                                <th class="text-right" scope="col">Price</th>
+                                <th class="text-right" scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Calendar App Customization</td>
+                                <td class="text-right">1</td>
+                                <td class="text-right">$120</td>
+                                <td class="text-right">$120</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Chat App Customization</td>
+                                <td class="text-right">1</td>
+                                <td class="text-right">$230</td>
+                                <td class="text-right">$230</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Laravel Integration</td>
+                                <td class="text-right">1</td>
+                                <td class="text-right">$405</td>
+                                <td class="text-right">$405</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Backend UI Design</td>
+                                <td class="text-right">1</td>
+                                <td class="text-right">$2500</td>
+                                <td class="text-right">$2500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-sm-5 col-12 order-sm-0 order-1">
+                    </div>
+                    <div class="col-sm-7 col-12 order-sm-1 order-0">
+                        <div class="text-sm-right">
+                            <div class="row">
+                                <div class="col-sm-8 col-7">
+                                    <p class="mb-1">Sub Total: </p>
+                                </div>
+                                <div class="col-sm-4 col-5">
+                                    <p class="mb-1">$3155</p>
+                                </div>
+                                <div class="col-sm-8 col-7">
+                                    <p class="mb-1">Tax Amount: </p>
+                                </div>
+                                <div class="col-sm-4 col-5">
+                                    <p class="mb-1">$700</p>
+                                </div>
+                                <div class="col-sm-8 col-7">
+                                    <p class="discount-rate">Discount : <span
+                                            class="discount-percentage">5%</span></p>
+                                </div>
+                                <div class="col-sm-4 col-5">
+                                    <p class="mb-1">$10</p>
+                                </div>
+                                <div class="col-sm-8 col-7 grand-total-title mt-4">
+                                    <h4 class="text-heading fs-22 lh-15">Grand Total : </h4>
+                                </div>
+                                <div class="col-sm-4 col-5 grand-total-amount mt-4">
+                                    <h4 class="text-heading fs-22 lh-15">$3845</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-top pt-6 mt-7">
+                    <div class="row">
+                        <div class="col-sm-12 col-12 order-sm-0 order-1">
+                            <p class="mb-0">Note: Thank you for doing Business with us.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xl-3 invoice-preview-button">
+
+            <div class="card card-body p-6">
+
+                <div class="row">
+                    <div class="col-xl-12 col-md-3 col-sm-6 mb-3">
+                        <a href="javascript:void(0);" class="btn btn-primary btn-send btn-block">Send Invoice</a>
+                    </div>
+                    <div class="col-xl-12 col-md-3 col-sm-6 mb-3">
+                        <a href="javascript:void(0);"
+                           class="btn btn-secondary btn-print invoice-action-print btn-block">Print</a>
+                    </div>
+                    <div class="col-xl-12 col-md-3 col-sm-6 mb-3">
+                        <a href="javascript:void(0);" class="btn btn-success btn-download btn-block">Download</a>
+                    </div>
+                    <div class="col-xl-12 col-md-3 col-sm-6 mb-3">
+                        <a href="dashboard-edit-invoice.html" class="btn btn-dark btn-edit btn-block">Edit</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+

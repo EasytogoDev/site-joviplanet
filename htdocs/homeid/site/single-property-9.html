@@ -1,0 +1,581 @@
+---
+layout: default
+title: "Single Property 9"
+category_text: "Single Property"
+category_url: /single-property-9.html
+---
+
+
+<section class="bg-secondary px-md-6 py-8 p-lg-0">
+	<div class="container">
+		<form class="search-form d-none d-md-block">
+			<div class="row align-items-center">
+				<div class="col-lg-5">
+					<div class="row">
+						<div class="col-md-6">
+							<label class="text-uppercase font-weight-500 opacity-7 text-white letter-spacing-093 mb-1">Home
+								Type</label>
+							<select class="form-control selectpicker bg-transparent border-bottom rounded-0 border-input-opacity-02"
+							        name="type"
+							        title="Select" data-style="p-0 h-24 lh-17 text-white" id="hometype">
+								<option>Condominium</option>
+								<option>Single-Family Home</option>
+								<option>Townhouse</option>
+								<option>Multi-Family Home</option>
+							</select>
+						</div>
+						<div class="col-md-6 pl-md-3 pt-md-0 pt-6">
+							<label class="text-uppercase font-weight-500 opacity-7 text-white letter-spacing-093 mb-1">Location</label>
+							<select class="form-control selectpicker bg-transparent border-bottom rounded-0 border-input-opacity-02"
+							        name="location"
+							        title="Select" data-style="p-0 h-24 lh-17 text-white" id="location">
+								<option>Austin</option>
+								<option>Boston</option>
+								<option>Chicago</option>
+								<option>Denver</option>
+								<option>Los Angeles</option>
+								<option>New York</option>
+								<option>San Francisco</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-5 pt-lg-0 pt-6">
+					<label class="text-uppercase font-weight-500 opacity-7 text-white letter-spacing-093">Search</label>
+					<div class="position-relative">
+						<input type="text" name="search"
+						       class="form-control bg-transparent shadow-none border-top-0 border-right-0 border-left-0 border-bottom rounded-0 h-24 lh-17 p-0 pr-md-5 text-white placeholder-light font-weight-500 border-input-opacity-02"
+						       placeholder="Enter an address, neighbourhood...">
+						<i class="far fa-search position-absolute pos-fixed-right-center pr-0 fs-18 text-white pb-2 d-none d-md-block"></i>
+					</div>
+				</div>
+				<div class="col-12 col-lg-2 pt-lg-0 pt-7">
+					<button type="submit"
+					        class="btn bg-white-opacity-01 bg-white-hover-opacity-03 h-lg-100 w-100 shadow-none text-white rounded-0 fs-16 font-weight-600">
+						Search
+					</button>
+				</div>
+			</div>
+		</form>
+		<form class="property-search property-search-mobile d-md-none py-8">
+			<div class="row align-items-lg-center" id="accordion-mobile">
+				<div class="col-12">
+					<div class="form-group mb-0 position-relative">
+						<a href="#advanced-search-filters-mobile"
+						   class="icon-primary btn advanced-search shadow-none pr-3 pl-0 d-flex align-items-center position-absolute pos-fixed-left-center py-0 h-100 border-right collapsed"
+						   data-toggle="collapse" data-target="#advanced-search-filters-mobile"
+						   aria-expanded="true"
+						   aria-controls="advanced-search-filters-mobile">
+						</a>
+						<input type="text"
+						       class="form-control form-control-lg border-0 shadow-none pr-9 pl-11 bg-white placeholder-muted"
+						       name="key-word"
+						       placeholder="Search...">
+						<button type="submit"
+						        class="btn position-absolute pos-fixed-right-center p-0 text-heading fs-20 px-3 shadow-none h-100 border-left bg-white">
+							<i class="far fa-search"></i>
+						</button>
+					</div>
+				</div>
+				<div id="advanced-search-filters-mobile" class="col-12 pt-2 collapse"
+				     data-parent="#accordion-mobile">
+					<div class="row mx-n2">
+						<div class="col-sm-6 pt-4 px-2">
+							<select class="form-control border-0 shadow-none form-control-lg selectpicker bg-white"
+							        title="Home Types" data-style="btn-lg py-2 h-52 bg-white" name="type">
+								<option>Condominium</option>
+								<option>Single-Family Home</option>
+								<option>Townhouse</option>
+								<option>Multi-Family Home</option>
+							</select>
+						</div>
+						<div class="col-sm-6 pt-4 px-2">
+							<select class="form-control border-0 shadow-none form-control-lg selectpicker bg-white"
+							        name="bedroom"
+							        title="Location" data-style="btn-lg py-2 h-52 bg-white">
+								<option>Austin</option>
+								<option>Boston</option>
+								<option>Chicago</option>
+								<option>Denver</option>
+								<option>Los Angeles</option>
+								<option>New York</option>
+								<option>San Francisco</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+<section class="pb-6 shadow-5">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb py-3">
+				{% for breadcrumb in site.data.single-property-1.breadcrumbs %}
+				{% if breadcrumb.is_active == true %}
+				<li class="breadcrumb-item letter-spacing-1 active">{{ breadcrumb.title }}</li>
+				{% else %}
+				<li class="breadcrumb-item letter-spacing-1">
+					<a href="{{ breadcrumb.url | document_url }}">{{ breadcrumb.title }}</a>
+				</li>
+				{% endif %}
+				{% endfor %}
+			</ol>
+		</nav>
+		<div class="d-md-flex justify-content-md-between mb-1">
+			<ul class="list-inline d-sm-flex align-items-sm-center mb-0">
+				<li class="list-inline-item badge badge-orange mr-2">Featured</li>
+				<li class="list-inline-item badge badge-primary mr-3">For Sale</li>
+				<li class="list-inline-item mr-2 mt-2 mt-sm-0"><i class="fal fa-clock mr-1"></i>2 months ago</li>
+				<li class="list-inline-item mt-2 mt-sm-0"><i class="fal fa-eye mr-1"></i>1039 views</li>
+			</ul>
+			<ul class="list-inline mb-0 mr-n2 my-4 my-md-0">
+				<li class="list-inline-item mr-2">
+					<a href="#" class="btn btn-outline-light px-3 text-body d-flex align-items-center h-32 border">
+						<i class="far fa-heart mr-2 fs-15 text-primary"></i>Save
+					</a>
+				</li>
+				<li class="list-inline-item mr-2">
+					<a href="#" class="btn btn-outline-light px-3 text-body d-flex align-items-center h-32 border">
+						<i class="far fa-share-alt mr-2 fs-15 text-primary"></i>Share
+					</a>
+				</li>
+				<li class="list-inline-item mr-2">
+					<a href="#" class="btn btn-outline-light px-3 text-body d-flex align-items-center h-32 border">
+						<i class="far fa-print mr-2 fs-15 text-primary"></i>Print
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="d-md-flex justify-content-md-between mb-2">
+			<div>
+				<h2 class="fs-35 font-weight-600 lh-15 text-heading">Villa Called Archangel</h2>
+				<p class="mb-0"><i class="fal fa-map-marker-alt mr-2"></i>398 Pete Pascale Pl, New York</p>
+			</div>
+			<div class="mt-2 text-md-right">
+				<p class="fs-22 text-heading font-weight-bold mb-0">$1.250.000</p>
+				<p class="mb-0">$9350/SqFt</p>
+			</div>
+		</div>
+	</div>
+	<div class="galleries">
+		<div class="container position-relative">
+			<ul class="nav nav-pills position-absolute pos-fixed-top-right z-index-3 pt-4 pr-5 flex-nowrap nav-gallery"
+			    role="tablist">
+				<li class="nav-item mr-2" role="presentation">
+					<a class="nav-link p-0 active d-flex align-items-center justify-content-center w-48px h-48 bg-white text-heading bg-hover-primary hover-white rounded-circle fs-18"
+					   data-toggle="pill" href="#image-1" role="tab"
+					   aria-selected="true">
+						<i class="fal fa-camera"></i>
+					</a>
+				</li>
+				<li class="nav-item mr-2" role="presentation">
+					<a class="nav-link p-0 d-flex align-items-center justify-content-center w-48px h-48 bg-white text-heading bg-hover-primary hover-white rounded-circle fs-18"
+					   data-toggle="pill" href="#map-view-1" role="tab"
+					   aria-selected="false">
+						<i class="fal fa-map-marked-alt"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="tab-content p-0 shadow-none">
+			<div class="tab-pane fade show active" id="image-1" role="tabpanel">
+				<div class="slick-slider mx-0"
+				     data-slick-options='{"slidesToShow": 1, "autoplay":false,"centerMode":true,"infinite":true,"arrows":false,"centerPadding":"350px","responsive":[{"breakpoint": 1200,"settings": {"centerMode":false}}]}'>
+					<div class="box px-xl-5">
+						<div class="item item-size-3-2">
+							<div class="card p-0">
+								<div class="card-img"
+								     style="background-image:url('{{ "/images/single-property-21.jpg" | document_url }}')">
+								</div>
+								<div class="card-img-overlay d-flex align-items-center justify-content-center p-4">
+									<a href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+									   class="d-inline-block position-relative play-animation"
+									   data-gtf-mfp="true" data-mfp-options='{"type":"iframe"}'>
+                                        <span class="text-primary bg-white w-78px h-78 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-play"></i>
+                                        </span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box px-lg-5">
+						<div class="item item-size-3-2">
+							<div class="card p-0">
+								<div class="card-img"
+								     style="background-image:url('{{ "/images/single-property-20.jpg" | document_url }}')">
+								</div>
+								<div class="card-img-overlay d-flex align-items-center justify-content-center p-4">
+									<a href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+									   class="d-inline-block position-relative play-animation"
+									   data-gtf-mfp="true" data-mfp-options='{"type":"iframe"}'>
+                                        <span class="text-primary bg-white w-78px h-78 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-play"></i>
+                                        </span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box px-lg-5">
+						<div class="item item-size-3-2">
+							<div class="card p-0">
+								<div class="card-img"
+								     style="background-image:url('{{ "/images/single-property-lg-1.jpg" | document_url }}')">
+								</div>
+								<div class="card-img-overlay d-flex align-items-center justify-content-center p-4">
+									<a href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+									   class="d-inline-block position-relative play-animation"
+									   data-gtf-mfp="true" data-mfp-options='{"type":"iframe"}'>
+                                        <span class="text-primary bg-white w-78px h-78 rounded-circle d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-play"></i>
+                                        </span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="map-view-1" role="tabpanel">
+				<div id="map-01" class="mapbox-gl" style="height:620px;"
+				     data-mapbox-access-token="{{ site.data.map-access-token.access-token}}"
+				     data-mapbox-options='{"center":[-73.981566, 40.739011],"setLngLat":[-73.981566, 40.739011],"container":"map-01"}'>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="street-view-1" role="tabpanel">
+				<div class="py-10" style="background-image: url('{{ "/images/BG2.jpg" | document_url }}');background-size: cover;background-position: center"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<article class="bg-gray-01 pt-8 pb-lg-13 pb-11">
+	<div class="container">
+		<div class="row">
+			<section class="col-lg-8">
+				<div class="collapse-tabs">
+					<ul class="nav nav-tabs tabs-04 d-md-flex d-none" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#details" role="tab">Details</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#facts" role="tab">Facts & Features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#tour" role="tab">Virtual Tour</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#mortgage" role="tab">Mortgage Calculator</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#nearby" role="tab">What's nearby?</a>
+						</li>
+					</ul>
+					<div class="tab-content bg-white-md shadow-none px-md-5 py-md-6 p-0">
+						<div id="collapse-tabs-accordion-01">
+							<div class="tab-pane tab-pane-parent fade show active mb-md-0 mb-2" id="details" role="tabpanel">
+								<div class="card border-0 bg-transparent">
+									<div class="card-header border-0 d-block d-md-none bg-transparent px-0 py-1"
+									     id="headingDetails-01">
+										<h5 class="mb-0">
+											<button class="btn lh-2 fs-18 py-1 px-6 shadow-none w-100 collapse-parent border"
+											        data-toggle="collapse"
+											        data-target="#details-collapse-01"
+											        aria-expanded="true"
+											        aria-controls="details-collapse-01">
+												Details
+											</button>
+										</h5>
+									</div>
+									<div id="details-collapse-01" class="collapse show collapsible"
+									     aria-labelledby="headingDetails-01"
+									     data-parent="#collapse-tabs-accordion-01">
+										<div id="accordion-style-01" class="accordion accordion-01 border-md-0 border p-md-0 p-6">
+											<h4 class="fs-22 text-heading mb-3 mt-1 lh-15">Description</h4>
+											<p class="mb-0 lh-214">Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus
+												scelerisque eleifend donec.
+												Porta nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper
+												quis lectus. Turpis in eu mi bibendum neque
+												egestas congue quisque. Sed elementum tempus egestas sed sed risus pretium quam. Dignissim sodales
+												ut eu sem. Nibh mauris cursus mattis molestie a
+												iaculis at erat pellentesque. Id interdum velit laoreet id donec ultrices tincidunt.</p>
+											<p class="fs-16 lh-2 font-weight-500 text-heading pl-xl-8 my-5">Insight Lux Villa’s innovative range of modular build homes, and Mansion House are the first apartments in the range.</p>
+											<p class="mb-3 lh-214">Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus scelerisque
+												eleifend donec. Porta nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac
+												tincidunt vitae semper quis lectus. Turpis in eu mi bibendum neque egestas congue quisque.
+												Nibh mauris cursus mattis molestie a iaculis at erat pellentesque. Massa tempor nec feugiat
+												nisl pretium. Egestas fringilla phasellus faucibus scelerisque eleifend donec. Porta nibh
+												venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper quis
+												lectus.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane tab-pane-parent fade mb-md-0 mb-2" id="facts" role="tabpanel">
+								<div class="card border-0 bg-transparent">
+									<div class="card-header border-0 d-block d-md-none bg-transparent px-0 py-1"
+									     id="headingfacts-01">
+										<h5 class="mb-0">
+											<button class="btn lh-2 fs-18 py-1 px-6 shadow-none w-100 collapse-parent border collapsed"
+											        data-toggle="collapse"
+											        data-target="#facts-collapse-01"
+											        aria-expanded="true"
+											        aria-controls="facts-collapse-01">
+												Facts & Features
+											</button>
+										</h5>
+									</div>
+									<div id="facts-collapse-01" class="collapse collapsible"
+									     aria-labelledby="headingfacts-01"
+									     data-parent="#collapse-tabs-accordion-01">
+										<div id="accordion-style-01-2" class="accordion accordion-01 border-md-0 border p-md-0 p-6">
+											<div class="row">
+												{% for box in site.data.single-property-9.info-box %}
+												<div class="col-lg-3 col-sm-4 mb-6">
+													<div class="media">
+														<div class="p-2 shadow-xxs-1 rounded-lg mr-2">
+															<svg class="icon icon-{{ box.icon }} fs-32 text-primary"><use xlink:href="#icon-{{ box.icon }}"></use></svg>
+														</div>
+														<div class="media-body">
+															<h5 class="my-1 fs-14 text-uppercase letter-spacing-093 font-weight-normal">{{ box.title }}</h5>
+															<p class="mb-0 fs-13 font-weight-bold text-heading">{{ box.sub-title }}</p>
+														</div>
+													</div>
+												</div>
+												{% endfor %}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane tab-pane-parent fade mb-md-0 mb-2" id="tour" role="tabpanel">
+								<div class="card border-0 bg-transparent">
+									<div class="card-header border-0 d-block d-md-none bg-transparent px-0 py-1"
+									     id="headingtour-01">
+										<h5 class="mb-0">
+											<button class="btn lh-2 fs-18 py-1 px-6 shadow-none w-100 collapse-parent border collapsed"
+											        data-toggle="collapse"
+											        data-target="#tour-collapse-01"
+											        aria-expanded="true"
+											        aria-controls="tour-collapse-01">
+												Virtual Tour
+											</button>
+										</h5>
+									</div>
+									<div id="tour-collapse-01" class="collapse collapsible"
+									     aria-labelledby="headingfacts-01"
+									     data-parent="#collapse-tabs-accordion-01">
+										<div id="accordion-style-01-3" class="accordion accordion-01 border-md-0 border p-md-0 p-6">
+											<h4 class="fs-22 text-heading mb-6">Virtual Tour</h4>
+											<iframe height="430" src="https://my.matterport.com/show/?m=wWcGxjuUuSb&amp;utm_source=hit-content-embed" allowfullscreen="" class="w-100"></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane tab-pane-parent fade mb-md-0 mb-2" id="mortgage" role="tabpanel">
+								<div class="card border-0 bg-transparent">
+									<div class="card-header border-0 d-block d-md-none bg-transparent px-0 py-1"
+									     id="headingmortgage-01">
+										<h5 class="mb-0">
+											<button class="btn lh-2 fs-18 py-1 px-6 shadow-none w-100 collapse-parent border collapsed"
+											        data-toggle="collapse"
+											        data-target="#mortgage-collapse-01"
+											        aria-expanded="true"
+											        aria-controls="mortgage-collapse-01">
+												Mortgage Calculator
+											</button>
+										</h5>
+									</div>
+									<div id="mortgage-collapse-01" class="collapse collapsible"
+									     aria-labelledby="headingmortgage-01"
+									     data-parent="#collapse-tabs-accordion-01">
+										<form class="border-md-0 border p-md-0 p-6">
+											<div class="row">
+												<div class="col-md-6 mb-4">
+													<label>Total Amount</label>
+													<div class="position-relative">
+														<input type="number" class="form-control border-0 pr-3 h-52 pl-7" value="345" name="total-amount">
+														<span class="position-absolute pl-3 pos-fixed-left-center fs-13 font-weight-600">$</span>
+													</div>
+												</div>
+												<div class="col-md-6 mb-4">
+													<label>Down Payment</label>
+													<div class="position-relative">
+														<input type="number" class="form-control border-0 pr-3 h-52 pl-7" value="0" name="down-payment">
+														<span class="position-absolute pl-3 pos-fixed-left-center fs-13 font-weight-600">$</span>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6 mb-4">
+													<label>Interest Rate</label>
+													<div class="position-relative">
+														<input type="number" class="form-control border-0 pr-3 h-52 pl-7" value="2.500" step="0.25" name="interest-rate">
+														<span class="position-absolute pl-3 pos-fixed-left-center fs-13 font-weight-600">%</span>
+													</div>
+												</div>
+												<div class="col-md-6 mb-4">
+													<label>Number of years</label>
+													<input type="number" class="form-control border-0 px-3 h-52" value="25" name="years">
+												</div>
+											</div>
+											<div class="form-group mb-6">
+												<label>Payment Period</label>
+												<select class="form-control selectpicker" data-style="btn-lg h-52 px-3" name="payment-period">
+													<option selected>Monthly</option>
+													<option>Yearly</option>
+												</select>
+											</div>
+											<button class="btn btn-primary fs-14 h-52 px-8" type="submit">Caculate</button>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane tab-pane-parent fade mb-md-0 mb-2" id="nearby" role="tabpanel">
+								<div class="card border-0 bg-transparent">
+									<div class="card-header border-0 d-block d-md-none bg-transparent px-0 py-1"
+									     id="headingnearby-01">
+										<h5 class="mb-0">
+											<button class="btn lh-2 fs-18 py-1 px-6 shadow-none w-100 collapse-parent border collapsed"
+											        data-toggle="collapse"
+											        data-target="#nearby-collapse-01"
+											        aria-expanded="true"
+											        aria-controls="nearby-collapse-01">
+												What's nearby?
+											</button>
+										</h5>
+									</div>
+									<div id="nearby-collapse-01" class="collapse collapsible"
+									     aria-labelledby="headingnearby-01"
+									     data-parent="#collapse-tabs-accordion-01">
+										<div id="accordion-style-01-5" class="accordion accordion-01 border-md-0 border px-md-0 pb-md-0 px-6 pb-6 mt-lg-n5">
+											{% for property in site.data.single-property-9.properties-01 %}
+												<h6 class="mb-0 mt-5"><a href="{{ property.url | document_url }}" class="fs-16 lh-2 text-heading border-bottom border-primary pb-1">{{ property.title }}</a></h6>
+												<div class="border-top pt-2">
+													{% for sub_property in property.sub_properties %}
+													<div class="py-3 border-bottom d-sm-flex justify-content-sm-between">
+														<div class="media align-items-sm-center d-sm-flex d-block">
+															<a href="#" class="hover-shine">
+																<img src="{{ sub_property.image | document_url }}" class="mr-sm-4 rounded-lg w-sm-90" alt="Bacchanal Buffet-Temporarily Closed">
+															</a>
+															<div class="media-body mt-sm-0 mt-2">
+																<h4 class="my-0"><a href="#" class="lh-186 fs-15 text-heading hover-primary">{{ sub_property.title }}</a></h4>
+																<p class="lh-186 fs-15 font-weight-500 mb-0">{{ sub_property.des }}</p>
+															</div>
+														</div>
+														<div class="text-lg-right mt-lg-0 mt-2">
+															<p class="mb-2 mb-0 lh-13">120 Reviews</p>
+															{% if sub_property.is_opacity == true %}
+															<div class="text-lg-right mt-lg-0 mt-2">
+																<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm opacity-7"></i>
+																<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm opacity-7"></i>
+																<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm opacity-7"></i>
+																<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm opacity-7"></i>
+																<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm opacity-1"></i>
+															</div>
+															{% else %}
+															<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+															<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+															<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+															<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+															<i class="fas fa-star w-18px h-18 d-inline-flex justify-content-center align-items-center rate-bg-blue text-white fs-12 rounded-sm"></i>
+															{% endif %}
+														</div>
+													</div>
+													{% endfor %}
+												</div>
+											{% endfor %}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<aside class="col-lg-4 primary-sidebar sidebar-sticky mt-lg-0 mt-6" id="sidebar">
+				<div class="primary-sidebar-inner">
+					<div class="p-6 bg-white rounded-lg">
+						<div class="media align-items-center mb-4">
+							<img src="{{ '/images/Oliver-Beddows.jpg' | document_url }}" class="mr-3" alt="Oliver Beddows">
+							<div class="media-body">
+								<h5 class="mb-0 fs-16 text-dark ">Oliver Beddows</h5>
+								<p class="mb-0">Sales Excutive</p>
+								<p class="mb-0"><i class="fal fa-phone fs-15 font-weight-light text-primary mr-1"></i>123 900 68668</p>
+							</div>
+						</div>
+						<form>
+							<div class="form-group mb-2">
+								<label for="name" class="sr-only">Name</label>
+								<input type="text" class="form-control form-control-lg border-0 shadow-none" id="name" placeholder="First Name, Last Name">
+							</div>
+							<div class="form-group mb-2">
+								<label for="email" class="sr-only">Email</label>
+								<input type="text" class="form-control form-control-lg border-0 shadow-none" id="email" placeholder="Your email">
+							</div>
+							<div class="form-group mb-2">
+								<label for="phone" class="sr-only">Phone</label>
+								<input type="text" class="form-control form-control-lg border-0 shadow-none" id="phone" placeholder="Your phone">
+							</div>
+							<div class="form-group mb-4">
+								<label for="message" class="sr-only">Message</label>
+								<textarea class="form-control form-control-lg border-0 shadow-none h-120" id="message" placeholder="Hello, I'm interested in Villa Called Archangel"></textarea>
+							</div>
+							<button type="submit" class="btn btn-outline-primary btn-lg btn-block rounded border text-muted border-hover-primary hover-white">Request Info</button>
+							<button type="submit" class="btn btn-outline-primary btn-lg btn-block rounded border text-muted border-hover-primary hover-white mt-2">Send Direct Message</button>
+						</form>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</div>
+</article>
+<section>
+	<div class="d-flex bottom-bar-action bottom-bar-action-01 py-2 px-4 bg-gray-01 align-items-center position-fixed fixed-bottom d-sm-none">
+		<div class="media align-items-center">
+			<img src="{{ '/images/irene-wallace.png' | document_url }}" alt="Irene Wallace" class="mr-4 rounded-circle">
+			<div class="media-body">
+				<a href="#" class="d-block text-dark fs-15 font-weight-500 lh-15">Irene Wallace</a>
+				<span class="fs-13 lh-2">Sales Excutive</span>
+			</div>
+		</div>
+		<div class="ml-auto">
+			<button type="button" class="btn btn-primary fs-18 p-2 lh-1 mr-1 mb-1 shadow-none" data-toggle="modal" data-target="#modal-messenger"><i class="fal fa-comment"></i></button>
+			<a href="tel:(+84)2388-969-888" class="btn btn-primary fs-18 p-2 lh-1 mb-1 shadow-none" target ="_blank"><i class="fal fa-phone"></i></a>
+		</div>
+	</div>
+	<div class="modal fade" id="modal-messenger" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header border-0 pb-0">
+					<h4 class="modal-title text-heading" id="exampleModalLabel">Contact Form</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body pb-6">
+					<div class="form-group mb-2">
+						<input type="text" class="form-control form-control-lg border-0" placeholder="First Name, Last Name">
+					</div>
+					<div class="form-group mb-2">
+						<input type="email" class="form-control form-control-lg border-0" placeholder="Your Email">
+					</div>
+					<div class="form-group mb-2">
+						<input type="tel" class="form-control form-control-lg border-0" placeholder="Your phone">
+					</div>
+					<div class="form-group mb-2">
+						<textarea class="form-control border-0" rows="4">Hello, I'm interested in Villa Called Archangel</textarea>
+					</div>
+					<div class="form-group form-check mb-4">
+						<input type="checkbox" class="form-check-input" id="exampleCheck3">
+						<label class="form-check-label fs-13" for="exampleCheck3">Egestas fringilla phasellus faucibus scelerisque eleifend donec.</label>
+					</div>
+					<button type="submit" class="btn btn-primary btn-lg btn-block rounded">Request Info</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

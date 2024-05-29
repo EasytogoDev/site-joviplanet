@@ -1,0 +1,120 @@
+- title: Home
+  url: /index.html
+  submenu:
+    - title: Home 01
+      url: /home-01.html
+    - title: Home 02
+      url: /home-02.html
+    - title: Home 03
+      url: /home-03.html
+    - title: Home 04
+      url: /home-04.html
+    - title: Home 05
+      url: /home-05.html
+    - title: Home 06
+      url: /home-06.html
+    - title: Home 07
+      url: /home-07.html
+    - title: Home 08
+      url: /home-08.html
+- title: Property
+  url: /listing.html
+  submenu: menu/megamenu-listing.html
+- title: Dashboard
+  url: /#
+  submenu:
+    - title: Dashboard
+      url: /dashboard.html
+    - title: Add New Property
+      url: /dashboard-add-new-property.html
+    - title: My Properties
+      url: /dashboard-my-properties.html
+    - title: My Favorites
+      url: /dashboard-my-favorites.html
+    - title: Save Search
+      url: /dashboard-save-search.html
+    - title: Reviews
+      url: /dashboard-reviews.html
+    - title: My Package
+      url: /dashboard-my-packages.html
+    - title: My Profile
+      url: /dashboard-my-profiles.html
+    - title: Signup and login
+      url: /signup-and-login.html
+    - title: Password Recovery
+      url: /password-recovery.html
+- title: Pages
+  url: /#
+  submenu:
+    - title: News
+      url: /#
+      submenu:
+        - title: Blog classic
+          url: /blog-classic.html
+        - title: Blog grid
+          url: /blog-grid.html
+        - title: Blog grid with sidebar
+          url: /blog-grid-with-sidebar.html
+        - title: Blog list with sidebar
+          url: /blog-list-width-sidebar.html
+        - title: Blog details 1
+          url: /blog-details-1.html
+        - title: Blog details 2
+          url: /blog-details-2.html
+    - title: About us
+      url: /about-us.html
+    - title: Service
+      url: /#
+      submenu:
+        - title: Services
+          url: /services.html
+        - title: Services with sidebar
+          url: /services-with-sidebar.html
+    - title: Contact us
+      url: /#
+      submenu:
+        - title: Contact us 1
+          url: /contact-us-1.html
+        - title: Contact us 2
+          url: /contact-us-2.html
+    - title: Agent
+      url: /#
+      submenu:
+        - title: Agents grid 1
+          url: /agents-grid-1.html
+        - title: Agents grid 2
+          url: /agents-grid-2.html
+        - title: Agents grid with sidebar
+          url: /agents-grid-with-sidebar.html
+        - title: Agents list
+          url: /agents-list.html
+        - title: Agent detais 1
+          url: /agent-details-1.html
+        - title: Agent detais 2
+          url: /agent-details-2.html
+    - title: Agency
+      url: /#
+      submenu:
+        - title: Agency grid
+          url: /agency-grid.html
+        - title: Agency list
+          url: /agency-list.html
+        - title: Agency details 1
+          url: /agency-details-1.html
+        - title: Agency details 2
+          url: /agency-details-2.html
+    - title: FAQs
+      url: /faqs.html
+    - title: Page 404
+      url: /page-404.html
+    - title: Checkout
+      url: /checkout-complete-1.html
+    - title: Payment Completed
+      url: /checkout-complete-2.html
+    - title: Compare
+      url: /compare-details.html
+    - title: Packages
+      url: /packages.html
+- title: Docs
+  url: /#
+  submenu: menu/menu-docs.html

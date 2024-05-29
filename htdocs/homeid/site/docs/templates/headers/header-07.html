@@ -1,0 +1,32 @@
+---
+layout: header-docs
+title: "Header 07"
+category_text: Headers
+category_url: /docs/templates/header.html
+---
+<header class="main-header navbar-light text-center border-bottom header-sticky header-sticky-smart">
+    <div class="sticky-area bg-white py-4">
+        <a href="{{ '/' | document_url }}">
+            <img src="{{ '/images/logo.png' | document_url }}" alt="{{site.title}}">
+        </a>
+    </div>
+</header>
+<main>
+    {% include components/page-title/docs.html %}
+    <section class="py-10">
+        <div class="container">
+            <div class="bg-gray-01 overflow-auto">
+{% highlight html %}
+<header class="main-header navbar-light text-center border-bottom header-sticky header-sticky-smart">
+    <div class="sticky-area bg-white py-4">
+        <a href="{{ '/' | document_url }}">
+            <img src="{{ '/images/logo.png' | document_url }}" alt="{{site.title}}">
+        </a>
+    </div>
+</header>
+{% endhighlight %}
+            </div>
+        </div>
+    </section>
+</main>
+

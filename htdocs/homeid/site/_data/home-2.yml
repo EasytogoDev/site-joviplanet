@@ -1,0 +1,1137 @@
+tabs-id:
+  - name: all
+    is_active: true
+  - name: apartment
+  - name: house
+  - name: office
+  - name: homes
+  - name: villa
+
+tabs:
+  - title: all
+    is_active: true
+    properties-01:
+      - title: Villa on Hollywood Boulevard
+        image: /images/properties-grid-08.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Home in Metric Way
+        image: /images/properties-grid-09.jpg
+        url: /single-property-1.html
+        categories:
+          - name: Featured
+            class: badge-orange
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $5.700
+        time: year
+      - title: Affordable Urban House
+        image: /images/properties-grid-10.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+      - title: Home in Metric Way
+        image: /images/properties-grid-11.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Home in Metric Way
+        image: /images/properties-grid-40.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+      - title: Affordable Urban House
+        image: /images/properties-grid-41.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Villa on Hollywood Boulevard
+        image: /images/properties-grid-42.jpg
+        url: /single-property-1.html
+        categories:
+          - name: Featured
+            class: badge-orange
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Affordable Urban House
+        image: /images/properties-grid-43.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Rent
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+  - title: apartment
+    properties-01:
+      - title: Home in Metric Way
+        image: /images/properties-grid-09.jpg
+        url: /single-property-1.html
+        categories:
+          - name: Featured
+            class: badge-orange
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $5.700
+        time: year
+      - title: Villa on Hollywood Boulevard
+        image: /images/properties-grid-08.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Affordable Urban House
+        image: /images/properties-grid-10.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+      - title: Home in Metric Way
+        image: /images/properties-grid-11.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.
+      - title: Affordable Urban House
+        image: /images/properties-grid-43.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Rent
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+      - title: Home in Metric Way
+        image: /images/properties-grid-40.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+      - title: Affordable Urban House
+        image: /images/properties-grid-41.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Villa on Hollywood Boulevard
+        image: /images/properties-grid-42.jpg
+        url: /single-property-1.html
+        categories:
+          - name: Featured
+            class: badge-orange
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+  - title: house
+    properties-01:
+      - title: Affordable Urban House
+        image: /images/properties-grid-41.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Affordable Urban House
+        image: /images/properties-grid-10.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+      - title: Villa on Hollywood Boulevard
+        image: /images/properties-grid-08.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Home in Metric Way
+        image: /images/properties-grid-09.jpg
+        url: /single-property-1.html
+        categories:
+          - name: Featured
+            class: badge-orange
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $5.700
+        time: year
+      - title: Home in Metric Way
+        image: /images/properties-grid-11.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Home in Metric Way
+        image: /images/properties-grid-40.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+      - title: Villa on Hollywood Boulevard
+        image: /images/properties-grid-42.jpg
+        url: /single-property-1.html
+        categories:
+          - name: Featured
+            class: badge-orange
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Affordable Urban House
+        image: /images/properties-grid-43.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Rent
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+  - title: office
+    properties-01:
+      - title: Villa on Hollywood Boulevard
+        image: /images/properties-grid-08.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Home in Metric Way
+        image: /images/properties-grid-09.jpg
+        url: /single-property-1.html
+        categories:
+          - name: Featured
+            class: badge-orange
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $5.700
+        time: year
+      - title: Affordable Urban House
+        image: /images/properties-grid-10.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+      - title: Home in Metric Way
+        image: /images/properties-grid-40.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+      - title: Home in Metric Way
+        image: /images/properties-grid-11.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Affordable Urban House
+        image: /images/properties-grid-41.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Villa on Hollywood Boulevard
+        image: /images/properties-grid-42.jpg
+        url: /single-property-1.html
+        categories:
+          - name: Featured
+            class: badge-orange
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Affordable Urban House
+        image: /images/properties-grid-43.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Rent
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+  - title: homes
+    properties-01:
+      - title: Home in Metric Way
+        image: /images/properties-grid-11.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Villa on Hollywood Boulevard
+        image: /images/properties-grid-08.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Home in Metric Way
+        image: /images/properties-grid-09.jpg
+        url: /single-property-1.html
+        categories:
+          - name: Featured
+            class: badge-orange
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $5.700
+        time: year
+      - title: Affordable Urban House
+        image: /images/properties-grid-10.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+      - title: Home in Metric Way
+        image: /images/properties-grid-40.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+      - title: Affordable Urban House
+        image: /images/properties-grid-41.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Affordable Urban House
+        image: /images/properties-grid-43.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Rent
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+      - title: Villa on Hollywood Boulevard
+        image: /images/properties-grid-42.jpg
+        url: /single-property-1.html
+        categories:
+          - name: Featured
+            class: badge-orange
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+  - title: villa
+    properties-01:
+      - title: Villa on Hollywood Boulevard
+        image: /images/properties-grid-08.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Home in Metric Way
+        image: /images/properties-grid-09.jpg
+        url: /single-property-1.html
+        categories:
+          - name: Featured
+            class: badge-orange
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $5.700
+        time: year
+      - title: Home in Metric Way
+        image: /images/properties-grid-11.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Affordable Urban House
+        image: /images/properties-grid-10.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+      - title: Home in Metric Way
+        image: /images/properties-grid-40.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+      - title: Affordable Urban House
+        image: /images/properties-grid-41.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Sale
+            class: badge-primary
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Villa on Hollywood Boulevard
+        image: /images/properties-grid-42.jpg
+        url: /single-property-1.html
+        categories:
+          - name: Featured
+            class: badge-orange
+          - name: For Sale
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        price: $1.250.000
+      - title: Affordable Urban House
+        image: /images/properties-grid-43.jpg
+        url: /single-property-1.html
+        categories:
+          - name: For Rent
+            class: badge-indigo
+        feature:
+          bed: 3 Br
+          tooltip_bed: 3 Bedroom
+          bath: 3 Ba
+          tooltip_bath: 3 Bathrooms
+          area: 2300 Sq.Ft
+          tooltip_area: Size
+          garage: 1 Gr
+          tooltip_garage: 1 Garage
+        is_price_time: true
+        price: $550
+        time: month
+
+info-box-01:
+  - title: Wider range of properties
+    image: /images/urban.png
+    url: /#
+    descriptions: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscorem ipsum dolor sit ametcipsum suscorein ipsumg elit.
+  - title: Financing made easy
+    image: /images/bank.png
+    url: /#
+    descriptions: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscorem ipsum dolor sit ametcipsum suscorein ipsumg elit.
+  - title: Transparentcy
+    image: /images/buy.png
+    url: /#
+    descriptions: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscorem ipsum dolor sit ametcipsum suscorein ipsumg elit.
+
+properties-02:
+  - title: Villa on Hollywood Boulevard
+    image: /images/properties-grid-12.jpg
+    url: /single-property-1.html
+    categories:
+      - name: Featured
+        class: badge-orange
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+    price: $1.250.000
+    descriptions: 1421 San Pedro St, Los Angeles
+  - title: Home in Metric Way
+    image: /images/properties-grid-13.jpg
+    url: /single-property-1.html
+    categories:
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+    price: $1.250.000
+    descriptions: 1421 San Pedro St, Los Angeles
+  - title: Affordable Urban House
+    image: /images/properties-grid-14.jpg
+    url: /single-property-1.html
+    categories:
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+    price: $1.250.000
+    descriptions: 1421 San Pedro St, Los Angeles
+  - title: Explore Old Barcelona
+    image: /images/properties-grid-15.jpg
+    url: /single-property-1.html
+    categories:
+      - name: Featured
+        class: badge-orange
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+    price: $1.250.000
+    descriptions: 1421 San Pedro St, Los Angeles
+  - title: Garden Gingerbread House
+    image: /images/properties-grid-16.jpg
+    url: /single-property-1.html
+    categories:
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+    price: $1.250.000
+    descriptions: 1421 San Pedro St, Los Angeles
+  - title: Villa on Hollywood Boulevard
+    image: /images/properties-grid-12.jpg
+    url: /single-property-1.html
+    categories:
+      - name: Featured
+        class: badge-orange
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+    price: $1.250.000
+    descriptions: 1421 San Pedro St, Los Angeles
+
+properties-03:
+  - title: Villa on Hollywood Boulevard
+    image: /images/properties-grid-23.jpg
+    url: /single-property-1.html
+    categories:
+      - name: For Rent
+        class: badge-indigo
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+    price: $550
+    time: month
+    descriptions: 1421 San Pedro St, Los Angeles
+  - title: Home in Metric Way
+    image: /images/properties-grid-24.jpg
+    url: /single-property-1.html
+    categories:
+      - name: For Rent
+        class: badge-indigo
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+    price: $550
+    time: month
+    descriptions: 1421 San Pedro St, Los Angeles
+  - title: Affordable Urban House
+    image: /images/properties-grid-25.jpg
+    url: /single-property-1.html
+    categories:
+      - name: Featured
+        class: badge-orange
+      - name: For Rent
+        class: badge-indigo
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+    price: $5.700
+    time: year
+    descriptions: 1421 San Pedro St, Los Angeles
+  - title: Explore Old Barcelona
+    image: /images/properties-grid-26.jpg
+    url: /single-property-1.html
+    categories:
+      - name: For Rent
+        class: badge-indigo
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+    price: $550
+    time: month
+    descriptions: 1421 San Pedro St, Los Angeles
+  - title: Garden Gingerbread House
+    image: /images/properties-grid-12.jpg
+    url: /single-property-1.html
+    categories:
+      - name: Featured
+        class: badge-orange
+      - name: For Rent
+        class: badge-indigo
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+    price: $5.700
+    time: year
+    descriptions: 1421 San Pedro St, Los Angeles
+
+info-box-02:
+  - title: Apartment
+    image: /images/white-verified.png
+    image-hover: /images/verified.png
+    url: /listing-with-left-sidebar.html
+    is_border: true
+  - title: House
+    image: /images/white-sofa.png
+    image-hover: /images/sofa.png
+    url: /listing-with-left-sidebar.html
+    is_border: true
+  - title: Office
+    image: /images/white-architecture-and-city.png
+    image-hover: /images/architecture-and-city.png
+    url: /listing-with-left-sidebar.html
+    is_border: true
+  - title: Villa
+    image: /images/white-eco-house.png
+    image-hover: /images/eco-house.png
+    url: /listing-with-left-sidebar.html
+
+blogs:
+  - title: Retail banks wake up to digital lending this year
+    image: /images/post-02.jpg
+    badge: rental
+    time: 30th Dec, 2020
+    url: /blog-details-1.html
+  - title: Within the construction industry as their overdraft
+    image: /images/post-01.jpg
+    badge: tips
+    time: 30th Dec, 2020
+    url: /blog-details-1.html
+testimonials:
+  - title: Great quality!
+    descriptions: We have chosen to work extensively with HomeID because of their quality services, including their On-the-Job Training program and other employer.
+    name: Oliver Beddows
+    jobs: / Reporter, Insights
+    image: /images/testimonial-1.png
+  - title: Great quality!
+    descriptions: We have chosen to work extensively with HomeID because of their quality services, including their On-the-Job Training program and other employer.
+    name: Oliver Beddows
+    jobs: / Reporter, Insights
+    image: /images/testimonial-1.png
+  - title: Great quality!
+    descriptions: We have chosen to work extensively with HomeID because of their quality services, including their On-the-Job Training program and other employer.
+    name: Oliver Beddows
+    jobs: / Reporter, Insights
+    image: /images/testimonial-1.png
+
+properties-04:
+  - title: New York
+    image: /images/properties-city-06.jpg
+    url: /single-property-1.html
+    min-price: $540.000
+    max-price: $900.000
+  - title: Los Angeles
+    image: /images/properties-city-07.jpg
+    url: /single-property-1.html
+    min-price: $520.000
+    max-price: $700.000
+  - title: San Jose
+    image: /images/properties-city-08.jpg
+    url: /single-property-1.html
+    min-price: $340.000
+    max-price: $600.000
+  - title: Fort Worth
+    image: /images/properties-city-09.jpg
+    url: /single-property-1.html
+    min-price: $240.000
+    max-price: $660.000
+  - title: Kansas City
+    image: /images/properties-city-10.jpg
+    url: /single-property-1.html
+    min-price: $380.000
+    max-price: $680.000

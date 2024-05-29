@@ -1,0 +1,35 @@
+<header class="main-header position-absolute fixed-top m-0 navbar-dark header-sticky header-sticky-smart header-mobile-xl header-02">
+    <div class="sticky-area">
+        <div class="{{ page.header_container| default: 'container container-xxl' }}">
+            <nav class="navbar navbar-expand-xl bg-transparent px-0 w-100">
+                <a class="navbar-brand order-0 order-xl-1 mx-xl-auto"
+                   href="{{ '/index.html' | document_url }}">
+                    <img src="{{ '/images/logo-white.png' | document_url }}" alt="{{site.title}}" class="normal-logo">
+                    <img src="{{ '/images/logo.png' | document_url }}" alt="{{site.title}}" class="sticky-logo">
+                </a>
+                <div class="d-flex d-xl-none order-2">
+                    <a class="d-block ml-auto mr-4 position-relative text-white p-2" href="#">
+                        <i class="fal fa-heart fs-large-4"></i>
+                        <span class="badge badge-primary badge-circle badge-absolute">1</span>
+                    </a>
+                    <button class="navbar-toggler border-0 pr-0" type="button"
+                            data-toggle="collapse"
+                            data-target="#primaryMenu03"
+                            aria-controls="primaryMenu03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="text-white fs-24"><i class="fal fa-bars"></i></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse order-3 order-xl-0 mt-3 mt-xl-0 mr-auto flex-grow-0"
+                     id="primaryMenu03">
+                    {% include navbar-main-02.html %}
+                    <div class="d-block d-xl-none">
+                        {% include navbar-right-mobile-02.html %}
+                    </div>
+                </div>
+                <div class="ml-auto d-none d-xl-block order-xl-2">
+                    {% include navbar-right-02.html %}
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>

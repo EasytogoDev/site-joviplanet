@@ -1,0 +1,41 @@
+.badge-circle {
+	border-radius: 100% !important;
+}
+
+.badge-absolute {
+	position: absolute;
+	right: -2px;
+	top: 10px;
+}
+
+.badge {
+	line-height: 1.15;
+	letter-spacing: 0.87px;
+	text-transform: uppercase;
+}
+.badge-blue {
+	background-color: rgba(78, 132, 250, 0.06);
+	border: 1px solid rgba(78, 132, 250, 0.2);
+	color: #4e84fa;
+}
+
+.badge-green {
+	background-color: rgba(108, 189, 126, 0.06);
+	border: 1px solid rgba(108, 189, 126, 0.2);
+	color: #6cbd7e;
+}
+
+.badge-yellow {
+	background-color: rgba(246, 181, 0, 0.06);
+	border: 1px solid rgba(246, 181, 0, 0.2);
+	color: #f6b500;
+}
+
+.badge-pink {
+	border: 1px solid rgba(231, 68, 91, 0.2);
+	background-color: rgba(231, 68, 91, 0.06);
+	color: $primary;
+}
+
+
+

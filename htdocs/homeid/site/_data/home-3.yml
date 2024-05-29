@@ -1,0 +1,339 @@
+properties:
+  - title: Home in Metric Way
+    image: /images/properties-grid-38.jpg
+    url: /single-property-1.html
+    categories:
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $1.250.000
+    address: 1421 San Pedro St, Los Angeles
+  - title: Garden Gingerbread House
+    image: /images/properties-grid-01.jpg
+    url: /single-property-1.html
+    categories:
+      - name: Featured
+        class: badge-orange
+      - name: For Rent
+        class: badge-indigo
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    is_price_time: true
+    price: $550
+    time: month
+    address: 1421 San Pedro St, Los Angeles
+  - title: Affordable Urban House
+    image: /images/properties-grid-02.jpg
+    url: /single-property-1.html
+    categories:
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $1.250.000
+    address: 1421 San Pedro St, Los Angeles
+  - title: Villa on Hollywood Boulevard
+    image: /images/properties-grid-39.jpg
+    url: /single-property-1.html
+    categories:
+      - name: Featured
+        class: badge-orange
+      - name: For Rent
+        class: badge-indigo
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    is_price_time: true
+    price: $5.700
+    time: year
+    address: 1421 San Pedro St, Los Angeles
+  - title: Affordable Urban House
+    image: /images/properties-grid-05.jpg
+    url: /single-property-1.html
+    categories:
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    price: $1.250.000
+    address: 1421 San Pedro St, Los Angeles
+  - title: Home in Metric Way
+    image: /images/properties-grid-03.jpg
+    url: /single-property-1.html
+    categories:
+      - name: For Rent
+        class: badge-indigo
+    feature:
+      bed: 3 Br
+      tooltip_bed: 3 Bedroom
+      bath: 3 Ba
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Gr
+      tooltip_garage: 1 Garage
+    is_price_time: true
+    price: $550
+    time: month
+    address: 1421 San Pedro St, Los Angeles
+info-box-01:
+  - title: Apartment
+    image: /images/verified.png
+    url: /listing-with-left-sidebar.html
+  - title: House
+    image: /images/sofa.png
+    url: /listing-with-left-sidebar.html
+  - title: Office
+    image: /images/architecture-and-city.png
+    url: /listing-with-left-sidebar.html
+  - title: Villa
+    image: /images/eco-house.png
+    url: /listing-with-left-sidebar.html
+  - title: Apartment
+    image: /images/town.png
+    url: /listing-with-left-sidebar.html
+  - title: Apartment
+    image: /images/verified.png
+    url: /listing-with-left-sidebar.html
+
+properties-slider-01:
+  - title: Villa in Coral Gables
+    sub-title: Stourbridge, West Midlands, DY9 9TA
+    image: /images/properties-slider-01.jpg
+    url: /single-property-1.html
+    categories:
+      - name: Featured
+        class: badge-orange
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Bedrooms
+      tooltip_bed: 3 Bedrooms
+      bath: 3 Bathrooms
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Garage
+      tooltip_garage: 1 Garage
+    price: $1.250.000
+    address: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspeor sit amet, cons ndisse suscorem ipsum dolor sit.
+  - title: Home in Metric Way
+    sub-title: Stourbridge, West Midlands, DY9 9TA
+    image: /images/properties-slider-02.jpg
+    url: /single-property-1.html
+    categories:
+      - name: Featured
+        class: badge-orange
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Bedrooms
+      tooltip_bed: 3 Bedrooms
+      bath: 3 Bathrooms
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Garage
+      tooltip_garage: 1 Garage
+    price: $1.250.000
+    address: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspeor sit amet, cons ndisse suscorem ipsum dolor sit.
+  - title: Affordable Urban House
+    sub-title: Stourbridge, West Midlands, DY9 9TA
+    image: /images/properties-slider-03.jpg
+    url: /single-property-1.html
+    categories:
+      - name: Featured
+        class: badge-orange
+      - name: For Sale
+        class: badge-primary
+    feature:
+      bed: 3 Bedrooms
+      tooltip_bed: 3 Bedrooms
+      bath: 3 Bathrooms
+      tooltip_bath: 3 Bathrooms
+      area: 2300 Sq.Ft
+      tooltip_area: Size
+      garage: 1 Garage
+      tooltip_garage: 1 Garage
+    price: $1.250.000
+    address: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspeor sit amet, cons ndisse suscorem ipsum dolor sit.
+
+properties-slider-02:
+  - title: Los Angeles
+    sub-title: 12 Properties
+    image: /images/properties-city-11.jpg
+    url: /single-property-1.html
+  - title: New York
+    sub-title: 24 Properties
+    image: /images/properties-city-12.jpg
+    url: /single-property-1.html
+  - title: Sacramento
+    sub-title: 24 Properties
+    image: /images/properties-city-13.jpg
+    url: /single-property-1.html
+  - title: Los Angeles
+    sub-title: 12 Properties
+    image: /images/properties-city-11.jpg
+    url: /single-property-1.html
+
+info-box-02:
+  - title: Buy a new home
+    image: /images/group-16.png
+    des: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscipit
+    url: /listing-with-left-sidebar.html
+  - title: Sell a home
+    image: /images/group-17.png
+    des: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscipit
+    url: /listing-with-left-sidebar.html
+  - title: Rent a home
+    image: /images/group-21.png
+    des: Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe ndisse suscipit
+    url: /listing-with-left-sidebar.html
+
+Counter:
+  - title: happy clients
+    start: 0
+    end: 1790
+  - title: finished projects
+    start: 0
+    end: 491
+  - title: Agents
+    start: 0
+    end: 245
+  - title: posts
+    start: 0
+    end: 1090
+
+testimonials:
+  - title: Amazing customer support so far!
+    des: Working with @homeID is like having a family member who can fix everything. They know what you need, exactly when you need it.
+    image: /images/testimonial-2.jpg
+    name: Oliver Beddows
+    jobs: / Reporter, Insights
+  - title: Very good and fast
+    des: Working with @homeID is like having a family member who can fix everything. They know what you need, exactly when you need it.
+    image: /images/testimonial-1.png
+    name: Oliver Beddows
+    jobs: / Reporter, Insights
+  - title: Very good and fast
+    des: Working with @homeID is like having a family member who can fix everything. They know what you need, exactly when you need it.
+    image: /images/testimonial-3.jpg
+    name: Oliver Beddows
+    jobs: / Reporter, Insights
+
+agents:
+  - name: Oliver Beddows
+    jobs: Sales Excutive
+    image: /images/agent-1.jpg
+    rate: 4.8/5
+    url: /agent-details-1.html
+    reviews: (67 reviews)
+  - name: Max Kordek
+    jobs: Real estate broker
+    image: /images/agent-2-lg.jpg
+    rate: 4.8/5
+    url: /agent-details-1.html
+    reviews: (67 reviews)
+  - name: Ted Stokes
+    jobs: Sales Excutive
+    image: /images/agent-4-lg.jpg
+    rate: 4.8/5
+    url: /agent-details-1.html
+    reviews: (67 reviews)
+  - name: David James
+    jobs: Real estate broker
+    image: /images/agent-3-lg.jpg
+    rate: 4.8/5
+    url: /agent-details-1.html
+    reviews: (67 reviews)
+  - name: Oliver Beddows
+    jobs: Sales Excutive
+    image: /images/agent-1.jpg
+    rate: 4.8/5
+    url: /agent-details-1.html
+    reviews: (67 reviews)
+
+blog-01:
+  - title: Opening a new store in NYC
+    url: /blog-details-1.html
+  - title: 5 Famous Progressive Web Apps
+    url: /blog-details-1.html
+  - title: How to Create an Effective Elevator Pitch
+    url: /blog-details-1.html
+  - title: Top Strategic Technology Trends for 2020
+    url: /blog-details-1.html
+  - title: The Quest for Better Web Accessibility
+    url: /blog-details-1.html
+
+blog-02:
+  - title: Retail banks wake up to digital lending this year
+    des: Lorem ipsum dolor sit amet, consecte tur cing elit. Suspe ndisse suscipit sagittis leo sit met condim entum, consecte tur cineoi
+    image: /images/post-03.jpg
+    time: 30th Dec, 2020
+    view: 149 views
+    badge: rental
+    url: /blog-details-1.html
+    url-cat: /#
+  - title: Within the construction industry as their overdraft
+    des: Lorem ipsum dolor sit amet, consecte tur cing elit. Suspe ndisse suscipit sagittis leo sit met condim entum, consecte tur cineoi
+    image: /images/post-04.jpg
+    time: 30th Dec, 2020
+    view: 149 views
+    badge: rental
+    url: /blog-details-1.html
+    url-cat: /#
+
+partner:
+  - is_hover_image: true
+    image: /images/partner-2.png
+    hover_image: /images/partner-hover-2.png
+    image_alt: Partner 2
+  - is_hover_image: true
+    image: /images/partner-3.png
+    hover_image: /images/partner-hover-3.png
+    image_alt: Partner 3
+  - is_hover_image: false
+    image: /images/partner-4.png
+    image_alt: Partner 4
+  - is_hover_image: true
+    image: /images/partner-5.png
+    hover_image: /images/partner-hover-5.png
+    image_alt: Partner 5
+  - is_hover_image: false
+    image: /images/partner-6.png
+    image_alt: Partner 6

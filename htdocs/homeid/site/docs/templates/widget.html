@@ -1,0 +1,1636 @@
+---
+layout: docs
+title: Widget
+description: List of widgets being used on the HomeID
+group: templates
+toc: true
+---
+
+<h2>Agents 01</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card border-0">
+		<div class="card-body pl-6 pr-0 py-0">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-4">Agents</h4>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item px-0 pb-3 pt-0">
+					<div class="media align-items-center">
+						<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block w-60px h-60 mr-3">
+							<img src="{{ '/images/agent-2.jpg' | document_url }}" alt="Oliver Beddows"
+							     class="rounded-circle">
+						</a>
+						<div class="media-body">
+							<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block text-dark font-weight-500 lh-15 hover-primary">Oliver Beddows</a>
+							<p class="mb-0 fs-13 mb-0 lh-17">Sales Excutive</p>
+							<p class="mb-0 fs-13 mb-0 lh-17"><span>(+123)</span><span
+									class="text-heading d-inline-block ml-2">1900 68668</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item px-0 pt-2 pb-3">
+					<div class="media align-items-center">
+						<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block w-60px h-60 mr-3">
+							<img src="{{ '/images/agent-1.jpg' | document_url }}" alt="Max Kordex"
+							     class="rounded-circle">
+						</a>
+						<div class="media-body">
+							<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block text-dark font-weight-500 lh-15 hover-primary">Max Kordex</a>
+							<p class="mb-0 fs-13 mb-0 lh-17">Real estate broker</p>
+							<p class="mb-0 fs-13 mb-0 lh-17"><span>(+123)</span><span
+									class="text-heading d-inline-block ml-2">1900 68668</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item px-0 pt-2">
+					<div class="media align-items-center">
+						<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block w-60px h-60 mr-3">
+							<img src="{{ '/images/agent-3.jpg' | document_url }}" alt="Hana Garcia"
+							     class="rounded-circle">
+						</a>
+						<div class="media-body">
+							<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block text-dark font-weight-500 lh-15 hover-primary">Hana Garcia</a>
+							<p class="mb-0 fs-13 mb-0 lh-17">Real estate broker</p>
+							<p class="mb-0 fs-13 mb-0 lh-17"><span>(+123)</span><span
+									class="text-heading d-inline-block ml-2">1900 68668</span>
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Agents 02</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card">
+		<div class="card-body px-6 py-4">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-2">Agents</h4>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item px-0 pb-3 pt-0">
+					<div class="media align-items-center">
+						<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block w-60px h-60 mr-3">
+							<img src="{{ '/images/agent-1.jpg' | document_url }}" alt="Oliver Beddows"
+							     class="rounded-circle">
+						</a>
+						<div class="media-body">
+							<a href="{{ '/agent-details-1.html' | document_url }}" class="text-muted hover-dark font-weight-500 mb-0 lh-214">Oliver Beddows</a>
+							<p class="mb-0 fs-13 mb-0 lh-2">Sales Excutive</p>
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item fs-13 text-heading font-weight-500">4.8/5</li>
+								<li class="list-inline-item fs-13 text-heading font-weight-500">
+									<ul class="list-inline mb-0">
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item px-0 pt-2 pb-3">
+					<div class="media align-items-center">
+						<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block w-60px h-60 mr-3">
+							<img src="{{ '/images/agent-2.jpg' | document_url }}" alt="Max Kordex"
+							     class="rounded-circle">
+						</a>
+						<div class="media-body">
+							<a href="{{ '/agent-details-1.html' | document_url }}" class="text-muted hover-dark font-weight-500 mb-0 lh-214">Max Kordex</a>
+							<p class="mb-0 fs-13 mb-0 lh-2">Real estate broker</p>
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item fs-12 text-heading font-weight-500">4.8/5</li>
+								<li class="list-inline-item fs-12 text-heading">
+									<ul class="list-inline mb-0">
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item px-0 pt-2">
+					<div class="media align-items-center">
+						<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block w-60px h-60 mr-3">
+							<img src="{{ '/images/agent-4-lg.jpg' | document_url }}" alt="Ted Stokes"
+							     class="rounded-circle">
+						</a>
+						<div class="media-body">
+							<a href="{{ '/agent-details-1.html' | document_url }}" class="text-muted hover-dark font-weight-500 mb-0 lh-214">Ted Stokes</a>
+							<p class="mb-0 fs-13 mb-0 lh-2">Sales Excutive</p>
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item fs-13 text-heading font-weight-500">4.8/5</li>
+								<li class="list-inline-item fs-13 text-heading font-weight-500">
+									<ul class="list-inline mb-0">
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+										<li class="list-inline-item mr-0">
+											<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Agents 03</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card">
+		<div class="card-body px-6 py-4">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-2">Agents</h4>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item px-0 pb-4 pt-0">
+					<div class="media align-items-center">
+						<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block w-60px h-60 mr-3">
+							<img src="{{ '/images/agent-1.jpg' | document_url }}" alt="Oliver Beddows"
+							     class="rounded-circle">
+						</a>
+						<div class="media-body">
+							<a href="#" class="d-block text-dark font-weight-500 lh-2 hover-primary">Oliver Beddows</a>
+							<p class="mb-0 fs-13 mb-0 lh-17">Sales Excutive</p>
+							<p class="mb-0 fs-13 mb-0 lh-17 text-heading font-weight-500">(+68)1221 09876
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item px-0 pt-3 pb-4">
+					<div class="media align-items-center">
+						<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block w-60px h-60 mr-3">
+							<img src="{{ '/images/agent-2.jpg' | document_url }}" alt="Max Kordex"
+							     class="rounded-circle">
+						</a>
+						<div class="media-body">
+							<a href="#" class="d-block text-dark font-weight-500 lh-2 hover-primary">Max Kordex</a>
+							<p class="mb-0 fs-13 mb-0 lh-17">Real estate broker</p>
+							<p class="mb-0 fs-13 mb-0 lh-17 text-heading font-weight-500">(+68)1221 09876
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item px-0 pt-2">
+					<div class="media align-items-center">
+						<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block w-60px h-60 mr-3">
+							<img src="{{ '/images/agent-4-lg.jpg' | document_url }}" alt="Ted Stokes"
+							     class="rounded-circle">
+						</a>
+						<div class="media-body">
+							<a href="#" class="d-block text-dark font-weight-500 lh-2 hover-primary">Ted Stokes</a>
+							<p class="mb-0 fs-13 mb-0 lh-17">Sales Excutive</p>
+							<p class="mb-0 fs-13 mb-0 lh-17 text-heading font-weight-500">(+68)1221 09876
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Agent Contact</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card">
+		<div class="card-body px-6 py-4 text-center">
+			<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block mb-2">
+				<img src="{{ '/images/agent-1.jpg' | document_url }}" alt="Oliver Beddows"
+				     class="rounded-circle">
+			</a>
+			<a href="{{ '/agent-details-1.html' | document_url }}" class="fs-16 lh-214 text-dark mb-0 font-weight-500 hover-primary">Oliver Beddows</a>
+			<p class="mb-0">Sales Excutive</p>
+			<ul class="list-inline mb-0">
+				<li class="list-inline-item fs-13 text-heading font-weight-500">4.8/5</li>
+				<li class="list-inline-item fs-13 text-heading font-weight-500 mr-1">
+					<ul class="list-inline mb-0">
+						<li class="list-inline-item mr-0">
+							<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+						</li>
+						<li class="list-inline-item mr-0">
+							<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+						</li>
+						<li class="list-inline-item mr-0">
+							<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+						</li>
+						<li class="list-inline-item mr-0">
+							<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+						</li>
+						<li class="list-inline-item mr-0">
+							<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+						</li>
+					</ul>
+				</li>
+				<li class="list-inline-item fs-13 text-gray-light">(67 reviews)</li>
+			</ul>
+			<a href="mailto:oliverbeddows@homeid.com" class="text-body">oliverbeddows@homeid.com</a>
+			<a href="tel:123-900-68668" class="text-heading font-weight-600 d-block mb-4">123 900 68668</a>
+			<ul class="list-inline border-bottom border-top py-3 mb-5">
+				<li class="list-inline-item mr-2">
+					<a href="#"
+					   class="w-40px h-40 rounded-circle border text-body bg-hover-primary hover-white border-hover-primary d-flex align-items-center justify-content-center"><i
+							class="fab fa-twitter"></i></a>
+				</li>
+				<li class="list-inline-item mr-2">
+					<a href="#"
+					   class="w-40px h-40 rounded-circle border text-body bg-hover-primary hover-white border-hover-primary d-flex align-items-center justify-content-center"><i
+							class="fab fa-facebook-f"></i></a>
+				</li>
+				<li class="list-inline-item mr-2">
+					<a href="#"
+					   class="w-40px h-40 rounded-circle border text-body bg-hover-primary hover-white border-hover-primary d-flex align-items-center justify-content-center">
+						<i class="fab fa-instagram"></i></a>
+				</li>
+				<li class="list-inline-item mr-2">
+					<a href="#"
+					   class="w-40px h-40 rounded-circle border text-body bg-hover-primary hover-white border-hover-primary d-flex align-items-center justify-content-center"><i
+							class="fab fa-linkedin-in"></i></a>
+				</li>
+			</ul>
+			<form>
+				<div class="form-group mb-2">
+					<label for="name" class="sr-only">Name</label>
+					<input type="text" class="form-control form-control-lg border-0 shadow-none" id="name"
+					       placeholder="First Name, Last Name">
+				</div>
+				<div class="form-group mb-2">
+					<label for="email" class="sr-only">Email</label>
+					<input type="text" class="form-control form-control-lg border-0 shadow-none" id="email"
+					       placeholder="Your email">
+				</div>
+				<div class="form-group mb-2">
+					<label for="phone" class="sr-only">Phone</label>
+					<input type="text" class="form-control form-control-lg border-0 shadow-none" id="phone"
+					       placeholder="Your phone">
+				</div>
+				<div class="form-group mb-4">
+					<label for="message" class="sr-only">Message</label>
+					<textarea class="form-control border-0 shadow-none" id="message"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary btn-lg btn-block shadow-none">Request Info</button>
+
+				<a href="{{ '/listing-with-left-sidebar.html' | document_url }}" class="d-flex align-items-center justify-content-center mt-4 text-heading hover-primary">
+					<span class="badge badge-circle border fs-13 font-weight-bold  mr-2">5</span>
+					<span class="font-weight-500 mr-2">Listed Properties</span>
+					<span class="text-primary fs-16"><i class="far fa-long-arrow-right"></i></span>
+				</a>
+			</form>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Category 01</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card category-widget">
+		<div class="card-body px-6 py-4">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-3">Popular Tags</h4>
+			<ul class="list-group list-group-no-border">
+				<li class="list-group-item px-0 pt-0 pb-3">
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="check1" name="tags">
+						<label class="custom-control-label" for="check1">Finace & Accounting</label>
+					</div>
+				</li>
+				<li class="list-group-item px-0 pt-0 pb-3">
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="check2" name="tags">
+						<label class="custom-control-label" for="check2">Financial Services</label>
+					</div>
+
+				</li>
+				<li class="list-group-item px-0 pt-0 pb-3">
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="check3" name="tags">
+						<label class="custom-control-label" for="check3">Funding Trends</label>
+					</div>
+				</li>
+				<li class="list-group-item px-0 pt-0 pb-3">
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="check4" name="tags">
+						<label class="custom-control-label" for="check4">Industrial Products</label>
+					</div>
+				</li>
+				<li class="list-group-item px-0 pt-0 pb-3">
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="check5" name="tags">
+						<label class="custom-control-label" for="check5">Press Releases</label>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Category 02</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card category-widget">
+		<div class="card-body px-6 py-4">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-3">Popular Tags</h4>
+			<ul class="list-group list-group-no-border">
+				<li class="list-group-item p-0">
+					<a href="{{ '/listing-with-left-sidebar.html' | document_url }}" class="d-flex text-body hover-primary">
+						<span class="lh-29">Creative</span>
+						<span class="d-block ml-auto">13</span>
+					</a>
+				</li>
+				<li class="list-group-item p-0">
+					<a href="{{ '/listing-with-left-sidebar.html' | document_url }}" class="d-flex text-body hover-primary">
+						<span class="lh-29">Rentals</span>
+						<span class="d-block ml-auto">21</span>
+					</a>
+				</li>
+				<li class="list-group-item p-0">
+					<a href="{{ '/listing-with-left-sidebar.html' | document_url }}" class="d-flex text-body hover-primary">
+						<span class="lh-29">Images and B-Roll</span>
+						<span class="d-block ml-auto">17</span>
+					</a>
+				</li>
+				<li class="list-group-item p-0">
+					<a href="{{ '/listing-with-left-sidebar.html' | document_url }}" class="d-flex text-body hover-primary">
+						<span class="lh-29">In the News</span>
+						<span class="d-block ml-auto">4</span>
+					</a>
+				</li>
+				<li class="list-group-item p-0">
+					<a href="{{ '/listing-with-left-sidebar.html' | document_url }}" class="d-flex text-body hover-primary">
+						<span class="lh-29">Real Estate</span>
+						<span class="d-block ml-auto">27</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>City</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card city-widget">
+		<div class="card-body px-6 py-4">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-3">Destinations</h4>
+			<div class="row no-gutters m-n1">
+				<div class="col-6 p-1">
+					<a href="{{ '/listing-with-left-sidebar.html' | document_url }}" class="card hover-zoom-in">
+						<div class="card-img bg-img"
+						     style="background-image: url('{{ "/images/small-los-angeles.jpg" | document_url }}');background-size: cover;background-position: center"></div>
+						<div class="card-img-overlay bg-gradient-3 rounded-lg d-flex align-items-end">
+							<p class="card-text font-weight-500 lh-1 text-white">Los Angeles</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 p-1">
+					<a href="{{ '/listing-with-left-sidebar.html' | document_url }}" class="card hover-zoom-in">
+						<div class="card-img bg-img"
+						     style="background-image: url('{{ "/images/small-south-florida.jpg" | document_url }}');background-size: cover;background-position: center"></div>
+						<div class="card-img-overlay bg-gradient-3 rounded-lg d-flex align-items-end">
+							<p class="card-text font-weight-500 lh-1 text-white">South Florida</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 p-1">
+					<a href="{{ '/listing-with-left-sidebar.html' | document_url }}" class="card hover-zoom-in">
+						<div class="card-img bg-img"
+						     style="background-image: url('{{ "/images/small-the-hamptons.jpg" | document_url }}');background-size: cover;background-position: center"></div>
+						<div class="card-img-overlay bg-gradient-3 rounded-lg d-flex align-items-end">
+							<p class="card-text font-weight-500 lh-1 text-white">The Hamptons</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 p-1">
+					<a href="{{ '/listing-with-left-sidebar.html' | document_url }}" class="card hover-zoom-in">
+						<div class="card-img bg-img"
+						     style="background-image: url('{{ "/images/small-greater-boston.jpg" | document_url }}');background-size: cover;background-position: center"></div>
+						<div class="card-img-overlay bg-gradient-3 rounded-lg d-flex align-items-end">
+							<p class="card-text font-weight-500 lh-1 text-white">Greater Boston</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 p-1">
+					<a href="{{ '/listing-with-left-sidebar.html' | document_url }}" class="card hover-zoom-in">
+						<div class="card-img bg-img"
+						     style="background-image: url('{{ "/images/small-new-mexico.jpg" | document_url }}');background-size: cover;background-position: center"></div>
+						<div class="card-img-overlay bg-gradient-3 rounded-lg d-flex align-items-end">
+							<p class="card-text font-weight-500 lh-1 text-white">New Mexico</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-6 p-1">
+					<a href="{{ '/listing-with-left-sidebar.html' | document_url }}" class="card hover-zoom-in">
+						<div class="card-img bg-img"
+						     style="background-image: url('{{ "/images/small-los-angeles.jpg" | document_url }}');background-size: cover;background-position: center"></div>
+						<div class="card-img-overlay bg-gradient-3 rounded-lg d-flex align-items-end">
+							<p class="card-text font-weight-500 lh-1 text-white">Los Angeles</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>MailChimp</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card">
+		<div class="card-body px-6 py-4">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-1">Newsletter Sign Up</h4>
+			<p class="card-text mb-5">Subscribe to new letter to receive exclusive offer and the latest news</p>
+			<form>
+				<div class="form-group mb-3">
+					<label for="name2" class="sr-only">Email</label>
+					<input type="text" class="form-control form-control-lg border-0 shadow-none" id="name2" name="email"
+					       placeholder="Enter your email">
+				</div>
+				<button type="submit" class="btn btn-primary btn-lg btn-block shadow-none mb-2">Subscribe</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Mortgage Calculator</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card">
+		<div class="card-body px-6 py-4">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-3">Mortgage Calculator</h4>
+			<form>
+				<div class="form-group">
+					<label for="totalAmount">Total Amount</label>
+					<div class="input-group input-group-lg">
+						<div class="input-group-prepend">
+							<span class="input-group-text bg-gray-01 border-0 font-weight-600">$</span>
+						</div>
+						<input type="text" class="form-control border-0 shadow-none" id="totalAmount" name="total-amount">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="downPayment">Down Paymentt</label>
+					<div class="input-group input-group-lg">
+						<div class="input-group-prepend">
+							<span class="input-group-text bg-gray-01 border-0 font-weight-600">$</span>
+						</div>
+						<input type="text" class="form-control border-0 shadow-none" id="downPayment" name="downPayment">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="interestRate">Interest Rate</label>
+					<div class="input-group input-group-lg">
+						<div class="input-group-prepend">
+							<span class="input-group-text bg-gray-01 border-0 font-weight-600">%</span>
+						</div>
+						<input type="text" class="form-control border-0 shadow-none" id="interestRate" name="interestRate">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="number-of-years">Number of years</label>
+					<input type="text" class="form-control border-0 shadow-none form-control-lg"
+					       id="number-of-years" name="years">
+				</div>
+				<div class="form-group mb-4">
+					<label for="paymentPeriod">Payment Period</label>
+					<select class="form-control border-0 shadow-none form-control-lg selectpicker"
+					        title="" data-style="btn-lg py-2 h-52" id="paymentPeriod" name="paymentPeriod">
+						<option>Monthly</option>
+						<option>Yearly</option>
+					</select>
+				</div>
+				<button type="submit" class="btn btn-primary btn-lg btn-block shadow-none">Caculate</button>
+			</form>
+			<ul class="list-group list-group-flush mt-3">
+				<li class="list-group-item px-0">
+					<div class="d-flex">
+						<span>Monthly Payment</span>
+						<span class="d-block ml-auto font-weight-500 text-heading">$33</span>
+					</div>
+
+				</li>
+				<li class="list-group-item px-0">
+					<div class="d-flex">
+						<span>Total Cost of Loan</span>
+						<span class="d-block ml-auto font-weight-500 text-heading">$464</span>
+					</div>
+
+				</li>
+				<li class="list-group-item px-0">
+					<div class="d-flex">
+						<span>Total interest Paid</span>
+						<span class="d-block ml-auto font-weight-500 text-heading">$119</span>
+					</div>
+
+				</li>
+				<li class="list-group-item px-0">
+					<div class="d-flex">
+						<span>Mortgage Payment</span>
+						<span class="d-block ml-auto font-weight-500 text-heading">$1.55</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Posts 01</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card">
+		<div class="card-body px-6 py-4">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-3">Latest Posts</h4>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item px-0 pt-0 pb-3">
+					<div class="media">
+						<div class="position-relative mr-3">
+							<a href="{{ '/blog-details-1.html' | document_url }}" class="d-block w-100px rounded pt-11 bg-img-cover-center"
+							   style="background-image: url('{{ "/images/post-02.jpg" | document_url }}')">
+							</a>
+							<a href="{{ '/blog-grid-with-sidebar.html' | document_url }}"
+							   class="badge text-white bg-dark-opacity-04 m-1 fs-13 font-weight-500 bg-hover-primary hover-white position-absolute pos-fixed-top">
+								creative
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="fs-14 lh-186 mb-1">
+								<a href="{{ '/blog-details-1.html' | document_url }}" class="text-dark hover-primary">
+									Retail banks wake up to digital lending this year
+								</a>
+							</h4>
+							<div class="text-gray-light">
+								Dec 16, 2018
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item px-0 pt-2 pb-3">
+					<div class="media">
+						<div class="position-relative mr-3">
+							<a href="{{ '/blog-details-1.html' | document_url }}" class="d-block w-100px rounded pt-11 bg-img-cover-center"
+							   style="background-image: url('{{ "/images/post-04.jpg" | document_url }}')">
+							</a>
+							<a href="{{ '/blog-grid-with-sidebar.html' | document_url }}"
+							   class="badge text-white bg-dark-opacity-04 m-1 fs-13 font-weight-500 bg-hover-primary hover-white position-absolute pos-fixed-top">
+								rental
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="fs-14 lh-186 mb-1">
+								<a href="{{ '/blog-details-1.html' | document_url }}" class="text-dark hover-primary">
+									Within the construction industry as their overdraft
+								</a>
+							</h4>
+							<div class="text-gray-light">
+								Dec 16, 2018
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item px-0 pt-2">
+					<div class="media">
+						<div class="position-relative mr-3">
+							<a href="{{ '/blog-details-1.html' | document_url }}" class="d-block w-100px rounded pt-11 bg-img-cover-center"
+							   style="background-image: url('{{ "/images/post-07.jpg" | document_url }}')">
+							</a>
+							<a href="{{ '/blog-grid-with-sidebar.html' | document_url }}"
+							   class="badge text-white bg-dark-opacity-04 m-1 fs-13 font-weight-500 bg-hover-primary hover-white position-absolute pos-fixed-top">
+								rental
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="fs-14 lh-186 mb-1">
+								<a href="{{ '/blog-details-1.html' | document_url }}" class="text-dark hover-primary">
+									Future Office Buildings: Intelligent by Design
+								</a>
+							</h4>
+							<div class="text-gray-light">
+								Dec 16, 2018
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Posts 02</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card border-0">
+		<div class="card-body pr-0 pl-6 py-0">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-3">Latest Posts</h4>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item px-0 pt-0 pb-3">
+					<div class="media">
+						<div class="position-relative mr-3">
+							<a href="{{ '/blog-details-1.html' | document_url }}" class="d-block w-100px rounded pt-11 bg-img-cover-center"
+							   style="background-image: url('{{ "/images/post-02.jpg" | document_url }}')">
+							</a>
+							<a href="{{ '/blog-grid-with-sidebar.html' | document_url }}"
+							   class="badge text-white bg-dark-opacity-04 m-1 fs-13 font-weight-500 bg-hover-primary hover-white position-absolute pos-fixed-top">
+								creative
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="fs-14 lh-186 mb-1">
+								<a href="{{ '/blog-details-1.html' | document_url }}" class="text-dark hover-primary">
+									Retail banks wake up to digital lending this year
+								</a>
+							</h4>
+							<div class="text-gray-light">
+								Dec 16, 2018
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item px-0 pt-2 pb-3">
+					<div class="media">
+						<div class="position-relative mr-3">
+							<a href="{{ '/blog-details-1.html' | document_url }}" class="d-block w-100px rounded pt-11 bg-img-cover-center"
+							   style="background-image: url('{{ "/images/post-04.jpg" | document_url }}')">
+							</a>
+							<a href="{{ '/blog-grid-with-sidebar.html' | document_url }}"
+							   class="badge text-white bg-dark-opacity-04 m-1 fs-13 font-weight-500 bg-hover-primary hover-white position-absolute pos-fixed-top">
+								rental
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="fs-14 lh-186 mb-1">
+								<a href="{{ '/blog-details-1.html' | document_url }}" class="text-dark hover-primary">
+									Within the construction industry as their overdraft
+								</a>
+							</h4>
+							<div class="text-gray-light">
+								Dec 16, 2018
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item px-0 pt-2">
+					<div class="media">
+						<div class="position-relative mr-3">
+							<a href="{{ '/blog-details-1.html' | document_url }}" class="d-block w-100px rounded pt-11 bg-img-cover-center"
+							   style="background-image: url('{{ "/images/post-07.jpg" | document_url }}')">
+							</a>
+							<a href="{{ '/blog-grid-with-sidebar.html' | document_url }}"
+							   class="badge text-white bg-dark-opacity-04 m-1 fs-13 font-weight-500 bg-hover-primary hover-white position-absolute pos-fixed-top">
+								rental
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="fs-14 lh-186 mb-1">
+								<a href="{{ '/blog-details-1.html' | document_url }}" class="text-dark hover-primary">
+									Future Office Buildings: Intelligent by Design
+								</a>
+							</h4>
+							<div class="text-gray-light">
+								Dec 16, 2018
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Property 01</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card border-0 property-widget">
+		<div class="card-body pl-6 pr-0 py-0">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-3">Featured Properties</h4>
+			<div class="slick-slider mx-0"
+			     data-slick-options='{"slidesToShow": 1, "autoplay":true}'>
+				<div class="box px-0">
+					<div class="card border-0">
+						<img src="{{ '/images/feature-property-01.jpg' | document_url }}" class="card-img" alt="Villa on Hollywood
+                                                    Boulevard">
+						<div class="card-img-overlay d-flex flex-column bg-gradient-3 rounded-lg">
+							<div class="d-flex mb-auto">
+								<a href="#" class="mr-1 badge badge-orange">featured</a>
+								<a href="#" class="badge badge-indigo">for Rent</a>
+							</div>
+							<div class="px-2 pb-2">
+								<a href="{{ '/single-property-1.html' | document_url }}" class="text-white"><h5 class="card-title fs-16 lh-2 mb-0">Villa on Hollywood
+									Boulevard</h5></a>
+								<p class="card-text text-gray-light mb-0 font-weight-500">1421 San Predro St, Los Angeles</p>
+								<p class="text-white mb-0"><span class="fs-17 font-weight-bold">$2500 </span>/month
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="box px-0">
+					<div class="card border-0">
+						<img src="{{ '/images/feature-property-01.jpg' | document_url }}" class="card-img" alt="Villa on Hollywood
+                                                    Boulevard">
+						<div class="card-img-overlay d-flex flex-column bg-gradient-3 rounded-lg">
+							<div class="d-flex mb-auto">
+								<a href="#" class="mr-1 badge badge-orange">featured</a>
+								<a href="#" class="badge badge-indigo">for Rent</a>
+							</div>
+							<div class="px-2 pb-2">
+								<a href="{{ '/single-property-1.html' | document_url }}" class="text-white"><h5 class="card-title fs-16 lh-2 mb-0">Villa on Hollywood
+									Boulevard</h5></a>
+								<p class="card-text text-gray-light mb-0 font-weight-500">1421 San Predro St, Los Angeles</p>
+								<p class="text-white mb-0"><span class="fs-17 font-weight-bold">$2500 </span>/month
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="box px-0">
+					<div class="card border-0">
+						<img src="{{ '/images/feature-property-01.jpg' | document_url }}" class="card-img" alt="Villa on Hollywood
+                                                    Boulevard">
+						<div class="card-img-overlay d-flex flex-column bg-gradient-3 rounded-lg">
+							<div class="d-flex mb-auto">
+								<a href="#" class="mr-1 badge badge-orange">featured</a>
+								<a href="#" class="badge badge-indigo">for Rent</a>
+							</div>
+							<div class="px-2 pb-2">
+								<a href="{{ '/single-property-1.html' | document_url }}" class="text-white"><h5 class="card-title fs-16 lh-2 mb-0">Villa on Hollywood
+									Boulevard</h5></a>
+								<p class="card-text text-gray-light mb-0 font-weight-500">1421 San Predro St, Los Angeles</p>
+								<p class="text-white mb-0"><span class="fs-17 font-weight-bold">$2500 </span>/month
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+
+<h2>Property 02</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card property-widget">
+		<div class="card-body px-6 pt-5 pb-6">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-3">Featured Properties</h4>
+			<div class="slick-slider mx-0"
+			     data-slick-options='{"slidesToShow": 1, "autoplay":true}'>
+				<div class="box px-0">
+					<div class="card border-0">
+						<img src="{{ '/images/feature-property-01.jpg' | document_url }}" class="card-img" alt="Villa on Hollywood
+                                                    Boulevard">
+						<div class="card-img-overlay d-flex flex-column bg-gradient-3 rounded-lg">
+							<div class="d-flex mb-auto">
+								<a href="#" class="mr-1 badge badge-orange">featured</a>
+								<a href="#" class="badge badge-indigo">for Rent</a>
+							</div>
+							<div class="px-2 pb-2">
+								<a href="{{ '/single-property-1.html' | document_url }}" class="text-white"><h5 class="card-title fs-16 lh-2 mb-0">Villa on Hollywood
+									Boulevard</h5></a>
+								<p class="card-text text-gray-light mb-0 font-weight-500">1421 San Predro St, Los Angeles</p>
+								<p class="text-white mb-0"><span class="fs-17 font-weight-bold">$2500 </span>/month
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="box px-0">
+					<div class="card border-0">
+						<img src="{{ '/images/feature-property-01.jpg' | document_url }}" class="card-img" alt="Villa on Hollywood
+                                                    Boulevard">
+						<div class="card-img-overlay d-flex flex-column bg-gradient-3 rounded-lg">
+							<div class="d-flex mb-auto">
+								<a href="#" class="mr-1 badge badge-orange">featured</a>
+								<a href="#" class="badge badge-indigo">for Rent</a>
+							</div>
+							<div class="px-2 pb-2">
+								<a href="{{ '/single-property-1.html' | document_url }}" class="text-white"><h5 class="card-title fs-16 lh-2 mb-0">Villa on Hollywood
+									Boulevard</h5></a>
+								<p class="card-text text-gray-light mb-0 font-weight-500">1421 San Predro St, Los Angeles</p>
+								<p class="text-white mb-0"><span class="fs-17 font-weight-bold">$2500 </span>/month
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="box px-0">
+					<div class="card border-0">
+						<img src="{{ '/images/feature-property-01.jpg' | document_url }}" class="card-img" alt="Villa on Hollywood
+                                                    Boulevard">
+						<div class="card-img-overlay d-flex flex-column bg-gradient-3 rounded-lg">
+							<div class="d-flex mb-auto">
+								<a href="#" class="mr-1 badge badge-orange">featured</a>
+								<a href="#" class="badge badge-indigo">for Rent</a>
+							</div>
+							<div class="px-2 pb-2">
+								<a href="{{ '/single-property-1.html' | document_url }}" class="text-white"><h5 class="card-title fs-16 lh-2 mb-0">Villa on Hollywood
+									Boulevard</h5></a>
+								<p class="card-text text-gray-light mb-0 font-weight-500">1421 San Predro St, Los Angeles</p>
+								<p class="text-white mb-0"><span class="fs-17 font-weight-bold">$2500 </span>/month
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Property 03</h2>
+{% capture example %}
+
+<div class="bg-gray-01 py-8 pl-3 pr-lg-0 pr-3">
+	<div style="max-width:370px">
+		<div class="bg-white rounded-lg py-lg-6 pl-lg-6 pr-lg-3 p-4">
+			<ul class="list-inline d-sm-flex align-items-sm-center mb-2">
+				<li class="list-inline-item badge badge-orange mr-2">Featured</li>
+				<li class="list-inline-item badge badge-primary mr-3">For Sale</li>
+			</ul>
+			<h2 class="fs-22 text-heading pt-2">Villa Called Archangel</h2>
+			<p class="mb-2"><i class="fal fa-map-marker-alt mr-1"></i>398 Pete Pascale Pl, New York</p>
+			<div class="d-sm-flex align-items-sm-center">
+				<p class="fs-22 text-heading font-weight-bold mb-0 mr-6">$1.250.000</p>
+				<p class="mb-0">$9350/SqFt</p>
+			</div>
+			<div class="row mt-5">
+				<div class="col-sm-6 mb-3">
+					<div class="media">
+						<div class="p-2 shadow-xxs-1 rounded-lg mr-2 lh-1">
+							<svg class="icon icon-bedroom fs-18 text-primary"><use xlink:href="#icon-bedroom"></use></svg>
+						</div>
+						<div class="media-body">
+							<h5 class="fs-13 font-weight-normal mb-0">Bedrooms</h5>
+							<p class="mb-0 fs-13 font-weight-bold text-dark">3</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 mb-3">
+					<div class="media">
+						<div class="p-2 shadow-xxs-1 rounded-lg mr-2 lh-1">
+							<svg class="icon icon-shower fs-18 text-primary"><use xlink:href="#icon-shower"></use></svg>
+						</div>
+						<div class="media-body">
+							<h5 class="fs-13 font-weight-normal mb-0">Bathrooms</h5>
+							<p class="mb-0 fs-13 font-weight-bold text-dark">2</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 mb-3">
+					<div class="media">
+						<div class="p-2 shadow-xxs-1 rounded-lg mr-2 lh-1">
+							<svg class="icon icon-square fs-18 text-primary"><use xlink:href="#icon-square"></use></svg>
+						</div>
+						<div class="media-body">
+							<h5 class="fs-13 font-weight-normal mb-0">Area</h5>
+							<p class="mb-0 fs-13 font-weight-bold text-dark">3.6k SqFt</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 mb-3">
+					<div class="media">
+						<div class="p-2 shadow-xxs-1 rounded-lg mr-2 lh-1">
+							<svg class="icon icon-Garage fs-18 text-primary"><use xlink:href="#icon-Garage"></use></svg>
+						</div>
+						<div class="media-body">
+							<h5 class="fs-13 font-weight-normal mb-0">Garage</h5>
+							<p class="mb-0 fs-13 font-weight-bold text-dark">1</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="mb-6 mt-1">Villa Called Archangel is now available to buy off plan in New Islington in Australia.</p>
+			<div class="mr-xl-2">
+				<a href="#" class="btn btn-outline-primary btn-lg btn-block rounded border text-body border-hover-primary hover-white">Schedule a Tour</a>
+				<a href="#" class="btn btn-outline-primary btn-lg btn-block rounded border text-body border-hover-primary hover-white mt-4">Request Info</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2> Request Tour</h2>
+
+{% capture example %}
+<div style="max-width: 370px">
+	<div class="card border-0 widget-request-tour">
+		<ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active px-3" data-toggle="tab" href="#schedule" role="tab"
+				   aria-selected="true">Schedule
+					A Tour</a>
+			</li>
+			<li class="nav-item" role="presentation">
+				<a class="nav-link px-3" data-toggle="tab" href="#request-info" role="tab"
+				   aria-selected="false">Request
+					Info</a>
+			</li>
+		</ul>
+		<div class="card-body px-6 shadow-xxs-2 pb-5 pt-0">
+			<form>
+				<div class="tab-content pt-1 pb-0 px-0 shadow-none" id="myTabContent">
+					<div class="tab-pane fade show active" id="schedule" role="tabpanel">
+						<div class="slick-slider calendar arrow-hide-disable mx-n1"
+						     data-slick-options='{"slidesToShow": 5, "autoplay":false,"dots":false}'>
+							<div class="box px-1 py-4">
+								<div class="card pointer active border-0 shadow-xxs-1" data-date="March 17, 2020">
+									<div class="card-body p-1 text-center">
+										<p class="day fs-12 text-muted lh-2 mb-0">Tue</p>
+										<p class="date fs-18 text-heading lh-173 mb-0 font-weight-bold">17</p>
+										<p class="month fs-13 letter-spacing-087 mb-0">Mar</p>
+									</div>
+								</div>
+							</div>
+							<div class="box px-1 py-4">
+								<div class="card pointer border-0 shadow-xxs-1" data-date="March 18, 2020">
+									<div class="card-body p-1 text-center">
+										<p class="day fs-12 text-muted lh-2 mb-0">Wed</p>
+										<p class="date fs-18 text-heading lh-173 mb-0 font-weight-bold">18</p>
+										<p class="month fs-13 letter-spacing-087 mb-0">Mar</p>
+									</div>
+								</div>
+							</div>
+							<div class="box px-1 py-4">
+								<div class="card pointer border-0 shadow-xxs-1" data-date="March 19, 2020">
+									<div class="card-body p-1 text-center">
+										<p class="day fs-12 text-muted lh-2 mb-0">Thur</p>
+										<p class="date fs-18 text-heading lh-173 mb-0 font-weight-bold">19</p>
+										<p class="month fs-13 letter-spacing-087 mb-0">Mar</p>
+									</div>
+								</div>
+							</div>
+							<div class="box px-1 py-4">
+								<div class="card pointer border-0 shadow-xxs-1" data-date="March 20, 2020">
+									<div class="card-body p-1 text-center">
+										<p class="day fs-12 text-muted lh-2 mb-0">Fri</p>
+										<p class="date fs-18 text-heading lh-173 mb-0 font-weight-bold">20</p>
+										<p class="month fs-13 letter-spacing-087 mb-0">Mar</p>
+									</div>
+								</div>
+							</div>
+							<div class="box px-1 py-4">
+								<div class="card pointer border-0 shadow-xxs-1" data-date="March 21, 2020">
+									<div class="card-body p-1 text-center">
+										<p class="day fs-12 text-muted lh-2 mb-0">Sat</p>
+										<p class="date fs-18 text-heading lh-173 mb-0 font-weight-bold">21</p>
+										<p class="month fs-13 letter-spacing-087 mb-0">Mar</p>
+									</div>
+								</div>
+							</div>
+							<div class="box px-1 py-4">
+								<div class="card pointer border-0 shadow-xxs-1" data-date="March 22, 2020">
+									<div class="card-body p-1 text-center">
+										<p class="day fs-12 text-muted lh-2 mb-0">Sun</p>
+										<p class="date fs-18 text-heading lh-173 mb-0 font-weight-bold">22</p>
+										<p class="month fs-13 letter-spacing-087 mb-0">Mar</p>
+									</div>
+								</div>
+							</div>
+							<div class="box px-1 py-4">
+								<div class="card pointer border-0 shadow-xxs-1" data-date="March 23, 2020">
+									<div class="card-body p-1 text-center">
+										<p class="day fs-12 text-muted lh-2 mb-0">Mon</p>
+										<p class="date fs-18 text-heading lh-173 mb-0 font-weight-bold">23</p>
+										<p class="month fs-13 letter-spacing-087 mb-0">Mar</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<input type="hidden" class="date" name="date" value="March 17, 2020">
+						<div class="form-group mb-2">
+							<div class="input-group input-group-lg bootstrap-timepicker timepicker">
+								<input type="text" class="form-control border-0 text-body shadow-none" name="time"
+								       placeholder="Choose a time">
+								<div class="input-group-append input-group-addon">
+									<button class="btn bg-input shadow-none fs-18 lh-1" type="button"><i
+											class="fal fa-angle-down"></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="form-group mb-2">
+							<input type="text" class="form-control form-control-lg border-0"
+							       placeholder="First Name, Last Name" name="name">
+						</div>
+						<div class="form-group mb-2">
+							<input type="email" class="form-control form-control-lg border-0" placeholder="Your Email" name="email">
+						</div>
+						<div class="form-group mb-4">
+							<input type="tel" class="form-control form-control-lg border-0" placeholder="Your phone" name="phone">
+						</div>
+						<button type="submit" class="btn btn-primary btn-lg btn-block rounded">Schedule A Tour</button>
+						<div class="form-group form-check mt-2 mb-0">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1" name="exampleCheck1">
+							<label class="form-check-label fs-13" for="exampleCheck1">Egestas fringilla phasellus
+								faucibus
+								scelerisque
+								eleifend donec.</label>
+						</div>
+					</div>
+					<div class="tab-pane fade pt-5" id="request-info" role="tabpanel">
+						<div class="form-check d-flex align-items-center border-bottom pb-3 mb-3">
+							<input class="form-check-input" type="radio" name="agent" value="option1">
+							<div class="form-check-label ml-2">
+								<div class="d-flex align-items-center">
+									<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block w-60px h-60 mr-3">
+										<img src="{{ '/images/agent-2.jpg' | document_url }}"
+										     class="rounded-circle" alt="Oliver Beddows">
+									</a>
+									<div>
+										<a href="{{ '/agent-details-1.html' | document_url }}"
+										   class="d-block text-dark font-weight-500 lh-15 hover-primary">Oliver
+											Beddows</a>
+										<p class="mb-0 fs-13 mb-0 lh-17">Sales Excutive</p>
+										<p class="mb-0 fs-13 mb-0 lh-17"><span>(+123)</span><span
+												class="text-heading d-inline-block ml-2">1900 68668</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-check d-flex align-items-center mb-6">
+							<input class="form-check-input" type="radio" name="agent" id="inlineRadio2"
+							       value="option2">
+							<div class="form-check-label ml-2">
+								<div class="d-flex align-items-center">
+									<a href="{{ '/agent-details-1.html' | document_url }}" class="d-block w-60px h-60 mr-3">
+										<img src="{{ '/images/agent-1.jpg' | document_url }}"
+										     class="rounded-circle" alt="Max Kordex">
+									</a>
+									<div>
+										<a href="{{ '/agent-details-1.html' | document_url }}"
+										   class="d-block text-dark font-weight-500 lh-15 hover-primary">Max Kordex</a>
+										<p class="mb-0 fs-13 mb-0 lh-17">Real estate broker</p>
+										<p class="mb-0 fs-13 mb-0 lh-17"><span>(+123)</span><span
+												class="text-heading d-inline-block ml-2">1900 68668</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group mb-2">
+							<input type="text" class="form-control form-control-lg border-0"
+							       placeholder="First Name, Last Name" name="name">
+						</div>
+						<div class="form-group mb-2">
+							<input type="email" class="form-control form-control-lg border-0" placeholder="Your Email" name="email">
+						</div>
+						<div class="form-group mb-2">
+							<input type="tel" class="form-control form-control-lg border-0" placeholder="Your phone" name="phone">
+						</div>
+						<div class="form-group mb-4">
+							<textarea class="form-control border-0" rows="4">Hello, I'm interested in Villa Called Archangel</textarea>
+						</div>
+						<button type="submit" class="btn btn-primary btn-lg btn-block rounded">Request Info</button>
+						<div class="form-group form-check mt-2 mb-0">
+							<input type="checkbox" class="form-check-input" id="exampleCheck2" name="exampleCheck2">
+							<label class="form-check-label fs-13" for="exampleCheck2">Egestas fringilla phasellus
+								faucibus
+								scelerisque
+								eleifend donec.</label>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Search 01</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card">
+		<div class="card-body px-6 py-4">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-3">Find your home</h4>
+			<form>
+				<div class="form-group">
+					<label for="key-word" class="sr-only">Key Word</label>
+					<input type="text" class="form-control form-control-lg border-0 shadow-none" id="key-word"
+					       placeholder="Enter keyword..." name="search">
+				</div>
+				<div class="form-group">
+					<label for="location" class="sr-only">Location</label>
+					<select class="form-control border-0 shadow-none form-control-lg selectpicker" name="location"
+					        title="Location" data-style="btn-lg py-2 h-52" id="location">
+						<option>Austin</option>
+						<option>Boston</option>
+						<option>Chicago</option>
+						<option>Denver</option>
+						<option>Los Angeles</option>
+						<option>New York</option>
+						<option>San Francisco</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="type" class="sr-only">Type</label>
+					<select class="form-control border-0 shadow-none form-control-lg selectpicker" name="type"
+					        title="All Types" data-style="btn-lg py-2 h-52" id="type">
+						<option>Apartment</option>
+						<option>Condo</option>
+						<option>Lot</option>
+						<option>Multi Family Home</option>
+						<option>Office</option>
+						<option>Shop</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="status" class="sr-only">Status</label>
+					<select class="form-control border-0 shadow-none form-control-lg selectpicker"
+					        title="All Status" data-style="btn-lg py-2 h-52" id="status" name="status">
+						<option>For Rent</option>
+						<option>For Sale</option>
+					</select>
+				</div>
+				<div class="form-row mb-4">
+					<div class="col">
+						<label for="bed" class="sr-only">Beds</label>
+						<select class="form-control border-0 shadow-none form-control-lg selectpicker"
+						        title="Beds" data-style="btn-lg py-2 h-52" id="bed" name="beds">
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+					<div class="col">
+						<label for="baths" class="sr-only">Baths</label>
+						<select class="form-control border-0 shadow-none form-control-lg selectpicker"
+						        title="Baths" data-style="btn-lg py-2 h-52" id="baths" name="baths">
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group slider-range slider-range-secondary">
+					<label for="price" class="mb-4 text-gray-light">Price Range</label>
+					<div data-slider="true"
+					     data-slider-options='{"min":0,"max":8000000,"values":[1000000,5000000],"type":"currency"}'></div>
+					<div class="text-center mt-2">
+						<input id="price" type="text" readonly name="price"
+						       class="border-0 amount text-center text-body font-weight-500">
+					</div>
+				</div>
+				<div class="form-group slider-range slider-range-secondary">
+					<label for="area-size" class="mb-4 text-gray-light">Area Size</label>
+					<div data-slider="true"
+					     data-slider-options='{"min":0,"max":15000,"values":[50,15000],"type":"sqrt"}'></div>
+					<div class="text-center mt-2">
+						<input id="area-size" type="text" readonly name="area"
+						       class="border-0 amount text-center text-body font-weight-500">
+					</div>
+				</div>
+				<a class="lh-17 d-inline-block" data-toggle="collapse" href="#other-feature" role="button"
+				   aria-expanded="false" aria-controls="other-feature">
+					<span class="text-primary d-inline-block mr-1"><i class="far fa-plus-square"></i></span>
+					<span class="fs-15 text-heading font-weight-500 hover-primary">Other Features</span>
+				</a>
+				<div class="collapse" id="other-feature">
+					<div class="card card-body border-0 px-0 pb-0 pt-3">
+						<ul class="list-group list-group-no-border">
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check1-2">
+									<label class="custom-control-label" for="check1-2">Air Conditioning</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check2-2">
+									<label class="custom-control-label" for="check2-2">Laundry</label>
+								</div>
+
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check3-2">
+									<label class="custom-control-label" for="check3-2">Refrigerator</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check4-2">
+									<label class="custom-control-label" for="check4-2">Washer</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check5-2">
+									<label class="custom-control-label" for="check5-2">Barbeque</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check6-2">
+									<label class="custom-control-label" for="check6-2">Lawn</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check7-2">
+									<label class="custom-control-label" for="check7-2">Sauna</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check8-2">
+									<label class="custom-control-label" for="check8-2">WiFi</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check9-2">
+									<label class="custom-control-label" for="check9-2">Dryer</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check10-2">
+									<label class="custom-control-label" for="check10-2">Microwave</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check11-2">
+									<label class="custom-control-label" for="check11-2">Swimming Pool</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check12-2">
+									<label class="custom-control-label" for="check12-2">Window Coverings</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check13-2">
+									<label class="custom-control-label" for="check13-2">Gym</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check14-2">
+									<label class="custom-control-label" for="check14-2">Outdoor Shower</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check15-2">
+									<label class="custom-control-label" for="check15-2">TV Cable</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary btn-lg btn-block shadow-none mt-4">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Search 02</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card border-0">
+		<div class="card-body pl-6 pr-0 py-0">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-3">Find your home</h4>
+			<form>
+				<div class="form-group">
+					<label for="key-word-1" class="sr-only">Key Word</label>
+					<input type="text" class="form-control form-control-lg border-0 shadow-none" id="key-word-1"
+					       placeholder="Enter keyword..." name="search">
+				</div>
+				<div class="form-group">
+					<label for="location-1" class="sr-only">Location</label>
+					<select class="form-control border-0 shadow-none form-control-lg selectpicker"
+					        title="Location" data-style="btn-lg py-2 h-52" id="location-1" name="location">
+						<option>Austin</option>
+						<option>Boston</option>
+						<option>Chicago</option>
+						<option>Denver</option>
+						<option>Los Angeles</option>
+						<option>New York</option>
+						<option>San Francisco</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="type-1" class="sr-only">Type</label>
+					<select class="form-control border-0 shadow-none form-control-lg selectpicker" name="type"
+					        title="All Types" data-style="btn-lg py-2 h-52" id="type-1">
+						<option>Apartment</option>
+						<option>Condo</option>
+						<option>Lot</option>
+						<option>Multi Family Home</option>
+						<option>Office</option>
+						<option>Shop</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="status-1" class="sr-only">Status</label>
+					<select class="form-control border-0 shadow-none form-control-lg selectpicker" name="type"
+					        title="All Status" data-style="btn-lg py-2 h-52" id="status-1">
+						<option>For Rent</option>
+						<option>For Sale</option>
+					</select>
+				</div>
+				<div class="form-row mb-4">
+					<div class="col">
+						<label for="bed-1" class="sr-only">Beds</label>
+						<select class="form-control border-0 shadow-none form-control-lg selectpicker" name="beds"
+						        title="Beds" data-style="btn-lg py-2 h-52" id="bed-1">
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+					<div class="col">
+						<label for="baths-1" class="sr-only">Baths</label>
+						<select class="form-control border-0 shadow-none form-control-lg selectpicker"
+						        title="Baths" data-style="btn-lg py-2 h-52" id="baths-1" name="baths">
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group slider-range slider-range-secondary">
+					<label for="price-1" class="mb-4 text-gray-light">Price Range</label>
+					<div data-slider="true"
+					     data-slider-options='{"min":0,"max":8000000,"values":[1000000,5000000],"type":"currency"}'></div>
+					<div class="text-center mt-2">
+						<input id="price-1" type="text" readonly name="price"
+						       class="border-0 amount text-center text-body font-weight-500">
+					</div>
+				</div>
+				<div class="form-group slider-range slider-range-secondary">
+					<label for="area-size-1" class="mb-4 text-gray-light">Area Size</label>
+					<div data-slider="true"
+					     data-slider-options='{"min":0,"max":15000,"values":[50,15000],"type":"sqrt"}'></div>
+					<div class="text-center mt-2">
+						<input id="area-size-1" type="text" readonly name="area"
+						       class="border-0 amount text-center text-body font-weight-500">
+					</div>
+				</div>
+				<a class="lh-17 d-inline-block" data-toggle="collapse" href="#other-feature-1" role="button"
+				   aria-expanded="false" aria-controls="other-feature">
+					<span class="text-primary d-inline-block mr-1"><i class="far fa-plus-square"></i></span>
+					<span class="fs-15 text-heading font-weight-500 hover-primary">Other Features</span>
+				</a>
+				<div class="collapse" id="other-feature-1">
+					<div class="card card-body border-0 px-0 pb-0 pt-3">
+						<ul class="list-group list-group-no-border">
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="check1-1" name="features[]">
+									<label class="custom-control-label" for="check1-1">Air Conditioning</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check2-1">
+									<label class="custom-control-label" for="check2-1">Laundry</label>
+								</div>
+
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check3-1">
+									<label class="custom-control-label" for="check3-1">Refrigerator</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check4-1">
+									<label class="custom-control-label" for="check4-1">Washer</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check5-1">
+									<label class="custom-control-label" for="check5-1">Barbeque</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check6-1">
+									<label class="custom-control-label" for="check6-1">Lawn</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check7-1">
+									<label class="custom-control-label" for="check7-1">Sauna</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check8-1">
+									<label class="custom-control-label" for="check8-1">WiFi</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check9-1">
+									<label class="custom-control-label" for="check9-1">Dryer</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check10-1">
+									<label class="custom-control-label" for="check10-1">Microwave</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check11-1">
+									<label class="custom-control-label" for="check11-1">Swimming Pool</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check12-1">
+									<label class="custom-control-label" for="check12-1">Window Coverings</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check13-1">
+									<label class="custom-control-label" for="check13-1">Gym</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check14-1">
+									<label class="custom-control-label" for="check14-1">Outdoor Shower</label>
+								</div>
+							</li>
+							<li class="list-group-item px-0 pt-0 pb-2">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" name="features[]" id="check15-1">
+									<label class="custom-control-label" for="check15-1">TV Cable</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary btn-lg btn-block shadow-none mt-4">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}
+
+<h2>Tag</h2>
+
+{% capture example %}
+<div style="max-width:370px">
+	<div class="card">
+		<div class="card-body px-6 py-4">
+			<h4 class="card-title fs-16 lh-2 text-dark mb-3">Popular Tags</h4>
+			<ul class="list-inline mb-0">
+				<li class="list-inline-item mb-2">
+					<a href="#"
+					   class="px-2 py-1 d-block fs-13 lh-17 bg-gray-03 text-muted hover-white bg-hover-primary rounded">designer</a>
+				</li>
+				<li class="list-inline-item mb-2">
+					<a href="#"
+					   class="px-2 py-1 d-block fs-13 lh-17 bg-gray-03 text-muted hover-white bg-hover-primary rounded">mockup</a>
+				</li>
+				<li class="list-inline-item mb-2">
+					<a href="#"
+					   class="px-2 py-1 d-block fs-13 lh-17 bg-gray-03 text-muted hover-white bg-hover-primary rounded">template</a>
+				</li>
+				<li class="list-inline-item mb-2">
+					<a href="#"
+					   class="px-2 py-1 d-block fs-13 lh-17 bg-gray-03 text-muted hover-white bg-hover-primary rounded">IT
+						Security</a>
+				</li>
+				<li class="list-inline-item mb-2">
+					<a href="#"
+					   class="px-2 py-1 d-block fs-13 lh-17 bg-gray-03 text-muted hover-white bg-hover-primary rounded">IT
+						services</a>
+				</li>
+				<li class="list-inline-item mb-2">
+					<a href="#"
+					   class="px-2 py-1 d-block fs-13 lh-17 bg-gray-03 text-muted hover-white bg-hover-primary rounded">business</a>
+				</li>
+				<li class="list-inline-item mb-2">
+					<a href="#"
+					   class="px-2 py-1 d-block fs-13 lh-17 bg-gray-03 text-muted hover-white bg-hover-primary rounded">videos</a>
+				</li>
+				<li class="list-inline-item mb-2">
+					<a href="#"
+					   class="px-2 py-1 d-block fs-13 lh-17 bg-gray-03 text-muted hover-white bg-hover-primary rounded">wordpress
+						theme</a>
+				</li>
+				<li class="list-inline-item mb-2">
+					<a href="#"
+					   class="px-2 py-1 d-block fs-13 lh-17 bg-gray-03 text-muted hover-white bg-hover-primary rounded">sketch</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+{% endcapture %}
+{% include docs/example.html content=example %}

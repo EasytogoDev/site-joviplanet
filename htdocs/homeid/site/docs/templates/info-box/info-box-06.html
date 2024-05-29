@@ -1,0 +1,210 @@
+---
+layout: page-title-docs
+title: "Info box 06"
+category_text: Info Box
+category_url: /docs/templates/info-box.html
+---
+{% include components/page-title/docs.html %}
+<div class="pt-8 pb-11">
+    <div class="container">
+        <h2 class="text-dark text-center pt-3">
+            About This Property</h2>
+        <span class="heading-divider mx-auto"></span>
+        <div class="row mt-7">
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media rounded-lg bg-gray-02 px-4 py-5 h-100 align-items-center">
+                    <img src="{{ '/images/single-family.png' | document_url }}"
+                         alt="Type" class="mr-3">
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">Type</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">Single Family
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media rounded-lg bg-gray-02 px-4 py-5 h-100 align-items-center">
+                            <span class="text-primary fs-64 d-inline-block mr-3">
+                                <svg class="icon icon-year"><use xlink:href="#icon-year"></use></svg></span>
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">Year Built</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">2019
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media rounded-lg bg-gray-02 px-4 py-5 h-100 align-items-center">
+                             <span class="text-primary fs-64 d-inline-block mr-3">
+                                <svg class="icon icon-heating"><use xlink:href="#icon-heating"></use></svg></span>
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">Heating</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">Radiant
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media rounded-lg bg-gray-02 px-4 py-5 h-100 align-items-center">
+                            <span class="text-primary fs-64 d-inline-block mr-3">
+                                <svg class="icon icon-price"><use xlink:href="#icon-price"></use></svg></span>
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">sqft</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">979.000
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media rounded-lg bg-gray-02 px-4 py-5 h-100 align-items-center">
+                            <span class="text-primary fs-64 d-inline-block mr-3">
+                                <svg class="icon icon-bedroom"><use xlink:href="#icon-bedroom"></use></svg></span>
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">bedrooms</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">3
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media bg-gray-02 rounded-lg px-4 py-5 h-100 align-items-center">
+                    <img src="{{ '/images/bath-rooms.png' | document_url }}"
+                         alt="Type" class="mr-3">
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">bathrooms</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">2
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media rounded-lg bg-gray-02 px-4 py-5 h-100 align-items-center">
+                             <span class="text-primary fs-64 d-inline-block mr-3">
+                                <svg class="icon icon-Garage"><use xlink:href="#icon-Garage"></use></svg></span>
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">garage</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">1
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media rounded-lg bg-gray-02 px-4 py-5 h-100 align-items-center">
+                             <span class="text-primary fs-64 d-inline-block mr-3">
+                               <svg class="icon icon-status"><use xlink:href="#icon-status"></use></svg></span>
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">status</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">Active
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="py-10">
+    <div class="container">
+        <div class="bg-gray-01 overflow-auto">
+{% highlight html %}
+<div class="pt-8 pb-11">
+    <div class="container">
+        <h2 class="text-dark text-center pt-3">
+            About This Property</h2>
+        <span class="heading-divider mx-auto"></span>
+        <div class="row mt-7">
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media rounded-lg bg-gray-02 px-4 py-5 h-100 align-items-center">
+                    <img src="{{ '/images/single-family.png' | document_url }}"
+                         alt="Type" class="mr-3">
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">Type</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">Single
+                            Family
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media rounded-lg bg-gray-02 px-4 py-5 h-100 align-items-center">
+<span class="text-primary fs-64 d-inline-block mr-3">
+<svg class="icon icon-year"><use xlink:href="#icon-year"></use></svg></span>
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">Year Built</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">2019
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media rounded-lg bg-gray-02 px-4 py-5 h-100 align-items-center">
+<span class="text-primary fs-64 d-inline-block mr-3">
+<svg class="icon icon-heating"><use xlink:href="#icon-heating"></use></svg></span>
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">Heating</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">Radiant
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media rounded-lg bg-gray-02 px-4 py-5 h-100 align-items-center">
+<span class="text-primary fs-64 d-inline-block mr-3">
+<svg class="icon icon-price"><use xlink:href="#icon-price"></use></svg></span>
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">sqft</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">979.000
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media rounded-lg bg-gray-02 px-4 py-5 h-100 align-items-center">
+<span class="text-primary fs-64 d-inline-block mr-3">
+<svg class="icon icon-bedroom"><use xlink:href="#icon-bedroom"></use></svg></span>
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">bedrooms</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">3
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media bg-gray-02 rounded-lg px-4 py-5 h-100 align-items-center">
+                    <img src="{{ '/images/bath-rooms.png' | document_url }}"
+                         alt="Type" class="mr-3">
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">bathrooms</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">2
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media rounded-lg bg-gray-02 px-4 py-5 h-100 align-items-center">
+<span class="text-primary fs-64 d-inline-block mr-3">
+<svg class="icon icon-Garage"><use xlink:href="#icon-Garage"></use></svg></span>
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">garage</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">1
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-6">
+                <div class="media rounded-lg bg-gray-02 px-4 py-5 h-100 align-items-center">
+<span class="text-primary fs-64 d-inline-block mr-3">
+<svg class="icon icon-status"><use xlink:href="#icon-status"></use></svg></span>
+                    <div class="media-body">
+                        <div class="text-uppercase letter-spacing-02 text-body lh-17">status</div>
+                        <div class="fs-16 lh-15 text-heading letter-spacing-03 font-weight-600">Active
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endhighlight %}
+        </div>
+    </div>
+</section>

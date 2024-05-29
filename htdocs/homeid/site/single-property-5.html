@@ -1,0 +1,1068 @@
+---
+layout: default
+title: "Single Property 5"
+category_text: "Single Property"
+category_url: /single-property-5.html
+---
+
+<section class="shadow-5">
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb pt-lg-0 pb-7">
+				{% for breadcrumb in site.data.single-property-1.breadcrumbs %}
+				{% if breadcrumb.is_active == true %}
+				<li class="breadcrumb-item letter-spacing-1 active">{{ breadcrumb.title }}</li>
+				{% else %}
+				<li class="breadcrumb-item letter-spacing-1">
+					<a href="{{ breadcrumb.url | document_url }}">{{ breadcrumb.title }}</a>
+				</li>
+				{% endif %}
+				{% endfor %}
+			</ol>
+		</nav>
+	</div>
+	<div class="container">
+		<ul class="nav nav-pills z-index-3 nav-gallery justify-content-end mb-n10 position-relative mr-n2"
+		    id="pills-tab"
+		    role="tablist">
+			<li class="nav-item mr-2" role="presentation">
+				<a class="nav-link p-0 active d-flex align-items-center justify-content-center w-48px h-48 bg-white text-heading bg-hover-primary hover-white rounded-circle fs-18"
+				   data-toggle="pill" href="#image" role="tab"
+				   aria-selected="true">
+					<i class="fal fa-camera"></i>
+				</a>
+			</li>
+			<li class="nav-item mr-2" role="presentation">
+				<a class="nav-link p-0 d-flex align-items-center justify-content-center w-48px h-48 bg-white text-heading bg-hover-primary hover-white rounded-circle fs-18"
+				   data-toggle="pill" href="#map-view" role="tab"
+				   aria-selected="false">
+					<i class="fal fa-map-marked-alt"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="tab-content p-0 shadow-none">
+		<div class="tab-pane fade show active" id="image" role="tabpanel">
+			{% for property in site.data.single-property-5.properties-05 %}
+				<div style="background-image: url('{{ property.image | document_url }}')" class="pt-17 pb-10 bg-cover">
+					<div class="container">
+						<h2 class="mb-3 pt-lg-17 mt-17"><a href="{{ property.url | document_url }}" class="fs-48 fs-md-64 font-weight-bold text-white hover-primary">{{ property.title }}</a></h2>
+						<p class="fs-18 text-white mb-0">{{ property.des }}</p>
+						<p class="fs-34 font-weight-bold text-white mb-lg-1">{{ property.price }} <span class="fs-15 text-white font-weight-normal">{{ property.acreage }}</span></p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="tab-pane fade" id="map-view" role="tabpanel">
+			<div id="map-01" style="height:720px;" class="mapbox-gl"
+			     data-mapbox-access-token="{{ site.data.map-access-token.access-token}}"
+			     data-mapbox-options='{"center":[-73.981566, 40.739011],"setLngLat":[-73.981566, 40.739011],"container":"map-01"}'>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="d-md-flex justify-content-md-between py-4">
+			<ul class="list-inline d-sm-flex align-items-sm-center mb-0">
+				<li class="list-inline-item badge badge-orange mr-2">Featured</li>
+				<li class="list-inline-item badge badge-primary mr-3">For Sale</li>
+				<li class="list-inline-item mr-2"><i class="fal fa-clock mr-1"></i>2 months ago</li>
+				<li class="list-inline-item"><i class="fal fa-eye mr-1"></i>1039 views</li>
+			</ul>
+			<ul class="list-inline mb-0 mr-n2 my-4 my-md-0">
+				<li class="list-inline-item mr-2">
+					<a href="#" class="btn btn-outline-light px-3 text-body d-flex align-items-center h-32 border">
+						<i class="far fa-heart mr-2 fs-15 text-primary"></i>Save
+					</a>
+				</li>
+				<li class="list-inline-item mr-2">
+					<a href="#" class="btn btn-outline-light px-3 text-body d-flex align-items-center h-32 border">
+						<i class="far fa-share-alt mr-2 fs-15 text-primary"></i>Share
+					</a>
+				</li>
+				<li class="list-inline-item mr-2">
+					<a href="#" class="btn btn-outline-light px-3 text-body d-flex align-items-center h-32 border">
+						<i class="far fa-print mr-2 fs-15 text-primary"></i>Print
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="pt-xl-12 pb-xl-10 py-11">
+	<div class="container">
+		<div class="row flex-md-row flex-column-reverse">
+			<div class="col-md-2">
+				<ul class="list-inline mb-0 d-lg-flex flex-lg-column pt-md-9 pt-6">
+					<li class="list-inline-item mr-2 mb-lg-2">
+						<a href="#" class="w-52px h-52 rounded-circle text-body bg-hover-primary hover-white d-flex align-items-center justify-content-center border border-hover-primary"><i class="fab fa-twitter fs-18"></i></a>
+					</li>
+					<li class="list-inline-item mr-2 mb-lg-2">
+						<a href="#" class="w-52px h-52 rounded-circle text-body bg-hover-primary hover-white d-flex align-items-center justify-content-center border border-hover-primary"><i class="fab fa-facebook-f fs-18"></i></a>
+					</li>
+					<li class="list-inline-item mr-2 mb-lg-2">
+						<a href="#" class="w-52px h-52 rounded-circle text-body bg-hover-primary hover-white d-flex align-items-center justify-content-center border border-hover-primary">
+							<i class="fab fa-instagram fs-18"></i></a>
+					</li>
+					<li class="list-inline-item mr-2 mb-lg-2">
+						<a href="#" class="w-52px h-52 rounded-circle text-body bg-hover-primary hover-white d-flex align-items-center justify-content-center border border-hover-primary"><i class="fab fa-linkedin-in fs-18"></i></a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xl-8 col-md-10">
+				<h2 class="fs-md-35 fs-30 font-weight-600 text-heading lh-15 mb-6">Insight Lux Villa’s innovative range of modular build homes,
+					and Mansion House are the first apartments in the range. </h2>
+				<p class="lh-214 mb-3">Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus scelerisque eleifend donec. Porta
+					nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper quis lectus. Turpis
+					in eu mi bibendum neque egestas congue quisque. Sed elementum tempus egestas sed sed risus pretium quam.
+					Dignissim sodales ut eu sem. Nibh mauris cursus mattis</p>
+				<div class="pt-6 border-bottom">
+					<h4 class="fs-22 text-heading mb-6">Facts and Features</h4>
+					<div class="row">
+						{% for box in site.data.single-property-5.info-box %}
+						<div class="col-lg-3 col-sm-4 mb-6">
+							<div class="media">
+								<div class="p-2 shadow-xxs-1 rounded-lg mr-2">
+									<svg class="icon icon-{{ box.icon }} fs-32 text-primary"><use xlink:href="#icon-{{ box.icon }}"></use></svg>
+								</div>
+								<div class="media-body">
+									<h5 class="my-1 fs-14 text-uppercase letter-spacing-093 font-weight-normal">{{ box.title }}</h5>
+									<p class="mb-0 fs-13 font-weight-bold text-heading">{{ box.sub-title }}</p>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<div class="row galleries">
+			<div class="col-sm-6 col-lg-4 mb-6">
+				<div class="item item-size-4-3">
+					<div class="card p-0 hover-zoom-in">
+						<a href="{{ '/images/single-property-lg-11.jpg' | document_url }}" class="card-img"
+						   data-gtf-mfp="true"
+						   data-gallery-id="05"
+						   style="background-image:url('{{ "/images/single-property-11.jpg" | document_url }}')">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-lg-4 mb-6">
+				<div class="item item-size-4-3">
+					<div class="card p-0 hover-zoom-in">
+						<a href="{{ '/images/single-property-lg-12.jpg' | document_url }}" class="card-img"
+						   data-gtf-mfp="true"
+						   data-gallery-id="05"
+						   style="background-image:url('{{ "/images/single-property-12.jpg" | document_url }}')">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-lg-4 mb-6">
+				<div class="item item-size-4-3">
+					<div class="card p-0 hover-zoom-in">
+						<a href="{{ '/images/single-property-lg-13.jpg' | document_url }}" class="card-img"
+						   data-gtf-mfp="true"
+						   data-gallery-id="05"
+						   style="background-image:url('{{ "/images/single-property-13.jpg" | document_url }}')">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-lg-4 mb-6">
+				<div class="item item-size-4-3">
+					<div class="card p-0 hover-zoom-in">
+						<a href="{{ '/images/single-property-lg-14.jpg' | document_url }}" class="card-img"
+						   data-gtf-mfp="true"
+						   data-gallery-id="05"
+						   style="background-image:url('{{ "/images/single-property-14.jpg" | document_url }}')">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-lg-4 mb-6">
+				<div class="item item-size-4-3">
+					<div class="card p-0 hover-zoom-in">
+						<a href="{{ '/images/single-property-lg-15.jpg' | document_url }}" class="card-img"
+						   data-gtf-mfp="true"
+						   data-gallery-id="05"
+						   style="background-image:url('{{ "/images/single-property-15.jpg" | document_url }}')">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-lg-4 mb-6">
+				<div class="item item-size-4-3">
+					<div class="card p-0 hover-zoom-in hover-change-image">
+						<a href="{{ '/images/single-property-lg-16.jpg' | document_url }}" class="card-img"
+						   data-gtf-mfp="true"
+						   data-gallery-id="05"
+						   style="background-image:url('{{ "/images/single-property-16.jpg" | document_url }}')">
+						</a>
+						<a href="#"
+						   class="card-img-overlay d-flex flex-column align-items-center justify-content-center hover-image bg-dark-opacity-04">
+							<p class="fs-48 font-weight-600 text-white lh-1 mb-4">+12</p>
+							<p class="fs-16 font-weight-bold text-white lh-1625 text-uppercase">View
+								more</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pt-6">
+	<div class="container">
+		<div class="col-xl-8 offset-xl-2">
+			<h4 class="fs-22 text-heading mb-4">Additional Details</h4>
+			<div class="row border-bottom no-gutters pb-4">
+				{% for list in site.data.single-property-5.list-01 %}
+				<dl class="{% if list.is_offset == true %}offset-sm-6 {% endif %}col-sm-6 mb-0 d-flex">
+					<dt class="w-110px fs-14 font-weight-500 text-heading pr-2">{{ list.title }}</dt>
+					<dd>{{ list.value }}</dd>
+				</dl>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pt-6">
+	<div class="container">
+		<div class="col-xl-8 offset-xl-2">
+			<h4 class="fs-22 text-heading mb-4">Offices Amenities</h4>
+			<ul class="list-unstyled mb-0 row no-gutters border-bottom pb-4">
+				{% for list in site.data.single-property-5.list-02 %}
+				<li class="col-sm-3 col-6 mb-2"><i class="far fa-check mr-2 text-primary"></i>{{ list.title }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="py-6">
+	<div class="container">
+		<div class="col-xl-8 offset-xl-2">
+			<h4 class="fs-22 text-heading mb-6">Floor Plans</h4>
+			{% for accordion in site.data.single-property-5.accordions %}
+			<div class="accordion accordion-03 mb-3" id="{{ accordion.data-parent }}">
+				<div class="card border-0 shadow-xxs-2">
+					<div class="card-header bg-gray-01 border-gray border-0 p-0" id="{{ accordion.labelledby }}">
+						<div class="heading d-flex justify-content-between align-items-center px-6{% if accordion.is_close == true %} collapsed {% endif %}" data-toggle="collapse" data-target="#{{ accordion.id }}" aria-expanded="true" aria-controls="{{ accordion.id }}" role="button">
+							<h2 class="mb-0 fs-16 text-heading font-weight-500 py-4 lh-13">{{ accordion.title }}</h2>
+							<ul class="list-inline mb-0 d-none d-sm-block pr-2">
+								{% for list in accordion.lists %}
+								<li class=" list-inline-item text-muted mr-4">{{ list.title }} : <span class="font-weight-500 text-heading">{{ list.value }}</span></li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+					<div id="{{ accordion.id }}" class="collapse {% if accordion.is_show == true %}show{% endif %}" aria-labelledby="{{ accordion.labelledby }}" data-parent="#{{ accordion.data-parent }}">
+						<div class="card-body card-body col-sm-6 offset-sm-3 mb-3">
+							<img src="{{ accordion.image | document_url }}" class="card-img" alt="Floor Plans">
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<div class="col-xl-8 offset-xl-2">
+			<h2 class="fs-md-35 fs-22 font-weight-600 lh-15 text-heading mt-9 mb-7 pb-lg-1">Insight Lux Villa is now available to buy off plan in New Islington in Australia. </h2>
+			<h4 class="fs-22 text-heading font-weight-normal mb-3">What Nearby?</h4>
+			<ul class="nav nav-pills mb-6 tabs-03" role="tablist">
+				<li class="nav-item pr-xl-9 pr-6" role="presentation">
+					<a class="nav-link active letter-spacing-1 px-0 py-1" id="pills-restaurants-tab" data-toggle="pill" href="#pills-restaurants" role="tab" aria-controls="pills-restaurants" aria-selected="true">Restaurants</a>
+				</li>
+				<li class="nav-item pr-xl-9 pr-6" role="presentation">
+					<a class="nav-link letter-spacing-1 px-0 py-1" id="pills-schools-tab" data-toggle="pill" href="#pills-schools" role="tab" aria-controls="pills-schools" aria-selected="false">Schools</a>
+				</li>
+				<li class="nav-item pr-xl-9 pr-6" role="presentation">
+					<a class="nav-link letter-spacing-1 px-0 py-1" id="pills-health-tab" data-toggle="pill" href="#pills-health" role="tab" aria-controls="pills-health" aria-selected="false">Health & Medicals</a>
+				</li>
+				<li class="nav-item pr-xl-9 pr-6" role="presentation">
+					<a class="nav-link letter-spacing-1 px-0 py-1" id="pills-transportation-tab" data-toggle="pill" href="#pills-transportation" role="tab" aria-controls="pills-transportation" aria-selected="false">Transportation</a>
+				</li>
+			</ul>
+		</div>
+		<div class="tab-content p-0 shadow-none">
+			<div class="tab-pane fade show active" id="pills-restaurants" role="tabpanel" aria-labelledby="pills-restaurants-tab">
+				<div class="row">
+					<div class="col-lg-3 pr-xl-1">
+						<ul class="list-group list-group-flush shadow-xxs-5 pb-lg-9 mb-lg-0 mb-6">
+							<li class="list-group-item pt-xl-5 pb-xl-6 pl-xl-6">
+								<h4 class="fs-16 text-heading lh-173">Safe Direction Firearms Training</h4>
+								<p class="mb-0">3570 S Las Vegas BlvdLas Vegas</p>
+							</li>
+							<li class="list-group-item pt-xl-5 pb-xl-6 pl-xl-6">
+								<h4 class="fs-16 text-heading lh-173">Safe Direction Firearms Training</h4>
+								<p class="mb-0">3570 S Las Vegas BlvdLas Vegas</p>
+							</li>
+							<li class="list-group-item pt-xl-5 pb-xl-6 pl-xl-6">
+								<h4 class="fs-16 text-heading lh-173">Safe Direction Firearms Training</h4>
+								<p class="mb-0">3570 S Las Vegas BlvdLas Vegas</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-9">
+						<div id="map-02" class="mapbox-gl map-point-animate"  style="height:488px;"
+						     data-mapbox-access-token="{{ site.data.map-access-token.access-token}}"
+						     data-mapbox-options='{"center":[-74.298261, 40.988098],"zoom": 16,"container":"map-02"}'
+						     data-mapbox-marker='[{"position":[-74.298261, 40.988098],"className":"marker","backgroundImage":"{{ "/images/google-market-06.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"},
+						     {"position":[-74.3016748, 40.988755],"className":"marker","backgroundImage":"{{ "/images/google-marker-07.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"},
+                             {"position":[-74.2966173, 40.9892109],"className":"marker","backgroundImage":"{{ "/images/google-marker-07.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"},
+						     {"position":[-74.296764, 40.986735],"className":"marker","backgroundImage":"{{ "/images/google-marker-07.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"}]'>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="pills-schools" role="tabpanel" aria-labelledby="pills-schools-tab">
+				<div class="row">
+					<div class="col-lg-3 pr-xl-1">
+						<ul class="list-group list-group-flush shadow-xxs-5 pb-lg-9 mb-lg-0 mb-6">
+							<li class="list-group-item pt-xl-5 pb-xl-6 pl-xl-6">
+								<h4 class="fs-16 text-heading lh-173">Safe Direction Firearms Training</h4>
+								<p class="mb-0">3570 S Las Vegas BlvdLas Vegas</p>
+							</li>
+							<li class="list-group-item pt-xl-5 pb-xl-6 pl-xl-6">
+								<h4 class="fs-16 text-heading lh-173">Safe Direction Firearms Training</h4>
+								<p class="mb-0">3570 S Las Vegas BlvdLas Vegas</p>
+							</li>
+							<li class="list-group-item pt-xl-5 pb-xl-6 pl-xl-6">
+								<h4 class="fs-16 text-heading lh-173">Safe Direction Firearms Training</h4>
+								<p class="mb-0">3570 S Las Vegas BlvdLas Vegas</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-9">
+						<div id="map-03" class="mapbox-gl map-point-animate"  style="height:488px;"
+						     data-mapbox-access-token="{{ site.data.map-access-token.access-token}}"
+						     data-mapbox-options='{"center":[-74.298261, 40.988098],"zoom": 16,"container":"map-03"}'
+						     data-mapbox-marker='[{"position":[-74.298261, 40.988098],"className":"marker","backgroundImage":"{{ "/images/google-market-06.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"},
+						     {"position":[-74.3016748, 40.988755],"className":"marker","backgroundImage":"{{ "/images/google-marker-07.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"},
+                             {"position":[-74.2966173, 40.9892109],"className":"marker","backgroundImage":"{{ "/images/google-marker-07.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"},
+						     {"position":[-74.296764, 40.986735],"className":"marker","backgroundImage":"{{ "/images/google-marker-07.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"}]'>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="pills-health" role="tabpanel" aria-labelledby="pills-health-tab">
+				<div class="row">
+					<div class="col-lg-3 pr-xl-1">
+						<ul class="list-group list-group-flush shadow-xxs-5 pb-lg-9 mb-lg-0 mb-6">
+							<li class="list-group-item pt-xl-5 pb-xl-6 pl-xl-6">
+								<h4 class="fs-16 text-heading lh-173">Safe Direction Firearms Training</h4>
+								<p class="mb-0">3570 S Las Vegas BlvdLas Vegas</p>
+							</li>
+							<li class="list-group-item pt-xl-5 pb-xl-6 pl-xl-6">
+								<h4 class="fs-16 text-heading lh-173">Safe Direction Firearms Training</h4>
+								<p class="mb-0">3570 S Las Vegas BlvdLas Vegas</p>
+							</li>
+							<li class="list-group-item pt-xl-5 pb-xl-6 pl-xl-6">
+								<h4 class="fs-16 text-heading lh-173">Safe Direction Firearms Training</h4>
+								<p class="mb-0">3570 S Las Vegas BlvdLas Vegas</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-9">
+						<div id="map-04" class="mapbox-gl map-point-animate"  style="height:488px;"
+						     data-mapbox-access-token="{{ site.data.map-access-token.access-token}}"
+						     data-mapbox-options='{"center":[-74.298261, 40.988098],"zoom": 16,"container":"map-04"}'
+						     data-mapbox-marker='[{"position":[-74.298261, 40.988098],"className":"marker","backgroundImage":"{{ "/images/google-market-06.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"},
+						     {"position":[-74.3016748, 40.988755],"className":"marker","backgroundImage":"{{ "/images/google-marker-07.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"},
+                             {"position":[-74.2966173, 40.9892109],"className":"marker","backgroundImage":"{{ "/images/google-marker-07.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"},
+						     {"position":[-74.296764, 40.986735],"className":"marker","backgroundImage":"{{ "/images/google-marker-07.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"}]'>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="pills-transportation" role="tabpanel" aria-labelledby="pills-transportation-tab">
+				<div class="row">
+					<div class="col-lg-3 pr-xl-1">
+						<ul class="list-group list-group-flush shadow-xxs-5 pb-lg-9 mb-lg-0 mb-6">
+							<li class="list-group-item pt-xl-5 pb-xl-6 pl-xl-6">
+								<h4 class="fs-16 text-heading lh-173">Safe Direction Firearms Training</h4>
+								<p class="mb-0">3570 S Las Vegas BlvdLas Vegas</p>
+							</li>
+							<li class="list-group-item pt-xl-5 pb-xl-6 pl-xl-6">
+								<h4 class="fs-16 text-heading lh-173">Safe Direction Firearms Training</h4>
+								<p class="mb-0">3570 S Las Vegas BlvdLas Vegas</p>
+							</li>
+							<li class="list-group-item pt-xl-5 pb-xl-6 pl-xl-6">
+								<h4 class="fs-16 text-heading lh-173">Safe Direction Firearms Training</h4>
+								<p class="mb-0">3570 S Las Vegas BlvdLas Vegas</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-9">
+						<div id="map-05" class="mapbox-gl map-point-animate"  style="height:488px;"
+						     data-mapbox-access-token="{{ site.data.map-access-token.access-token}}"
+						     data-mapbox-options='{"center":[-74.298261, 40.988098],"zoom": 16,"container":"map-05"}'
+						     data-mapbox-marker='[{"position":[-74.298261, 40.988098],"className":"marker","backgroundImage":"{{ "/images/google-market-06.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"},
+						     {"position":[-74.3016748, 40.988755],"className":"marker","backgroundImage":"{{ "/images/google-marker-07.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"},
+                             {"position":[-74.2966173, 40.9892109],"className":"marker","backgroundImage":"{{ "/images/google-marker-07.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"},
+						     {"position":[-74.296764, 40.986735],"className":"marker","backgroundImage":"{{ "/images/google-marker-07.png" | document_url }}","backgroundRepeat":"no-repeat","width":"48px","height":"51px"}]'>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="pt-12">
+	<div class="container">
+		<div class="col-xl-8 offset-xl-2">
+			<h2 class="fs-35 font-weight-600 lh-15 text-heading mb-7">Register your interest for regular updates or to
+				<span class="border-bottom border-dark border-3x">Book a viewing</span> or <span class="opacity-3">Request Info</span>
+			</h2>
+			<form>
+				<div class="row">
+					<div class="col-md-6 mb-4">
+						<input type="text" class="form-control form-control-lg border-0"
+						       placeholder="First Name" name="first-name">
+					</div>
+					<div class="col-md-6 mb-4">
+						<input type="text" class="form-control form-control-lg border-0"
+						       placeholder="Last Name" name="last-name">
+					</div>
+					<div class="col-md-6 mb-4">
+						<input type="email" class="form-control form-control-lg border-0" placeholder="Your Email" name="email">
+					</div>
+					<div class="col-md-6 mb-4">
+						<input type="tel" class="form-control form-control-lg border-0" placeholder="Your phone" name="phone">
+					</div>
+					<div class="col-md-6 mb-4">
+						<div class="input-group input-group-lg bootstrap-timepicker timepicker">
+							<input type="text" class="form-control border-0 placeholder-body text-body shadow-none" name="time"
+							       placeholder="Choose a time">
+							<div class="input-group-append input-group-addon">
+								<button class="btn bg-input shadow-none fs-18 lh-1" type="button"><i
+										class="fal fa-angle-down"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 mb-4">
+						<select class="form-control selectpicker" data-style="btn-lg h-52 px-3" name="budget">
+							<option selected>Select Budget</option>
+							<option>Family Budget</option>
+							<option>Business Budget</option>
+							<option>State Budget.</option>
+						</select>
+					</div>
+				</div>
+				<p class="mb-0">For more information, including how we use your personal details, please see our Privacy Policy.</p>
+				<div class="form-group form-check mt-2 mb-6">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1" name="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">
+						I would like to receive updates from Insight Lux Villa
+					</label>
+				</div>
+				<button type="submit" class="btn btn-primary btn-lg btn-block rounded">Schedule a Tour</button>
+			</form>
+		</div>
+	</div>
+</section>
+<section class="py-8">
+	<div class="container">
+		<div class="col-xl-8 offset-xl-2">
+			<h4 class="fs-22 text-heading lh-15 mb-5 pt-3">Rating & Reviews</h4>
+			<div class="card border-0 mb-4">
+				<div class="card-body p-0">
+					<div class="row">
+						<div class="col-sm-6 mb-6 mb-sm-0">
+							<div class="bg-gray-01 rounded-lg pt-2 px-6 pb-6">
+								<h5 class="fs-16 lh-2 text-heading mb-6">
+									Avarage User Rating
+								</h5>
+								<p class="fs-40 text-heading font-weight-bold mb-6 lh-1">4.6 <span class="fs-18 text-gray-light font-weight-normal">/5</span></p>
+								<ul class="list-inline">
+									<li class="list-inline-item bg-warning text-white w-46px h-46 rounded-lg d-inline-flex align-items-center justify-content-center fs-18 mb-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item bg-warning text-white w-46px h-46 rounded-lg d-inline-flex align-items-center justify-content-center fs-18 mb-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item bg-warning text-white w-46px h-46 rounded-lg d-inline-flex align-items-center justify-content-center fs-18 mb-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item bg-warning text-white w-46px h-46 rounded-lg d-inline-flex align-items-center justify-content-center fs-18 mb-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item bg-gray-04 text-white w-46px h-46 rounded-lg d-inline-flex align-items-center justify-content-center fs-18 mb-1">
+										<i class="fas fa-star"></i>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6 pt-3">
+							<h5 class="fs-16 lh-2 text-heading mb-5">
+								Rating Breakdown
+							</h5>
+							<div class="d-flex align-items-center mx-n1">
+								<ul class="list-inline d-flex px-1 mb-0">
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+								</ul>
+								<div class="d-block w-100 px-1">
+									<div class="progress rating-progress">
+										<div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="text-muted px-1">60%</div>
+							</div>
+							<div class="d-flex align-items-center mx-n1">
+								<ul class="list-inline d-flex px-1 mb-0">
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-border mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+								</ul>
+								<div class="d-block w-100 px-1">
+									<div class="progress rating-progress">
+										<div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="text-muted px-1">40%</div>
+							</div>
+							<div class="d-flex align-items-center mx-n1">
+								<ul class="list-inline d-flex px-1 mb-0">
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-border mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-border mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+								</ul>
+								<div class="d-block w-100 px-1">
+									<div class="progress rating-progress">
+										<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="text-muted px-1">0%</div>
+							</div>
+							<div class="d-flex align-items-center mx-n1">
+								<ul class="list-inline d-flex px-1 mb-0">
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-border mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-border mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-border mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+								</ul>
+								<div class="d-block w-100 px-1">
+									<div class="progress rating-progress">
+										<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="text-muted px-1">0%</div>
+							</div>
+							<div class="d-flex align-items-center mx-n1">
+								<ul class="list-inline d-flex px-1 mb-0">
+									<li class="list-inline-item text-warning mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-border mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-border mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-border mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="list-inline-item text-border mr-1">
+										<i class="fas fa-star"></i>
+									</li>
+								</ul>
+								<div class="d-block w-100 px-1">
+									<div class="progress rating-progress">
+										<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="text-muted px-1">0%</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<div class="col-xl-8 offset-xl-2">
+			<h2 class="fs-35 font-weight-600 lh-15 text-heading mb-6">Virtual Tour</h2>
+		</div>
+		<iframe height="727" src="https://my.matterport.com/show/?m=wWcGxjuUuSb&amp;utm_source=hit-content-embed" allowfullscreen="" class="w-100"></iframe>
+	</div>
+</section>
+<section class="pt-12 pb-8">
+	<div class="container">
+		<div class="col-xl-8 offset-xl-2">
+			<h2 class="fs-35 font-weight-600 lh-15 text-heading mb-6">Mortgage calculator</h2>
+			<form>
+				<div class="row">
+					<div class="col-md-6 mb-4">
+						<label>Total Amount</label>
+						<div class="position-relative">
+							<input type="number" class="form-control border-0 pr-3 h-52 pl-7" value="345" name="total-amount">
+							<span class="position-absolute pl-3 pos-fixed-left-center fs-13 font-weight-600">$</span>
+						</div>
+					</div>
+					<div class="col-md-6 mb-4">
+						<label>Down Payment</label>
+						<div class="position-relative">
+							<input type="number" class="form-control border-0 pr-3 h-52 pl-7" value="0" name="down-payment">
+							<span class="position-absolute pl-3 pos-fixed-left-center fs-13 font-weight-600">$</span>
+						</div>
+					</div>
+					<div class="col-md-6 mb-4">
+						<label>Interest Rate</label>
+						<div class="position-relative">
+							<input type="number" class="form-control border-0 pr-3 h-52 pl-7" value="2.500" step="0.25" name="interest-rate">
+							<span class="position-absolute pl-3 pos-fixed-left-center fs-13 font-weight-600">%</span>
+						</div>
+					</div>
+					<div class="col-md-6 mb-4">
+						<label>Number of years</label>
+						<input type="number" class="form-control border-0 px-3 h-52" value="25" name="years">
+					</div>
+				</div>
+				<div class="form-group mb-6">
+					<label>Payment Period</label>
+					<select class="form-control selectpicker" data-style="btn-lg h-52 px-3" name="payment-period">
+						<option selected>Monthly</option>
+						<option>Yearly</option>
+					</select>
+				</div>
+				<button class="btn btn-primary fs-14 h-52 px-8" type="submit">Caculate</button>
+			</form>
+		</div>
+	</div>
+</section>
+<section class="pb-4">
+	<div class="container">
+		<div class="col-xl-8 offset-xl-2">
+			<div class="card border-0 mb-4">
+		<div class="card-body p-0">
+			<h3 class="fs-16 lh-2 text-heading mb-0 d-inline-block pr-4 border-bottom border-primary">5 Reviews</h3>
+			<div class="media border-top pt-7 pb-6 d-sm-flex d-block text-sm-left text-center">
+				<img src="{{ '/images/review-07.jpg' | document_url }}" alt="Danny Fox" class="mr-sm-8 mb-4 mb-sm-0">
+				<div class="media-body">
+					<div class="row mb-1 align-items-center">
+						<div class="col-sm-6 mb-2 mb-sm-0">
+							<h4 class="mb-0 text-heading fs-14">Danny Fox</h4>
+						</div>
+						<div class="col-sm-6">
+							<ul class="list-inline d-flex justify-content-sm-end justify-content-center mb-0">
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<p class="mb-3 pr-xl-17">Very good and fast support during the week. Thanks for always
+						keeping your WordPress themes up to date. Your level of support and dedication
+						is second to none.</p>
+					<div class="d-flex justify-content-sm-start justify-content-center">
+						<p class="mb-0 text-muted fs-13 lh-1">02 Dec 2020 at 2:40pm</p>
+						<a href="#" class="mb-0 text-heading border-left border-dark hover-primary lh-1 ml-2 pl-2">Reply</a>
+					</div>
+				</div>
+			</div>
+			<div class="media border-top py-6 d-sm-flex d-block text-sm-left text-center">
+				<img src="{{ '/images/review-08.jpg' | document_url }}" alt="Viola Austin" class="mr-sm-8 mb-4 mb-sm-0">
+				<div class="media-body">
+					<div class="row mb-1 align-items-center">
+						<div class="col-sm-6 mb-2 mb-sm-0">
+							<h4 class="mb-0 text-heading fs-14">Viola Austin</h4>
+						</div>
+						<div class="col-sm-6 ">
+							<ul class="list-inline d-flex justify-content-sm-end justify-content-center mb-0">
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<p class="mb-3 pr-xl-17">Very good and fast support during the week. Thanks for always
+						keeping your WordPress themes up to date. Your level of support and dedication
+						is second to none.</p>
+					<div class="d-flex justify-content-sm-start justify-content-center">
+						<p class="mb-0 text-muted fs-13 lh-1">02 Dec 2020 at 2:40pm</p>
+						<a href="#" class="mb-0 text-heading border-left border-dark hover-primary lh-1 ml-2 pl-2">Reply</a>
+					</div>
+				</div>
+			</div>
+			<div class="media border-top py-6 d-sm-flex d-block text-sm-left text-center">
+				<img src="{{ '/images/review-09.jpg' | document_url }}" alt="Nettie Singleton" class="mr-sm-8 mb-4 mb-sm-0">
+				<div class="media-body">
+					<div class="row mb-1 align-items-center">
+						<div class="col-sm-6 mb-2 mb-sm-0">
+							<h4 class="mb-0 text-heading fs-14">Nettie Singleton</h4>
+						</div>
+						<div class="col-sm-6 ">
+							<ul class="list-inline d-flex justify-content-sm-end justify-content-center mb-0">
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<p class="mb-3 pr-xl-17">Very good and fast support during the week. Thanks for always
+						keeping your WordPress themes up to date. Your level of support and dedication
+						is second to none.</p>
+					<div class="d-flex justify-content-sm-start justify-content-center">
+						<p class="mb-0 text-muted fs-13 lh-1">02 Dec 2020 at 2:40pm</p>
+						<a href="#" class="mb-0 text-heading border-left border-dark hover-primary lh-1 ml-2 pl-2">Reply</a>
+					</div>
+				</div>
+			</div>
+			<div class="media border-top py-6 d-sm-flex d-block text-sm-left text-center">
+				<img src="{{ '/images/review-07.jpg' | document_url }}" alt="Vernon Fisher" class="mr-sm-8 mb-4 mb-sm-0">
+				<div class="media-body">
+					<div class="row mb-1 align-items-center">
+						<div class="col-sm-6 mb-2 mb-sm-0">
+							<h4 class="mb-0 text-heading fs-14">Vernon Fisher</h4>
+						</div>
+						<div class="col-sm-6">
+							<ul class="list-inline d-flex justify-content-sm-end justify-content-center mb-0">
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-border fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<p class="mb-3 pr-xl-17">Very good and fast support during the week. Thanks for always
+						keeping your WordPress themes up to date. Your level of support and dedication
+						is second to none.</p>
+					<div class="d-flex justify-content-sm-start justify-content-center">
+						<p class="mb-0 text-muted fs-13 lh-1">02 Dec 2020 at 2:40pm</p>
+						<a href="#" class="mb-0 text-heading border-left border-dark hover-primary lh-1 ml-2 pl-2">Reply</a>
+					</div>
+				</div>
+			</div>
+			<div class="media border-top py-6 d-sm-flex d-block text-sm-left text-center">
+				<div class="w-82px h-82 mr-2 bg-gray-01 rounded-circle fs-25 font-weight-500 text-muted d-flex align-items-center justify-content-center text-uppercase mr-sm-8 mb-4 mb-sm-0 mx-auto">
+					HI
+				</div>
+				<div class="media-body">
+					<div class="row mb-1 align-items-center">
+						<div class="col-sm-6 mb-2 mb-sm-0">
+							<h4 class="mb-0 text-heading fs-14">Harry Iglesias</h4>
+						</div>
+						<div class="col-sm-6">
+							<ul class="list-inline d-flex justify-content-sm-end justify-content-center mb-0">
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+								<li class="list-inline-item mr-1">
+									<span class="text-border fs-12 lh-2"><i class="fas fa-star"></i></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<p class="mb-3 pr-xl-17">Very good and fast support during the week. Thanks for always
+						keeping your WordPress themes up to date. Your level of support and dedication
+						is second to none.</p>
+					<div class="d-flex justify-content-sm-start justify-content-center">
+						<p class="mb-0 text-muted fs-13 lh-1">02 Dec 2020 at 2:40pm</p>
+						<a href="#" class="mb-0 text-heading border-left border-dark hover-primary lh-1 ml-2 pl-2">Reply</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		</div>
+	</div>
+</section>
+<section class="pb-11">
+	<div class="container">
+		<div class="col-xl-8 offset-xl-2">
+			<div class="card border-0">
+			<div class="card-body p-0">
+				<h3 class="fs-16 lh-2 text-heading mb-4">Write A Review</h3>
+				<form>
+					<div class="form-group mb-4 d-flex justify-content-start">
+						<div class="rate-input">
+							<input type="radio" id="star5" name="rate" value="5">
+							<label for="star5" title="text" class="mb-0 mr-1 lh-1">
+								<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" id="star4" name="rate" value="4">
+							<label for="star4" title="text" class="mb-0 mr-1 lh-1">
+								<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" id="star3" name="rate" value="3">
+							<label for="star3" title="text" class="mb-0 mr-1 lh-1">
+								<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" id="star2" name="rate" value="2">
+							<label for="star2" title="text" class="mb-0 mr-1 lh-1">
+								<i class="fas fa-star"></i>
+							</label>
+							<input type="radio" id="star1" name="rate" value="1">
+							<label for="star1" title="text" class="mb-0 mr-1 lh-1">
+								<i class="fas fa-star"></i>
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group mb-4">
+								<input placeholder="Your Name" class="form-control form-control-lg border-0" type="text" name="name">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group mb-4">
+								<input type="email" placeholder="Email" name="email" class="form-control form-control-lg border-0">
+							</div>
+						</div>
+					</div>
+					<div class="form-group mb-6">
+						<textarea class="form-control form-control-lg border-0" placeholder="Your Review" name="message" rows="5"></textarea>
+					</div>
+					<button type="submit" class="btn btn-lg btn-primary px-10 mb-2">Submit</button>
+				</form>
+			</div>
+		</div>
+		</div>
+	</div>
+</section>
+<section class="mb-13">
+	<div class="container">
+		<div class="col-xl-8 offset-xl-2">
+			<h2 class="fs-35 font-weight-600 lh-15 text-heading mb-6">Similar Homes You May Like</h2>
+		</div>
+		<div class="slick-slider"
+		     data-slick-options='{"slidesToShow": 3, "dots":false,"arrows":false,"responsive":[{"breakpoint": 1200,"settings": {"slidesToShow":3,"arrows":false}},{"breakpoint": 992,"settings": {"slidesToShow":2}},{"breakpoint": 768,"settings": {"slidesToShow": 1}},{"breakpoint": 576,"settings": {"slidesToShow": 1}}]}'>
+			{% for property in site.data.single-property-5.properties-04 %}
+			<div class="box">
+				<div class="card shadow-hover-2">
+					<div class="hover-change-image bg-hover-overlay rounded-lg card-img-top">
+						<img src="{{ property.image | document_url }}"
+						     alt="{{ property.title }}">
+						<div class="card-img-overlay p-2 d-flex flex-column">
+							<div>
+								{% for category in property.categories %}
+								<span class="badge mr-2 {{ category.class }}">{{ category.name }}</span>
+								{% endfor %}
+							</div>
+							<ul class="list-inline mb-0 mt-auto hover-image">
+								<li class="list-inline-item mr-2" data-toggle="tooltip" title="9 Images">
+									<a href="#" class="text-white hover-primary">
+										<i class="far fa-images"></i><span class="pl-1">9</span>
+									</a>
+								</li>
+								<li class="list-inline-item" data-toggle="tooltip" title="2 Video">
+									<a href="#" class="text-white hover-primary">
+										<i class="far fa-play-circle"></i><span class="pl-1">2</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card-body pt-3">
+						<h2 class="card-title fs-16 lh-2 mb-0"><a href="{{ property.url | document_url }}" class="text-dark hover-primary">{{
+							property.title }}</a></h2>
+						<p class="card-text font-weight-500 text-gray-light mb-2">{{ property.address }}</p>
+						<ul class="list-inline d-flex mb-0 flex-wrap mr-n5">
+							<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-5" data-toggle="tooltip" title="{{ property.feature.tooltip_bed }}">
+								<svg class="icon icon-bedroom fs-18 text-primary mr-1"><use xlink:href="#icon-bedroom"></use></svg>{{
+								property.feature.bed }}
+							</li>
+							<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-5" data-toggle="tooltip" title="{{ property.feature.tooltip_bath }}">
+								<svg class="icon icon-shower fs-18 text-primary mr-1"><use xlink:href="#icon-shower"></use></svg>{{
+								property.feature.bath }}
+							</li>
+							<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-5" data-toggle="tooltip" title="{{ property.feature.tooltip_area }}">
+								<svg class="icon icon-square fs-18 text-primary mr-1"><use xlink:href="#icon-square"></use></svg>{{
+								property.feature.area }}
+							</li>
+							<li class="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-5" data-toggle="tooltip" title="{{ property.feature.tooltip_garage }}">
+								<svg class="icon icon-Garage fs-18 text-primary mr-1"><use xlink:href="#icon-Garage"></use></svg>{{
+								property.feature.garage }}
+							</li>
+						</ul>
+					</div>
+					<div class="card-footer bg-transparent d-flex justify-content-between align-items-center py-3">
+						{% if property.is_time == true %}
+						<p class="fs-17 font-weight-bold text-heading mb-0">{{ property.price }}<span class="text-gray-light font-weight-500 fs-14"> / {{ property.time }}</span></p>
+						{% else %}
+						<p class="fs-17 font-weight-bold text-heading mb-0">{{ property.price }}</p>
+						{% endif %}
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item">
+								{% if property.is_favorite == true %}
+								<a href="#"
+								   class="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-secondary bg-accent border-accent" data-toggle="tooltip" title="Wishlist"><i
+										class="fas fa-heart"></i></a>
+								{% else %}
+								<a href="#"
+								   class="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-body hover-secondary bg-hover-accent border-hover-accent" data-toggle="tooltip" title="Wishlist"><i
+										class="far fa-heart"></i></a>
+								{% endif %}
+							</li>
+							<li class="list-inline-item">
+								<a href="#"
+								   class="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-body hover-secondary bg-hover-accent border-hover-accent" data-toggle="tooltip" title="Compare"><i
+										class="fas fa-exchange-alt"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<section>
+	<div class="d-flex bottom-bar-action bottom-bar-action-01 py-2 px-4 bg-gray-01 align-items-center position-fixed fixed-bottom d-sm-none">
+		<div class="media align-items-center">
+			<img src="{{ '/images/irene-wallace.png' | document_url }}" alt="Irene Wallace" class="mr-4 rounded-circle">
+			<div class="media-body">
+				<a href="#" class="d-block text-dark fs-15 font-weight-500 lh-15">Irene Wallace</a>
+				<span class="fs-13 lh-2">Sales Excutive</span>
+			</div>
+		</div>
+		<div class="ml-auto">
+			<button type="button" class="btn btn-primary fs-18 p-2 lh-1 mr-1 mb-1 shadow-none" data-toggle="modal" data-target="#modal-messenger"><i class="fal fa-comment"></i></button>
+			<a href="tel:(+84)2388-969-888" class="btn btn-primary fs-18 p-2 lh-1 mb-1 shadow-none" target ="_blank"><i class="fal fa-phone"></i></a>
+		</div>
+	</div>
+	<div class="modal fade" id="modal-messenger" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header border-0 pb-0">
+					<h4 class="modal-title text-heading" id="exampleModalLabel">Contact Form</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body pb-6">
+					<div class="form-group mb-2">
+						<input type="text" class="form-control form-control-lg border-0" placeholder="First Name, Last Name">
+					</div>
+					<div class="form-group mb-2">
+						<input type="email" class="form-control form-control-lg border-0" placeholder="Your Email">
+					</div>
+					<div class="form-group mb-2">
+						<input type="tel" class="form-control form-control-lg border-0" placeholder="Your phone">
+					</div>
+					<div class="form-group mb-2">
+						<textarea class="form-control border-0" rows="4">Hello, I'm interested in Villa Called Archangel</textarea>
+					</div>
+					<div class="form-group form-check mb-4">
+						<input type="checkbox" class="form-check-input" id="exampleCheck3">
+						<label class="form-check-label fs-13" for="exampleCheck3">Egestas fringilla phasellus faucibus scelerisque eleifend donec.</label>
+					</div>
+					<button type="submit" class="btn btn-primary btn-lg btn-block rounded">Request Info</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

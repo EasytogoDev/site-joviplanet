@@ -1,0 +1,100 @@
+---
+layout: get-started
+title: Working with Gulp
+group: getting-started
+toc: true
+---
+<div class="mb-6">
+    <p>As has been mentioned in previous section, <span class="text-dark font-weight-500">Gulp</span> is a JavaScript
+        task runner. It helps with performing repetitive tasks like minification, compilation, unit testing, linting,
+        etc.
+        This is possible thanks to extensive Gulp Plugins library.</p>
+    <p>Gulp tasks are already set up for you. They are stored inside <code>homeid/gulpfile.js</code>. But in order to
+        have access to them via you Command Line tool you will need to install <span
+                class="text-dark font-weight-500">gulp-cli node package</span>. Gulp CLI stands for Gulp Command Line
+        Interface.
+        <u class="d-block">To do that type following line in your terminal:</u>
+    <p><kbd>npm install -g gulp-cli</kbd></p>
+    <p><span class="d-block text-info mb-4">* if you are on Mac make sure to use <span
+            class="font-weight-500">sudo</span> to install packages globally otherwise you may runt into error.</span>
+    </p>
+</div>
+<h2 class="fs-20 mb-4 ">Gulp CLI commands</h2>
+<ul class="mb-4">
+    <li class="pb-3"><kbd>gulp</kbd> - this main command will fire default gulp task which includes: <u> moving vendor
+        libraries from node_modules directory to dist folder, javascript minification,compress image, sass
+        and jekyll compilation and lanching watch task</u>. Note: to use other separate tasks explained below you will
+        need to open other Terminal window
+        and leave the one with running server intact.
+    </li>
+    <li class="pb-3"><kbd>gulp clean</kbd> - as the name implies it cleans dist folder from
+        generated (compiled assests
+        like css, js, vendor libs, etc.) without folder vendors
+    </li>
+    <li class="pb-3"><kbd>gulp clean-vendors</kbd> - clean vendors folder of dist folder
+    </li>
+    <li class="pb-3"><kbd>gulp clean-all</kbd> - as the <kbd>gulp clean</kbd> but clean all of the dist folder</li>
+    <li class="pb-3"><kbd>gulp vendors</kbd> - clean <code>dist/vendors</code> folder then moves vendor libraries from <code>/site/_assets/vendors</code> directory
+        to <code>dist</code> and
+        <code>js/bootstrap</code> directory to <code>dist/vendors/bootstrap</code>
+        folder. Please check this article explaining how to add new vendor plugin to your project - <a
+                href="installing-vendor-plugins.html" class="font-weight-500">Installing Vendor
+            plugins with npm and
+            Gulp</a>
+    </li>
+    <li class="pb-3"><kbd>gulp clean-images</kbd> - clean images folder of the dist folder</li>
+    <li class="pb-3"><kbd>gulp images</kbd> - copy images folder from <code>/site/_assets/images</code> to <code>/dist/images</code>
+    </li>
+    <li class="pb-3"><kbd>gulp js-rebuild</kbd> - build and then minify and uglify main
+        <code>theme.js</code>
+        file from <code>site/_assets/js</code> folder to <code>dist/js/theme.min.js</code> file which linked to your
+        HTML document.
+    </li>
+    <li class="pb-3"><kbd>gulp jekyll-build</kbd> - compiles <code>.html</code> and <code>.md</code> from
+        <code>site</code> folder into HTML
+        in <code>dist</code> folder.
+    </li>
+    <li class="pb-3"><kbd>gulp css-build</kbd> - compiles <code>.scss</code> files into non-minified CSS
+        (css/themes.css). From <code>/site/_assets/scss</code> to <code>dist</code> folder.
+    </li>
+    <li class="pb-3"><kbd>gulp css-min</kbd> - compiles <code>.css</code> files into minified CSS
+        (css/themes.min.css). From <code>/site/_assets/scss</code> to <code>dist</code> folder.
+    </li>
+    <li class="pb-3"><kbd>gulp css-rebuild</kbd> launches series <kbd>gulp css-build</kbd> and <kbd>gulp css-min</kbd>
+    </li>
+    <li class="pb-3"><kbd>gulp watch-scss</kbd> - launches <code>watch-css</code> task. It will watch changes of your
+        <code>.scss</code> files and automatically compile them into <code>.css</code>.
+    </li>
+    <li class="pb-3"><kbd>gulp watch-scss</kbd> - launches <code>watch-js</code> task. It will watch changes of your
+        <code>.js</code> files and automatically compile them into <code>.js</code>.
+    </li>
+    <li class="pb-3"><kbd>gulp watch-images</kbd> - launches <code>watch-images</code> task. It will watch changes of
+        your
+        images files and automatically copy them into <code>/dist/images</code>.
+    </li>
+    <li class="pb-3"><kbd>gulp watch</kbd> - launches <code>watch</code> task. It will watch changes of your .scss / .js
+        / .html / .md files and automatically compile them into .css / .js / .html.
+    </li>
+    <li class="pb-3"><kbd>gulp rebuild</kbd> - launches parallel <kbd>gulp css-rebuild</kbd>, <kbd>gulp js-rebuild</kbd>,
+        <kbd>gulp images</kbd> and <kbd>gulp vendors</kbd> tasks.
+    </li>
+    <li class="pb-3"><kbd>gulp serve</kbd> - provide connect-server functionality
+    </li>
+    <li class="pb-3"><kbd>gulp imagemin</kbd> - minify PNG, JPEG, GIF and SVG images
+    </li>
+    <li class="pb-3"><kbd>gulp w3c</kbd> - validate HTML using the W3C Markup Validation Service
+    </li>
+    <li class="pb-3"><kbd>gulp default</kbd> - launches <kbd>gulp clean</kbd> task then launches parallel <kbd>gulp
+        rebuild</kbd>, <kbd>gulp watch</kbd>,
+        and <kbd>gulp serve</kbd> tasks.
+    </li>
+</ul>
+<h2 class="fs-20 mb-4 ">Next steps</h2>
+<div>
+    <p>Now, when you are equiped with all necessary tools and dev invironment is all set you are ready to dive into
+        Around customization.</p>
+    <p>Take some time to familiarize yourself with <a href="project-structure.html" class="font-weight-500">Project
+        Structure</a>.</p>
+</div>
+
+

@@ -1,0 +1,263 @@
+slider-01:
+  - title: Facts & Features
+    url: /single-property-1.html
+    img: /images/properties-slider-07.jpg
+    description: Stourbridge, West Midlands, DY9 9TA
+    meta:
+      type: Single family
+      parking: Attached garage
+      lot: 23.345 sqft
+      price-sqft: $534
+
+  - title: Facts & Features
+    url: /single-property-1.html
+    img: /images/properties-slider-08.jpg
+    description: Stourbridge, West Midlands, DY9 9TA
+    meta:
+      type: Single family
+      parking: Attached garage
+      lot: 23.345 sqft
+      price-sqft: $534
+
+  - title: Facts & Features
+    url: /single-property-1.html
+    img: /images/properties-slider-04.jpg
+    description: Stourbridge, West Midlands, DY9 9TA
+    meta:
+      type: Single family
+      parking: Attached garage
+      lot: 23.345 sqft
+      price-sqft: $534
+
+  - title: Facts & Features
+    url: /single-property-1.html
+    img: /images/properties-slider-05.jpg
+    description: Stourbridge, West Midlands, DY9 9TA
+    meta:
+      type: Single family
+      parking: Attached garage
+      lot: 23.345 sqft
+      price-sqft: $534
+
+  - title: Facts & Features
+    url: /single-property-1.html
+    img: /images/properties-slider-06.jpg
+    description: Stourbridge, West Midlands, DY9 9TA
+    meta:
+      type: Single family
+      parking: Attached garage
+      lot: 23.345 sqft
+      price-sqft: $534
+
+property-grid-01:
+  - title: Home in Metric Way
+    url: /single-property-1.html
+    img: /images/properties-grid-38.jpg
+    address: 1421 San Pedro St, Los Angeles
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    featured: true
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    favorite: true
+
+  - title: Affordable Urban House
+    url: /single-property-1.html
+    img: /images/properties-grid-01.jpg
+    address: 1421 San Pedro St, Los Angeles
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    featured: true
+    for-rent: true
+    for-sale: false
+    price: $550
+    favorite: false
+
+  - title: Villa Hollywood Boulevard
+    url: /single-property-1.html
+    img: /images/properties-grid-06.jpg
+    address: 1421 San Pedro St, Los Angeles
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    featured: true
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    favorite: false
+
+  - title: Affordable Urban House
+    url: /single-property-1.html
+    img: /images/properties-grid-04.jpg
+    address: 1421 San Pedro St, Los Angeles
+    meta:
+      bed: 3 Br
+      bath: 3 Ba
+      area: 2300 Sq.Ft
+      garage: 1 Gr
+    featured: true
+    for-rent: false
+    for-sale: true
+    price: $1.250.000
+    favorite: false
+
+properties-creative-01:
+  properties-creative-lg:
+    - title: Villa on Hollywood Boulevard
+      url: /single-property-1.html
+      img: /images/properties-creative-01.jpg
+      address: 1421 San Pedro St, Los Angeles
+      price: $1.250.000
+      meta:
+        bed: 3 Br
+        bath: 3 Ba
+        area: 2300 Sq.Ft
+
+  properties-creative-md:
+    - title: Home in Metric Way
+      url: /single-property-1.html
+      img: /images/properties-creative-02.jpg
+      address: 1421 San Pedro St, Los Angeles
+      featured: true
+      price: $1.250.000
+      description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+      meta:
+        bed: 3 Bedrooms
+        bath: 3 Bathrooms
+        area: 2300 Sq.Ft
+
+    - title: Garden Gingerbread House
+      url: /single-property-1.html
+      img: /images/properties-creative-03.jpg
+      address: 1421 San Pedro St, Los Angeles
+      featured: false
+      price: $1.250.000
+      description: Lorem ipsum dolor sit amet, sectetur cing elit uspe ndisse suscorem ipsum dolor sitorem
+      meta:
+        bed: 3 Bedrooms
+        bath: 3 Bathrooms
+        area: 2300 Sq.Ft
+
+properties-creative-02:
+  column-01:
+    - title: Villa on Hollywood Boulevard
+      url: /single-property-1.html
+      img: /images/properties-creative-04.jpg
+      address: 1421 San Pedro St, Los Angeles
+      price: $1.250.000
+      meta:
+        bed: 3 Br
+        bath: 3 Ba
+        area: 2300 Sq.Ft
+
+    - title: Villa on Hollywood Boulevard
+      url: /single-property-1.html
+      img: /images/properties-creative-06.jpg
+      address: 1421 San Pedro St, Los Angeles
+      price: $1.250.000
+      meta:
+        bed: 3 Br
+        bath: 3 Ba
+        area: 2300 Sq.Ft
+
+  column-02:
+    - title: Villa on Hollywood Boulevard
+      url: /single-property-1.html
+      img: /images/properties-creative-05.jpg
+      address: 1421 San Pedro St, Los Angeles
+      price: $1.250.000
+      meta:
+        bed: 3 Br
+        bath: 3 Ba
+        area: 2300 Sq.Ft
+
+    - title: Villa on Hollywood Boulevard
+      url: /single-property-1.html
+      img: /images/properties-creative-07.jpg
+      address: 1421 San Pedro St, Los Angeles
+      price: $1.250.000
+      meta:
+        bed: 3 Br
+        bath: 3 Ba
+        area: 2300 Sq.Ft
+
+  column-03:
+    - title: Villa on Hollywood Boulevard
+      url: /single-property-1.html
+      img: /images/properties-creative-08.jpg
+      address: 1421 San Pedro St, Los Angeles
+      price: $1.250.000
+      meta:
+        bed: 3 Br
+        bath: 3 Ba
+        area: 2300 Sq.Ft
+
+agent-02:
+  - name: Darrell Knight
+    job: Sales Excutive
+    img: /images/agent-6.jpg
+    url-agent: /agent-details-1.html
+    url-list-property: /listing-with-left-sidebar.html
+    property: 5
+
+  - name: Dollie Horton
+    job: Sales Excutive
+    img: /images/agent-7.jpg
+    url-agent: /agent-details-1.html
+    url-list-property: /listing-with-left-sidebar.html
+    property: 6
+
+  - name: Fatma Ghaly
+    job: Sales Excutive
+    img: /images/agent-8.jpg
+    url-agent: /agent-details-1.html
+    url-list-property: /listing-with-left-sidebar.html
+    property: 8
+
+  - name: Abody Swedey
+    job: Sales Excutive
+    img: /images/agent-9.jpg
+    url-agent: /agent-details-1.html
+    url-list-property: /listing-with-left-sidebar.html
+    property: 7
+
+  - name: Magdy Aya
+    job: Sales Excutive
+    img: /images/agent-10.jpg
+    url-agent: /agent-details-1.html
+    url-list-property: /listing-with-left-sidebar.html
+    property: 5
+
+partner-01:
+  - img: /images/partner-1.png
+    img-hover: /images/partner-hover-1.png
+    hover: true
+
+  - img: /images/partner-2.png
+    img-hover: /images/partner-hover-2.png
+    hover: true
+
+  - img: /images/partner-3.png
+    img-hover: /images/partner-hover-3.png
+    hover: true
+
+  - img: /images/partner-4.png
+    img-hover: /images/partner-hover-4.png
+    hover: false
+
+  - img: /images/partner-5.png
+    img-hover: /images/partner-hover-5.png
+    hover: true
+
+  - img: /images/partner-6.png
+    img-hover: /images/partner-hover-6.png
+    hover: false

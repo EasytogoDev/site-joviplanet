@@ -1,0 +1,83 @@
+
+#map {
+	height: 430px;
+	&:focus, .mapboxgl-canvas {
+		outline: none;
+	}
+}
+
+.map-point-animate .marker {
+	&:before, &:after {
+		width: 180px;
+		height: 180px;
+		border-radius: 50%;
+		background-clip: padding-box;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		opacity: 0;
+		transform: translate(-50%, -50%);
+		animation: gel-map-animationSignal linear 2s;
+		animation-iteration-count: infinite;
+		display: block;
+		box-shadow: inset 0 0 35px 10px $primary;
+		border-color: $primary;
+		content: '';
+	}
+	&:before {
+		animation-delay: .5s;
+	}
+	&:after {
+		animation-delay: 1s;
+	}
+}
+
+@keyframes gel-map-animationSignal {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, -50%) scale(0.3);
+	}
+	1% {
+		transform: translate(-50%, -50%) scale(0.32);
+		opacity: 0.1;
+	}
+	20% {
+		opacity: 0.5;
+		transform: translate(-50%, -50%) scale(0 0.45);
+	}
+	60% {
+		transform: translate(-50%, -50%) scale(0.75);
+		opacity: 0.35;
+	}
+}
+
+.popup-map-property, .popup-map-property-02 {
+	width: 100%;
+	.mapboxgl-popup-content {
+		padding: 0;
+		box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
+		height: 100%;
+	}
+
+}
+
+.popup-map-property .mapboxgl-popup-close-button {
+	font-size: 20px;
+	z-index: 10;
+}
+
+.popup-map-property-02 {
+	.mapboxgl-popup-content {
+		border-radius: 5px;
+	}
+
+	.mapboxgl-popup-close-button {
+		font-size: 0;
+	}
+
+	.badge {
+		position: absolute;
+		top: -12px;
+		right: 0;
+	}
+}

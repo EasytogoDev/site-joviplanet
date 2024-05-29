@@ -1,0 +1,35 @@
+---
+layout: get-started
+title: Global colors
+group: getting-started
+toc: true
+---
+<div class="mb-4">
+    <u>There are 2 options to customize HomeID global colors:</u>
+    <ol class="mt-3">
+        <li>Customize global colors via Sass variables</li>
+        <li>Replace global colors in CSS</li>
+    </ol>
+</div>
+<h2 class="fs-20 mb-3 mt-0">Customize global colors via Sass variables</h2>
+<div class="mb-4">
+    <p>In case you want to create your own color scheme - the fastest and painless way to do that is via Sass
+        variables.</p>
+    <p>Simply copy necessary variable from <code>scss/bootstrap/_variables.scss</code> file and paste to <code>site/_assets/scss/_theme-variables.scss</code>,
+        then compile new <code>themes.min.css</code> file either using
+        <span class="font-size-medium">Gulp</span> in <a href="working-with-gulp.html" class="font-weight-medium">Working
+            with Gulp</a>
+        sections for instructions.</p>
+    <p>If you want to add new your custom variable, go to <code>site/_assets/scss/_custom-variables.scss</code> and
+        append the end of file. </p>
+    <p>
+        <u>Blelow is the screenshot of the part of Sass variables file responsible for global colors:</u>
+    </p>
+    <img src="{{ '/images/variable.jpg' | document_url }}" alt="Global colors">
+</div>
+<h2 class="fs-20 mt-0">Replace global colors in CSS</h2>
+<div class="pb-5">
+    <p>This is the hardest way to do things done. I don't recommend it but if you prefer vanilla CSS you can replace all
+        color hex values inside <code>homeid/dist/css/themes.min.css</code> with your own using "find and replace" panel
+        of you code editor. Refer to the image above as a guidance.</p>
+</div>

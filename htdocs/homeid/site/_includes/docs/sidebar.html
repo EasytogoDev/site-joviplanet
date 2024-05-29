@@ -1,0 +1,63 @@
+<div class="bd-sidebar-wrapper">
+    <div class="bd-search d-flex align-items-center">
+        <div class="position-relative w-100">
+            <input type="search" class="form-control search-input shadow-none" id="search-input" placeholder="Search..."
+                   aria-label="Search for..." autocomplete="off">
+            <ul class="search-result list-group list-group-flush position-absolute shadow fs-14 rounded">
+
+            </ul>
+        </div>
+        <button class="btn bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse"
+                data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            {%- include icons/menu.svg width="30" height="30" -%}
+        </button>
+    </div>
+    <nav class="collapse show bd-links" id="bd-docs-nav" aria-label="Main navigation">
+        {%- assign page_slug = page.url | split: '/' | last -%}
+        {%- assign page_slug = page_slug | split: '.' | first -%}
+        {%- for group in site.data.doc_sidebar -%}
+        {%- assign link = group.pages | first -%}
+        {%- assign link_slug = link.title | slugify -%}
+        {%- if link_slug -%}
+        {%- assign link_slug = link_slug | append: '.html' -%}
+        {%- endif -%}
+        {%- assign group_slug = group.title | slugify -%}
+        {%- assign active = nil -%}
+        {%- if page.group == group_slug -%}
+        {%- assign active = 'active' -%}
+        {%- endif -%}
+
+        <div class="bd-toc-item{% unless active == nil %} {{ active }}{% endunless %}">
+            <a class="bd-toc-link"
+               href="{{ "/docs/" | append: group_slug | append: "/" | append: link_slug | document_url }}">
+                {{ group.title }}
+            </a>
+
+            <ul class="nav bd-sidenav">
+                {%- for doc in group.pages -%}
+                {%- assign doc_slug = doc.title | slugify -%}
+                {%- assign active = nil -%}
+                {%- if page.group == group_slug and page_slug == doc_slug -%}
+                {%- assign active = 'active bd-sidenav-active' -%}
+                {%- endif -%}
+                {%- if doc.url != nil -%}
+                <li>
+                    <a class="bd-sidenav-link" href="{{ doc.url }}" target="_blank">
+                        {{ doc.title }}
+                    </a>
+                </li>
+                {%- else -%}
+                <li {% unless active== nil %} class="{{ active }}" {% endunless %}>
+                    <a href="{{ "/docs/" | append: group_slug | append: "/" | append: doc_slug | document_url }}.html" class="bd-sidenav-link">
+                        {{ doc.title }}
+                    </a>
+                </li>
+                {%- endif -%}
+                {%- endfor -%}
+            </ul>
+        </div>
+        {%- endfor -%}
+    </nav>
+</div>
+

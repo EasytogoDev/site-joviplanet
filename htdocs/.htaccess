@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d  
+RewriteRule ^([a-z0-9+_-]+)\/?([a-z0-9+_-]+)?\/?([a-z0-9+_-]+)?\/?([a-z0-9+_-]+)?\/?([a-z0-9+_-]+)?\/?([a-�-�a-zA-Z0-9+_\-\/.]+)?$ /index.php?make=$1&pga=$2&pgb=$3&pgc=$4&pgd=$5
+Options All
+
+
